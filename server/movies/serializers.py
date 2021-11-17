@@ -4,6 +4,8 @@ from rest_framework import serializers
 from .models import Movie, Genre
 
 class MovieSerializer(serializers.ModelSerializer):
+    
+    genres = serializers.ListField()
     class Meta:
         model = Movie
         fields = '__all__'
@@ -12,11 +14,7 @@ class MovieListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-<<<<<<< Updated upstream
         fields = ('id', 'title' ,'poster_path',)
-=======
-        fields = ('id', 'poster_path',)
->>>>>>> Stashed changes
 
 class GenreSerializer(serializers.ModelSerializer):
     

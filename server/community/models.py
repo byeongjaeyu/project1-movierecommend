@@ -11,6 +11,6 @@ class Review(models.Model):
     like_user = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_reviews')
 
 class Comment(models.Model):
-    content = models.TextField
+    content = models.TextField()
     review = models.ForeignKey(Review, on_delete=models.CASCADE)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

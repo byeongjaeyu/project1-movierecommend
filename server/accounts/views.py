@@ -11,7 +11,7 @@ from .serializers import UserSerializer
 def signup(request):
 	# 1-1. Client에서 온 데이터를 받아서
     password = request.data.get('password')
-    password_confirmation = request.data.get('passwordConfirmation')
+    password_confirmation = request.data.get['passwordConfirmation']
 		
 	# 1-2. 패스워드 일치 여부 체크
     if password != password_confirmation:

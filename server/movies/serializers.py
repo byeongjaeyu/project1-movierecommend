@@ -12,7 +12,11 @@ class MovieListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
+<<<<<<< Updated upstream
         fields = ('id', 'title' ,'poster_path',)
+=======
+        fields = ('id', 'poster_path',)
+>>>>>>> Stashed changes
 
 class GenreSerializer(serializers.ModelSerializer):
     

@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_list_or_404, get_object_or_404
+<<<<<<< Updated upstream
 import requests
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
@@ -32,4 +33,19 @@ def movie_index(request):
             temp_dict["genres"] = response["genre_ids"]
             temp.append(temp_dict)
         serializer = MovieListSerializer(temp, many=True)
+=======
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from .models import Movie, Genre
+from .serializers import MovieListSerializer, MovieSerializer
+from rest_framework import status
+
+# Create your views here.
+
+@api_view(['GET'])
+def movie_list(request):
+    if request.method == 'GET':
+        movies = get_list_or_404(Movie)
+        serializer = MovieListSerializer(movies, many=True)
+>>>>>>> Stashed changes
         return Response(serializer.data)

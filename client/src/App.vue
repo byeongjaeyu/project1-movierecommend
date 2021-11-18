@@ -11,6 +11,7 @@
       <router-link :to="{ name: 'ReviewList' }">Community</router-link>
     </span>
     <index></index>
+    <router-view/>
   </div>
 </template>
 

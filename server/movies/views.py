@@ -12,6 +12,7 @@ import random
 # Create your views here.
 
 key = "733c7d5145ecf236ad387093e2d52047"
+poster_url = "https://image.tmdb.org/t/p/original/"
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
@@ -30,7 +31,7 @@ def movie_index(request):
             temp_dict["vote_count"] = response["vote_count"]
             temp_dict["vote_average"] = response["vote_average"]
             temp_dict["overview"] = response["overview"]
-            temp_dict["poster_path"] = response["poster_path"]
+            temp_dict["poster_path"] = poster_url + response["poster_path"]
             temp_dict["genres"] = response["genre_ids"]
             temp.append(temp_dict)
         serializer = MovieListSerializer(temp, many=True)
@@ -54,7 +55,7 @@ def random_recommend(request):
             temp_dict["vote_count"] = response["vote_count"]
             temp_dict["vote_average"] = response["vote_average"]
             temp_dict["overview"] = response["overview"]
-            temp_dict["poster_path"] = response["poster_path"]
+            temp_dict["poster_path"] = poster_url + response["poster_path"]
             temp_dict["genres"] = response["genre_ids"]
             temp.append(temp_dict)
         serializer = MovieSerializer(temp, many=True)
@@ -81,7 +82,7 @@ def movie_search(request, word):
                 temp_dict["vote_count"] = response["vote_count"]
                 temp_dict["vote_average"] = response["vote_average"]
                 temp_dict["overview"] = response["overview"]
-                temp_dict["poster_path"] = response["poster_path"]
+                temp_dict["poster_path"] = poster_url + response["poster_path"]
                 temp_dict["genres"] = response["genre_ids"]
                 temp.append(temp_dict)
         serializer = MovieSerializer(temp, many=True)
@@ -107,10 +108,11 @@ def choice_recommend(request, movie_id):
                 temp_dict["vote_count"] = response["vote_count"]
                 temp_dict["vote_average"] = response["vote_average"]
                 temp_dict["overview"] = response["overview"]
-                temp_dict["poster_path"] = response["poster_path"]
+                temp_dict["poster_path"] = poster_url + response["poster_path"]
                 temp_dict["genres"] = response["genre_ids"]
                 temp.append(temp_dict)
         temp.sort(key = lambda x: -x["vote_average"])
+        temp = temp[:20]
         serializer = MovieSerializer(temp, many=True)
         return Response(serializer.data)
 

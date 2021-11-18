@@ -12,7 +12,11 @@ class ReviewListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Review
+<<<<<<< Updated upstream
         fields = ('id', 'title', 'movie_title', 'created_at', 'user')
+=======
+        fields = ('id', 'title', 'movie_title',)
+>>>>>>> Stashed changes
 
 class CommentSerializer(serializers.ModelSerializer):
     

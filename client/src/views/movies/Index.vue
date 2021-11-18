@@ -1,13 +1,26 @@
 <template>
-  <div id="app">
-    <h1>최신영화20개</h1>
-    <div>
+  <div>
+    <hr>
+    <div class="row row-cols-3 g-4" id="app">
+
       <div v-for="movie in movies" :key="movie.movie_id">
-        {{ movie.title }}
-        <img :src="movie.poster_path" alt="">
-        <hr>
+
+          <div class="col">
+
+            <div class="card">
+              <img :src="movie.poster_path" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">{{ movie.title }}</h5>
+              </div>
+            </div>
+          
+
+        </div>
+
       </div>
+
     </div>
+
   </div>
 </template>
 
@@ -38,9 +51,5 @@ export default {
 </script>
 
 <style>
-  img {
-    width: 300px;
-    height: 150px;
-    
-  }
+
 </style>

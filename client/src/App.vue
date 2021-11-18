@@ -1,21 +1,21 @@
 <template>
-  <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div id="app" class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark font">
       <div class="container-fluid">
-        <p class="navbar-brand">MovieKing</p>
+        <p class="navbar-brand fw-bold text-white-50 m-auto">MovieKing</p>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link :to="{ name: 'Login' }" class="nav-link">Login</router-link>
+              <router-link :to="{ name: 'Login' }" class="nav-link text-white-50">Login</router-link>
             </li>
             <li class="nav-item">
-              <router-link :to="{ name: 'Signup' }" class="nav-link">Signup</router-link>
+              <router-link :to="{ name: 'Signup' }" class="nav-link text-white-50">Signup</router-link>
             </li>
             <li class="nav-item">
-              <router-link :to="{ name: 'Logout' }" class="nav-link">Logout</router-link>
+              <router-link :to="{ name: 'Logout' }" class="nav-link text-white-50">Logout</router-link>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-white-50" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 영화추천
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -32,6 +32,9 @@
                   <router-link :to="{ name: 'Recommend3' }" class="dropdown-item">추천3</router-link>
                 </li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <router-link :to="{ name: 'ReviewList' }" class="nav-link text-white-50">Community</router-link>
             </li>
           </ul>
           <form class="d-flex">
@@ -101,5 +104,9 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.nav-link {
+  color: white;
 }
 </style>

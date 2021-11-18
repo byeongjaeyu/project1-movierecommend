@@ -23,6 +23,7 @@ def movie_index(request):
         responses = requests.get(Url).json()
         for response in responses["results"]:
             temp_dict = {}
+            temp_dict["movie_id"] = response["id"]
             temp_dict["title"] = response["title"]
             temp_dict["release_date"] = response["release_date"]
             temp_dict["popularity"] = response["popularity"]
@@ -46,6 +47,7 @@ def random_recommend(request):
         responses = requests.get(Url).json()
         for response in responses["results"]:
             temp_dict = {}
+            temp_dict["movie_id"] = response["id"]
             temp_dict["title"] = response["title"]
             temp_dict["release_date"] = response["release_date"]
             temp_dict["popularity"] = response["popularity"]
@@ -55,5 +57,59 @@ def random_recommend(request):
             temp_dict["poster_path"] = response["poster_path"]
             temp_dict["genres"] = response["genre_ids"]
             temp.append(temp_dict)
+        serializer = MovieSerializer(temp, many=True)
+        return Response(serializer.data)
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def movie_search(request, word):
+    if request.method == 'GET':
+        Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page=1&include_adult=false"
+        responses = requests.get(Url).json()
+        temp = []
+        pages = responses["total_pages"]
+        for page in range(1,pages):
+            Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page={page}&include_adult=false"
+            responses = requests.get(Url).json()
+            for response in responses["results"]:
+                temp_dict = {}
+                temp_dict["movie_id"] = response["id"]
+                temp_dict["title"] = response["title"]
+                temp_dict["release_date"] = response["release_date"]
+                temp_dict["popularity"] = response["popularity"]
+                temp_dict["vote_count"] = response["vote_count"]
+                temp_dict["vote_average"] = response["vote_average"]
+                temp_dict["overview"] = response["overview"]
+                temp_dict["poster_path"] = response["poster_path"]
+                temp_dict["genres"] = response["genre_ids"]
+                temp.append(temp_dict)
+        serializer = MovieSerializer(temp, many=True)
+        return Response(serializer.data)
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def choice_recommend(request, movie_id):
+    if request.method == 'GET':
+        Url = f"https://api.themoviedb.org/3/movie/{movie_id}/similar?api_key={key}&language=ko-kr&page=1"
+        temp = []
+        responses = requests.get(Url).json()
+        for page in range(1,10):
+            Url = f"https://api.themoviedb.org/3/movie/{movie_id}/similar?api_key={key}&language=ko-kr&page={page}"
+            responses = requests.get(Url).json()
+            for response in responses["results"]:
+                temp_dict = {}
+                temp_dict["movie_id"] = response["id"]
+                temp_dict["title"] = response["title"]
+                temp_dict["release_date"] = response["release_date"]
+                temp_dict["popularity"] = response["popularity"]
+                temp_dict["vote_count"] = response["vote_count"]
+                temp_dict["vote_average"] = response["vote_average"]
+                temp_dict["overview"] = response["overview"]
+                temp_dict["poster_path"] = response["poster_path"]
+                temp_dict["genres"] = response["genre_ids"]
+                temp.append(temp_dict)
+        temp.sort(key = lambda x: -x["vote_average"])
         serializer = MovieSerializer(temp, many=True)
         return Response(serializer.data)

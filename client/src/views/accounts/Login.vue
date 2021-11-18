@@ -1,16 +1,27 @@
 <template>
-  <div>
-    <h1>Login</h1>
-    <div>
-      <label for="username">사용자 이름: </label>
-      <input type="text" id="username" v-model="credentials.username">
+  <transition name="modal" appear >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button @click="$emit('closeLoginModal')">Close</button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <label for="username">사용자 이름: </label>
+            <input type="text" id="username" v-model="credentials.username">
+          </div>
+          <div>
+            <label for="password">비밀번호: </label>
+            <input type="password" id="password" v-model="credentials.password">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button @click="login" class="btn btn-primary">로그인</button>
+        </div>
+      </div>
     </div>
-    <div>
-      <label for="password">비밀번호: </label>
-      <input type="password" id="password" v-model="credentials.password">
-    </div>
-    <button @click="login">로그인</button>
-  </div>
+  </transition>
 </template>
 
 
@@ -38,7 +49,7 @@ export default {
           console.log(res)
           localStorage.setItem('jwt',res.data.token)
           this.$emit('login')
-          this.$router.push({ name: 'TodoList' })
+          this.$router.push({ name: 'Index' })
         })
         .catch(err => {
           console.log(err)

@@ -5,6 +5,7 @@ from django.conf import settings
 class Review(models.Model):
     title = models.CharField(max_length=50)
     content = models.TextField()
+    rank = models.IntegerField()
     created_at = models.DateField(auto_now_add=True)
     updated_at = models.DateField(auto_now=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

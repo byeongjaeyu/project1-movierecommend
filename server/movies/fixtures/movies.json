@@ -1,0 +1,4831 @@
+[
+  {
+    "model": "movies.genre",
+    "pk": 28,
+    "fields": {
+      "name": "액션"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 12,
+    "fields": {
+      "name": "모험"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 16,
+    "fields": {
+      "name": "애니메이션"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 35,
+    "fields": {
+      "name": "코미디"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 80,
+    "fields": {
+      "name": "범죄"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 99,
+    "fields": {
+      "name": "다큐멘터리"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 18,
+    "fields": {
+      "name": "드라마"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 10751,
+    "fields": {
+      "name": "가족"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 14,
+    "fields": {
+      "name": "판타지"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 36,
+    "fields": {
+      "name": "역사"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 27,
+    "fields": {
+      "name": "공포"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 10402,
+    "fields": {
+      "name": "음악"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 9648,
+    "fields": {
+      "name": "미스터리"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 10749,
+    "fields": {
+      "name": "로맨스"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 878,
+    "fields": {
+      "name": "SF"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 10770,
+    "fields": {
+      "name": "TV 영화"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 53,
+    "fields": {
+      "name": "스릴러"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 10752,
+    "fields": {
+      "name": "전쟁"
+    }
+  },
+  {
+    "model": "movies.genre",
+    "pk": 37,
+    "fields": {
+      "name": "서부"
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "가브리엘의 지옥 파트 2",
+      "release_date": "2020-07-31",
+      "popularity": 12.087,
+      "vote_count": 883,
+      "vote_average": 8.9,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/pci1ArYW7oJ2eyTo2NMYEKHHiCP.jpg",
+      "genres": [
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "가브리엘의 지옥",
+      "release_date": "2020-05-29",
+      "popularity": 12.701,
+      "vote_count": 1476,
+      "vote_average": 8.9,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/oyG9TL7FcRP4EZ9Vid6uKzwdndz.jpg",
+      "genres": [
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "Dedicada a mi ex",
+      "release_date": "2019-11-01",
+      "popularity": 21.833,
+      "vote_count": 246,
+      "vote_average": 8.8,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/riAooJrFvVhotyaOgoI0WR7okSe.jpg",
+      "genres": [
+        35,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "쇼생크 탈출",
+      "release_date": "1994-09-23",
+      "popularity": 40.468,
+      "vote_count": 17292,
+      "vote_average": 8.7,
+      "overview": "촉망받는 은행 간부 앤디 듀프레인은 아내와 그녀의 정부를 살해했다는 누명을 쓴다. 주변의 증언과 살해 현장의 그럴듯한 증거들로 그는 종신형을 선고받고 악질범들만 수용한다는 지옥같은 교도소 쇼생크로 향한다. 인간 말종 쓰레기들만 모인 그곳에서 그는 이루 말할 수 없는 억압과 짐승보다 못한 취급을 당한다. 그러던 어느 날, 간수의 세금을 면제받게 해 준 덕분에 그는 일약 교도소의 비공식 회계사로 일하게 된다. 그 와중에 교도소 소장은 죄수들을 이리저리 부리면서 검은 돈을 긁어 모으고 앤디는 이 돈을 세탁하여 불려주면서 그의 돈을 관리하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/3hO6DIGRBaJQj2NLEYBMwpcz88D.jpg",
+      "genres": [
+        80,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "용감한 자가 신부를 데려가리",
+      "release_date": "1995-10-20",
+      "popularity": 15.604,
+      "vote_count": 2405,
+      "vote_average": 8.7,
+      "overview": "영국에서 유학중인 라즈(샤룩 칸)와 인도 처녀 심란(까졸).  심란은 부모님이 정해주신 약혼자가 있는데 약혼을 앞두고 친구들과 유럽 여행을 떠나게 된다.  여행 중 우연히 만남 샤룩과 까졸. 두 남녀의 연속된 우연과 좌충우돌 사랑 만들기.  그렇게 사랑하게 된 그들이지만 까졸은 약혼자가 있는 몸. 인도로 돌아가게 된다.  샤룩 또한 그녀를 못 잊어 인도로 뒤 따라 들어가지만 엄격한 까졸의 부모를 설득하기가 힘이 든다. 도망가자는 까졸의 제안을 거부하고 샤룩은 끝내 그녀의 부모님의 허락을 얻어 내기 위해 고군분투한다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/2CAL2433ZeIihfX1Hb2139CX0pW.jpg",
+      "genres": [
+        35,
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "대부",
+      "release_date": "1972-03-14",
+      "popularity": 41.163,
+      "vote_count": 13088,
+      "vote_average": 8.7,
+      "overview": "시실리에서 이민온 뒤, 정치권까지 영향력을 미치는 거물로 자리잡은 돈 꼴레오네는 갖가지 고민을 호소하는 사람들의 문제를 해결해주며 대부라 불리운다. 한편 솔로소라는 인물은 꼴레오네가와 라이벌인 탓타리아 패밀리와 손잡고 새로운 마약 사업을 제안한다. 돈 꼴레오네가 마약 사업에 참여하지 않기로 하자, 돈 꼴레오네를 저격해 그는 중상을 입고 사경을 헤매게 된다. 그 뒤, 돈 꼴레오네의 아들 소니는 조직력을 총 동원해 다른 패밀리들과 피를 부르는 전쟁을 시작하는데... 가족의 사업과 상관없이 대학에 진학한 뒤 인텔리로 지내왔던 막내 아들 마이클은 아버지가 총격을 당한 뒤, 아버지를 구하기 위해 위험천만한 협상 자리에 나선다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/cOwVs8eYA4G9ZQs7hIRSoiZr46Q.jpg",
+      "genres": [
+        80,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "쉰들러 리스트",
+      "release_date": "1993-11-30",
+      "popularity": 36.801,
+      "vote_count": 10417,
+      "vote_average": 8.6,
+      "overview": "2차 세계대전 당시 독일군이 점령한 폴란드. 시류에 맞춰 자신의 성공을 추구하는 기회주의자 쉰들러는 유태인이 경영하는 그릇 공장을 인수한다. 그는 공장을 인수하기 위해 나찌 당원이 되고 독일군에게 뇌물을 바치는 등 갖은 방법을 동원한다. 그러나 냉혹한 기회주의자였던 쉰들러는 유태인 회계사인 스턴과 친분을 맺으면서 냉혹한 유태인 학살에 대한 양심의 소리를 듣기 시작한다. 마침내 그는 강제 수용소로 끌려가 죽음을 맞게될 유태인들을 구해내기로 결심하고, 독일군 장교에게 빼내는 사람 숫자대로 뇌물을 주는 방법으로 유태인들을 구해내려는 계획을 세우는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/oyyUcGwLX7LTFS1pQbLrQpyzIyt.jpg",
+      "genres": [
+        18,
+        36,
+        10752
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "나의 히어로 아카데미아 더 무비: 히어로즈 라이징",
+      "release_date": "2019-12-20",
+      "popularity": 245.897,
+      "vote_count": 426,
+      "vote_average": 8.6,
+      "overview": "눈이 계속 내리는 겨울 어느 밤, 히어로 사회를 파괴하려고 계획하는 시가라키 토무라가 인솔하는 빌런 연합과 그 움직임을 사전에 포착한 히어로들의 전투가 전개되는 가운데, 남모르게 조용히 꿈틀거리는 \"뭔가\"가 일어나고, 그 자리를 떠났다. 마침 이즈쿠 일행의 유에이 고교 히어로과 1학년 A반이 은퇴한 No.1 히어로 올마이트의 뒤를 이어 \"차세대 영웅 육성 프로젝트\"의 일환으로 학급 전원에서 기간 한정의 교외 히어로 활동을 위해 일본의 훨씬 남쪽에 위치한 외딴 섬 \"나부 섬\"을 찾았다. 얼마 전 큰 사건이 일어나지 않았던 평화로운 섬에서 이들은 주재 영웅으로서 섬사람들의 생활을 도우며 분주했고, 그러면서도 한가한 시간을 보내고 있었다. 그러나 그 정적을 부수듯이, 갑자기 빌런들이 나부 섬을 덮쳐, 차례차례로 섬의 시설을 파괴해 간다. 그들을 지휘하는 것은, \"나인\". 그날 밤, 눈을 뜬 \"뭔가\"그 자체였다. 이즈쿠와 바쿠고 등의 1학년 A반의 멤버는 힘을 모아 빌런에 맞선다! 과연 섬을 덮치는 나인의 목적이란!? 그리고 이즈쿠 일행의 1학년 A반의 \"뉴 히어로\"들은 이 가장 흉악한 빌런으로부터 섬의 사람들을 지킬 수 있을까!?",
+      "poster_path": "https://image.tmdb.org/t/p/w500/y56HkHAbSZQJjQaxlqCaRI3lIHu.jpg",
+      "genres": [
+        16,
+        28
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "너의 이름은.",
+      "release_date": "2016-08-26",
+      "popularity": 122.145,
+      "vote_count": 6464,
+      "vote_average": 8.6,
+      "overview": "시골에 사는 소녀 미츠하(가미시라이시 모네)는 어느 날 잠에서 깬 후 자신의 몸이 남자로 바뀐 걸 알게 된다. 같은 시간, 도쿄에 사는 소년 타키(가미키 류노스케) 역시 이 기이한 상황을 겪고 있다. 낯선 가족, 낯선 친구들, 낯선 풍경들... 서로에게 이어진 끈을 알게 된 둘은 둘만의 규칙을 정하고 점차 상황을 받아들이기 시작한다. 서로에게 남긴 메모를 확인하며  점점 친구가 되어가는 타키와 미츠하. 언제부턴가 더 이상 몸이 바뀌지 않자  자신들이 특별하게 이어져있었음을 깨달은  타키는 미츠하를 만나러 가는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/wx1Dxr4UyvN18SyC5GsVWWWtYja.jpg",
+      "genres": [
+        16,
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "대부 2",
+      "release_date": "1974-12-20",
+      "popularity": 30.969,
+      "vote_count": 7762,
+      "vote_average": 8.6,
+      "overview": "아버지의 장례식 도중에 맏아들 파올로가 총에 맞아 죽고, 비토(로버트 드니로)는 겨우 도망쳐 미국으로 건너온다. 대부로 성장한 후 비토는 다시 치치오를 찾아 복수를 한다. 새롭게 등장한 젊은 대부 마이클(알 파치노)은 본거지를 라스베가스로 옮기고 가족의 사업을 가능한 합법적인 것으로 바꾸려고 애쓴다. 그런 과중 중에 자신을 제거하려는 음모를 알게되고 그는 냉혹하고 신속하게 반대파들을 제거, 조직을 더욱 확대해 나간다. 이를 위해 마이클은 배신한 형마저 죽이고, 일 때문에 아내와 헤어지는 등 인간적으로는 계속 외로워져 가는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/cj9UsJEN5bNf6ZoF1BbKjKN81hc.jpg",
+      "genres": [
+        18,
+        80
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "센과 치히로의 행방불명",
+      "release_date": "2001-07-20",
+      "popularity": 50.127,
+      "vote_count": 10256,
+      "vote_average": 8.5,
+      "overview": "평범한 열 살 짜리 소녀 치히로 식구는 이사 가던 중 길을 잘못 들어 낡은 터널을 지나가게 된다. 터널 저편엔 폐허가 된 놀이공원이 있었고 그곳엔 이상한 기운이 흘렀다. 인기척 하나 없는 이 마을의 낯선 분위기에 불길한 기운을 느낀 치히로는 부모님에게 돌아가자고 조르지만 부모님은 호기심에 들떠 마을 곳곳을 돌아다니기 시작한다. 어느 음식점에 도착한 치히로의 부모님은 그 곳에 차려진 음식들을 보고 즐거워하며 허겁지겁 먹어대다가 돼지로 변해버린다. 겁에 질려 당황하는 치히로에게 낯선 소년 하쿠가 나타나 빨리 이곳을 나가라고 소리치는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/u1L4qxIu5sC2P082uMHYt7Ifvnj.jpg",
+      "genres": [
+        16,
+        14,
+        10751
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "기생충",
+      "release_date": "2019-05-30",
+      "popularity": 98.079,
+      "vote_count": 9414,
+      "vote_average": 8.5,
+      "overview": "전원 백수로 살 길 막막하지만 사이는 좋은 기택 가족. 장남 기우에게 명문대생 친구가 연결시켜 준 고액 과외 자리는 모처럼 싹튼 고정수입의 희망이다. 온 가족의 도움과 기대 속에 박 사장 집으로 향하는 기우. 글로벌 IT기업의 CEO인 박 사장의 저택에 도착하자 젊고 아름다운 사모님 연교와 가정부 문광이 기우를 맞이한다. 큰 문제 없이 박 사장의 딸 다혜의 과외를 시작한 기우. 그러나 이렇게 시작된 두 가족의 만남 뒤로, 걷잡을 수 없는 사건이 기다리고 있는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/eJ0kCMcqKLBUaHhB9PfOMFu2uim.jpg",
+      "genres": [
+        35,
+        53,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "해밀턴",
+      "release_date": "2020-07-03",
+      "popularity": 41.241,
+      "vote_count": 454,
+      "vote_average": 8.5,
+      "overview": "미국 건국의 주역인 알렉산더 해밀턴의 일생을 그린 뮤지컬 영화",
+      "poster_path": "https://image.tmdb.org/t/p/w500/h1B7tW0t399VDjAcWJh8m87469b.jpg",
+      "genres": [
+        18,
+        36,
+        10402
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "우리는 그토록 사랑했네",
+      "release_date": "1974-12-21",
+      "popularity": 8.802,
+      "vote_count": 273,
+      "vote_average": 8.5,
+      "overview": "2차 대전 당시 연합군으로 참전했다가 친구가 된 세 남자와 한 여자의 사랑과 우정을 그린 작품.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/9SoDsSKrSgfZJq9qIZJItWZtrO7.jpg",
+      "genres": [
+        35,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "그린 마일",
+      "release_date": "1999-12-10",
+      "popularity": 56.813,
+      "vote_count": 11057,
+      "vote_average": 8.5,
+      "overview": "미국 루이지애나의 콜드 마운틴 교도소. 폴은 사형수 감방의 간수장으로 일하고 있다. 그의 일은 사형수들을 감독하고, 그린 마일이라 불리는 초록색 복도를 거쳐 그들을 사형 집행장까지 안내하는 것. 폴은 그들이 죽음을 맞이하는 순간까지 평화롭게 지낼 수 있도록 최선을 다한다. 어느 날 존 커피라는 사형수가 이송되어 온다. 그는 쌍둥이 여자아이를 살해한 흉악범. 하지만 순진한 눈망울에 겁을 잔뜩 집어먹은 그의 모습에 폴은 당혹감을 느낀다. 게다가 그는 초자연적 능력으로 폴의 지병을 깨끗하게 치료해주기까지 한다. 존을 전기 의자로 데려가야 할 날이 다가오면서 폴은 그가 무죄라는 확신을 갖게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/yrWKHQEwhJwjTOk33ydCSfaTcag.jpg",
+      "genres": [
+        14,
+        18,
+        80
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "펄프 픽션",
+      "release_date": "1994-09-10",
+      "popularity": 36.106,
+      "vote_count": 19685,
+      "vote_average": 8.5,
+      "overview": "펌프킨(팀 로스)와 허니 버니(아만다 플러머)가 레스토랑에서 강도 행각을 벌이기 시작한다. 빈센트(존 트라볼타)와 그 동료 쥴스(사무엘 L 잭슨)는 두목의 금가방을 찾기 위해 다른 건달이 사는 아파트를 찾아간다. 마르셀러스(빙 라메스)는 부치(브루스 윌리스)에게 돈을 주며 상대 선수에게 져 주라고 하지만 부치는 상대 선수를 때려 눕히고 도망치다, 어릴 때 아버지에게 물려받은 시계를 찾기 위해 아파트로 향한다. 아무런 상관 없이 보이는 이 사건들이 서로 얽히고 섥히면서 예상치 못한 인과관계가 만들어지는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/6lXRHGoEbnnBUKsuqpL9JxD4DzT.jpg",
+      "genres": [
+        80,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "인생은 아름다워",
+      "release_date": "1997-12-20",
+      "popularity": 26.929,
+      "vote_count": 9347,
+      "vote_average": 8.5,
+      "overview": "로마에 갓 상경한 시골 총각 귀도는 운명처럼 만난 여인 도라에게 첫눈에 반한다. 넘치는 재치와 유머로 약혼자가 있던 그녀를 사로잡은 귀도는 가정을 꾸리며 분신과도 같은 아들 조수아를 얻는다. 조수아의 다섯 살 생일, 갑작스레 들이닥친 군인들은 귀도와 조수아를 수용소 행 기차에 실어버리고, 소식을 들은 도라 역시 기차에 따라 오른다. 귀도는 아들을 달래기 위해 무자비한 수용소 생활을 단체게임이라 속이고 1,000점을 따는 우승자에게는 진짜 탱크가 주어진다고 말한다. 하루하루가 지나 어느덧 전쟁이 끝났다는 말을 들은 귀도는 조수아를 창고에 숨겨둔 채 아내를 찾아 나서는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/yjOqQsQHdsEZfAosZERqHiwjaty.jpg",
+      "genres": [
+        35,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "반지의 제왕: 왕의 귀환",
+      "release_date": "2003-12-01",
+      "popularity": 47.087,
+      "vote_count": 16368,
+      "vote_average": 8.5,
+      "overview": "사우론이 인간들의 마지막 요새인 곤도르를 향해 야욕을 드러내고 있는 한편, 아라곤은 쇠락해가고 있는 곤도르의 재건을 위해 왕위 계승을 신중하게 결정지어야만 하는 상황. 이제 중간대륙의 미래는 그의 어깨에 달려있는 것. 사우론이 이끄는 어둠의 군대와의 마지막 전투를 위해 간달프는 곤도르에 흩어져 있던 병사들을 모으고, 로한의 왕 세오덴에게 도움을 받기도 하지만 사우론의 군대에 비하면 열세를 면치 못한다. 그러나 그들은 중간대륙을 사우론의 야욕으로부터 지키려는 사명감과, 마지막 반지 운반자에게 임무를 끝낼 기회를 주기 위해 어둠의 군대를 향해 돌진하게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/tAXXuEAKLk2mOEIJzwajJQEnVZu.jpg",
+      "genres": [
+        28,
+        12,
+        14
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "다크 나이트",
+      "release_date": "2008-07-16",
+      "popularity": 75.008,
+      "vote_count": 23451,
+      "vote_average": 8.5,
+      "overview": "범죄와 부정부패를 제거하여 고담시를 지키려는 배트맨(크리스찬 베일). 그는 짐 고든 형사(게리 올드만)와 패기 넘치는 고담시 지방 검사 하비 덴트(아론 에크하트)와 함께 도시를 범죄 조직으로부터 영원히 구원하고자 한다. 세 명의 의기투합으로 위기에 처한 악당들이 모인 자리에 보라색 양복을 입고 얼굴에 짙게 화장을 한 괴이한 존재가 나타나 배트맨을 죽이자는 사상 초유의 제안을 한다. 그는 바로 어떠한 룰도, 목적도 없는 사상 최악의 악당 미치광이 살인광대 조커(히스 레저). 배트맨을 죽이고 고담시를 끝장내버리기 위한 조커의 광기 어린 행각에 도시는 혼란에 빠지는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/f6dNinWX8rBM79JXKcShkfSh2oA.jpg",
+      "genres": [
+        18,
+        28,
+        80,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "12명의 성난 사람들",
+      "release_date": "1957-04-10",
+      "popularity": 24.581,
+      "vote_count": 5023,
+      "vote_average": 8.5,
+      "overview": "뉴욕시의 법정에 아버지를 칼로 찌른 한 소년의 살인혐의를 두고, 12인의 배심원들은 만장일치 합의를 통해 소년의 유무죄 여부를 가려줄 것을 요구받는다. 판사는 유죄일 경우 이 소년은 사형이 불가피하다는 것을 이들에게 미리 일러둔다.  배심원 방에 모인 이들은 투표를 통해 유무죄 여부를 가리기로 한다. 사람들이 전부 소년이 유죄로 판단하는 가운데, 오직 배심원 8(헨리 폰다)는 소년이 무죄라고 주장하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/ppd84D2i9W8jXmsyInGyihiSyqz.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "레이싱 인 더 레인",
+      "release_date": "2019-08-08",
+      "popularity": 35.61,
+      "vote_count": 633,
+      "vote_average": 8.5,
+      "overview": "경주용 자동차 스피드 레이서인 데니가 사랑하는 여인을 만나 딸을 낳고, 가정을 이루며 애완견 엔조와 함께 행복을 찾아가는 이야기를 다룬 영화.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/rFKqqy4YIXq1hasaCEqk5p4Lywh.jpg",
+      "genres": [
+        35,
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "포레스트 검프",
+      "release_date": "1994-07-06",
+      "popularity": 40.467,
+      "vote_count": 19006,
+      "vote_average": 8.5,
+      "overview": "불편한 다리, 남들보다 조금 떨어지는 지능을 가진 포레스트 검프는 헌신적인 어머니의 보살핌과 첫사랑 제니와의 만남으로 편견과 괴롭힘 속에서도 따뜻한 마음을 지니고 성장한다. 또래들의 괴롭힘을 피해 도망치던 포레스트는 누구보다 빠르게 달릴 수 있는 자신의 재능을 깨닫는다. 그의 재능을 알아 본 대학에서 그를 미식축구 선수로 발탁하고, 졸업 후에도 뛰어난 신체능력으로 군에 들어가 무공훈장을 수여받는 등 탄탄한 인생 가도에 오르게 된 포레스트. 하지만 어머니가 병에 걸려 죽음을 맞이하고, 첫사랑 제니 역시 그의 곁을 떠나가며 다시 한 번 인생의 전환점을 맞이하게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/8UUZ2oV1OjYd55BMZWaQrcRPTGN.jpg",
+      "genres": [
+        35,
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "원스 어폰 어 타임 인 아메리카",
+      "release_date": "1984-05-23",
+      "popularity": 17.827,
+      "vote_count": 3213,
+      "vote_average": 8.4,
+      "overview": "1921년, 좀도둑질을 일삼던 누들스는 친구들과 함께 밀수품 운반 일을 하며 돈을 벌어들인다. 누들스 무리에 위협을 느낀 벅시는 누들스의 친구를 죽이고, 분노한 누들스는 벅시를 살해한 후 감옥에 들어가게 된다. 1932년, 출소한 누들스는 어린 시절 첫사랑 데보라와 밀주 사업으로 크게 성공한 맥스를 다시 만나지만, 금주법 철폐로 밀주 사업도 위기를 맞는다. 맥스는 누들스에게 연방준비은행을 털 것을 제안하지만 누들스는 거절한다. 1968년, 베일리 재단 파티에 초대 받은 누들스는 재단 창립 기념 사진 속에서 데보라를 발견하고 그녀를 찾아가는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/xbuc6sjIIopkA1Ep24rR6yCw0DK.jpg",
+      "genres": [
+        18,
+        80
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "좋은 친구들",
+      "release_date": "1990-09-12",
+      "popularity": 22.635,
+      "vote_count": 8012,
+      "vote_average": 8.4,
+      "overview": "아일랜드계 이탈리아인 헨리 힐(레이 리오타)와 토미(조 페시)는 13살에 마피아에 입문해 지미(로버트 드 니로)와 함께 트럭이나 공항 화물을 훔치는 일을 한다. 결혼 후에도 마피아 생활을 계속하는 헨리는 이제 조직에서도 안정된 위치와 경제적 여유를 갖는다.  어느 날 헨리와 지미는 공항터미널 사건을 모의해 현금 6백만 달러라는 엄청한 돈을 훔친다. 이 사건을 은폐하기 위해 혈안이 된 지미는 모의에 참여했던 사람들을 죽이고, 토미는 마피아 조직에 가담했다가 살해당한다. 엎친데 덮친격으로 헨리마저 마약거래로 경찰서에 잡혀 들어가는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/1MWsO3QQd6vB7ENMeXOGil7i0Al.jpg",
+      "genres": [
+        18,
+        80
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "시네마 천국",
+      "release_date": "1988-11-17",
+      "popularity": 16.553,
+      "vote_count": 2543,
+      "vote_average": 8.4,
+      "overview": "어린 시절 영화가 세상의 전부였던 소년 토토(살바토레 카스치오)는 학교 수업을 마치면 마을 광장에 있는 낡은 시네마 천국이라는 극장으로 달려가 영사 기사 알프레도와 친구로 지내며 어깨너머로 영사기술을 배운다. 어느 날 관객들을 위해 광장에서 야외 상영을 해주던 알프레도가 그만 화재 사고로 실명하게 되고, 토토가 그의 뒤를 이어 시네마 천국의 영상기사로 일하게 된다. 실명한 후에도 토토의 친구이자 아버지로 든든한 정신적 지주가 되어준 알프레도는 청년이 된 토토(마코 레오나디)가 사랑하는 여자 엘레나(아그네즈 나노)의 부모님의 반대로 좌절하자 넓은 세상으로 나가서 더 많은 것을 배우라며 권유하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/dt6YKSolZ0GBtKXOmTVGjJY5ZQ5.jpg",
+      "genres": [
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "스티븐 유니버스: 더 무비",
+      "release_date": "2019-09-02",
+      "popularity": 71.467,
+      "vote_count": 476,
+      "vote_average": 8.4,
+      "overview": "지구 수호를 위한 마법 미션들을 헤쳐 나가는 스티븐 유니버스의 신나는 모험이 펼쳐진다. 믿어라, 스티븐 젬파워! 스티븐이 지구를 지키는 일은 끝났다고 생각했다. 그러나, 비치시티에서 새로운 위협이 다가오고 있다. 스티븐은 거대한 도전에 마주하게 될 것이다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/8mRgpubxHqnqvENK4Bei30xMDvy.jpg",
+      "genres": [
+        28,
+        12,
+        16,
+        35,
+        18,
+        14,
+        10402,
+        10751
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "석양의 무법자",
+      "release_date": "1966-12-23",
+      "popularity": 28.704,
+      "vote_count": 5381,
+      "vote_average": 8.4,
+      "overview": "미국의 남북전쟁이 한창인 때, 블론디(클린트 이스트우드)는 멕시칸 총잡이 투코(엘리 월라치)와 함께 동업 중이다. 블론디는 현상범 투코를 잡아 현상금을 받고, 투코가 교수형을 당하는 순간 구해주는 역할. 한편 세텐자(리 반 클리프)라 불리우는 범죄자는 엄청나 돈이 묻힌 비밀장소를 추적 중이다. 그런데, 투코와 실랑이를 벌이던 블론디는 돈이 묻힌 장소를 죽어가는 사람에게 듣게 되고, 결국 둘은 돈을 찾아 나서는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/sOTQkPoEZd7ImsZBuXfu4BqZ6JS.jpg",
+      "genres": [
+        37
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "어 독스 윌",
+      "release_date": "2000-09-15",
+      "popularity": 10.573,
+      "vote_count": 663,
+      "vote_average": 8.4,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/m8eFedsS7vQCZCS8WGp5n1bVD0q.jpg",
+      "genres": [
+        12,
+        35
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "싸이코",
+      "release_date": "1960-06-22",
+      "popularity": 29.793,
+      "vote_count": 6689,
+      "vote_average": 8.4,
+      "overview": "마리온 크레인(쟈넷 리)는 그녀의 애인 샘(존 개빈)과 결혼하길 원하지만 샘은 빚을 갚을 때까지 기다리라고 말한다. 그래서 그녀는 자신이 다니고 있는 회사 사장이 은행에 입금하라고 맡긴 돈을 들고 도망친다. 도주 첫날 밤 묵게 된 도로변의 낡은 모텔 주인인 노만 베이츠(앤소니 퍼킨스)는 그녀에게 친절하게 대해주며 자신은 모텔 바로 뒤쪽 저택에서 몸이 불편한 어머니와 함께 살고 있다고 말한다. 잠자리에 들기 전 마리온이 샤워를 하는 도중, 난데없이 검은 형상이 욕실에 나타나고 마리온은 실종된다. 마리온을 찾기 위해 그녀의 언니 릴라(베라 마일즈)와 샘, 그리고 보험회사 측에서 고용한 탐정 등 세 사람이 추적에 나서는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/vC3P8hH4r3I3fHiRFa1kj6yzeaN.jpg",
+      "genres": [
+        27,
+        18,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "7인의 사무라이",
+      "release_date": "1954-04-26",
+      "popularity": 17.35,
+      "vote_count": 2049,
+      "vote_average": 8.4,
+      "overview": "일본의 전국시대. 주민들은 황폐한 땅에서 어렵게 수확한 식량으로 한해 한해를 넘기는 빈촌에 살고 있다. 이 빈촌엔 보리 수확이 끝날 무렵이면 어김없이 산적들이 찾아와 모든 식량을 모조리 약탈해 간다. 싸워도 애원해도 소용이 없었다. 가만히 있을 수만은 없던 촌장의 결단으로 사무라이들을 모집하는데, 이들은 풍부한 전쟁 경험을 가진 감병위(勘兵衛)를 포함한 7명이었다. 감병위의 지휘하에 마을은 방위태세를 갖추고 전투훈련도 시작한다. 이윽고 산적들의 공격이 시작되어 치열한 사투가 벌어지고 산적들은 전멸한다. 하지만 마을 사람들 다수와 7명 중 4명의 사무라이도 목숨을 잃고 마는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/dCLodUvnee3dxXZRS63dAYfmsJV.jpg",
+      "genres": [
+        28,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "모탈 컴뱃 레전드: 스콜피온의 복수",
+      "release_date": "2020-04-12",
+      "popularity": 266.271,
+      "vote_count": 630,
+      "vote_average": 8.4,
+      "overview": "한 세대에 한 번 꼴로 개최되는 외계와 지구의 챔피언들 간의 토너먼트를 통해 세계의 운명을 결정짓게 되는 이야기. 지구의 수호자인 라이덴 경은 지구에서 가장 강력한 파이터들을 모아 최후의 대결인, 모탈 컴뱃에서 사악한 빌런 상췡으로부터 지구를 지켜야 하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/4VlXER3FImHeFuUjBShFamhIp9M.jpg",
+      "genres": [
+        28,
+        12,
+        16,
+        14
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "파이트 클럽",
+      "release_date": "1999-10-15",
+      "popularity": 38.542,
+      "vote_count": 20214,
+      "vote_average": 8.4,
+      "overview": "자동차 회사의 리콜 심사관으로 일하는 주인공(에드워드 노튼)은 일상의 무료함과 공허함 속에서 늘 새로운 탈출을 꿈꾼다. 그는 비행기에서 자신을 비누 제조업자라고 소개하는 타일러 더든(브래드 피트)을 만난다. 집에 돌아온 주인공은 아파트가 누군가에 의해 폭파되었음을 발견하고, 타일러에게 도움을 청해 함께 생활하게 된다. 어느 날 밤 타일러는 주인공에게 자신을 때려달라고 부탁한다. 사람은 싸워봐야 진정한 자신을 알 수 있다는 것이다. 결국 이들은 매주 토요일 밤 술집 지하에서 맨주먹으로 격투를 벌이는 파이트 클럽을 결성하기에 이르는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/eKZ07Ted7VHxQjbuZrRBFOamcKJ.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "뻐꾸기 둥지 위로 날아간 새",
+      "release_date": "1975-11-18",
+      "popularity": 28.512,
+      "vote_count": 7095,
+      "vote_average": 8.4,
+      "overview": "많은 죄를 짓고 수감중이던 맥머피(잭 니콜슨)는 교도소에서 정신 병원으로 후송되는데, 감옥보다는 자유로울 것으로 생각했지만 전혀 그렇지 않다는 것을 깨닫는다. 정신 병원의 여러 환자들과 생활하면서 맥머피는 그들이 겉으로는 전혀 문제가 없어 보이지만 보이지 않는 병원내의 압력에 의해 짓눌려 사는 죽은 인간들임을 간파한다. 그리고 그러한 압력의 주범이 간호사 레취드(루이스 플레쳐)임을 알게 된다. 맥머피는 환자들을 끌고 병원을 빠져나가 낚시를 다녀오거나 파티를 여는 등 의도적인 반항을 시도하다 결국 탈출을 결심하게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/biejlC9yx8W66KHrD5tp9YiSqmV.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "저스티스 리그 다크: 아포콜립스 워",
+      "release_date": "2020-05-05",
+      "popularity": 97.767,
+      "vote_count": 774,
+      "vote_average": 8.4,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/c01Y4suApJ1Wic2xLmaq1QYcfoZ.jpg",
+      "genres": [
+        16,
+        28,
+        12,
+        14,
+        878
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "스파이더맨: 뉴 유니버스",
+      "release_date": "2018-12-06",
+      "popularity": 127.019,
+      "vote_count": 8092,
+      "vote_average": 8.4,
+      "overview": "평범한 10대 마일스 모랄레스는 우연히 방사능 거미에 물려 스파이더맨 능력을 가지게 된다. 혼란스러워하던 마일스는 악당과 싸우고 있는 피터 파커를 마주치게 되고 피터 파커는 마일스가 자신과 같은 능력을 가지고 있음을 직감한다. 여러 개의 평행세계가 존재한다는 것을 알게 된 마일스와 피터 파커는 이후 스파이더우먼 스파이더 그웬, 스파이더맨 누아르, 스파이더햄 등 평행세계 속 공존하는 모든 스파이더맨들을 만나게 되는데... 하나의 유니버스에서 만나 팀을 결성한 스파이더맨들은 과연 세계를 구할 수 있을까?",
+      "poster_path": "https://image.tmdb.org/t/p/w500/vnWgIIEWAvWKOI65tm6h6VRbyY8.jpg",
+      "genres": [
+        28,
+        12,
+        16,
+        878,
+        35
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "시티 오브 갓",
+      "release_date": "2002-02-05",
+      "popularity": 25.729,
+      "vote_count": 4567,
+      "vote_average": 8.4,
+      "overview": "막 빈민가가 형성되기 시작한 1960년대. 마을을 지나가는 배달 트럭을 털면서 가족을 부양하는 텐더 삼총사가 주름잡던 그 시기에는 엄연한 룰이 존재했다. 돈은 훔치되 살인은 삼갔고, 엉뚱한 용의자를 사살하고도 지갑을 챙기는 악질 경찰에 비하면 약자에 불과했다. 텐더 트리오 시대에 종지부를 찍은 제빼게노(레안드로 피르미노)는 큰 돈을 만지기 위해서는 마약을 다뤄야 함을 알게 된다. 단짝친구 베네(펠리페 하겐센)는 악랄하기만 할 뿐 주변을 다독일 줄 모르던 제빼게노를 보좌하며 또 다른 룰을 만들어내지만, 위태로운 평화의 유효기간은 그리 길지 않다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/iKXrQB16sxeXoc6GlnYjeeZKsOW.jpg",
+      "genres": [
+        18,
+        80
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "Me contro Te: Il film - La vendetta del Signor S",
+      "release_date": "2020-01-17",
+      "popularity": 5.939,
+      "vote_count": 370,
+      "vote_average": 8.4,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/4XzbcAKdX4n3aWfzBjjeAlm68S3.jpg",
+      "genres": [
+        35,
+        10751
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "하울의 움직이는 성",
+      "release_date": "2004-11-19",
+      "popularity": 41.08,
+      "vote_count": 5662,
+      "vote_average": 8.4,
+      "overview": "19세기 말 마법과 과학이 공존하고 있는 세계 앵거리. 소피는 돌아가신 아버지의 모자상점에서 쉴틈없이 일하는 18살 소녀이다. 어느 날 오랫만에 마을로 나간 소피는 우연히 하울을 만나게 된다. 하울은 왕실 마법사로서 핸섬하지만 조금 겁이 많은 청년이다. 황무지 마녀는 두 사람의 사이를 오해, 주문을 걸어 소피를 90살의 늙은 할머니로 만들어 버린다. 가족을 걱정한 소피는 집을 나오게 되고 황무지를 헤매다가 하울이 사는 성에서 가정부로 낯선 생활을 시작한다. 4개의 다리로 걷는 기괴한 움직이는 성 안에서 하울과 소피의 기묘한 사랑과 모험이 시작되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/xiz6TiSduvR1U3VLfWVlBEdT9fO.jpg",
+      "genres": [
+        14,
+        16,
+        12
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "반딧불이의 묘",
+      "release_date": "1988-04-16",
+      "popularity": 0.6,
+      "vote_count": 3063,
+      "vote_average": 8.4,
+      "overview": "2차 세계대전, 일본의 한 마을에 폭격기로 인한 대공습이 일어난다. 마을이 화염으로 휩싸이자, 14살인 세이타는 부모님과 따로 만나기로 약속한 채 4살짜리 여동생 세츠코를 업고 피신한다. 결국 집과 어머니를 잃고 먼 친척아주머니의 집으로 향하는 세이타와 세츠코. 힘들고 어려운 환경에서도 오빠 세이타는 천진하고 착한 여동생 세츠코를 보면서 희망과 용기를 잃지 않는다. 하지만 시간이 지날수록 친척아주머니의 남매에 대한 냉대는 더욱 심해지고, 세이타는 어머니가 남겨주었던 마지막 여비를 챙겨 세츠코와 함께 산 속에 있는 방공호로 거처를 옮긴다. 두 남매는 산 속 동굴에서 반딧불이를 잡아 불을 밝히고, 물고기와 개구리를 잡아먹으며 살아가는데..",
+      "poster_path": "https://image.tmdb.org/t/p/w500/uN0x0G4uuRjFJIFN57iYihBV2Qh.jpg",
+      "genres": [
+        16,
+        18,
+        10752
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "선셋 대로",
+      "release_date": "1950-08-10",
+      "popularity": 15.348,
+      "vote_count": 1492,
+      "vote_average": 8.4,
+      "overview": "캘리포니아주 로스앤젤레스의 선셋 대로에 위치한 대저택에서 살인사건이 발생한다. 유명 여배우의 풀장에서 한 시나리오 작가가 총에 맞은 채 죽어서 발견된 것이다. 경찰이 출동한 가운데 세상 사람들은 이 사건에 눈과 귀를 기울인다.\r 사건이 일어나기 정확히 6개월 전. 주로 B급 영화의 시나리오를 썼던 조셉 길리스(윌리엄 홀덴 분)는 벌이가 좋지 않아 차까지 압류당할 위기에 처한다. 해결사들의 추격을 받던 조셉은 선셋 대로에 위치한 대저택에 숨어들었다가 그 곳의 주인이자 과거 무성영화 시절 스타인 노마 데스몬드(글로리아 스완슨 분)을 만나게 된다. 한편 노마는 조셉에게 자신이 쓴 시나리오를 보여주며 유혹하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/zt8aQ6ksqK6p1AopC5zVTDS9pKT.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "위대한 독재자",
+      "release_date": "1940-10-23",
+      "popularity": 18.455,
+      "vote_count": 2050,
+      "vote_average": 8.4,
+      "overview": "세계대전에서 패배한 토매니아국에 힌켈이라는 독재자가 나타나 악명을 떨친다. 한편, 힌켈과 닮은꼴 외모의 이발사 찰리는 국가의 유태인 탄압정책으로 인해 곤경에 처하지만 병사로 참전했던 전쟁에서 우연히 구해줬던 슐츠 장교의 도움을 받아 위기를 모면한다. 독재자 힌켈의 악행은 갈수록 도를 더해가고, 찰리는 유태인 수용소에 끌려가게 되지만 기지를 부려 탈옥에 성공한다. 하지만 이발사와 똑같은 얼굴을 한 힌켈이 탈옥범으로 오해 받아 감옥에 잡혀 들어가게 되는데…",
+      "poster_path": "https://image.tmdb.org/t/p/w500/uw26mSTaA10hg2yuQfNaFLSeY3h.jpg",
+      "genres": [
+        35
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "위플래쉬",
+      "release_date": "2014-10-10",
+      "popularity": 39.247,
+      "vote_count": 10223,
+      "vote_average": 8.4,
+      "overview": "최고의 드러머가 되기 위해서라면 무엇이든 할 각오가 되어있는 음악대학 신입생 앤드류는 아무도 없는 지하실에서 혼자 드럼을 연습하던 중 우연한 기회로 누구든지 성공으로 이끄는 최고의 실력자이지만, 또한 동시에 최악의 폭군인 플렛처 교수에게 발탁되어 그의 밴드에 들어가게 된다. 설레는 마음으로 참가한 첫 연습에서, 그는 플렛처 교수의 진짜 얼굴을 마주치게 된다. 폭언과 학대 속에 좌절과 성취를 동시에 안겨주는 플렛처의 지독한 교육방식은 천재가 되길 갈망하는 앤드류의 집착을 끌어내며 그를 점점 광기로 몰아넣는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/fz6osxiG7BWqnLoNgAlekpgSthf.jpg",
+      "genres": [
+        18,
+        10402
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "스타워즈 에피소드 5: 제국의 역습",
+      "release_date": "1980-05-20",
+      "popularity": 31.12,
+      "vote_count": 12079,
+      "vote_average": 8.4,
+      "overview": "제국군은 데스스타를 잃은 뒤에도 여전히 강력한 화력으로 반란군을 수세로 몰아넣었고, 반란군은 게릴라전을 위해 얼음으로 뒤덮인 행성 호스에 은신한다. 하지만 결국 제국군에 의해 호스의 반란군 기지마저 탄로나게 되고, 일행은 필사적으로 호스를 탈출해 다시 정처없는 피난길에 오른다. 반란군의 피난길에 함께 오르던 루크는 포스의 영이 된 오비완으로부터 제다이 마스터 요다를 찾아가라는 메시지를 받고 요다가 있는 정글 행성 대고바로 향한다. 루크는 요다를 만나 제다이가 되기 위한 훈련을 시작하고 솔로 일행은 제국군을 따돌리기 위해 옛 친구 랜도를 찾아가는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/icaO5w8uLVm4JxMew71JJrQE2YX.jpg",
+      "genres": [
+        12,
+        28,
+        878
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "아메리칸 히스토리 X",
+      "release_date": "1998-10-30",
+      "popularity": 23.522,
+      "vote_count": 7927,
+      "vote_average": 8.4,
+      "overview": "3년 전 강도 사건으로 소방수였던 아버지를 잃은 데렉은 백인 우월주의자들의 모임인 DOC에 관심을 갖게 되면서 유색인종에게 그 분노와 증오를 터트린다. 그는 혐오스러운 유색인종들을 이 땅에서 몰아내야 한다고 주장하면서 강렬한 카리스마로 동료들 사이에서 영웅이 된다. 가족들은 그런 그의 모습을 걱정하여 만류하지만, 단 한 사람, 동생 대니만은 그를 전적으로 믿고 따른다. 어느 날, 데렉에게 적대감을 품은 흑인들이 아버지의 낡은 밴을 훔치러 왔을 때 그는 서슴없이 그들에게 총을 겨눈다. 그리고는 총을 맞고 신음하는 그를 참혹하게 죽이고 마는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/nm4XkYBt79ZjUQj6Rqxxzl1Wt3c.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "Z-O-M-B-I-E-S 2",
+      "release_date": "2020-02-14",
+      "popularity": 89.75,
+      "vote_count": 269,
+      "vote_average": 8.4,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/frTwEqSMWQ27oQeuiBO5PT0ZNqq.jpg",
+      "genres": [
+        10402,
+        10749,
+        10770
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "이키루",
+      "release_date": "1952-10-09",
+      "popularity": 21.417,
+      "vote_count": 578,
+      "vote_average": 8.4,
+      "overview": "시청에서 근무하는 노년의 남자. 시민 과장이란 직위는 있지만 매일 출근해 서류에 도장을 찍는 기계다. 어느날 갑자기 위암 말기 선고를 받은 그는 핏줄에게서 위안을 받으려 하지만 부인과 따로 살림을 차리는 데만 혈안이 된 아들의 모습에서 실망을 느낀다. 그러다 옛 여직원을 우연히 만나고, 인형 공장에서 직공 일을 하고 있는 그녀에게서 건강함과 생명력을 느끼게 된다. 뭔가를 창조하는 데서 즐거움을 얻을 수 있다는 사실을 배운 그는 먼지가 쌓여 있던 서류더미 속에서 일거리를 찾아낸다. 가난한 지역에 아이들을 위한 놀이터를 만들어달라는 건의가 계속 무시되고 있었는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/uMaLKmpxepW4Uq8lcCpels656u0.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "피아니스트",
+      "release_date": "2002-09-17",
+      "popularity": 26.457,
+      "vote_count": 5699,
+      "vote_average": 8.4,
+      "overview": "1939년 폴란드 바르샤바, 유명한 유대계 피아니스트 블라디슬로프 스필만은 한 인기 라디오 프로그램에서 쇼팽의 야상곡을 연주하다 폭격을 당한다. 이후 유태인인 스필만과 가족들은 게토에서 생활하지만, 결국 수용소로 향하는 기차에 몸을 싣게 된다. 가족들을 죽음으로 내보내고 간신히 목숨을 구한 스필만은 허기와 추위, 고독과 공포 속에서 마지막까지 생존해 나간다. 자신을 도와주던 몇몇의 사람마저 떠나고, 자신만의 은신처에서 끈질기게 생존을 유지하는 스필만. 어둠과 추위로 가득한 폐건물 속에서 은신생활 중 스필만은 우연찮게 순찰을 돌던 독일 장교에게 발각되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/t7L2YDpu635qKT3ehqZxry4yvTX.jpg",
+      "genres": [
+        18,
+        10752
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "시티 라이트",
+      "release_date": "1931-02-01",
+      "popularity": 13.366,
+      "vote_count": 1258,
+      "vote_average": 8.4,
+      "overview": "일자리가 없어 도시를 배회하는 떠돌이(찰리 채플린)는 어느날 아침 산책길에서 꽃 파는 눈먼 소녀(버지니아 세릴)를 만난다. 떠돌이는 마지막 동전을 털어서 꽃을 사주고, 육중한 차문 닫히는 소리에 소녀는 그를 부자로 오인한다. 소녀에게 애정을 느낀 떠돌이는 부자 행세를 하며 가깝게 지내고, 그녀의 눈을 수술할 비용을 마련해 주기로 약속한다. 어느 날 술에 취해 물에 빠진 백만장자를 구해준 떠돌이는 그와 친구가 되는데, 백만장자는 술에 취했을 때만 그를 알아보고 술이 깨면 그를 도둑으로 오인한다. 백만장자가 술에 취했을 때 소녀의 수술비를 얻어낸 떠돌이는 그가 술이 깨기 전에 달아나 소녀에게 돈을 전해주고 사라지는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/bXNvzjULc9jrOVhGfjcc64uKZmZ.jpg",
+      "genres": [
+        35,
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "천국과 지옥",
+      "release_date": "1963-03-01",
+      "popularity": 14.708,
+      "vote_count": 364,
+      "vote_average": 8.4,
+      "overview": "신발제조회사의 중역인 곤도는 회사의 주도권을 잡기 위해 자신의 전 재산을 회사에 투자한 상태다. 어느 날 그는 자신의 아들이 납치됐으며 범인이 엄청난 몸값을 요구하고 있다는 통보를 받고 회사냐 아들이냐 하는 선택의 기로에 서게 된다. 하지만 정작 납치된 것은 그의 아들이 아니라 그의 운전사의 아들이란 사실이 밝혀지면서 곤도는 또 다른 고민에 빠지게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/dgnyE40yWdI7gbaHmmB5yCCIVpI.jpg",
+      "genres": [
+        80,
+        18,
+        9648,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "모노노케 히메",
+      "release_date": "1997-07-12",
+      "popularity": 31.809,
+      "vote_count": 5085,
+      "vote_average": 8.4,
+      "overview": "북쪽의 끝, 에미시족의 마을에 어느 날 갑자기 재앙신이 나타나 마을을 위협한다. 이에 강한 힘을 소유한 에미시족의 후계자인 아시타카는 결투 끝에 포악해진 재앙신을 쓰러트리지만 싸움 도중 오른팔에 저주의 상처를 받고 죽어야 할 운명에 처하게 된다. 결국 재앙신의 탄생 원인을 밝혀 자신의 저주를 없애기 위해 서쪽으로 길을 떠난 아시카타는 여행 중에 지코라는 미스테리한 수도승을 만나 재앙 신이 생겨나게 된 이유가 서쪽 끝에 있는 시시신의 숲과 관련이 깊다는 이야기를 듣게 되고 한시 바삐 서쪽으로 향한다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/kBlI1WEWbfYyrh5nuAH2whzWx9Y.jpg",
+      "genres": [
+        12,
+        16,
+        14
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "이창",
+      "release_date": "1954-09-01",
+      "popularity": 26.326,
+      "vote_count": 3984,
+      "vote_average": 8.4,
+      "overview": "사진 작가인 제프리스는 촬영 도중 다리가 부러져 휠체어에서 꼼짝할 수 없는 처지이다. 무료함을 견디지 못하는 그는 자신의 그리니치 빌리지에 있는 독신자 아파트에서 뜰 건너편에 사는 사람들의 행동을 관찰하는 것으로 시간을 보낸다. 어느날 건너편 아파트에 사는 한 사람이 아내를 살해한 것으로 의심받을 만한 짓을 한 것을 본 그는 이를 모델인 애인 리사와 친구인 형사 도일에게 말하지만 아무도 그의 말을 믿지 않는다. 그러나 결국 그의 의심이 전혀 근거없는 것은 아니라는 것을 알게 된 리사와 간호부 스텔라는 그의 지시에 따라 범행의 증거를 찾아 부부의 집을 조사하기 시작하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/jU5Fe7n9rsEBa0uaV5dqGjJGwmX.jpg",
+      "genres": [
+        53,
+        9648,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "할복",
+      "release_date": "1962-09-15",
+      "popularity": 15.966,
+      "vote_count": 404,
+      "vote_average": 8.3,
+      "overview": "인습과 전통에 대해 순응하는 일본 사회에 저항하는 메세지를 담은 작품. 사소한 잘못으로 상부로부터 할복 명령을 하달받은 사무라이가 그것에 저항하는 이야기",
+      "poster_path": "https://image.tmdb.org/t/p/w500/5OyHptbe0KVQqivUbYROpDJNJ5f.jpg",
+      "genres": [
+        28,
+        18,
+        36
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "영광의 길",
+      "release_date": "1957-09-18",
+      "popularity": 12.315,
+      "vote_count": 1658,
+      "vote_average": 8.3,
+      "overview": "총사령관 브롤라드는 프랑스군의 용맹함을 보여주고 싶은 열망에 독일군이 점령하고 있는 '개미고지'를 탈환하라고 명령한다. 승진을 바라고 있던 사단장 미로는 그것이 자살행위라는 것을 알면서도 자신의 명예를 위해 부하들을 희생시키기로 한다.  결국 군대의 명령 계통에 충실한 닥스 대령이 부대원들을 이끌고 작전을 수행하지만 무모한 작전은 사병들의 끔찍한 희생을 부른다. 동료들의 끔찍한 죽음을 목격한 군인들은 참호를 떠나 공격하기를 거부하기에 이른다. 이에 화가 난 미로 장군은 포병대에게 자신의 부하들이 있는 참호를 향해 대포를 발사하라고 명령한다.  그렇게 작전은 실패로 끝나고, 공격 계획이 잘못된 것이었다는 사실을 인정할 수 없는 미로장군은 작전의 실패가 부하들의 비겁함 때문이라고 스스로를 합리화하고 사단에서 병사 한명씩을 무단으로 색출해, 실패한 임무에 대한 희생양으로 이들을 군법회의에 회부해 기자들이 지켜보는 가운데 처형하려 한다.  닥스 대령은 미로장군의 처사에 분노를 느끼며 병사들을 위해 필사적인 변호를 펼치는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/aAol0HgMU4HOqAeb1ebIGFJyk7L.jpg",
+      "genres": [
+        18,
+        10752
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "엄마는 나의 분신 3",
+      "release_date": "2019-12-26",
+      "popularity": 8.316,
+      "vote_count": 321,
+      "vote_average": 8.3,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/zw77BFPGJ73Lig8GwRzYj1XHq53.jpg",
+      "genres": [
+        35
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "목소리의 형태",
+      "release_date": "2016-09-17",
+      "popularity": 63.879,
+      "vote_count": 1896,
+      "vote_average": 8.3,
+      "overview": "따분한 게 질색인 아이, 이시다 쇼야.  간디가 어떤 사람인지, 인류의 진화과정이라든지, 알게뭐람.  어느 날 쇼야의 따분함을 앗아갈 전학생이 나타났다. 니시미야 쇼코. 그 아이는 귀가 들리지 않는다고 한다.  쇼야의 짓궂은 장난에도 늘, 생글생글 웃고만 있다. 짜증난다.  그의 괴롭힘에 쇼코는 결국 전학을 갔고, 이시다 쇼야는 외톨이가 되었다.  6년 후, 더 이상 이렇게 살아봐야 의미가 없음을 느낀 쇼야는 마지막으로 쇼코를 찾아간다.  처음으로 전해진 두 사람의 목소리. 두 사람의 만남이 교실을, 학교를,  그리고 쇼야의 인생, 쇼코의 인생을 바꾸기 시작한다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/emNuB1GNGjJqZiK9uVJNiUPbgsx.jpg",
+      "genres": [
+        18,
+        16,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "반지의 제왕: 반지 원정대",
+      "release_date": "2001-12-18",
+      "popularity": 52.904,
+      "vote_count": 17840,
+      "vote_average": 8.3,
+      "overview": "호빗이라 불리우는 난장이 종족 중의 한 명인 프로도는 자신의 삼촌에게서 우연히 절대 반지를 물려받게 되고, 마법사 간달프를 통해서 절대반지가 사우론의 손에 들어가면 악의 세력이 세상을 지배하게 된다는 것을 알게 된다. 하지만 절대반지를 영원히 파괴할 수 있는 유일한 방법은 반지가 만들어진 불의 산의 용암에 그것을 던져 넣는 길 뿐이다. 마침내 프로도와 그의 친구들, 엘프족인 레골라스, 난장이족 김리, 두명의 인간 전사 아라곤과 보로미르, 그리고 마법사 간달프로 구성된 반지 원정대가 길고도 험난한 여정을 떠나게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/7uCvKNKKLRqYYyHIRpphi3yUE6Z.jpg",
+      "genres": [
+        12,
+        14,
+        28
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "신세기 에반게리온: 엔드 오브 에반게리온",
+      "release_date": "1997-07-19",
+      "popularity": 27.379,
+      "vote_count": 607,
+      "vote_average": 8.3,
+      "overview": "네르프에 있는 마기가 미국, 프랑스 등지의 마기 5대의 파상공격으로 인해 해킹을 당하고 있었다. 그러나 슈퍼인공지능 컴퓨터도 그 파상공격을 당해내지는 못하는 상황. 결국 감금되어 있던 리츠코 박사를 다시 부르게 된다. 그는 처음에는 자신을 감금한 것에 대해 불만을 표시하지만, 결국 겐도우의 명령에 따르고 예전 사도에게 사용한 캐스퍼의 방법인 마지막 로직 코드를 변경하여 완전 몰아내기로 간신히 마기를 복구한다. 그리고 666프로텍트와 B다낭형 방벽을 세워 62시간은 막을 수 있게 조치하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/vIWonMqeYRmY95OEk06NvTC1h8N.jpg",
+      "genres": [
+        28,
+        16,
+        18,
+        14,
+        878
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "트윈 픽스",
+      "release_date": "1990-04-08",
+      "popularity": 11.885,
+      "vote_count": 412,
+      "vote_average": 8.3,
+      "overview": "잣나무를 흔드는 바람소리가 올빼미 울음소리처럼 들리는 계곡 속의 작고 조용한 마을 트윈 픽스. 어느 날 테레사 뱅크스라는 금발의 소녀 시체가 강 위로 떠내려 오는 것이 발견된다. 이 사건의 수사를 위해 FBI 특별수사관 데스몬드와 샘이 파견되는데 수사는 미궁으로 빠져들어 좀처럼 범인의 실체가 드러나지 않는다. 그러던 어느 날 2년 전 어느 소녀의 살인사건을 수사하다 실종된 전 FBI 수사요원 필립이 FBI 본부에 불쑥 나타나 사건의 불길한 징조를 암시해주고 유령처럼 사라진다. 이와 때를 같이해 트윈 픽스 마을에서 살인 사건의 의문을 풀어 나가던 수사관 데스몬드가 실종되었다는 소식이 FBI 본부에 날아든다. 그로부터 1년 후, 영화는 트윈 픽스 마을의 미의 여왕인 여고생 로라 파머 얘기로 넘어간다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/2Fb8neVxZtCIXwbJ9DOk6Ra29mV.jpg",
+      "genres": [
+        80,
+        18,
+        9648,
+        10770
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "인셉션",
+      "release_date": "2010-07-15",
+      "popularity": 46.872,
+      "vote_count": 27337,
+      "vote_average": 8.3,
+      "overview": "타인의 꿈과 접속해 생각을 빼낼 수 있는 근미래, 돔 코브는 꿈의 보안 프로그래머이자 동시에 침입자다. 그는 일본인 사업가 사이토의 제안에 따라 거대 합병 기업의 총수가 될 피셔의 꿈을 설계하여 기업 합병을 막으려 든다. 그 일을 성사시키면 코브는 사이토의 도움으로 아내의 살해범으로 몰린 자신의 누명을 뒤로 하고 사랑스런 자녀들이 있는 집으로 돌아갈 수 있다. 마침내 코브 일행은 꿈 안의 꿈 안의 또 꿈이라는 경로를 거치며 피셔의 꿈과 무의식 깊숙한 곳을 설계하고 침투한다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/dVhP5LObWUYWwcHKufcdUabApII.jpg",
+      "genres": [
+        28,
+        878,
+        12
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "죽은 시인의 사회",
+      "release_date": "1989-06-02",
+      "popularity": 19.354,
+      "vote_count": 7452,
+      "vote_average": 8.3,
+      "overview": "1859년에 창립된 미국의 명문 사립학교인 웰튼 고등학교의 새 학기를 맞아 신입생들도 들어오고, 이 학교 출신인 새로운 영어 교사 존 키팅(로빈 윌리엄스)도 부임한다. 키팅 선생은 학생들에게 관습에 맞서고 자신의 삶을 남다르게 가꾸라며 새로운 학습 방법으로 학생들을 지도하며 학생들에게 신선한 충격을 준다. 닐(로버트 숀 레오나드)은 키팅 선생을 캡틴이라 부르며 따르게 되고, 몇몇 학생들과 함께 죽은 시인의 사회라는 시낭독 클럽을 조직한다. 닐과 그의 친구들은 엄격한 학교 규율을 어기고 서클에 참여하면서 키팅 선생을 통해 참된 인생이 무엇인지를 조금씩 느끼게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/qZARQ9ztjIBRfwmg8q3SdOVI6H1.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "셜록: 마지막 문제",
+      "release_date": "2017-01-15",
+      "popularity": 8.3,
+      "vote_count": 847,
+      "vote_average": 8.3,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/dbsS4oBDwLTVTuIiqwTls9wD1I1.jpg",
+      "genres": [
+        18,
+        9648,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "닥터 후: 닥터의 날",
+      "release_date": "2013-11-23",
+      "popularity": 13.152,
+      "vote_count": 576,
+      "vote_average": 8.3,
+      "overview": "시간 전쟁의 마지막 날을 다루고 있다. 전쟁 한복판에서 워 닥터 (존 허트 분)가 이 모든 파멸을 끝내기 위해 달렉 종족과 자신의 종족인 타임 로드 모두를 말살하기로 결심한다. 이와 동시에 현재에서는 준군사조직 UNIT이 외계인의 침공을 막기 위해 런던 전체를 파괴하는 쪽을 택하려 한다. 닥터는 자신의 내력을 뒤집고 마음을 바꿔 달라는 클라라 오스왈드의 간청에 따르고, 시간 전쟁의 마지막 순간으로 돌아가서 전쟁으로 황폐화된 고향 행성을 없애버리지 않고 대신 시공간 속에 숨기게 된다. 그러나 이 선택으로 시간이 일그러지면서 닥터의 과거 모습들은 자신 스스로가 바꿔놓은 선택을 기억하지 못하게 된다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/qkhP3bhxQQjs1bGEWNts64DOUkK.jpg",
+      "genres": [
+        12,
+        878
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "세븐",
+      "release_date": "1995-09-22",
+      "popularity": 31.654,
+      "vote_count": 13872,
+      "vote_average": 8.3,
+      "overview": "은퇴를 7일 앞둔 관록의 형사 윌리엄 소머셋(모건 프리먼)과 새로 전근 온 신참내기 형사 밀스(브래드 피트)가 팀이 된 바로 다음날, 강압에 의해 위가 찢어질 때까지 먹다가 죽은 초고도 비만 남자와 역시 강압에 의해 식칼로 자기 살을 베어내 죽은 악덕 변호사의 사건과 마주한다. 식탐, 탐욕, 그리고 나태, 분노, 교만, 욕정, 시기. 소머셋은 현장에 남은 흔적들로 단테의 신곡과 쵸서의 캔터베리 서사시를 근거로 한 기나긴 연쇄 살인이 시작되었음을 직감하고 성서의 7가지 죄악을 따라 발생하는 사건들을 추적하기 시작하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/9DyIU9bbm5FchHhFwQxiU82xf2O.jpg",
+      "genres": [
+        80,
+        9648,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "레옹",
+      "release_date": "1994-09-14",
+      "popularity": 38.917,
+      "vote_count": 9980,
+      "vote_average": 8.3,
+      "overview": "한 손엔 우유 2팩이 든 가방, 다른 한 손엔 화분을 들고 뿌리 없이 떠도는 킬러 레옹은 어느 날 옆 집 소녀 마틸다의 일가족이 몰살 당하는 것을 목격한다. 그 사이 심부름을 갔다 돌아 온 마틸다는 가족들이 처참히 몰살 당하자 레옹에게 도움을 청한다. 가족의 원수를 갚기 위해 킬러가 되기로 결심한 12세 소녀 마틸다는 레옹에게 글을 알려주는 대신 복수하는 법을 배우고, 그 사이 레옹에 대한 사랑을 키워나간다. 드디어 그녀는 가족을 죽인 사람이 부패한 마약 경찰 스탠스임을 알게 되고, 홀로 그의 사무실로 향하게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/nmLhnK0Jxyj3WYZADgvrwFUY0wk.jpg",
+      "genres": [
+        80,
+        18,
+        28
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "반지의 제왕: 두 개의 탑",
+      "release_date": "2002-12-18",
+      "popularity": 50.623,
+      "vote_count": 15406,
+      "vote_average": 8.3,
+      "overview": "9명의 반지원정대는 사우론의 세력에 맞서 반지를 지켜냈지만 반지 원정대는 뿔뿔이 흩어지게 된다. 메리와 피핀을 구하기 위해 우르크하이 군대를 추격하던 아라곤과 레골라스, 김리는 유령 숲에서 백색의 마법사로 부활한 마법사 간달프를 만나게 되고 사우론이 암흑세계의 두 개의 탑을 통합하여 점점 그 세력을 넓혀가고 있다는 사실을 듣게 된다. 이에 아라곤과 원정대는 중간계의 선한 무리의 통합을 이뤄 사우론의 세력을 견제해야 하는 큰 임무를 맡게 된다. 하지만 원수지간인 곤도르와 로한으로 나뉜 인간 종족의 통합은 쉽지 않고 게다가 로한의 왕마저 사루만에게 동화되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/hjGjAdEPJF2unG8yseu5mcVb5cx.jpg",
+      "genres": [
+        12,
+        14,
+        28
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "파이브 피트",
+      "release_date": "2019-03-15",
+      "popularity": 57.951,
+      "vote_count": 3424,
+      "vote_average": 8.3,
+      "overview": "같은 병을 가진 사람끼리 6피트 이상 접근해서도, 접촉도 해선 안되는 CF(낭포성 섬유증)를 가진 ‘스텔라’와 ‘윌’. 첫눈에 반한 두 사람은 서로를 위해 안전거리를 유지하려고 하지만 그럴수록 더욱 빠져든다. 손을 잡을 수도 키스를 할 수도 없는 그들은 병 때문에 지켜야 했던 6피트에서 1피트 더 가까워지는 걸 선택하고 처음으로 용기를 내 병원 밖 데이트를 결심한다. 그러나 갑자기 숨을 쉬지 못하는 ‘스텔라’. ‘윌’은 그녀를 살리기 위해 안전거리를 어기게 되는데…",
+      "poster_path": "https://image.tmdb.org/t/p/w500/oXDWCIrCCA8kfz3kLIzfN61GafF.jpg",
+      "genres": [
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "모던 타임즈",
+      "release_date": "1936-02-11",
+      "popularity": 14.913,
+      "vote_count": 2343,
+      "vote_average": 8.3,
+      "overview": "산업의 기계화와 대공황이 맞물려 힘든 시절, 공장의 컨베이어 벨트 위에서 하루 종일 나사못 조이는 일을 하는 찰리. 찰리는 반복되는 작업에 착란 현상을 일으키고, 눈에 보이는 모든 것을 조여버리는 강박 관념에 빠지고 만다. 그는 급기야 정신 병원에 가게 되고, 거리를 방황하다 시위 군중에 휩쓸려 감옥살이까지 하게 된다. 몇 년 후 감옥에서 풀려난 찰리는 부모를 잃고 고아가 된 한소녀를 만난다.  그녀의 도움으로 카페에서 일하게 되고 서로를 의지하며 새로운 희망을 가진다. 둘은 행복하고 단란한 가정을 꿈꾸며 일자리를 찾아 헤매지만 매번 다시 거리로 내몰리고 마는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/uQEVm6yyzt9OhZAfSf6Dg4qexcw.jpg",
+      "genres": [
+        35,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "양들의 침묵",
+      "release_date": "1991-02-01",
+      "popularity": 7.789,
+      "vote_count": 10914,
+      "vote_average": 8.3,
+      "overview": "FBI요원 스탈링은 몸집이 비대한 여자들의 살을 도려내는 변태 살인자를 추적하라는 상부의 명령을 받는다. 스탈링은 사건 해결의 단서를 얻기 위해 인육을 먹은 죄로 감옥에 수감된 정신과 의사 렉터 박사를 찾아간다. 지능범인 렉터와 침착하게 대처하는 스탈링은 긴장감 속에서 협상을 한다. 이러한 와중에 상원의원의 딸 캐더린이 납치된다. 결국 범인의 정체를 알려준다던 렉터는 다른 감옥으로 이송되고 스탈링은 수사에서 제외된다. 범인에 대한 단서를 알아낸 범죄심리 전문가인 렉터는 이송 중에 도주하고, 스탈링은 렉터와 나눈 마지막 대화를 기억하고 수사를 계속하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/5ipQH8X3qvWKI3CEGeUPemNRXtq.jpg",
+      "genres": [
+        80,
+        18,
+        53,
+        27
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "7번방의 기적",
+      "release_date": "2019-10-10",
+      "popularity": 51.633,
+      "vote_count": 3260,
+      "vote_average": 8.3,
+      "overview": "교도소 7번 방. 지능이 예닐곱 살 수준인 남자가 이곳에 들어왔다. 아동 살해 누명을 쓰고 사형을 기다리지만 그에겐 아끼는 딸이 있다. 감방 동료들이 준비한 특별 선물로 딸과 재회한 남자. 하지만 계속 함께하려면 무죄를 밝혀야 한다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/sOfUbzu6OUL5cscGODPdpHn9C1g.jpg",
+      "genres": [
+        35,
+        18,
+        10751
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "인터스텔라",
+      "release_date": "2014-11-05",
+      "popularity": 69.486,
+      "vote_count": 23908,
+      "vote_average": 8.3,
+      "overview": "세계 각국의 정부와 경제가 완전히 붕괴된 미래가 다가온다. 지난 20세기에 범한 잘못이 전 세계적인 식량 부족을 불러왔고, NASA도 해체되었다. 나사 소속 우주비행사였던 쿠퍼는 지구에 몰아친 식량난으로 옥수수나 키우며 살고 있다. 거센 황사가 몰아친 어느 날 알 수 없는 힘에 이끌려 딸과 함께 도착한 곳은 인류가 이주할 행성을 찾는 나사의 비밀본부. 이 때 시공간에 불가사의한 틈이 열리고, 이 곳을 탐험해 인류를 구해야 하는 임무를 위해 쿠퍼는 만류하는 딸을 뒤로한 채 우주선에 탑승하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/evoEi8SBSvIIEveM3V6nCJ6vKj8.jpg",
+      "genres": [
+        12,
+        18,
+        878
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "베스트 오브 유스",
+      "release_date": "2003-06-22",
+      "popularity": 14.372,
+      "vote_count": 326,
+      "vote_average": 8.3,
+      "overview": "영화는 1966년부터 2003년까지의 시간이 로마 중류층 가정 카라티의 두 형제 니콜라와 마테오를 축으로 보여준다. 니콜라(루이지 로 카시오)는 침착하고 다정하고 쾌활한 의대생이며 마테오(알레시오 보니)는 반항적이고 격정적인 철학도이다. 형제는 모두 자유와 사회개혁을 꿈꾸는 이상주의자이다. 둘은 서로 극단적으로 상반된 길을 가고 두 형제의 삶과 국가의 소용돌이치는 역사가 서로 뒤엉킨다.\r 60년대 플로렌스 대홍수 복구사업장에서 정신과 의사 공부를 하는 니콜라와 순간적으로 대학을 중퇴하고 군인이 된 마테오가 헤어졌다 오랜만에 다시 만난다. 여기서 니콜라는 허무주의 정치사상을 가지고 후에 테러단 붉은 연대와 관계를 맺는 아름다운 음악학도 줄리아(소니아 베르가마스코)와 사랑에 빠지고 그녀는 나중에 니콜라의 아내가 된다.\r 두 형제의 재회의 기쁨은 얼마가지 못하고 다시 둘은 헤어진다. 또 니콜라는 이탈리아 북부 투린의 대학으로 전학을 가고 여기서 일어나는 격렬한 노동투쟁에 끼여든다. 한편 경찰이 된 마테오가 시위진압에 투입되면서 다시 두 형제는 서로 정반대 편에 서서 만난다.  영화는 니콜라와 마테오 그리고 이들의 친구와 가족과 주변 인물들을 둘러싸고 붉은 연대의 테러, 나라를 뒤흔든 정치 스캔들, 시실리의 반마피아 운동 그리고 월드컵 축구 등 굵직굵직한 이탈리아의 역사들이 커다란 그림을 그린다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/u5h3LD8f9paCKmNYF9mebWNJZ1B.jpg",
+      "genres": [
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "완전 범죄",
+      "release_date": "1970-10-16",
+      "popularity": 8.289,
+      "vote_count": 424,
+      "vote_average": 8.3,
+      "overview": "성공한 로마의 경찰 간부 킬러는 과대망상증에 사로잡혀 있는 인물로 매저키스트(피학대 음란광) 성향이 있는 그의 정부 아우구스타 테르찌와 살인 유희를 즐긴다. 이들의 살인 유희는 마침내 극에 달해 아우구스타는 킬러를 충동질한다. 실제로 자신을 죽여달라고 주도 면밀한 계획을 세운 킬러는 성교중아우구스타를 살해하고 느긋하게 샤워를 한다. 자신에게 혐의가 돌아올수 있도록 증거를 무수히 남긴채 그곳을 나서는 킬러. 자신의 높은 지위를 과신한 킬러는 그것만으로는 만족할 수 없었던 나머지 자신에게 불리한 정황 증거를 더 만들어 내고 겁에 질린 부하들과 증인들을 우롱한다. 첫번째 용의자인 남편은 곧 무혐의로 풀어주고, 아우구스타가 좋아했던 젊은 사회주의 혁명가 산체를 범인으로 지목하는 등 자신만의 유희를즐기던 킬러는 경찰간부들이 모인 자리에서 자신이 범인임을 자백한다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/nbzBwpePgi7uvsIpAmCktDEUy9t.jpg",
+      "genres": [
+        18,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "동경 이야기",
+      "release_date": "1953-11-03",
+      "popularity": 9.602,
+      "vote_count": 549,
+      "vote_average": 8.3,
+      "overview": "2차 세계대전 후. 결혼하여 도쿄에 살고 있는 자식들을 만나기 위해 노부부가 상경한다. 의사 장남과 미용실을 운영하는 둘째 딸은 곧 부모님의 방문을 부담스러워하고 바쁜 일상을 핑계로 소홀히 대한다. 전쟁 중 남편을 잃은 며느리 노리코만이 노부부를 극진히 모시는데…",
+      "poster_path": "https://image.tmdb.org/t/p/w500/rMPIrpEiWRVLLzSrXqrSsdeoPU4.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "옛날 옛적 서부에서",
+      "release_date": "1968-12-21",
+      "popularity": 16.087,
+      "vote_count": 2732,
+      "vote_average": 8.3,
+      "overview": "프랭크가 보낸 세명의 총잡이가 기차역에서 누군가를 기다린다. 드디어 그들이 기다리던 한 남자가 하모니카를 불며 기차역에 도착하고, 그들 세 총잡이는 모두 이름 없는 그 남자의 총에 쓰러진다. 한편, 프랭크와 그 부하들은 아일랜드 출신인 맥베인 일가를 잔인하게 살해하는데, 뉴올리언즈에서 이제 막 도착한 맥베인의 새 아내 질로서는 황망할 수밖에 없다. 두 사람은 한달 전 이미 결혼을 한 상태였다.\r 다시 뉴올리언즈로 돌아가려던 질은 마음을 고쳐먹고 맥베인과 아이들의 시체만 있는 그 집에서 혼자 생활을 시작한다. 프랭크가 그런 범죄를 저지른 것은, 맥베인이 소유하고 있는 지역이 지하수 덕분에 막대한 돈을 벌 수 있기 때문이다. 그런 프랭크의 배후에는 돈밖에 모르는 자본가 모튼이 있다.\r 이후 프랭크는 맥베인의 유산을 넘겨받은 질을 유혹해 타협하려 하지만, 알 수 없는 이유로 프랭크를 노리는 무명의 총잡이로 인해 일은 복잡해진다. 이름 없이 ‘하모니카’로 불리는 그는 끝까지 자신의 정체를 밝히지 않는다. 하지만 그의 머릿속에는 오래전 프랭크와 얽힌 잔인한 기억이 도사리고 있다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/sSCyXeUE8tvCBSmSlxZe5MuBL38.jpg",
+      "genres": [
+        37
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "마미",
+      "release_date": "2014-05-22",
+      "popularity": 10.072,
+      "vote_count": 1890,
+      "vote_average": 8.3,
+      "overview": "불 같은 성격이지만 유쾌하고 당당한 엄마 '디안'은 거칠지만 사랑스러운 사고뭉치 아들 '스티브'가 보호시설에서 사고를 쳐 쫓겨나자 홈스쿨링을 시작한다. 엄마가 행복하다면 무엇이든 할 수 있는 아들 스티브와 함께 행복한 생활을 꿈꾸는 디안. 하지만 홀로 생계를 책임지며 불안정한 성격의 스티브를 돌보기란 쉽지 않다. 이때 이들 앞에 나타난 이웃집 여인 '카일라'. 카일라의 등장으로 세 사람은 유일하게 서로에게 의지하며 지금까지 느껴보지 못한 작은 행복을 찾아가게 된다. 그러던 어느 날, 디안 앞으로 한 장의 편지가 날아오는데…….",
+      "poster_path": "https://image.tmdb.org/t/p/w500/8AcQTHscYw8iUQ73GYlWKDPBxt7.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "피아니스트의 전설",
+      "release_date": "1998-10-28",
+      "popularity": 10.386,
+      "vote_count": 1482,
+      "vote_average": 8.3,
+      "overview": "1900년, 유럽과 미국을 오가는 버지니아 호에서 태어나 평생을 바다 위에서 살아온 천재 피아니스트 ‘나인틴 헌드레드’. 유일한 친구인 트럼펫 연주자 ‘맥스’와 첫사랑이자 마지막 사랑 ‘퍼든’, 그의 소문을 듣고 찾아온 재즈 피아니스트를 만나며 조금씩 바다 밖 세상을 배워가던 그의 인생에 새로운 변화가 찾아오는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/jwlrdRwXj45xcXoKEXfXX0mhcEb.jpg",
+      "genres": [
+        18,
+        10402,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "아가씨",
+      "release_date": "2016-06-01",
+      "popularity": 26.416,
+      "vote_count": 1888,
+      "vote_average": 8.3,
+      "overview": "어릴 적 부모를 잃고 후견인 이모부의 보호 아래 살아가는 귀족 아가씨에게 백작이 추천한 새로운 하녀가 찾아온다. 이모부의 서재에서 책을 읽는 것이 일상의 전부인 아가씨는  순박해 보이는 하녀에게 조금씩 의지하기 시작한다. 하지만 하녀의 정체는 유명한 여도둑의 딸인 소매치기 고아 소녀 숙희. 막대한 재산을 상속받게 될 아가씨를 유혹하여 돈을 가로채겠다는 사기꾼 백작의 제안을 받고  아가씨가 백작을 사랑하게 만들기 위해 하녀가 된 것. 드디어 백작이 등장하고, 백작과 숙희는 자신만의 방식으로 아가씨의 마음을 흔들기 시작하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/asCb2ptT077tdQkaUfKrRHhO2GV.jpg",
+      "genres": [
+        53,
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "너의 췌장을 먹고 싶어",
+      "release_date": "2018-09-01",
+      "popularity": 54.361,
+      "vote_count": 416,
+      "vote_average": 8.3,
+      "overview": "어느 날, 우연히 주운 한 권의 「공병문고」를 통해 ‘나’는 학급 최고의 인기인 ‘사쿠라’의 비밀과 마주하게 된다. 비밀을 숨긴 채 살아가는 ‘사쿠라’와 그 비밀을 아는 유일한 클래스메이트 ‘나’",
+      "poster_path": "https://image.tmdb.org/t/p/w500/g1ucSvfDnV3HEVt8x7YeZ0fAIs2.jpg",
+      "genres": [
+        16,
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "어벤져스: 엔드게임",
+      "release_date": "2019-04-24",
+      "popularity": 187.322,
+      "vote_count": 15296,
+      "vote_average": 8.3,
+      "overview": "어벤져스의 패배 이후 지구는 초토화됐고 남은 절반의 사람들은 정신적 고통을 호소하며 하루하루를 근근이 버텨나간다. 와칸다에서 싸우다 생존한 히어로들과 우주의 타이탄 행성에서 싸우다 생존한 히어로들이 뿔뿔이 흩어졌는데, 아이언맨과 네뷸라는 우주를 떠돌고 있고 지구에 남아 있는 어벤져스 멤버들은 닉 퓨리가 마지막에 신호를 보내다 만 송신기만 들여다보며 혹시 모를 우주의 응답을 기다리는 중이다. 애초 히어로의 삶을 잠시 내려놓고 가족과 시간을 보내던 호크아이 역시 헤아릴 수 없는 마음의 상처를 입은 채 사라지고 마는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/z7ilT5rNN9kDo8JZmgyhM6ej2xv.jpg",
+      "genres": [
+        28,
+        12,
+        878
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "클라우스",
+      "release_date": "2019-11-08",
+      "popularity": 44.565,
+      "vote_count": 1868,
+      "vote_average": 8.3,
+      "overview": "공기도 인심도 꽁꽁 얼어붙은 마을. 활기 넘치는 젊은 우체부와 세상을 등지고 장난감을 만드는 목수. 작은 장난감 선물로 냉기가 사라질 수 있을까. 전혀 어울리지 않는 둘의 우정이 차디찬 세상에 온기를 불어넣는다. 《슈퍼배드》 작가의 산타 탄생 이야기.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/1mtsyXMbMdaC5Oc1Jqy8pD0xZLA.jpg",
+      "genres": [
+        12,
+        16,
+        35,
+        10751
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "콜 미 바이 유어 네임",
+      "release_date": "2017-09-01",
+      "popularity": 69.127,
+      "vote_count": 7990,
+      "vote_average": 8.3,
+      "overview": "17살 소년 엘리오의 가족은 매년 여름 손님을 받는다. 엘리오의 아버지 펄먼 교수의 일을 돕는 보조 연구원은 6주 동안 이곳에 머물며 사람들과 어울리고 자유로운 식사, 일광욕과 수영을 즐긴다. 올해 집을 찾은 24살 올리버는 모든 사람이 호감을 갖는 사람이다. 하지만 엘리오의 감정은 좀더 특별하다. 처음 보는 순간부터 그를 의식했고, 그 실체가 동성에게 품은 사랑임을 깨달은 후에는 적대감을 갖고 있는 것처럼 군다. 하지만 엘리오가 자신의 진짜 속내를 내비친 후 두 사람은 서로의 마음이 같다는 것을 알게 된다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/z1wsD5TvfjKbTGt37utj6np8qAY.jpg",
+      "genres": [
+        10749,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "컴 앤 씨",
+      "release_date": "1985-09-03",
+      "popularity": 15.429,
+      "vote_count": 558,
+      "vote_average": 8.3,
+      "overview": "소년 플로리아(알렉세이 크레프첸코)는 나치독일의 침공을 받고 있는 벨로러시아에 살고 있다. 그런데 첫 장면에서 그는 모래밭의 흙을 파고 있는 중이다. 제대로 매장되지 못한 죽은 병사들의 시체들이 나오지만, 어떻게든 쓸 만한 총을 찾아낸다. 그때 하늘에는 나치독일의 전투기들이 지나간다. 즉 플로리아는 독일군과의 전투에 자신의 힘을 보태겠다고 생각한 것이다. 하지만 어른들은 그를 무시한다. 더 경험많은 군인에게 그의 총은 인계되고, 그는 군인들의 행진을 지켜볼 뿐이다. 이윽고 플로리아는 글로샤(올가 미로노바)라는 독특한 매력의 소녀와 함께 뒤에 처져 있음을 깨닫는다. 이들은 숲으로 가지만 거기서 나치독일의 엄청난 폭격을 당하고, 그 바람에 플로리아의 청력에 문제가 생긴다. 이때부터 플로리아의 시점쇼트에는 항상 웅웅거리는 소음과 절망적인 광경이 표현된다. 정신이 혼미해진 플로리아는 마을로 들어가는데, 거기서 엄청난 대량학살의 흔적과 널부러진 시신들을 보고 경악한다. 문득 어머니의 생사가 궁금해져 필사적으로 찾아다니던 그가 본 것은 비극적인 장면. 비명조차 새어나오지 않는 참상 앞에서 그는 심리적 공황 상태에 빠진다. 이때 나치독일의 잔혹한 학살로 피했던 러시아 민중은 의분에 가득찬 게릴라 활동을 펴고 있다. 구제된 플로리아는 그들과 함께 한다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/baK79h2An0J8mzTue13KThAeYC5.jpg",
+      "genres": [
+        18,
+        10752,
+        36
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "페르소나",
+      "release_date": "1966-10-18",
+      "popularity": 13.881,
+      "vote_count": 1143,
+      "vote_average": 8.3,
+      "overview": "유명 연극배우인 엘리자벳은 연극 ‘엘렉트라’를 공연하던 중 갑자기 말을 잃게 되고, 신경쇠약으로 병원을 거쳐 요양을 떠나게 된다. 그녀의 요양에 동행한 간호사 알마는 엘리자벳에 대해 간호사로서의 친절과 인간적인 호감, 동경 등을 느끼지만 말이 없는 엘리자벳에게 자기를 털어놓는 과정에서 그녀가 자신을 구경거리로 관찰하고 있다는 사실을 깨닫고 공격적인 비난의 태도를 취하게 된다. 엘리자벳의 남편의 방문을 계기로 알마는 마치 엘리자벳이 된 듯 그녀의 인격으로 말과 행동을 하게 되는 이상한 체험을 한다. 자신으로 돌아온 후에도 알마는 점차 엘리자벳과 닮아가다가, 마침내 두 인격이 겹쳐지는 듯 현실과 환상의 경계는 갈수록 모호해지고, 두 여인은 가면과 실체 사이의 자기 자신의 죄의식을 고통스럽게 들여다보게 된다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/bjPo1GDN1DaXcg8ecSzwLTLdbbv.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "더 헤이트 유 기브",
+      "release_date": "2018-10-19",
+      "popularity": 18.245,
+      "vote_count": 1323,
+      "vote_average": 8.3,
+      "overview": "부유한 백인들의 학교에 다니는 16살의 스타(아만들라 스텐버그)는 흑인이라는 이유로 갖은 인종차별을 겪는다. 아슬아슬하게 유지되던 스타의 일상은 어린 시절의 단짝 카일이 경찰의 총에 맞는 모습을 목격하면서 전환점을 맞는다. 영화는 사건의 유일한 목격자인 스타가 혐오를 일삼는 교외의 커뮤니티에 있는 힘껏 돌을 던지는 과정을 담았다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/zfDN0YX1BNRsnCnp1mWOaiGeN9y.jpg",
+      "genres": [
+        80,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "마이 프렌즈",
+      "release_date": "1975-08-15",
+      "popularity": 7.36,
+      "vote_count": 440,
+      "vote_average": 8.3,
+      "overview": "",
+      "poster_path": "https://image.tmdb.org/t/p/w500/4Hw3Li49v6dKuKQTVrHsoFJuqtj.jpg",
+      "genres": [
+        35
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "구멍",
+      "release_date": "1960-03-18",
+      "popularity": 8.098,
+      "vote_count": 210,
+      "vote_average": 8.3,
+      "overview": "라 상테 형무소에서도 특히 경계가 삼엄한 감방 안에는 ‘신부’라는 별명을 가진 보슬랭, 세 차례 탈옥 경력이 있는 롤랑, 눈초리가 날카로운 마뉴, 그리고 여자를 좋아하는 조가 있다. 지하에 구멍을 파고 탈옥한다는 계획을 모의하던 네 사람은 형무소 풋내기 가스파를 계획에 가담시킨다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/ih2IppwsMkCyHazLJKOMdpwFT37.jpg",
+      "genres": [
+        80,
+        18,
+        36,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "빽 투 더 퓨쳐",
+      "release_date": "1985-07-03",
+      "popularity": 60.618,
+      "vote_count": 13919,
+      "vote_average": 8.3,
+      "overview": "마티 맥플라이(마이클 J. 폭스)는 평범한 고등학생이다. 그런데 평소 친하게 지내던 괴상한 발명가 에메트 브라운 박사(크리스토퍼 로이드)가 스포츠카 드로리안을 개조해 타임머신을 만들고, 뜻밖의 사고로 브라운 박사가 테러범들에게 총을 맞고 위험해진 상황에서 마티는 30년 전으로 가게 된다. 극장 간판에는 2류 배우인 로널드 레이건이 보이고 청년인 아버지와 어머니를 보게 된다. 젊은 아버진 멍청하고, 어머니는 미래의 아들인 마티를 좋아해 야단이다. 마티가 미래로 가는 것을 도와 줄 사람은 30년 전인 젊은 브라운 박사뿐인데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/kkGjbTcmKIn8jaIOaZOV2amBh7n.jpg",
+      "genres": [
+        12,
+        35,
+        878,
+        10751
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "그린북",
+      "release_date": "2018-11-16",
+      "popularity": 31.76,
+      "vote_count": 6928,
+      "vote_average": 8.3,
+      "overview": "1962년 미국, 입담과 주먹만 믿고 살아가던 토니 발레롱가(비고 모텐슨)는 교양과 우아함 그 자체인 천재 피아니스트 돈 셜리(마허샬라 알리)의 운전기사 면접을 보게 된다. 백악관에도 초청되는 등 미국 전역에서 콘서트 요청을 받으며 명성을 떨치고 있는 돈 셜리는 위험하기로 소문난 미국 남부 투어 공연을 떠나기로 결심하고, 투어 기간 동안 자신의 보디가드 겸 운전기사로 토니를 고용한다. 거친 인생을 살아온 토니와 교양과 기품을 지키며 살아온 돈. 생각, 행동, 말투, 취향까지 달라도 너무 다른 두 사람은 그들을 위한 여행안내서 그린북에 의존해 특별한 남부 투어를 시작하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/fO0oIKQAnDe6COaf5Rdg2StDHQE.jpg",
+      "genres": [
+        18,
+        35
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "이지 라이프",
+      "release_date": "1962-12-04",
+      "popularity": 9.27,
+      "vote_count": 406,
+      "vote_average": 8.3,
+      "overview": "쨍쨍 내리쬐는 태양 아래, 텅 빈 듯한 로마의 8월 어느 휴일 아침. 창 밖을 내다보던 소심한 법대생 로베르토는 한 40대 남자의 부탁을 들어준다. 브루노라는 이 남자가 로베르토에게 전화를 쓸 수 있겠냐고 부탁하고, 로베르토는 그에게 집으로 올라와서 직접 걸어보라고 한다. 붙임성 좋고 사람을 끄는 매력을 가진 브루노는 어디로 튈지 모르는 철부지다. 로베르토의 무료하던 휴일은 브루노와 얽히며 정신없이 흘러간다. 이탈리안 코미디의 걸작으로 일컬어지는 작품. 1960년대 초, 고도의 경제적 성장을 이어가는 한편, 천박하고 이기적인 자본주의에 물들어가는 이탈리아 사회에 대한 통렬한 풍자적 묘사가 돋보인다.  (2015 영화의 전당 - 오래된 극장 2015)",
+      "poster_path": "https://image.tmdb.org/t/p/w500/fik1edfOI4nFXVtLz1oRFts3eIp.jpg",
+      "genres": [
+        18,
+        35
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "잠입자",
+      "release_date": "1979-05-25",
+      "popularity": 14.736,
+      "vote_count": 1103,
+      "vote_average": 8.3,
+      "overview": "잿빛의 이름없는 이 도시는 \"구역\"이라는 곳으로 철조망으로 둘러싸여 군인들이 지키고 있는 외계의 공간이라 알려져 있다. 아내의 만류에도 불구하고 \"스토커\"라는 이름의 한 사내가 칠흑 같은 어둠 속을 걸어나온다. 그는 구역 안으로 사람들을 안내할 수 있는 정신적인 재능을 부여받은 소수의 무리 중의 하나이다. 하지만 이 일은 너무나도 위험천만한 일이기 때문에 정부에 걸릴 경우엔 감옥행도 불사해야 하는 일이다. 사람들이 이 구역 안의 공간으로 들어가고자 하는 이유는 이곳에 가는 오직 한 사람만 자신의 비밀스런 꿈을 이룰 수 있다는 설이 있기 때문이다. 그 날밤, 스토커는 두 사람을 안내해 구역 안으로 들어간다. 한 사람은 유명한 작가로 이제는 영감이 소멸돼 자신의 천재성에 대해 회의를 갖기 시작하는 사람이고, 또 다른 한 사람은 조용한 과학자로 여행보다는 배낭에 더 관심을 가지는 사람이다. 버려진 공간 \"구역\"에서 그 공간을 향하는 길은 정해져 있지 않다. 그들이 점점 공간에 가까이 다가갈수록 규칙은 변하고 스토커는 커다란 위험에 직면하는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/mzJxTxIODATNaYUwyJ2C2XPkhXW.jpg",
+      "genres": [
+        878,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "지옥의 묵시록",
+      "release_date": "1979-08-15",
+      "popularity": 31.309,
+      "vote_count": 5237,
+      "vote_average": 8.3,
+      "overview": "미 특수부대의 윌라드 대위(마틴 쉰)는 고향에 돌아갔다가 아내가 내민 이혼장에 도장을 찍고, 다시 정글로 돌아온다. 혼돈과 막연한 갈망에 시달리던 윌라드에게 떨어진 임무는 캄보디아에 자신의 왕국을 건설한 커츠 대령(말론 브랜도)를 암살하라는 것.  커츠 대령은 한때 가장 뛰어난 군인으로 인정받았으나 미국의 통제를 벗어나 캄보디아에서 독자적인 왕국을 거느리고 있다. 윌라드 대위는 4명의 병사들과 함께 커츠 대령을 찾아 나선다. 폭염과 광기로 가득한 전투를 겪으면서 두려움과 공포로 이성을 잃어가던 그들은 마침내 커츠 대령의 왕국에 도착한다. 그리고 그곳에서 윌라드 대위는 상상을 초월하는 진실을 마주하게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/p4IXOudom5OoGN7FDU1mZ2yVyUr.jpg",
+      "genres": [
+        18,
+        10752
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "모래의 여자",
+      "release_date": "1964-02-15",
+      "popularity": 10.994,
+      "vote_count": 202,
+      "vote_average": 8.3,
+      "overview": "곤충 연구가인 한 교사가 표본 수집을 하기 위해 모래 지대를 돌아다니다, 지역 주민의 소개로 어느 여인이 혼자 사는 집에서 묵게 된다. 다음날 이 집을 떠나려 하던 그는 땅위로 올라갈 사다리가 없어진 것으로 보고 놀란다. 1964년 칸 영화제 수상작으로 인간의 실존적 조건을 예리하게 묘사한 작품이다. 아베 고보의 소설을 영화화 하였다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/rE6vtXBDXy3cjyFmxfsDese0Eo4.jpg",
+      "genres": [
+        18,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "검찰 측 증인",
+      "release_date": "1957-12-17",
+      "popularity": 11.148,
+      "vote_count": 727,
+      "vote_average": 8.3,
+      "overview": "남편 레너드를 사랑하는 부인 크리스틴은 살인죄로 구속되자 검사측 증인이 되어 남편 레너드의 범죄를 증언한다. 그 때 정체불명의 여인이 나타나법정에 크리스틴 필적의 편지를 공개해 크리스틴은 위증죄로 걸리게 되고 남편은 석방된다. 하지만 이것은 남편을 구하기 위해 크리스틴이 꾸민 계략이다. 그렇지만 석방된 남편은 애인 다이애너와 달아나 버린다.  세계적인 추리소설가 애거서 크리스티의 「검찰 측 증인」을 각색하여, 인간의 추잡한 욕망을 지능적이고 긴장감 넘치는 법정 스릴러로 밀도 있게 그려낸 걸작이다. 배우들의 탄탄한 연기력이 돋보이지만, 단연 1930~40년대 섹스 심벌로 유명했던 마를렌 디트리히의 악녀 연기가 압권이다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/99QUmKYziu6WGcHUmi06lY6w5Z3.jpg",
+      "genres": [
+        18,
+        9648,
+        80
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "드래곤 길들이기: 홈커밍",
+      "release_date": "2019-10-25",
+      "popularity": 38.739,
+      "vote_count": 414,
+      "vote_average": 8.3,
+      "overview": "스노글토그에 히컵과 투슬리스, 라이트 퓨리와 새끼들까지 모두 버크 섬에 모인다",
+      "poster_path": "https://image.tmdb.org/t/p/w500/kXj2Qrfm994yLeuADqbOieU1mUH.jpg",
+      "genres": [
+        16,
+        14,
+        12,
+        28,
+        10751
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "자전거 도둑",
+      "release_date": "1948-11-24",
+      "popularity": 12.496,
+      "vote_count": 1367,
+      "vote_average": 8.3,
+      "overview": "2차 대전이 끝났지만 전쟁의 여파로 로마에는 실업자들이 넘쳐난다. 안토니오(람베르토 마지오라니) 역시 오랜 실직상태로 일자리가 필요하다. 그가 구한 일은 포스터를 붙이는 일로 이 일을 하기 위해서는 자전거가 꼭 필요하다. 간신히 자전거를 구한 안토니오는 아들 브루노(엔조 스타이오라)와 함께 일을 시작한다. 그러던 어느날 모퉁이에 자전거를 세워두고 잠시 자리를 비운 사이 자전거를 도둑맞고 만다. 경찰에 신고했으나 아무 소용이 없다. 그러던 중 자전거 가게들을 찾아다니다 어느 젊은이가 자신의 자전거를 타고 가는 것을 보고 그를 쫓아갔으나 그 젊은이는 간질에 걸렸을 뿐 아니라 몹시 가난했다. 경찰이 왔으나 그 자전거가 안토니오의 것이라는 증거도 없다. 경기장 앞을 지나가던 안토니오는 브루노를 먼저 집으로 보내고 경기장 앞에 세워져 있던 자전거 중 하나를 훔쳐 달아난다. 그러나 곧 주인에게 붙잡히고 마음 좋은 자전거 주인의 덕에 경찰에게서 풀려난다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/hC3ozZMMATfmbLMrZCsIiEuezlK.jpg",
+      "genres": [
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "타오르는 여인의 초상",
+      "release_date": "2019-06-17",
+      "popularity": 22.533,
+      "vote_count": 1004,
+      "vote_average": 8.3,
+      "overview": "1770년, 젊은 화가 마리안느(노에미 멜랑)는 밀라노 귀족과 결혼을 앞둔 여인 엘로이즈(아델 에넬)의 초상화를 그려달라는 백작 부인의 의뢰를 받고 엘로이즈가 머무는 외딴섬의 영지에서 며칠간 머물게 된다. 마리안느는 엘로이즈가 초상화 그리는 걸 싫어한다는 이유 때문에 화가라는 신분을 숨기고 접근한다. 마리안느는 엘로이즈의 이목구비를 눈에 담기 위해 매일 산책에 동행하면서 그녀가 지닌 아픔을 어루만져주고 친분도 쌓는다. 어쨌든 그녀는 엘로이즈의 결혼을 종용하는 도구로 사용될 초상화 완성에 매진해야 한다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/M0mm1VGMZRa6eRzgoZmYW9zPd8.jpg",
+      "genres": [
+        18,
+        10749
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "8과 1/2",
+      "release_date": "1963-02-14",
+      "popularity": 13.783,
+      "vote_count": 1370,
+      "vote_average": 8.3,
+      "overview": "영화감독 로이드는 어느 날 자신의 몸이 공중에서 추락하는 꿈을 꾼다. 현실의 일상에서 지쳐 있던 그는 요양을 핑계로 온천에 간다. 그러나 그는 온천에서도 생활과 일에서 벗어날 수가 없다. 그리고 온천에서 여생을 보내는 노인들 속에 자신이 있다는 환상을 보기 시작한다. 그는 아내와도 애인과도 모두 지쳐 있는 상태이다. 그런 그에게 유일한 구원은 마음 속에 나타나는 창부같은 성녀 클라우디아였다. 로이드는 소년 시절의 추억에 잠기는 동안 오래도록 잊고 있던 것을 생각해 낸다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/5kcmmHKrGNVf4CdHf1MrnaDd8mW.jpg",
+      "genres": [
+        14,
+        18
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "어벤져스: 인피니티 워",
+      "release_date": "2018-04-25",
+      "popularity": 201.712,
+      "vote_count": 19894,
+      "vote_average": 8.3,
+      "overview": "타노스는 6개의 인피니티 스톤을 획득해 신으로 군림하려 한다. 그것은 곧 인류의 절반을 학살해 우주의 균형을 맞추겠다는 뜻. 타노스는 닥터 스트레인지가 소유한 타임 스톤, 비전의 이마에 박혀 있는 마인드 스톤을 차지하기 위해 지구를 침략한다. 아이언맨과 스파이더맨은 가디언즈 오브 갤럭시의 멤버들과 타노스를 상대한다. 지구에선 캡틴 아메리카, 완다, 블랙 위도우, 블랙 팬서 등이 비전을 지키기 위해 뭉친다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg",
+      "genres": [
+        28,
+        12,
+        878
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "올드보이",
+      "release_date": "2003-11-21",
+      "popularity": 20.966,
+      "vote_count": 5136,
+      "vote_average": 8.3,
+      "overview": "오대수는 어느 날 술이 거나하게 취해 집에 돌아가는 길에 누군가에게 납치, 사설 감금방에 갇히게 된다. 중국집 군만두만을 먹으며 8평이라는 제한된 공간에서 그가 할 수 있는 일이라곤 텔레비전 보는 게 전부. 1년이 지났을 무렵, 뉴스를 통해 나오는 아내의 살해소식. 게다가 아내의 살인범으로 자신이 지목되고 있음을 알게 된 오대수는 복수와 탈출을 위해 감금방 한쪽 구석을 쇠젓가락으로 파기 시작한다. 감금 15년을 맞이하는 해, 마침내 사람 몸 하나 빠져나갈 만큼의 탈출구가 생겼을 때, 어이없게도 15년 전 납치됐던 바로 그 장소로 풀려나 있는 자신을 발견하게 된다.",
+      "poster_path": "https://image.tmdb.org/t/p/w500/xpa9ybm6tYGna5LseqSXvKpSSJn.jpg",
+      "genres": [
+        28,
+        18,
+        9648,
+        53
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "title": "마돈나 거리에서 한탕",
+      "release_date": "1958-06-06",
+      "popularity": 8.068,
+      "vote_count": 414,
+      "vote_average": 8.3,
+      "overview": "한 밤에 자동차를 훔치다 현장에서 검거된 코지모는 구치소에 수감되었다가 그곳에 수감된 다른 죄수로부터 마돈나 거리에 있는 전당포를 털 수 있는 방법을 알게 된다. 한탕에 대한 욕심으로 안달이 난 코지모는 자신 대신 죄를 뒤집어쓰고 형을 살아줄 사람으로 삼류 복서인 페페를 매수하는데 이들의 공모를 눈치 챈 경찰은 코지모와 페페를 교도소에 수감한다. 집행유예를 선고받은 페페는 3년형을 선고받은 것처럼 꾸며 코지모에게 동정심을 유발시켜 그로부터 마돈나 거리에서 한탕에 대한 상세한 비밀을 듣게 되고, 출소하여 좀도둑 마리오, 사진사 티베리오, 시칠리 출신의 미켈레, 그리고 나이 먹고 주책없는 늙은 남자와 코지모의 정부, 페페까지 여섯 명이 모여 전당포를 털 계획을 세우던 중 코지모가 출소를 하게 되는데...",
+      "poster_path": "https://image.tmdb.org/t/p/w500/hAREIg0yrGml3oUJAcY8ZkoK24i.jpg",
+      "genres": [
+        35,
+        80
+      ]
+    }
+  },
+  {
+    "model": "movies.movie",
+    "fields": {
+      "genres": [
+        28,
+        53
+    ],
+    "title": "기프트",
+    "release_date": "2009-02-27",
+    "popularity": 14.182,
+    "vote_count": 338,
+    "vote_average": 6.3,
+    "overview": "방콕 출장 중 익명으로부터 최첨단 스마트폰을 받게 된 젊은 엔지니어 맥스. 그리고 한 통의 SMS 메시지가 전송된다. 귀국을 연기하고 하루 더 머물라는 문자. 다음날... 그는 자신이 예약했던 비행기가 공중 폭발했다는 뉴스를 목격한다. 문자 메시지는 이어지고 이번엔 프라하로 간 그는 카지노에서 거액의 돈을 거머쥔다. 모두가 원하던 꿈의 핸드폰이 배달됐다. 모두가 원하던 꿈의 정보가 손 안으로 쏟아지기 시작한다. 감당할 수 있다면… 당신도 가질 수 있다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//h3KzbE0mOmTlI2ZZyyjx90vUFeA.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        12,
+        28,
+        16
+    ],
+    "title": "나루토 질풍전 극장판 4기 - 더 로스트 타워",
+    "release_date": "2010-07-31",
+    "popularity": 102.59,
+    "vote_count": 264,
+    "vote_average": 7.0,
+    "overview": "그 야망을 저지하라!  호카게 츠나데로부터 임무를 받은 나루토는 사쿠라, 야마토와 함께 도망친 닌자 무카데를 쫓아 모래에 가려져있는 폐가 ‘로우란’에 도착한다.  무카데가 노리는 것은 로우란의 지하에 잠들어 있는 ‘용맥’. 결판을 내기 위해 폐허 속 깊은 곳으로 향하는 나루토.  하지만, 무카데에 의해 봉인이 풀린 ‘용맥’의 힘에 삼켜져 버리고 마는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//kMKhM7RUhA4j3yH9oTi1FN8cZJE.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        9648,
+        27
+    ],
+    "title": "피어 스트리트 파트 3: 1666",
+    "release_date": "2021-07-14",
+    "popularity": 86.21,
+    "vote_count": 903,
+    "vote_average": 7.4,
+    "overview": "1666년 속의 디나는 세라 피어에 얽힌 충격적 진실을 마주한다. 1994년에서는 처절한 생존 싸움이 계속되는데. 이제 진실의 힘으로 저주의 뿌리를 끊고 셰이디사이드를 구할 수 있을까.",
+    "poster_path": "https://image.tmdb.org/t/p/original//rmEPtz3Ufzol2VWUAZYzOFaBio3.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        878,
+        28,
+        53,
+        12
+    ],
+    "title": "터미네이터 제니시스",
+    "release_date": "2015-06-23",
+    "popularity": 88.48,
+    "vote_count": 6923,
+    "vote_average": 5.9,
+    "overview": "인간 저항군의 리더 존 코너의 탄생을 막기 위해 스카이넷은 터미네이터를 과거로 보내고, 이를 저지하기 위해 부하 카일 리스가 뒤를 따른다. 젊은 사라 코너와 그녀를 보호하고 있던 T-800은 로봇과의 전쟁을 준비하며 이미 그들을 기다리고 있었다. 시간의 균열로 존 코너 역시 과거로 오지만 그는 나노 터미네이터 T-3000으로 변해있었던 것. 이제 인류는 인간도 기계도 아닌 그 이상의 초월적인 존재, 사상 최강의 적에 맞서 전쟁을 벌여야만 한다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//bzcw6IyAbX3DbXrzPXx7ZgLXalr.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        28,
+        9648
+    ],
+    "title": "레지던트 이블",
+    "release_date": "2021-11-24",
+    "popularity": 95.215,
+    "vote_count": 0,
+    "vote_average": 0.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//bArhvjRHl535XMaSh9VjInF2mSZ.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        12,
+        35
+    ],
+    "title": "썬더 포스",
+    "release_date": "2021-04-09",
+    "popularity": 100.554,
+    "vote_count": 835,
+    "vote_average": 5.7,
+    "overview": "초능력을 가진 악당들을 소탕하라. 사이가 소원해진 두 친구가 도시의 수호자로 나선다. 계획에 없던 슈퍼 팀이지만 싸워보자고, 친구!",
+    "poster_path": "https://image.tmdb.org/t/p/original//oJ9BWm2wWlkuKWAZOwIRIHgxAJo.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        35,
+        878
+    ],
+    "title": "픽셀",
+    "release_date": "2015-07-16",
+    "popularity": 86.328,
+    "vote_count": 6198,
+    "vote_average": 5.7,
+    "overview": "1982년, 나사(NASA)는 외계와의 접촉을 희망하며 지구의 문화를 담은 타임 캡슐을 우주로 쏘아 올렸다. 하지만 여기에 담긴 아케이드 게임을 자신들에 대한 선전포고로 오해한 외계인들은 팩맨, 갤러그, 동키콩, 센티피드, 스페이스 인베이더의 모습으로 나타나 지구를 침공하기 시작하는데… 30년 전 동전 몇 개로 수천 번이나 세상을 구했던 클래식 아케이드 게임의 고수 3인방은 위기에 빠진 지구를 구하기 위해 다시 한 번 뭉치게 된다. 유일하게 게임의 룰을 지배할 수 있는 이들, 과연 현실에서도 세상을 구해낼 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//hvPbxB8rVoQDSzqhHjrYM1W37WU.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        80,
+        28,
+        878
+    ],
+    "title": "채피",
+    "release_date": "2015-03-04",
+    "popularity": 94.12,
+    "vote_count": 6566,
+    "vote_average": 6.8,
+    "overview": "2016년, 매일 300건의 범죄가 폭주하는 요하네스버그. 도시의 치안을 책임지는 세계 최초의 로봇 경찰 ‘스카우트’ 군단을 설계한 로봇 개발자 ‘디온(데브 파텔)’은 폐기된 스카우트 22호에 고도의 인공지능을 탑재하여 스스로 생각하고 느낄 수 있는 성장하는 로봇 ‘채피’를 탄생시킨다.  한편, 진화하는 로봇에 맞서 인간의 힘으로 로봇을 통제하고 싶은 무기 개발자 ‘빈센트 (휴 잭맨)’는 눈엣가시 ‘채피’를 제거하기 위한 음모를 꾸미게 되고, 예상을 뛰어넘는 속도로 성장하던 ‘채피’는 어느새 인류를 위협하는 대상으로 몰리게 되는데… 생존을 꿈꾸는 로봇 ‘채피’와 로봇을 통제하려는 ‘인간’의 대결이 시작된다!",
+    "poster_path": "https://image.tmdb.org/t/p/original//hcGym66raZDzDIGjdkVDoQZvLks.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        35
+    ],
+    "title": "아쿠아슬래시",
+    "release_date": "2019-07-29",
+    "popularity": 82.981,
+    "vote_count": 84,
+    "vote_average": 4.1,
+    "overview": "뜨거운 태양이 내리는 한 여름, 밸리 힐 고등학교 학생들이 졸업파티를 위해 워터파크에 도착한다 . 80년대 스타일로 신나는 음악과 춤, 캠프 파이어와 함께 광란의 파티를 즐기는 그들. 다음 날, 상금이 걸린 워터 슬라이드 대회가 열리고 신나게 물놀이를 즐기던 중, 누군가 슬라이드에 거대한 칼을 꽂아놓은 충격적인 사실이 드러나며 워터파크는 공포의 피바다가 된다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//einwZHGGZ3DIbrLg2eehaTsvBBY.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        53,
+        878
+    ],
+    "title": "인 타임",
+    "release_date": "2011-10-27",
+    "popularity": 84.341,
+    "vote_count": 9071,
+    "vote_average": 6.9,
+    "overview": "커피 1잔.. 4분, 권총 1정.. 3년, 스포츠카 1대.. 59년!  모든 비용은 시간으로 계산된다!!  근 미래, 모든 인간은 25세가 되면 노화를 멈추고, 팔뚝에 새겨진 ‘카운트 바디 시계’에 1년의 유예 시간을 제공받는다. 이 시간으로 사람들은 음식을 사고, 버스를 타고, 집세를 내는 등, 삶에 필요한 모든 것을 시간으로 계산한다. 하지만, 주어진 시간을 모두 소진하고 13자리 시계가 0이 되는 순간, 그 즉시 심장마비로 사망한다. 때문에 부자들은 몇 세대에 걸쳐 시간을 갖고 영생을 누릴 수 있게 된 반면, 가난한 자들은 하루를 겨우 버틸 수 있는 시간을 노동으로 사거나, 누군가에게 빌리거나, 그도 아니면 훔쳐야만 한다.  돈으로 거래되는 인간의 수명!  “살고 싶다면, 시간을 훔쳐라!!”  윌 살라스(저스틴 팀버레이크)는 매일 아침 자신의 남은 시간을 보며 충분한 양의 시간을 벌지 못하면, 더는 살 수 없다는 사실을 깨달으며 눈을 뜬다. 그러던 어느 날, 수천 년을 살수 있는 헤밀턴이란 남자를 위험에서 구해준 윌은 그에게서 소수의 영생을 위해 다수가 죽어야 하는 현 시스템의 비밀을 듣게 되지만, 그 남자가 100년의 시간을 물려주고 시체로 발견되면서 졸지에 살인자의 누명을 쓰고 쫓기게 된다. 사람들의 눈을 피해 부자들만이 모여 사는 ‘뉴 그리니치’로 잠입한 그는 끈질긴 타임 키퍼 리온(킬리언 머피)의 추적으로 체포될 위기를 맞지만, 와이스 금융사의 회장 딸인 실비아(아만다 사이프리드)를 인질로 삼아 간신히 탈출한다. 이때부터 윌은 실비아와 함께 누명을 벗고 전세계를 통제하는 시스템의 비밀을 파헤치려 하는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//1bE6wSfmSNs0xj6rYsFcE1Vzqw8.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        10749
+    ],
+    "title": "Tentacles",
+    "release_date": "2021-02-12",
+    "popularity": 85.656,
+    "vote_count": 83,
+    "vote_average": 6.2,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//rRfcH0jg9X8czKJhXCnny45NSWt.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        878,
+        9648
+    ],
+    "title": "Dinosaur Hotel",
+    "release_date": "2021-06-11",
+    "popularity": 84.852,
+    "vote_count": 48,
+    "vote_average": 5.3,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//qISzj26R3LnsChQcXQKnuyxQQhK.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        878,
+        9648
+    ],
+    "title": "Dinosaur Hotel",
+    "release_date": "2021-06-11",
+    "popularity": 84.852,
+    "vote_count": 48,
+    "vote_average": 5.3,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//qISzj26R3LnsChQcXQKnuyxQQhK.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        12,
+        878
+    ],
+    "title": "쥬라기 월드: 폴른 킹덤",
+    "release_date": "2018-06-06",
+    "popularity": 78.693,
+    "vote_count": 9334,
+    "vote_average": 6.6,
+    "overview": "지상 최대의 테마파크 쥬라기 월드가 폐쇄된 지 3년 후.  이슬라 누블라의 활화산 시보산이 분화하려는 조짐을 보이자 조짐에 뉴스에서는 이와 더불어 공룡들의 보호에 관련된 시위나 소식들을 보도한다. 오웬(크리스 프렛)과 클레어(브라이스 달라스 하워드)는 벤자민 록우드(제임스 크롬웰)의 부탁으로 공룡들의 멸종을 막기 위해 이슬라 누블라 섬으로 떠난다. 한편 진화된 공룡들을 이용하려는 세력의 거대한 음모가 드러나고, 절대 지상에 존재해선 안될 위협적 공룡들이 마침내 세상 밖으로 등장하게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//xR2VgpNxElFOJBul0q7ULiT0ayF.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        53,
+        28
+    ],
+    "title": "테이큰 3",
+    "release_date": "2014-12-16",
+    "popularity": 90.332,
+    "vote_count": 4656,
+    "vote_average": 6.2,
+    "overview": "전 부인 레니(팜케 얀센)가 방문한다는 연락을 받고 집으로 돌아온 브라이언 밀스(리암 니슨)를 기다리는 건 살해당한 아내의 싸늘한 시체. 사태를 파악할 겨를도 없이 경찰이 집에 들이닥치고 브라이언은 살인범으로 체포되기 직전 가까스로 탈출한다. 쫓아야 할 대상도, 쫓기는 이유도 알 수 없는 상황에 경찰, FBI, CIA까지 총동원 되어 모두가 그를 쫓는다. 이제 그에게 무엇보다 중요한 것은 마지막 남은 딸 킴(매기 그레이스)을 지켜내는 것. 브라이언은 부인을 죽인 범인을 찾고 딸을 지키기 위해 목숨을 건 추격을 시작하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//rYgLU3yHoq3qKftVXpbX9115wdI.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        16,
+        12
+    ],
+    "title": "천로역정: 천국을 찾아서",
+    "release_date": "2019-04-18",
+    "popularity": 85.68,
+    "vote_count": 55,
+    "vote_average": 7.9,
+    "overview": "희망도, 기쁨도 없는 멸망도시에서 살아가던 ‘크리스천’은 어느 날, 한 권의 책을 통해 천국도시가 존재하며, 곧 멸망도시가 불바다로 변할 것이라는 사실을 알게 된다. 바깥세상은 죽음뿐이라는 모두의 만류를 뒤로하고 ‘크리스천’은 천국도시를 찾아서 모험의 길로 접어 드는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//w0IRQoYIr7iuNE3f4vPEIkkchEc.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        53,
+        80
+    ],
+    "title": "머신건 프리처",
+    "release_date": "2011-09-23",
+    "popularity": 84.244,
+    "vote_count": 756,
+    "vote_average": 6.7,
+    "overview": "세상이 눈감았던 아이들\r 그들을 구하기 위한 그 남자의 뜨거운 전쟁!\r 그 남자의 뜨거운 전쟁이 시작된다!  불법과 마약 등 엉망인 삶을 살았던 샘 칠더스 (제라드 버틀러)는 우발적인 살인을 하게 되고 반성과 함께 가족들에게 도움을 요청한다. 그러나 다행스럽게 상대가 살아있는걸 알게 된 그는 선교사이자 목사의 길을 걷게 되는데…… 그러던 어느 날 수단의 집 짓기 봉사에 참여한 그는 그 곳에서 아이들이 팔려가거나 총을 들고 군인이 되어 총알받이가 되거나 혹은 제거의 대상이 되는 상황을 보고 고심하게 된다. 이런 죽어가는 아이들 앞에 그는 목회자이지만 총을 들고 반군에게 맞서기 시작하고 그를 지지하는 사람들과 함께 아이들을 구하기 위해 나서는데……",
+    "poster_path": "https://image.tmdb.org/t/p/original//zbtRjMTt93Yt2Wj9UgTIyrqb21N.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        53
+    ],
+    "title": "사탄의 인형 2",
+    "release_date": "1990-11-09",
+    "popularity": 89.49,
+    "vote_count": 1247,
+    "vote_average": 6.2,
+    "overview": "비극적인 사건을 겪은 앤디는 그의 어머니가 위임한 대로 위탁 부양가정에서 지낸다. 한편, 자신들의 명성을 유지하려는 인형 제조회사는 '굿가이 인형'을 다시 생산하기로 한다. 자신들이 아무것도 잘못한 일이 없다라고 대중들 앞에서 증명하기 위해서이다. 또한 회사측은 이에 그치지 않고, 한술 더 떠서 연쇄살인마 찰스 리 레이의 영혼을 불러들인다. 이같은 노력의 결과, 살인마가 깃든 '굿가이 인형'은 다시 인기를 얻게 되고, 인형회사는 생산에 박차를 가한다. 그러는중 사악한 미소의 처키 인형은 이 틈을 놓치지 않고 부활하여 앤디를 찾아다니는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//kdnermMCBOnVxjDKA0FV1HZueqg.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10751,
+        16,
+        35,
+        12
+    ],
+    "title": "주먹왕 랄프",
+    "release_date": "2012-01-01",
+    "popularity": 87.727,
+    "vote_count": 10215,
+    "vote_average": 7.3,
+    "overview": "8비트 게임 ‘다고쳐 펠릭스’에서 건물을 부수는 악당 주먹왕 랄프. 30년째 매일같이 건물을 부수며 직업에 충실해왔지만, 악당이라는 이유로 누구도 그를 좋아하지 않는다. 모두에게 인정 받는 영웅이 되고 싶은 마음에 급기야 자기 게임을 이탈하여 다른 게임으로 들어가는 랄프! 슈팅게임 ‘히어로즈 듀티’를 거쳐 레이싱 게임 ‘슈가 러시’에 불시착하는 랄프는 과연 게임 세계의 새로운 영웅이 될 수 있을 것인가! 그리고 랄프가 떠난 후 고장 딱지가 붙은 ‘다고쳐 펠릭스’ 게임은 오락실에서 퇴출될 위기를 넘길 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//A6jGfyW7yzTpXkRJovUhe2IanKu.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        35,
+        14
+    ],
+    "title": "19곰 테드",
+    "release_date": "2012-06-29",
+    "popularity": 105.368,
+    "vote_count": 10171,
+    "vote_average": 6.4,
+    "overview": "전세계를 홀린 진정한 짐승남이 온다!  애 같은 남자와 남자 같은 곰의 발칙한 우정!  어린 시절, 왕따에게도 왕따를 당하던 존(마크 월버그)의 소원을 통해 생명을 얻은 곰인형 테드(세스 맥팔레인)! 말하고 걷는 곰인형 테드는 전세계적인 스타가 된다. 그러나 세월에는 장사가 없는 법. 대중에게 잊혀진 스타 테드는 취미 음주가무, 특기 여자 꼬시기인 백수 한량으로 전락한다. 곰인형 외모에 어울리지 않는 음담패설과 욕설을 일삼는 발칙한 곰 테드와 27년째 그와 죽고 못사는 절친 존! 참다 못한 존의 여자친구 로리(밀라 쿠니스)는 남친의 미래를 위해 극약처방을 선택하는데…  “테드, 내 남친 옆에서 좀 꺼져 줄래?”",
+    "poster_path": "https://image.tmdb.org/t/p/original//v6klSXH4e0HL4iCIj9FJYreqUdV.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [],
+        "title": "Return of Chucky",
+        "release_date": "2021-12-31",
+        "popularity": 90.139,
+        "vote_count": 0,
+        "vote_average": 0.0,
+        "overview": "",
+        "poster_path": "https://image.tmdb.org/t/p/original//oHBhzKR2QViBakHdVpQq7E0cyfa.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        35,
+        27
+    ],
+    "title": "스탠 헬싱",
+    "release_date": "2009-10-27",
+    "popularity": 79.822,
+    "vote_count": 340,
+    "vote_average": 4.2,
+    "overview": "할로윈 밤에 비디오 가게 점원 스탠 헬싱이 친구들과 함께 할로윈 파티에 참석하기 전에 비디오 배달을 하러 갔다가 어떤 마을에 들렀는데, 그곳이 실은 인기 호러 영화를 대량으로 만든 곳으로 유명한 곳이지만 화재가 발생하여 마을 사람들이 떼죽음을 당한 뒤 저주 받아 괴물들에게 괴롭힘을 당하고 있는 상황에.. 반 헬싱이란 전설의 용자가 나타나 그들을 구원해줄 것이란 전설이 전해지고 있어 헬싱 성을 쓰는 스탠이 그 임무를 대행하게 되면서 벌어지는 이야기",
+    "poster_path": "https://image.tmdb.org/t/p/original//qDlmKahejt0NoQzw65tnLayEhHZ.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        80,
+        18
+    ],
+    "title": "데스 위시 5",
+    "release_date": "1994-01-14",
+    "popularity": 10.31,
+    "vote_count": 178,
+    "vote_average": 5.5,
+    "overview": "데드 위시 시리즈의 영웅 폴 커시는 이제 거리의 쓰레기들에 대한 그의 집념을 대학에서 학문에 대한 열정으로 바꾸고 정상의 패션 모델인 볼리비아와의 사랑으로 새로운 인생의 시작을 꿈꾸고 있었다. 그러나 마피아의 보스이자 볼리비아의 딸인 첼시의 생부인 톰니는 질투에 불타 커시와 볼리비아를 습격하여 볼리비아가 그들의 손에 죽고만다. 일시에 모든 희망을 잃은 커시를 제거하기 위하여 첼시마저 납치하자 다시 타오르는 커시의 분노는 가장 악랄하고 잔인하게 그들을 하나씩 제거하기 시작하는데.",
+    "poster_path": "https://image.tmdb.org/t/p/original//mWLBf0aSW9CPZcBvTEVglGlx3QT.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        99
+    ],
+    "title": "불사조, 비상하다",
+    "release_date": "2020-08-26",
+    "popularity": 11.33,
+    "vote_count": 76,
+    "vote_average": 8.2,
+    "overview": "장애란 무엇이며, 정상이란 무엇인가. 탁월함은 어디에서 오는가. 각자의 도전을 돌아보는 패럴림픽 선수들. 한계를 넘어, 가능성을 만드는 그들의 이야기를 만난다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//oso09gID2bFk9q3Cni8GNOuzTWZ.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        99
+    ],
+    "title": "Kevin Garnett: Anything Is Possible",
+    "release_date": "2021-11-12",
+    "popularity": 9.46,
+    "vote_count": 1,
+    "vote_average": 8.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//sgncJ84O2hK80mNfXaO3f2NsehX.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        18
+    ],
+    "title": "Six Minutes to Midnight",
+    "release_date": "2020-10-15",
+    "popularity": 11.195,
+    "vote_count": 78,
+    "vote_average": 6.3,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//hOdW30Yk3aAmiWGjbfeNJ316QQY.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        12,
+        878
+    ],
+    "title": "킹콩 대 고지라",
+    "release_date": "1962-08-11",
+    "popularity": 11.56,
+    "vote_count": 209,
+    "vote_average": 6.7,
+    "overview": "세계적인 제약회사의 회장인 다코는 연구원인 사쿠라이 오사무와 후루에 긴자부로를 파로 섬으로 보낸다. 파로 섬에서만 자라는 소마 열매는 강력한 마취 성분을 갖고 있으며 중독성이 없는데, 그는 이 열매로 신약을 개발하려 한다. 또한 다코 회장은 연구원들에게 킹콩의 존재 여부 또한 알아올 것을 부탁한다.파로 섬에 도착한 사쿠라이와 후루에는 킹콩을 발견하고, 소마 열매로 킹콩을 마취시켜 일본으로 데려온다. 한편 7년 전 빙하에 갇혔던 고질라가 깨어나고 바다를 건너 일본에 출몰한다. 일본으로 끌려온 킹콩도 탈출하는데 성공하여 마침내 두 괴물이 격돌하게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//mkCGTVI8TceOTrCOlI2AzoWEHid.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        14,
+        878
+    ],
+    "title": "RoboCroc",
+    "release_date": "2013-09-14",
+    "popularity": 8.424,
+    "vote_count": 37,
+    "vote_average": 4.9,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//gsurzan9Ml5OyUR7ybzhqw60yz5.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        53,
+        18,
+        27
+    ],
+    "title": "룸메이트",
+    "release_date": "2011-02-04",
+    "popularity": 11.562,
+    "vote_count": 732,
+    "vote_average": 5.5,
+    "overview": "로스앤젤레스대학에서 입학해 들뜬 마음으로 기숙사에 들어간 새러(민카 캘리). 그녀의 룸메이트 레베카(레이튼 미스터)는 다른 친구들과 잘 어울리지 않고 차갑지만 새러에게만은 너무 다정하고 친절하게 대한다. 디자인 전공을 하는 새러는 아르바이트를 하면서 열심히 생활하고 클럽에서 우연히 만난 밴드 드러머 스티븐(캠 지겐뎃)과 연인 사이가 된다. 하지만 레베카와 점점 가까워질수록 새러는 일거수일투족을 감시 당하는 느낌을 받고 레베카는 새러에게 집착에 가까운 강박관념을 보인다. 새러와 어울리는 파티광 트레이시를 위협하고, 새러에게 추파를 던진 디자인과 교수를 유혹해 그를 징계당하게 만든 레베카. 스스로 자해해 부상을 입히고 추수감사절을 자신의 집에서 같이 보내도록 유인한다. 그러나 새러는 레바카의 부모님과 옛친구들에게 이상한 느낌을 받고, 레베카가 정신 질환을 앓고 있다는 것을 알게된다. 선배인 아이린의 집으로 거처를 옮기겠다는 새러의 말에 레베카는 이성을 잃어가고 또다른 음모를 꾸미는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//kQZcOn5rDuwpbQTluC4Wm0amYmR.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        12,
+        16,
+        18,
+        36
+    ],
+    "title": "붓다: 싯다르타 왕자의 모험",
+    "release_date": "2011-05-28",
+    "popularity": 9.612,
+    "vote_count": 35,
+    "vote_average": 7.3,
+    "overview": "2500여 년 전, \"이 아이는 세상의 왕이 될 것이다!\"라는 위대한 성자의 예언으로 태어난 샤카국의왕자 싯다르타. 10살이 된 싯다르타는 사람이나 동물의 죽음과 고통에 마음 아파하는 소년으로 성장한다. 사춘기를 맞이한 싯다르타는 우연히 도적 패거리의 아름다운 소녀 미게이라와 사랑에 빠지지만 왕인 아버지의 반대로 난관에 처한다. 한편, 노예 신분에서 벗어나기 위해 공을 세우려는 코살라국의 용사 차프라는 샤카국을 정복하기 위한 최후의 전쟁을 준비하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//idrwvZygykOie3KnkgWc0752Oe5.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        35,
+        18
+    ],
+    "title": "원더 보이즈",
+    "release_date": "2000-02-22",
+    "popularity": 8.81,
+    "vote_count": 431,
+    "vote_average": 6.9,
+    "overview": "영문학을 가르치는 그래디 트립 교수는 한때 굉장한 베스트셀러를 내놓은 작가로 세인의 주목을 한몸에 받지만 현재 다음 작품을 완성하지 못해 고생하는 중. 아내는 그를 떠나고, 그는 주임교수의 아내 사라와 불륜을 저지루고 있기도 하다.  그러던 어느 주말. 주임교수 집에서 파티가 열리고 자신의 에이전트 테리와 그의 게이 애인을 데리고 간 그래디는 사라의 임신을 알게 된다. 자신만 보면 으르렁거리며 덤비는 사라의 개와 엉뚱한 사고방식으로 자신을 괴롭히는 남학생 제임스, 그리고 사랑의 대쉬인지 그저 골탕먹이려는 것인지 알 수 없는 여제자 한나를 한꺼번에 그곳에서 만나 그래디의 주말은 엉뚱한 사건으로 인해 꼬이기 시작한다.  자신을 향해 달려든 사라의 개를 제임스가 총으로 쏴죽이자 시체를 트렁크에 숨긴채 주말을 보내게 된 그래디. 주임교수가 아끼던 마릴린 먼로의 자켓이 도난당하고 또 그것은 제임스의 가방 안에서 발견되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//vGOdSLaZmu42qqwDUMgrfctJ65M.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        18,
+        37
+    ],
+    "title": "콘크리트 카우보이",
+    "release_date": "2020-09-10",
+    "popularity": 11.35,
+    "vote_count": 106,
+    "vote_average": 6.3,
+    "overview": "반항적인 10대 소년 콜은 숱한 사고를 치던 끝에 필라델피아 북부에서 여름을 보내게 된다. 서먹한 아버지가 있는 그곳, 범죄의 세계가 유혹하는 도시에서. 하지만 그의 아버지가 속한 도시 카우보이 공동체의 생기 넘치는 문화에 젖어 들며, 콜은 조금씩 변하기 시작한다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//gkur5NmrIkX3xPosd4YQTqct4Wm.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10749,
+        18
+    ],
+    "title": "너와 100번째 사랑",
+    "release_date": "2017-02-04",
+    "popularity": 13.597,
+    "vote_count": 26,
+    "vote_average": 7.4,
+    "overview": "‘리쿠’는 시간을 되돌릴 수 있는 ‘인생 레코드’로 인해 타임리프 능력을 가지게 된다.  첫사랑 소녀인 ‘아오이’가 웃는 것을 보기 위해 사용했던 ‘인생 레코드’.  하지만 이제 그녀의 슬픈 운명을 바꾸기 위한 시간 여행을 시작한다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//tCooXGG1m2zcrTsMuPCzyOglegT.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        12,
+        35,
+        10751,
+        16
+    ],
+    "title": "정글번치: 최강 악당의 등장",
+    "release_date": "2017-07-26",
+    "popularity": 14.069,
+    "vote_count": 104,
+    "vote_average": 6.3,
+    "overview": "최강 악당의 습격으로 위기에 처한 정글을 지켜라! 버섯폭탄으로 정글을 파괴하려는  악당 코알라 '이고르'가 돌아오자,  평화롭던 정글은 위기에 처한다.  동물 친구들에게 유일한 희망은  정글을 지키는 수호대 '정글번치' 뿐.  최강악당으로부터 정글을 구하기 위해  동물 친구들과 '정글번치'가 힘을 합쳐 총출동한다!",
+    "poster_path": "https://image.tmdb.org/t/p/original//mBEhSA8aWSCOnMDiYA1qhx2Ox9k.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        53,
+        18,
+        80
+    ],
+    "title": "언노운 걸",
+    "release_date": "2016-10-05",
+    "popularity": 10.067,
+    "vote_count": 290,
+    "vote_average": 6.1,
+    "overview": "의사 '제니'는 한밤 중 누군가 병원 문을 두드리지만 진료가 끝나 문을 열어주지 않는다. 다음 날 병원 문을 두드렸던 신원미상의 소녀가 변사체로 발견되었다는 소식을 듣게 되고 죄책감에 사로잡힌 '제니'는 소녀의 행적을 직접 찾아 나서는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//6JyS6dJpOdlnrnTP3qzPeO5gRRB.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28
+    ],
+    "title": "Vendetta",
+    "release_date": "2015-06-12",
+    "popularity": 13.505,
+    "vote_count": 98,
+    "vote_average": 5.6,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//7hfZbdtuxmbDbXZocYOVQNmUeXy.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        16,
+        10751
+    ],
+    "title": "배트맨 언리미티드: 동물적 본능",
+    "release_date": "2015-05-12",
+    "popularity": 13.814,
+    "vote_count": 115,
+    "vote_average": 5.6,
+    "overview": "배트맨은 플래시, 그린 애로우, 나이트윙, 레드 로빈 등의 도움을 받아 고담 시를 습격한 사이보그 동물들의 배후를 찾아내려 한다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//kxvw4c4Yx9HYqprP4lnZEtzezRd.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        18
+    ],
+    "title": "마더 데레사의 편지",
+    "release_date": "2015-12-04",
+    "popularity": 8.475,
+    "vote_count": 22,
+    "vote_average": 5.8,
+    "overview": "인종과 국적, 성별과 종교, 부자와 가난한 자. 세상의 사람들을 가르는 온갖 차이를 넘어서서, 전 세계인에게 ‘마더’로 불렸던 가난한 자들의 어머니 ‘마더 데레사’ 그녀의 사후에 공개된, 마더 데레사가 사제들에게 50여 년 간 써 내려간 편지들은 우리가 기억하는 살아있는 성자가 아니라, 조국 알바니아를 떠나 인도 콜카타에서 길 위에서 태어나고 죽는 가난한 자들의 어머니로 거듭나기까지 마더 데레사가 겪어야 했던 외로움과 고통, 영적 갈등과 하느님에 대한 목마름을 보여준다. 수녀원 밖으로 나갈 수 없다는 봉쇄 규정과 가톨릭의 도움을 거부하는 힌두와 무슬림의 탄압과 반대 등 현실의 어려움과 맞서 사랑의 선교회를 만들기까지. 가난한 자들과 함께 하라는 신의 목소리를 들은 후, 고통이 있는 곳이면 그 어디든 달려갔던 마더 데레사의 진솔한 목소리가 우리를 찾아온다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//12R7y3180Pr0QLNhz0PQBhm1tDA.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        18
+    ],
+    "title": "샤오린: 최후의 결전",
+    "release_date": "2011-01-20",
+    "popularity": 14.061,
+    "vote_count": 268,
+    "vote_average": 6.8,
+    "overview": "반란군이 점령한 혼돈의 시대, 대륙을 뒤흔들 전설이 시작된다! 반란군들이 들끓던 중국 공화국 초기, 백전백승의 장군 호우지에(유덕화 분)는 소림사가 위치한 동봉성을 함락시키는데 성공한다. 승리에 도취된 채 의기양양하던 호우지에는 가장 믿던 의형제 카오만(사정봉 분)의 배신으로 딸을 잃고 사랑하는 아내(판빙빙)마저 떠나 보내게 된다. 모든 것을 다 잃은 후 소림사에서 은신하며 지내던 호우지에는 독특한 수도승 우다오(성룡)를 통해 깨달..",
+    "poster_path": "https://image.tmdb.org/t/p/original//woOGZOTL3e8UObvfHrwxKjk8v5g.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        18,
+        9648,
+        53
+    ],
+    "title": "크랙",
+    "release_date": "2009-12-04",
+    "popularity": 11.76,
+    "vote_count": 286,
+    "vote_average": 6.7,
+    "overview": "1930년대 영국의 외딴 기숙학교, 엄격한 규칙의 고립된 그곳에서 모든 여학생들의 선망의 대상인 카리스마 넘치는 다이빙 교사 미스 G와 그녀를 추종하는 여섯 명의 소녀 디, 릴리, 포피, 로렐, 로지 그리고 퍼지. 그녀들만의 특별하고 견고하던 세계는 스페인 귀족 출신의 아름다운 소녀 피아마가 전학 오면서 조금씩 균열이 생기기 시작한다. 아름다울 뿐 아니라 다양한 경험과 사람들을 끌어들이는 매력, 뛰어난 다이빙 실력까지 갖춘 피아마의 등장으로 리더였던 디는 질투와 위기감을 느끼고 고군분투하지만 미스 G가 피아마에게 빠져들고 집착하게 되면서 모든 것은 파국을 향해 치닫는다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//fyROBXQ8QyPcstlko7Nfs9GhLfe.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        18,
+        10751
+    ],
+    "title": "돌핀 테일",
+    "release_date": "2011-09-23",
+    "popularity": 9.561,
+    "vote_count": 520,
+    "vote_average": 7.0,
+    "overview": "게그물에 걸려 꼬리가 잘리며 부상당한 채 구출된 큰돌고래 윈터와 친구가 된 소년 소이어의 모습을 지켜보던 이들이 인공꼬리를 제작하는 과정에서 일어나는 갈등과 눈물… 그리고 마침내 인공꼬리 제작에 성공하여 윈터를 다시 헤엄치게 해준다는 줄거리의 가족 드라마.",
+    "poster_path": "https://image.tmdb.org/t/p/original//92P8cAORDMW4Z8qxYpKz3iFdnYk.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10751,
+        16,
+        12,
+        35,
+        80
+    ],
+    "title": "루팡 3세 칼리오스트로의 성",
+    "release_date": "1979-12-15",
+    "popularity": 12.807,
+    "vote_count": 708,
+    "vote_average": 7.5,
+    "overview": "대도둑 루팡 3세는 국제 카지노를 털고 도망가지만, 그 돈이 모두 위조지폐라는 것을 깨닫고 위조지폐가 만들어진 칼리오스트로로 향한다. 그리고 우연히 괴한에게 쫓기던 여인을 구하고, 여인은 자신을 구하기 위해 애쓰다 다친 루팡을 보살펴준다. 그러나 다시 나타난 괴한들 때문에 도망을 치던 여인은 결국 괴한들에게 잡혀가고, 남겨진 그녀의 장갑을 살펴본 루팡은 그녀의 정체를 알아낸다. 그녀를 구하기로 결심한 루팡은 동료인 고에몽을 부르는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//kxVOFUaLQvwXeUywOmmRkkCKRtq.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        53,
+        18
+    ],
+    "title": "더 링크",
+    "release_date": "2020-10-02",
+    "popularity": 33.957,
+    "vote_count": 178,
+    "vote_average": 5.5,
+    "overview": "이탈리아 남부의 고택. 딸과 같이 이곳에 약혼자의 가족을 만나러 온 엠마는 불길한 기운에 휩싸인다. 그리고 딸에게 일어나는 기괴한 일들. 이 모든 것은 과거의 저주와 연관되어 있다. 딸을 앗아가려는 저주에 맞서려면 어째야 한단 말인가.",
+    "poster_path": "https://image.tmdb.org/t/p/original//ufbubTLEUvt2aEyFs2u9ow9XxWe.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        18
+    ],
+    "title": "Heks",
+    "release_date": "2020-12-15",
+    "popularity": 38.997,
+    "vote_count": 26,
+    "vote_average": 6.3,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//2b2d6i3LZHRaGUwIGcw4h1Wecz6.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        9648,
+        53
+    ],
+    "title": "레드 스패로",
+    "release_date": "2018-02-28",
+    "popularity": 35.374,
+    "vote_count": 4960,
+    "vote_average": 6.5,
+    "overview": "도미니카(제니퍼 로렌스)는 병든 어머니를 책임져야 하는 가장이자 동료의 시기심으로 다리를 다친 비운의 발레리나다. 그는 러시아 정보국 간부인 삼촌의 계략에 빠져 어쩔 수 없이 스파이가 되는 길을 택한다. 탁월한 신체적 조건을 가진 이들에게 심리 조작술을 가르쳐 정보원으로 양성하는 스패로 스쿨. 한계를 뛰어넘는 훈련과정을 통해  레드 스패로 사상 가장 치명적인 스파이로 새롭게 태어난 도미니카는 이후 미국과 러시아의 이중첩자를 가려내기 위해 CIA 요원 나다니엘(조엘 에저턴)에게 도미니카가 접근하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//gEguR1qDAlEHfKhhYH9asgvsUBn.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        878,
+        28,
+        16,
+        12
+    ],
+    "title": "저스티스 리그: 아틀란티스의 왕좌",
+    "release_date": "2015-01-27",
+    "popularity": 35.363,
+    "vote_count": 682,
+    "vote_average": 7.1,
+    "overview": "스릴 넘치는 애니메이션 '저스티스 리그: 워'의 속편. 저스티스 리그에서 가 장 수수께끼 같은 영웅 아쿠아맨의 기원을 다룬다. 어린 아서 커리는 자신이 아틀란티스 왕국의 왕위 계승자라는 사실을 까맣게 모르고 있다. 인간 아버지의 죽음에 대처하려고 노력하는 혼란스럽고 상심한 외톨이일 뿐. 그의 태생을 알게 되면서 아서는 힘든 결정을 내려야 한다. 망설일 시간은 얼마 없다. 아틀란티스인들은 육지세계와 전쟁을 확대하려 하고 저스티스 리그에 합류 해야만 글로벌 재앙을 막을 수 있다. 아서는 마침내 아쿠아맨으로서 자신의 운명을 받아들이는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//wjD6lr6vi9DIwwyDZaOjGpIbulu.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        878,
+        27
+    ],
+    "title": "기생수 파트1",
+    "release_date": "2014-11-29",
+    "popularity": 36.352,
+    "vote_count": 165,
+    "vote_average": 7.1,
+    "overview": "명령이 내려왔다. “인간을 먹어 치워라!”  어느 날 갑자기 정체불명의 생명체로부터 오른팔을 공격 당한 신이치는 자신을 ‘오른쪽이’라 부르며 공생을 제안하는 이상한 생물과 기묘한 동거를 시작하게 된다.  한편, 연쇄적인 의문의 실종사건과 끔찍한 시체가 연이어 발견되고 국가 차원의 수사가 시작되자 인간사회에 퍼져있던 기생생물의 존재가 서서히 드러나는데...  사건의 범인이 오른쪽이의 동족인 기생생물이라는 것을 알게 된 신이치는 친구와 가족에게도 말할 수 없는 비밀을 간직한 채 인간을 위협하는 기생생물들과 맞서야 하는 운명에 처하게 된다.  한편, 오른쪽이는 인간사회에 잠입해 조금씩 신이치에게 접근해오는 동족들의 움직임을 느끼는데...!",
+    "poster_path": "https://image.tmdb.org/t/p/original//nccyWy08aNAP462ii5YCdtmU2Vj.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        878,
+        28,
+        80,
+        10770
+    ],
+    "title": "어메이징 스파이더맨",
+    "release_date": "1977-09-14",
+    "popularity": 54.998,
+    "vote_count": 67,
+    "vote_average": 5.4,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//nyXfGIkJQgKhugxMVql15URobtt.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        14,
+        12,
+        18
+    ],
+    "title": "피노키오",
+    "release_date": "2019-12-19",
+    "popularity": 33.668,
+    "vote_count": 1159,
+    "vote_average": 6.6,
+    "overview": "가난하게 살아가던 목공 제페토 할아버지는 멋진 꼭두각시를 만들어 돈을 벌 계획을 세운다. 나무를 구해 꼭두각시를 만들던 할아버지는 깜짝 놀란다. 나무 인형에게서 심장이 뛰는 소리가 들리고, 움직이기 시작한 것이다. 제페토 할아버지는 ‘피노키오’라는 이름을 지어주고, 아들로 삼기로 한다. 하지만 호기심이 많은 피노키오는 말썽만 부리며 할아버지를 걱정만 하게 만들고, 심지어 학교 책을 팔아 인형극 구경을 가게 되는데…!",
+    "poster_path": "https://image.tmdb.org/t/p/original//oBeGHpr7sAqmxNuS7rbFy5HZ5Bn.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        18,
+        28,
+        12,
+        53,
+        9648,
+        14
+    ],
+    "title": "동물세계",
+    "release_date": "2018-06-29",
+    "popularity": 38.154,
+    "vote_count": 148,
+    "vote_average": 7.3,
+    "overview": "병상의 어머니, 쌓일 대로 쌓인 빚, 설상가상으로 친구의 배신까지. 막다른 상황에 몰린 청년이 반강제로 정체불명의 게임에 참가한다. 운이 좋으면 빚을 청산하고 떼돈까지 벌 수 있는 기회. 하지만 운이 나쁘면? 그럼 어떻게 되는 거지?",
+    "poster_path": "https://image.tmdb.org/t/p/original//k4ostodSp1kWChPwpf30UBDsMOS.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        53
+    ],
+    "title": "더 그레이트 샤크",
+    "release_date": "2021-05-13",
+    "popularity": 30.735,
+    "vote_count": 183,
+    "vote_average": 5.6,
+    "overview": "나름의 목적을 안고 피서를 즐기기 위해 비행기에 올라탄 5명의 승객들이 불의의 사고로 여객기가 추락하여 해안에서 100마일 떨어진 뗏목에 갇히게 되면서 그들의 여행은 생지옥으로 바뀌게 된다. 그들이 생존할 수 있는 유일한 길은 해안으로 가는 것이지만 두 마리의 백상아리가 무리를 노리고 있다",
+    "poster_path": "https://image.tmdb.org/t/p/original//fbFG87LLTuPT8MZHRxofYvDnelc.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        53,
+        27
+    ],
+    "title": "디 오너스",
+    "release_date": "2020-08-27",
+    "popularity": 35.676,
+    "vote_count": 216,
+    "vote_average": 5.7,
+    "overview": "허긴스 박사의 집에 대형 금고가 있다는 테리의 말을 듣고, 네이슨과 가즈는 금고 안에 있을 현금을 훔치려고 계획한다. 테리, 네이슨 그리고 가즈는 차 안에서 허긴스 박사의 저택을 훔쳐보며, 리처드, 엘렌 부부가 집에서 나가기를 기다린다. 그때 자동차 소유자인 메리가 그들 앞에 나타나, 출근해야 되니 자동차를 돌려 달라고 네이슨에게 말한다. 네이슨은 메리에게 잠시만 기다려 달라고 부탁한 뒤, 테리, 가즈와 함께 아무도 없는 허긴스 박사의 집으로 들어간다. 하지만 지하실에 있는 다이얼 방식의 금고를 열지 못하던 그들은, 박사가 집에 오기를 기다렸다가 협박해서 비밀 번호를 알아내기로 계획을 변경한다. 그 후 애인 네이슨의 부탁에 따라 허긴스 박사의 집안까지 들어온 메리는, 임신했다고 테리에게 고백한다. 얼마 후, 네이슨 일행은 집으로 돌아온 리처드에게 비밀 번호를 달라고 협박하지만, 스타킹을 쓴 테리와 네이슨의 정체를 알고 있는 리처드 박사는 쉽게 입을 열지 않는다. 가즈는 리처드가 비밀 번호를 말하지 않으면 엘렌의 손가락을 자르라고 네이슨에게 말하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//gzFatNrw0lhKD5NxaU6zC7S2KjP.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        35,
+        16,
+        18,
+        10749
+    ],
+    "title": "중2병이라도 사랑이 하고 싶어! 극장판",
+    "release_date": "2013-09-14",
+    "popularity": 40.928,
+    "vote_count": 53,
+    "vote_average": 7.0,
+    "overview": "중학교 시절, 스스로 ‘다크 플레임 마스터’라 부를 정도로 심각한 ‘중2병’을 앓았던 ‘유타’는 자신의 흑역사를 모두 정리하고 새로운 마음으로 고교 생활을 시작한다. 하지만 등교 첫날부터 그의 앞에 한쪽 눈을 안대로 가린 ‘릿카’가 등장해 난데없이 입 밖으로 꺼내기도 민망한 ‘유타’의 과거를 떠벌리며 당황하게 만든다. ‘유타’는 직감적으로 ‘릿카’가 ‘중2병’에 걸려있음을 알게 되고 되도록 그녀를 피해보려 하지만 동급생인 것은 물론 이웃사촌인 둘은 계속해서 얽히게 된다. 함께 하는 시간이 많아질수록 서로에 대해 조금씩 알아가게 되고, 결국 서로에 대한 마음도 점차 깊어지는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//jT5Tx9svLNTkCfaLh6AhbaxaWzZ.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        53
+    ],
+    "title": "스케어리 스토리: 어둠의 속삭임",
+    "release_date": "2019-08-08",
+    "popularity": 33.553,
+    "vote_count": 1991,
+    "vote_average": 6.5,
+    "overview": "마을의 폐가에서 발견한 책 한 권. 책을 펼치는 순간 멈출 수 없는 공포스러운 스토리가 책에 나타나기 시작한다. 태워도, 버려도, 찢어도 멈출 수 없는 죽음의 스토리는 기괴하고 기묘하면서도 끔찍한 판타지 세상을 하나씩 그들에게 선물하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//87twowNSNUsQvq1lLXbIw8PwpIF.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        18,
+        36,
+        10752
+    ],
+    "title": "쉰들러 리스트",
+    "release_date": "1993-11-30",
+    "popularity": 35.13,
+    "vote_count": 12038,
+    "vote_average": 8.6,
+    "overview": "2차 세계대전 당시 독일군이 점령한 폴란드. 시류에 맞춰 자신의 성공을 추구하는 기회주의자 쉰들러는 유태인이 경영하는 그릇 공장을 인수한다. 그는 공장을 인수하기 위해 나찌 당원이 되고 독일군에게 뇌물을 바치는 등 갖은 방법을 동원한다. 그러나 냉혹한 기회주의자였던 쉰들러는 유태인 회계사인 스턴과 친분을 맺으면서 냉혹한 유태인 학살에 대한 양심의 소리를 듣기 시작한다. 마침내 그는 강제 수용소로 끌려가 죽음을 맞게될 유태인들을 구해내기로 결심하고, 독일군 장교에게 빼내는 사람 숫자대로 뇌물을 주는 방법으로 유태인들을 구해내려는 계획을 세우는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//oyyUcGwLX7LTFS1pQbLrQpyzIyt.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        12,
+        16,
+        10751
+    ],
+    "title": "브라더 베어 2",
+    "release_date": "2006-08-17",
+    "popularity": 36.882,
+    "vote_count": 1146,
+    "vote_average": 6.7,
+    "overview": "전편에서 인간이 아닌 곰으로 살아가기를 선택한 키나이는 꼬마 곰 코다와 함께 즐거운 시간을 보내며 행복하게 살고 있던 어느날 키나이는 꿈 속에서 어린 시절 소꼽 친구인 니타를 만나게 되고, 그녀에 대한 추억을 기억하게 된다.\r 한편 니타는 아트카와의 결혼식을 앞두고 행복해 하지만, 조상들의 방해로 그녀는 결혼식을 마치지 못한다. 상심에 빠진 니타는 유명한 무당을 찾아가게 되고 무당은 그녀에게 이미 어린 시절 조상들이 정한 인연이 따로 있는데 그 인연은 곰으로 변신한 키나이라는 사실을 말해주고 키나이와의 인연을 끊어야 아트카와 결혼할 수 있으며, 인연을 끊을 수 있는 방법은 춘분까지 호카니 폭포에 가서 어린 시절 키나이에게 받은 목걸이를 불태워버려야 한다고 말해준다. 그리고, 이 방법이 효과를 보기 위해서는 그녀는 꼭 키나이와 함께 호카니 폭포로 가야 하다고 경고 하는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//yaA8q2zHHUgFWdJNxXyAdU71SzM.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        35,
+        10752,
+        18
+    ],
+    "title": "조조 래빗",
+    "release_date": "2019-10-18",
+    "popularity": 36.951,
+    "vote_count": 6732,
+    "vote_average": 8.1,
+    "overview": "전쟁이 막바지에 접어든 1940년대 독일, 엄마 로지와 단둘이 살고 있는 10살 소년 조조는 독일 소년단에 입단한다. 상상 속 친구 히틀러의 응원에 힘입어 소년단 생활을 시작한 조조는 나약한 모습으로 단원 사이에서 놀림거리가 되고 만다. 설상가상으로 조조는 수류탄 사고까지 일으키며 얼굴과 다리에 부상을 입는다. 그렇게 히틀러의 멋진 경호원이 되겠다는 부푼 꿈이 물거품으로 돌아갈 때쯤, 조조는 자신의 집 벽장 안에 숨어 지내던 유대인 소녀 엘사와 마주치게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//vUDIREXlBiGT1WoKNVaV47gdtkA.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10749,
+        35,
+        10402
+    ],
+    "title": "A Cinderella Story: Starstruck",
+    "release_date": "2021-06-29",
+    "popularity": 34.494,
+    "vote_count": 83,
+    "vote_average": 7.4,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//9yG4utptSiN4sa8esR7pXyRN8kh.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10751,
+        16,
+        12,
+        35
+    ],
+    "title": "스노우 몬스터",
+    "release_date": "2019-09-19",
+    "popularity": 38.391,
+    "vote_count": 1526,
+    "vote_average": 7.6,
+    "overview": "할머니, 어머니와 함께 살고 있는 ‘이’는 아버지가 죽기 전 함께 가고자 했던 여행을 위해 아르바이트를 하며 하루하루 돈을 모으고 있다.  그런 ‘이’ 앞에 악당인 동물학자와 사장의 손아귀에서 도망친 신비의 동물 ‘예티’가 나타난다. ‘이’는 ‘예티’를 가족의 품으로 돌려보내기 위해 ‘펭’ 그리고 진’과 함께 에베레스트로 떠난다. 하지만 ‘이’와 친구들 앞에 ‘예티’를 포획하고자 하는 동물학자, 사장이 나타난다. ‘이’와 친구들은 ‘예티’를 지키기 위해 있는 힘껏 도망치지만, 그들은 바짝 뒤를 쫓아오게 되는데…  ‘이’와 ‘펭’ 그리고 ‘진’은 어느새 친구가 되어버린 ‘예티’를 무사히 에베레스트까지 데려다 준 뒤 집으로 돌아올 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//nwW056VfnoiGBbZyrZvP9laDUsy.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        12,
+        14
+    ],
+    "title": "명탐정 피카츄 2",
+    "release_date": "2019-05-09",
+    "popularity": 46.118,
+    "vote_count": 0,
+    "vote_average": 0.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//knr2XAbotEtc2X2diStLvv4ovPX.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        80,
+        27,
+        9648
+    ],
+    "title": "스크림",
+    "release_date": "1996-12-20",
+    "popularity": 41.861,
+    "vote_count": 4580,
+    "vote_average": 7.3,
+    "overview": "작은 소도시 우즈버러에 사는 케이시에게 이상한 남자로부터 전화가 걸려온다. 비디오를 보려는 케이시에게 그 남자는 케이시의 남자 친구인 스티브의 목숨을 걸고 게임을 하자고 한다. 케이시가 문제를 맞추면 살고, 틀리면 남자친구가 죽는다. 문제는 '13일의 금요일'에 나오는 살인마의 이름을 맞추는 것. 케이시는 문제를 풀지 못하고, 스티브는 처참하게 죽임을 당한다. 이튿날, 혼자 집에 있는 시드니에게도 이상한 전화가 걸려온다. 시드니는 케이시와는 달리 힘들게 괴전화의 마수에서 빠져 나온다. 그러나 시드니의 남자 친구 빌리가 살인 용의자로 체포되는데, 조사 후 무혐의로 풀려난다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//fvprcRjlvrgok1rvOJN4NY8Uqba.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10751,
+        16,
+        12,
+        35
+    ],
+    "title": "파라노만",
+    "release_date": "2012-08-03",
+    "popularity": 35.111,
+    "vote_count": 1975,
+    "vote_average": 6.9,
+    "overview": "남들과는 다른 능력을 지닌 ‘노만’은 유령을 보고 그들과 대화를 나눌 수 있는 특별한 소년! 그러던 어느 날, 죽은 할아버지로부터 오랫동안 잠들어 있던 마녀가 곧 깨어날 것이라는 이야기를 듣게 되고, 모두를 구할 사람은 바로 자신 뿐이라는 것을 깨닫는다. 아니다 다를까, 조금은 엉뚱한 좀비들과 비밀을 한 가득 숨긴 마녀가 마을을 습격해 오는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//1NPLsl3hVoN4ZCt2rThMHUihKME.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10749,
+        14,
+        27
+    ],
+    "title": "테일 오브 테일즈",
+    "release_date": "2015-05-14",
+    "popularity": 22.01,
+    "vote_count": 1318,
+    "vote_average": 6.3,
+    "overview": "욕망에 휩싸인 세 여인이 있다. 영화의 시작을 여는 건 아기를 갖기 위해 영혼이라도 팔겠다는 왕비(샐마 헤이엑) 이야기다. 왕비는 풍문에 따라 처녀가 요리한 바다괴물의 심장을 먹고 아들을 얻는다. 아이는 같은 날 태어난 처녀의 아이에게 집착에 관심을 보이며 성장한다. 두 번째는 왕의 사랑을 얻기 위해 젊음을 탐하는 노파와 그 동생의 이야기다. 도라는 우연한 계기로 젊음을 얻는다. 이를 시기한 동생 이마는 도라의 말만 믿고 피부를 깎아내 젊음을 되찾으려 한다. 마지막은 거인에게 잡혀간 공주(비비 케이브)의 이야기다. 공주는 벼룩에 정신이 팔린 아버지를 원망하며 호시탐탐 탈출할 기회만 노린다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//cJ0WsKW0AkfnEfgi0PyzZdEz9ri.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        35
+    ],
+    "title": "라이드 어롱 2",
+    "release_date": "2016-01-14",
+    "popularity": 21.46,
+    "vote_count": 1326,
+    "vote_average": 6.3,
+    "overview": "고등학교 경비원에서 경찰이 된 벤은 여자친구 안젤라와의 결혼을 위해 형사인 그의 오빠 제임스에게 인정받고 싶어 한다. 이를 위해 벤은 제임스의 파트너를 자청해 마이애미의 마약 밀매 수사 현장에 뛰어든다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//2433Vt8xuDnAIDAJTNx6DEtf9Qb.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        16,
+        10751,
+        12,
+        14
+    ],
+    "title": "울프워커스",
+    "release_date": "2020-10-26",
+    "popularity": 26.549,
+    "vote_count": 622,
+    "vote_average": 8.5,
+    "overview": "사냥꾼이 되고 싶은 소녀 로빈은 아버지와 함께 마지막 남겨진 늑대 떼를 없애기 위해 아일랜드로 떠난다. 그곳에서 밤이면 늑대로 변한다고 알려진 신비로운 부족의 소녀와 로빈이 친구가 되자, 모든 것이 변한다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//ehAKuE48okTuonq6TpsNQj8vFTC.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        80,
+        18,
+        36
+    ],
+    "title": "아이리시맨",
+    "release_date": "2019-11-01",
+    "popularity": 24.775,
+    "vote_count": 5036,
+    "vote_average": 7.7,
+    "overview": "2000년, 양로원에서 쓸쓸하게 늙어가는 프랭크 시런은 1975년 빌 버팔리노의 딸 결혼식 참석을 위해 길을 떠났던 날을 회상한다. 영화는 제2차 세계대전에 참전했던 노동자 출신의 프랭크가 어떻게 청부살인업자로 활약하게 됐는지 따라가며 주변 인물과 관계를 조명한다. 지미 호파는 전미운수노조의 수장으로서 막강한 권력을 누리고, 프랭크 시런을 범죄로 끌어들인 러셀 버팔리노는 살해 건수를 배당하는 설계자다. 법무장관으로 지명된 로버트 케네디의 견제, 그로 인한 지미의 감옥행은 나비효과처럼 예기치 못한 결과로 이어지는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//Ch4DTlESeylOs7VaTI5YWI2XN9.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        35,
+        10749
+    ],
+    "title": "장르만 로맨스",
+    "release_date": "2021-11-17",
+    "popularity": 30.237,
+    "vote_count": 0,
+    "vote_average": 0.0,
+    "overview": "7년째 슬럼프에 빠져 신작을 내놓지 못하고 있는 베스트셀러 작가 현. 되는 일 없이 우울한 현에게 이혼 후 싱글라이프를 즐기는 전처 미애와 한창 사춘기가 찾아와 첫사랑에 갈팡질팡하는 아들 성경 그리고 오랜 친구이자 출판사 대표인 순모가 의도치 않은 사건사고를 가져다준다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//4EKpFX23reRVsv8ZY2wm6DhZPPs.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        14,
+        35
+    ],
+    "title": "레프리콘 리턴즈",
+    "release_date": "2018-12-11",
+    "popularity": 25.263,
+    "vote_count": 229,
+    "vote_average": 6.0,
+    "overview": "부활한 악마 레프리콘과의 사투를 그린 코믹성 판타지 공포 영화",
+    "poster_path": "https://image.tmdb.org/t/p/original//7kToQsV04Jel1ob7VJ471LDz7wD.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10751,
+        35
+    ],
+    "title": "매직 마스크 레슬러",
+    "release_date": "2020-04-10",
+    "popularity": 21.026,
+    "vote_count": 146,
+    "vote_average": 6.8,
+    "overview": "언젠가는 WWE 스타가 되고 말겠어. 근데 그 꿈이 지금 당장 이루어진다면? 우연히 마법의 가면을 얻은 열한 살 소년이 링에 오른다. 덩치들아 비켜라, 작은 고추 나가신다!",
+    "poster_path": "https://image.tmdb.org/t/p/original//tzg5AEEu1T7nFOCq4gKbGBObhdk.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        18,
+        28,
+        12,
+        36,
+        10752
+    ],
+    "title": "킹덤 오브 헤븐",
+    "release_date": "2005-05-03",
+    "popularity": 26.647,
+    "vote_count": 3100,
+    "vote_average": 6.8,
+    "overview": "전쟁으로 가족을 잃고 깊은 슬픔에 잠겨있는 프랑스의 젊은 대장장이 발리안에게 부상당한 십자군 기사 고프리가 찾아온다. 무언가 비밀을 품고 있는 듯한 그의 정체는 바로 발리안의 아버지. 발리안에게 숨겨진 전사의 자질을 꿰뚫어본 고프리는 자신과 함께 떠날 것을 제안하고, 발리안은 성스러운 도시를 지키기 위한 영예로운 여정을 시작한다. 발리안은 고프리로부터 여러 가지 검술과 전술 등을 배우며 용맹한 전사로 거듭난다. 그리고 고프리가 죽기 직전 수여한 작위를 받아 정식기사가 되어 성스러운 도시 예루살렘의 국왕 볼드윈 4세에 대한 충성을 서약하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//i90Xt1xvwZzfecWRhkXt7z2HtGl.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        28,
+        12,
+        878
+    ],
+    "title": "블랙 팬서: 와칸다 포에버",
+    "release_date": "2022-11-09",
+    "popularity": 20.048,
+    "vote_count": 0,
+    "vote_average": 0.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//6N6Rr1Y5wsi2KbTP4hFAP3hnWQE.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        878,
+        18,
+        10749,
+        28
+    ],
+    "title": "인베이젼 2020",
+    "release_date": "2020-01-01",
+    "popularity": 23.518,
+    "vote_count": 589,
+    "vote_average": 6.9,
+    "overview": "첫 우주 침공으로부터 3년이 지난 지구. 인류는 상처를 이겨내고 조금씩 평범한 일상으로 돌아가고 있다. 그러나 평화도 잠시, 다시 그들이 모습을 드러냈다. 물이 존재하는 그 어느 곳도 안전하지 않은 상황. 하지만 인류는 반드시 이겨낼 것이다!",
+    "poster_path": "https://image.tmdb.org/t/p/original//kXDm2b90sekbtX1DSBKPzgmFBJb.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        16,
+        12,
+        35
+    ],
+    "title": "Scooby-Doo! and the Cyber Chase",
+    "release_date": "2001-10-09",
+    "popularity": 29.393,
+    "vote_count": 360,
+    "vote_average": 7.3,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//mKmFscYvGLMnZ5TslwxCge5oELO.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        16,
+        12,
+        14,
+        10751
+    ],
+    "title": "도라에몽 진구의 남극 꽁꽁 대모험",
+    "release_date": "2017-03-04",
+    "popularity": 29.021,
+    "vote_count": 34,
+    "vote_average": 7.5,
+    "overview": "더위를 피해 남극으로 놀러 간 도라에몽과 친구들은 얼음에 묻혀있던 신기한 팔찌를 발견한다. 팔찌가 묻힌 곳은 바로 10만년 전 남극! 그곳에서 도라에몽과 친구들은 수수께끼를 찾는 소녀 카라와 햣코이 박사를 만나고, 지구가 꽁꽁 얼어버릴 위기에 처했다는 사실을 알게 되는데…! 과연 도라에몽과 친구들은 신기한 팔찌의 주인을 찾고, 지구를 구할 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//nxNGk0xVHXFM0CZGn9utohcctdr.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        35,
+        18
+    ],
+    "title": "트루먼 쇼",
+    "release_date": "1998-06-04",
+    "popularity": 31.092,
+    "vote_count": 13897,
+    "vote_average": 8.1,
+    "overview": "트루먼 버뱅크는 작고 조용한 섬마을에 사는 평범한 세일즈맨이다. 그런 그가 자신의 삶에 대해 의문을 갖기 시작한 것은 평소와 다름없이 평범한 어느 날, 갑자기 하늘에서 촬영용 조명등이 떨어지고, 어렸을 적 자신이 익사를 직접 목격했던 아버지가 살아오고, 또 누군가에 의해 끌려가는 등 상식 밖의 일들이 벌어지고 나서부터였다. 평생을 그다지 신경쓰지 않고 지냈던 일상이었지만 주변을 보니 이상한 일이 너무 많았다. 결국 자신이 특별한 상황에 놓여있다는 확신을 하게된 트루먼은 첫사랑 실비아의 모든 것이 다 거짓라는 말을 되새기며 일상으로부터 탈출을 결심하게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//AsUv4pFf1UQuOLKf7nYUXgmgCNf.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10751,
+        16,
+        14
+    ],
+    "title": "백조 공주: 왕실 결혼식",
+    "release_date": "2020-07-20",
+    "popularity": 21.437,
+    "vote_count": 22,
+    "vote_average": 7.3,
+    "overview": "오데뜨 공주는 아름다운 공주 메이 리 공주의 부름을 받게 되고, 메이 리 공주는 곧 자신의 진정한 사랑인 첸과 결혼을 하려고 한다. 하지만 오데뜨가 도착 했을때 모든 일들은 제대로 되어 있지 않았고, 사람들도 바뀌어있다는걸 알아차리게 된다. 사악한 마법사 팡은 사악한 주문으로 첸과 결혼을 하려고 하고, 결혼식이 다가오면서, 메이리의 오빠 왕자 리와 오데끄 공주 그리고 왕실 친구들은 첸의 저주를 풀고 메이 리와 첸이 결혼할 수 있도록 도움을 주게 된다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//mJaNBADFKRiMys8DiGemrLGYd9U.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        53
+    ],
+    "title": "프로즌",
+    "release_date": "2010-02-05",
+    "popularity": 16.991,
+    "vote_count": 1403,
+    "vote_average": 5.9,
+    "overview": "한밤중에 멈춰서버린 스키장의 리프트 위에서 생존 투쟁을 하게 된 사람들의 이야기.",
+    "poster_path": "https://image.tmdb.org/t/p/original//6SjRpaJg43iJnY0jlJ6c61tAKOo.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        18,
+        53,
+        14
+    ],
+    "title": "사일런스",
+    "release_date": "2019-05-16",
+    "popularity": 20.256,
+    "vote_count": 1117,
+    "vote_average": 6.1,
+    "overview": "갑자기 알 수 없는 존재가 세상의 모든 소리를 집어 삼키고, 소리 내는 모든 인류는 공격을 당한다. 청력을 잃은 소녀와 가족들만이 소리 없이 대화할 수 있는 그들만의 방법으로 살아남아 마지막 사투를 벌이게 되는데… 공포가 들리는 순간, 거대한 재앙이 시작된다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//aYiSmyYEcEYATHOhzzErWoG14Zx.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        10402,
+        18,
+        10751,
+        10749
+    ],
+    "title": "허니 3",
+    "release_date": "2016-11-30",
+    "popularity": 21.245,
+    "vote_count": 182,
+    "vote_average": 6.7,
+    "overview": "케이프 타운. 예술 학교를 다니며 친구들과 춤을 추는 멀리아(캐시)는 학교측으로 부터 수업료를 납부하지 않으면 수업을 들을 수 없다는 통보를 받게 된다.  돌아가신 어머니를 위해 '로미오와 줄리엣'을 졸업 작품으로 올리겠다는 다짐을 한 멀리아로서는 학교측의 통보가 당황스럽다. 하는 수 없이 학비를 벌기 위해 일자리를 알아보러 다니는 멀리아. 여기저기서 힙합 안무가는 거절을 하고, 궁여지책으로 그녀는 동네의 한 소극장을 찾아 자신이 일할 곳이 없는지를 물어본다.  그러던 차에 소극장이 문을 닫게 되어 비어있다는 것을 알게된 멀리아는 친구들과 '로미오와 줄리엣' 공연을 열어 학비를 벌기로 결심한다. 남자친구 에릭(케니 워말드)의 도움으로 계획은 점점 탄력을 받는 받지만, 라이벌 이샤니(시본길 믈람보)의 곱지 않은 시선은 그녀를 점점 더 힘들게만 한다. 설상가상으로 유명 뮤지션 타지와의 스캔들은 남자친구와의 오해까지 만들면서 멀리아의 계획은 점점 난항을 겪게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//2qsCUy88FPiHxOSFXdkKlmJz7Hw.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        9648,
+        12,
+        80
+    ],
+    "title": "너브",
+    "release_date": "2016-06-27",
+    "popularity": 24.493,
+    "vote_count": 5965,
+    "vote_average": 7.1,
+    "overview": "대학 입학을 앞둔 소심한 성격의 '비'(엠마 로버츠 분)는 일탈을 결심하고 SNS 미션 수행 사이트 '너브'에 가입하게 된다. 미션을 수행하는 플레이어(player)와 그들의 미션 성공 여부를 배팅하는 왓쳐(watcher)들이 소통하는 10대들의 비밀 사이트 '너브'는 왓쳐가 늘어날수록 단계별 상금 또한 늘어나는 24시간 라이브 게임이다. 플레이어가 된 '비'는 미션 도전 중 미스터리한 남자 '이안'(데이브 프랭코 분)을 만나 파트너가 된다. 그들은 미션을 성공하면서 엄청난 상금을 얻으며 온라인 스타로 부상한다. 하지만 계속되는 자극적이고 짜릿한 미션들을 통해 급기야 자신의 미래까지 좌우할 위험에 도전하게 되는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//wI9CoCJymKE5flzgQ56vnqKAHWQ.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        27,
+        53
+    ],
+    "title": "쿠조",
+    "release_date": "1983-08-10",
+    "popularity": 27.234,
+    "vote_count": 687,
+    "vote_average": 6.0,
+    "overview": "착하기 이를데 없는 순한 눈을 가진 세인트 버나드종의 개가 악마로 돌변한다. 토끼를 쫓다 박쥐에게 물린 뒤 광견병에 걸린 개 쿠조가 주인도 몰라보고 달려드는데. 가장 집요한 공격을 받는 사람은 바람피우다 남편에게 버림받은 여자. 여자는 어린 아들과 함께 자동차 안에 갖힌다. 그리고 꼬박 이틀간 미친 개에게 시달리는 가혹한 처벌을 받고서, 비로서 구원을 받는다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//uNBt2YxrQdyOjnm2rDQ5QiCmQ0K.jpg"
+    }
+  }
+  ,{
+    "model": "movies.movie",
+    "fields" :{
+      "genres": [
+        18,
+        10749,
+        14
+    ],
+    "title": "어바웃 타임",
+    "release_date": "2013-09-04",
+    "popularity": 25.786,
+    "vote_count": 6535,
+    "vote_average": 7.9,
+    "overview": "모태솔로 팀(돔놀 글리슨)은 성인이 된 날, 아버지(빌 나이)로부터 놀랄만한 가문의 비밀을 듣게 된다.  바로 시간을 되돌릴 수 있는 능력이 있다는 것!  그것이 비록 히틀러를 죽이거나 여신과 뜨거운 사랑을 할 수는 없지만,  여자친구는 만들어 줄 순 있으리..  꿈을 위해 런던으로 간 팀은 우연히 만난 사랑스러운 여인 메리에게 첫눈에 반하게 된다.  그녀의 사랑을 얻기 위해 자신의 특별한 능력을 마음껏 발휘하는 팀.  어설픈 대시, 어색한 웃음은 리와인드! 뜨거웠던 밤은 더욱 뜨겁게 리플레이!  꿈에 그리던 그녀와 매일매일 최고의 순간을 보낸다.  하지만 그와 그녀의 사랑이 완벽해질수록 팀을 둘러싼 주변 상황들은 미묘하게 엇갈리고,  예상치 못한 사건들이 여기저기 나타나기 시작하는데…  어떠한 순간을 다시 살게 된다면, 과연 완벽한 사랑을 이룰 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//3S70EKUpe2X3CMGLIRKwPKqAoiR.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        99
+    ],
+    "title": "Gabriela, The German with the Bicycle",
+    "release_date": "2021-11-19",
+    "popularity": 18.263,
+    "vote_count": 0,
+    "vote_average": 0.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original/"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        9648,
+        53,
+        27,
+        878
+    ],
+    "title": "아바스 포제션스",
+    "release_date": "2015-03-16",
+    "popularity": 8.462,
+    "vote_count": 110,
+    "vote_average": 5.7,
+    "overview": "여주인공 에이바는 어느날  \"나푤라\"라는 악령에게 28일동안 빙의되게 되고  엑소시스트를 통해 힘겹게 악령을 내보내고 일상 생활로 돌아오게 됩니다.  ​  악령에게 빙의된 28일동안 에이바는 범죄를 저지르게 되고  이러한 범죄로 감옥에 갈수 있다고 자신의 변호사에게 듣게됩니다.  그런데, 에이바는 기억이 없습니다.  ​  그녀는 빙의 된 28일동안  1. 기물 파손과 폭행  2. 문란한 남자 관계, 외설적 노출, 남자친구와 결별  3. 친구들의 회피  방을 청소하던 에이바는 의문의 시계와 마룻바닥에 핏자국도 발견하게 됩니다.  피해자들의 고소로 에이바는 각종 혐의로 기소되고  해결책은 감옥에 가거나, 시설에 입소하거나, 빙의자 치료 모임에 참석 중 1개를 선택해야 했고  에이바는 기소항목 말소 조건으로 빙의자 치료 모임에 참석하기로 합니다.  빙의자 치료 모임의 치료과정은  영혼을 담는 그릇이란 목걸이를 이용해 마지막으로 빙의되었던 악령을 불러내는 것이었습니다.  다시 빙의된 상태에서 목걸이를 스스로 제거하면 훈련이 완료되고 아닌 경우는 치료가 계속하게 됩니다.  ​  빙의자 모임에서 만난 헤이즐은 빙의시 악마에 매료되서 다시 빙의되고 싶어하고  에이바는 그녀를 도와주게 되고 헤이즐은 빙의에 성공하게 되자 행복해 합니다.  ​  에이바는 빙의된 당시 자신이 일으킨 사고에 대한 것들을 하나씩 조사하고 용서를 구하기 시작합니다.  ​  그러던 중  자신이 빙의되어 있을때 사건을 일으킨 원인들이 존재하고  이것들을 추적하면 할수록 더 복잡한 일들이 발생하게 되지만  결국 모든 원인을 알게된 에이바는 복수를 다짐하고 실행하게 됩니다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//tmTlL0U3NMQFjB1KGnWj2NuAE3g.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        27,
+        53
+    ],
+    "title": "화이트 노이즈",
+    "release_date": "2005-01-07",
+    "popularity": 12.458,
+    "vote_count": 627,
+    "vote_average": 5.6,
+    "overview": "사랑하는 아내, 안나를 잃은 존(마이클 키튼 분)은 어느날, 죽은 아내의 목소리가 라디오와 자동 응답기를 통해 들려오자 혼란에 빠진다. 이에 앞서 레이몬드라는 남자가 존을 찾아와 자신도 안나로부터 메시지를 들었다고 했지만 절대로 있을 수 없는 일이라고 생각하고 그를 돌려 보낸다.  그러나 존은 혹시나 하는 마음으로 레이몬드를 찾아가게 되는데 거기서 비슷한 처지의 사라(데보라 카라 웅거 분)를 만나고 그들은 죽은 이들과의 접촉을 이어나가게 된다. 그러다 레이몬드가 죽고 사라와 존은 우연찮게 새로운 사실을 발견하게 되는데 레이몬드를 방문했던 명단에 있는 사람들이 존의 모니터에 모습을 보이곤 죽음을 맞이하게 된다는 것이었다. 존의 모니터에 '가서 그들을 도와 주라'는 메시지가 나타난다. 그러자 존은 이렇게 계속되는 삶과 죽음의 갈림길에서 혼돈에 빠지게 되는데.",
+    "poster_path": "https://image.tmdb.org/t/p/original//rPVkVox6ma4wXjGXhfFlJz7AZRj.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        53
+    ],
+    "title": "테이큰 하드체이싱",
+    "release_date": "2020-10-13",
+    "popularity": 13.752,
+    "vote_count": 123,
+    "vote_average": 6.6,
+    "overview": "아들 '테일러'와 함께 멕시코로 이사 온 싱글 대디 '리차드' 갑작스러운 공격에 쓰러지게 된 '리차드'는 알 수 없는 정체로부터 전화를 받게 된다. 그는 비밀정보요원 시절 리차드 이름인 '네로'를 언급하며, 아들 '테일러'의 목숨을 담보로 무시무시한 제안을 하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//oGeA5tumaNiCuKUpfUhfsf074BN.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        878,
+        53,
+        80
+    ],
+    "title": "리포 맨",
+    "release_date": "2010-03-18",
+    "popularity": 11.459,
+    "vote_count": 1465,
+    "vote_average": 6.3,
+    "overview": "한쌍의 연인앞에 나타나 순식간에 남자를 마취시키고 그의 배를 갈라 태연히 장기를 적출해가는 한 남자. 그의 이름은 래미다. 인공장기이식회사의 직원인 래미의 주 업무는 인공장기 대금액이 체납된 이식자들에게서 장기를 회수해오는 것이다. 사람들은 래미의 직업을 이렇게 부른다. '리포 맨' 집이나 길거리 또는 지하철등 장소불문하고 체납고객을 찾아 인정사정 없이 그들의 인공장기를 적출, 회수해가는 리포맨들. 사냥감을 쫓는 사냥꾼이 되어 ..",
+    "poster_path": "https://image.tmdb.org/t/p/original//rGQhqc0KVPBmjhTo4yom22c2lz7.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        80,
+        18,
+        53
+    ],
+    "title": "퍼펙트 월드",
+    "release_date": "1993-11-24",
+    "popularity": 13.456,
+    "vote_count": 1171,
+    "vote_average": 7.5,
+    "overview": "8살 소년 필립 페리(Phillip Perry : T.J. 로더 분)는 홀어머니 슬하에서 엄격하고도 비정상적인 교육을 받으며 자란다. 어머니는 '여호와의 증인'의 독실한 신자로 아들 필립에게 크리스마스나 생일 파티, 할로윈 카니발에 참가하는 것조차 금지한다. 필립은 다른 아이들처럼 평범해 보는게 소원일 뿐이다.  그 무렵, 버치 하인즈(Butch Haynes : 케빈 코스트너 분)가 동료 죄수 제리와 함께 감옥을 탈출한다. 버치 역시 아버지가 누구인지 모르는 어두운 과거를 가지고 있었고 이 과거는 그를 폭력적인 인물로 만들어버려서 청소년기에 이미 범죄자가 되었다. 탈옥수가 되어 도망하던 도중 필립의 집에 숨게 되고, 소년에게서 어릴적 자신의 모습을 발견한다. 버치는 필립을 인질로 삼아 도피하던 도중 소망해왔던 완전한 세상을 보게 되는데, 그것은 바로 아버지와 아들의 소원 목록을 만들고, 드라이브를 하고, 할로원 의상을 선물하는 평범한 삶을 누리는 것이다.  부정에 매말랐던 둘은 탈옥수와 인질이라는 세상의 판견을 뒤로하고 서로의 상처를 보듬는 친구요, 아버지와 아들이 되어 텍사스를 가로지르며 오랫동안 필요로 했던 상처를 치유하게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//AgS2RRgeGkNBrEwG1914QhmY4.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35
+    ],
+    "title": "Mi gente linda, mi gente bella",
+    "release_date": "2012-06-08",
+    "popularity": 12.11,
+    "vote_count": 5,
+    "vote_average": 4.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original/"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        80
+    ],
+    "title": "Trail of the Pink Panther",
+    "release_date": "1982-12-03",
+    "popularity": 11.705,
+    "vote_count": 175,
+    "vote_average": 5.3,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//wweohgiSkNmxSPQhKlWyMj3dWPw.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18
+    ],
+    "title": "미안해요, 리키",
+    "release_date": "2019-10-04",
+    "popularity": 14.128,
+    "vote_count": 467,
+    "vote_average": 7.4,
+    "overview": "소박하지만 행복한 가정을 꾸리며 살던 리키는 택배 회사에 취직한다. 안정적인 생활을 꿈꾸며 시작한 일은 무리한 스케줄로 점점 리키를 지치게 하고 행복했던 가족은 생각하지도 못했던 난관에 부딪히는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//qlIHBheVo6VPLZzDaHyZIXmXCxE.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        80,
+        18
+    ],
+    "title": "분노의 아메리칸",
+    "release_date": "1992-03-13",
+    "popularity": 11.455,
+    "vote_count": 228,
+    "vote_average": 7.4,
+    "overview": "1943년 LA 폭동이 일어났을 때 어머니 에스페란자가 해군에게 겁탈당해 태어나게 된 산타나는 그의 친구 2명과 함께 어려서부터 갱단을 조직하여 범죄를 저지른다.그러다 소년원에 수감된 그는 그곳에서 자신에게 성적 희롱을 가하던 다른 원생을 살해한다. 어른이 되어서도 교도소를 집처럼 드나들던 산타나는 교도소내에서 '멕시칸 마피아'를 조직, 교도소는 물론 거리의 갱세계까지 지배하며 범죄 세계의 보스로 군림하게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//eeoK2gRfAxZyYn9SiBgAlzfTiBI.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        35
+    ],
+    "title": "스쿨 라이프",
+    "release_date": "2019-08-28",
+    "popularity": 9.477,
+    "vote_count": 550,
+    "vote_average": 7.0,
+    "overview": "모두가 의심하고 외면하기 바빴던 '특수반'의 문제아들. 이 아이들은 진정 구제 불능인 걸까, 아니면 편견 없이 자신을 바라봐줄 누군가가 필요했던 것일까. 새로 부임한 선생님은 이 아이들에게 새로운 길을 제시할 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//awmVj0xmD8CP4g0uD7dUrM8nqi.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        14,
+        878,
+        35
+    ],
+    "title": "쏘리 투 보더 유",
+    "release_date": "2018-07-06",
+    "popularity": 13.519,
+    "vote_count": 1039,
+    "vote_average": 6.8,
+    "overview": "캘리포니아 오클랜드의 대체 현실에서, 텔레마케터 캐시어스 그린은 그를 승리로 이끈 마법 같은 방법을 찾은 후 섬뜩한 세계 속의 자신을 발견한다. 캐시어스의 커리어가 발전하면서, 그의 친구들과 동료들은 기업의 억압에 대항하는 조직을 만든다. 캐시어스는 그가 상상도 못할 연봉을 제시한, 코카인을 흡입하는 CEO 스티브 리프트의 마수에 빠지게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//wdiJKxlyg3bzqZgRsNcIfoaQs1O.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        9648,
+        18,
+        53
+    ],
+    "title": "Mientras El Lobo No Está",
+    "release_date": "2017-02-24",
+    "popularity": 14.844,
+    "vote_count": 71,
+    "vote_average": 7.5,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//7y2SvYTYQeCNoEEOD26wjr3Nx1N.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        9648,
+        53
+    ],
+    "title": "맨하탄 녹턴",
+    "release_date": "2016-05-20",
+    "popularity": 13.463,
+    "vote_count": 306,
+    "vote_average": 6.0,
+    "overview": "뉴욕의 스캔들, 살인 등의 이야기를 파는 신문 기자인 포터 렌은 기업 행사 파티에서 치명적인 매력의 팜므파탈 그녀, 캐롤라인을 만나게 된다. 남편의 죽음에 대해 수사를 의뢰하는 그녀에게 시선을 뗄 수 없던 그는 결국 그녀의 집까지 찾아가게 된다. 핸드폰을 두고 나와 다시 집에 들어선 포터. 샤워 중이던 캐롤라인을 훔쳐보게 되는데… 과연 포터는 거부할 수 없는 아찔한 유혹으로부터 자유로울 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//uyPSVWeFH9Q0PLvfabIBhz849SS.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        878,
+        80,
+        53,
+        28
+    ],
+    "title": "발렌타인 더 다크 어벤저",
+    "release_date": "2017-11-23",
+    "popularity": 12.306,
+    "vote_count": 53,
+    "vote_average": 6.1,
+    "overview": "아름다웠던 ‘바타비아’ 시는 더 이상 안전한 도시가 아니다.  강도, 폭력이 난무하는 등 사회가 혼란해지고 어둠의 세력이 범위를 넓혀나간다.  그 와중에 샤도우라는 악당이 나타나서 “우리는 이 도시를 어둡고 무섭게 만들거야. 따르는 자들은 평화롭게 살 것이고 보살펴 주겠다. 그러나 저항하는 자들은 고통스럽게 죽게 될 것이다” 하며 범죄를 부추긴다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//jcoaZNyoN2l8G2RCTgcogaj525G.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10402,
+        18
+    ],
+    "title": "러브, 비트, 라임",
+    "release_date": "2017-12-01",
+    "popularity": 9.616,
+    "vote_count": 80,
+    "vote_average": 5.8,
+    "overview": "시 수업을 등록한 뒤 모든 게 달라졌다! 내가 쓴 가사의 진짜 의미는 무엇일까. 시 경연을 통해 진정한 목소리를 찾아가는 여정. 고전하던 래퍼의 도전기, 지금 시작됩니다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//oPqzTaS905V3ZUbc5297YrWEPAd.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        16,
+        10751,
+        35,
+        878
+    ],
+    "title": "Minions: Puppy",
+    "release_date": "2013-12-10",
+    "popularity": 12.459,
+    "vote_count": 172,
+    "vote_average": 7.2,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//bapLpnoV3PUbgcZNDwg6Hxe75HI.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        18,
+        36
+    ],
+    "title": "에드 우드",
+    "release_date": "1994-09-27",
+    "popularity": 14.304,
+    "vote_count": 1740,
+    "vote_average": 7.5,
+    "overview": "영화감독을 꿈꾸는 30대의 에드(조니 뎁)는 왕년의 명감독 벨라 루고시(마틴 랜도)를 만난다. 외롭게 살아가던 자신을 아직까지 존경해 주는 사람이 있다는 사실에 벨라는 에드를 아낀다.  에드는 인간의 양면성을 그린 영화 를 완성하지만 어디에서도 그 영화를 받아주지 않는다. 에드는 계속해서 실험적인 영화를 만들고 비난을 받는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//ilNYwPc8v5jyGl2F7srrEJLUboK.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10751,
+        28
+    ],
+    "title": "슬립오버",
+    "release_date": "2020-08-21",
+    "popularity": 10.744,
+    "vote_count": 291,
+    "vote_average": 6.6,
+    "overview": "부모님이 납치된다면? 우리가 구하러 가야지! 하지만 십 대 아이들이 국제적인 도둑 무리를 상대할 수 있을까? 최첨단 장비도 생겼겠다, 거칠고 뜨거운 밤을 보내볼까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//9iEc34Qje2V3FZnrSXKfZsbiHjW.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        36,
+        35
+    ],
+    "title": "바이스",
+    "release_date": "2018-12-25",
+    "popularity": 14.262,
+    "vote_count": 2590,
+    "vote_average": 7.1,
+    "overview": "미국 행정부 역사를 통틀어 가장 강력한 권력을 행사한 부통령이자 네오콘의 상징적인 인물이었던 딕 체니. 그의 의중에 대해서는 거의 알려진 바 없다. 영화는 예일대학교를 중퇴하고 전기설비공으로 일하던 알코올중독자 청년이 어떻게 대기업 CEO에서 펜타곤 수장을 거쳐 미국 부통령이 되었는지, 또 부통령 재임 시절 그가 내린 결정이 세계에 얼마나 치명적인 변화를 가져왔는지를 쫓는다. 딕 체니와 모종의 관계가 있다고 고백하는 내레이터의 정체가 호기심을 자극하는 가운데, 권력자들의 부침, 권력의 이면을 목격하며 점점 더 괴물이 되어가는 한 정치인의 초상이 펼쳐진다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//dTeTBBXbf1dEcEbVASEZ8tMiKPr.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        12,
+        14,
+        16,
+        10751
+    ],
+    "title": "피터 팬 2: 리턴 투 네버랜드",
+    "release_date": "2002-02-14",
+    "popularity": 15.696,
+    "vote_count": 1581,
+    "vote_average": 6.4,
+    "overview": "세월이 흘러 웬디는 성인이 되었다. 그러나 피터팬은 여전히 어린이로 남아있다. 결혼을 한 웬디에게는 제인이라는 딸이 하나 있다. 제인은 피터팬이 나오는 동화를 읽으면서도 결코 피터팬의 존재를 믿지 않는다. 그러던 어느 날 밤 웬디의 집에는 피터팬의 숙적 캡틴 훅이 나타난다. 캡틴 훅은 웬디의 딸 제인을 납치하여 네버랜드로 데려간다. 제인은 자신의 어머니 웬디가 그랬던 것처럼, 네버랜드에서 피터팬을 만난 뒤에야 그의 존재를 믿게 된다. 피터팬은 다시 캡틴 훅과 싸움을 벌이고, 제인은 피터 팬의 도움으로 런던의 집으로 돌아온다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//xRYWvDDUxXun24jWRqNTXfo6a0b.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        14,
+        10749
+    ],
+    "title": "Sam",
+    "release_date": "2015-04-21",
+    "popularity": 13.911,
+    "vote_count": 47,
+    "vote_average": 5.4,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//yhi43UFo5DjksahZ8N5TUYDavPj.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        36,
+        10752
+    ],
+    "title": "뉘른베르크의 재판",
+    "release_date": "1961-12-18",
+    "popularity": 17.246,
+    "vote_count": 521,
+    "vote_average": 8.1,
+    "overview": "뉘른베르크 전범재판은 2차세계대전에서 승리한 연합국이 주체가 되어 패전국 독일이 제3제국의 이름으로 저지른 반인도적 행위에 대해 개인적 책임을 추궁한 역사적 사건이다. 2차대전을 일으킨 독일이 연합군의 힘에 밀려 참패하자 연합군은 전범들을 재판하게 된다. 이영화에서 다루는 피고는 전쟁당시 재판관들이다. 미국측 재판관 헤이우드는 독일군 고위층 부부가 살던 대 저택에 머물게 되는데 이집의 전 여주인을 알게 된다. 그리고 전쟁후 남편이 독일군이었다는 이유로 미국인에 살해당한 이 부인을 만나면서부터 독일군들이 인도주의적 정신보다는 나라에 대한 충성심을 더 강요받았다는 사실을 깨닫게 된다. 재판이 진행되는 동안 시종일관 침묵으로 일관하던 피고 언스트 야닝은 나중에야 자신과 동료들의 부정 부패를 고발하고 그것을 알고도 침묵했던 자신이 가장 사악한 사람이라며 자신의 잘못을 고백한다. 헤이우드는 전쟁이라는 상황과 비인도적인 판결을 내릴 수밖에 없었던 독일 재판관들의 입장을 고뇌하다 사형대신 종신형을 선고하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//cqumfgd74ftVzOKJpFGOG64WlXL.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        35,
+        878,
+        16
+    ],
+    "title": "은혼 완결편: 해결사여 영원하라",
+    "release_date": "2013-07-04",
+    "popularity": 18.339,
+    "vote_count": 73,
+    "vote_average": 8.0,
+    "overview": "수수께끼의 힘에 의해 자신이 없는 미래 세계에 버려진 긴토키는 혼란스럽고 통제불능인 에도 거리를 목격한다. 그는 그곳에서 성장한 모습의 신파치와 카구라를 만난다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//iEVopSWktGFcBaM9YyRVoy9mcXR.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        878
+    ],
+    "title": "SOS 우주특명",
+    "release_date": "1985-12-12",
+    "popularity": 15.144,
+    "vote_count": 658,
+    "vote_average": 6.9,
+    "overview": "우주로 진출한 지구인들은 파충류 외계생물체인 드레그들과 영토 확장을 위한 치열한 전투를 계속한다. 교전중 조정사 데비는 황폐한 혹성에 불시착하게 되는데, 그 미개발지에 역시 우주선의 고장으로 남아있던 드레그와 맞부닥치게 된다. 서로 적대 관계였던 두 종족은 살아남아야 한다는 공동 목표하에 기묘한 우정을 쌓아나가게 된다. 결국 드레그는 죽게 되고 데비는 남겨진 아기 드레그를 돌보며 드레그와의 약속을 지키려한다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//a3dr9L8VIjhEvivzQ2M12VQDere.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        10402,
+        10749,
+        18
+    ],
+    "title": "비긴 어게인",
+    "release_date": "2013-09-07",
+    "popularity": 15.799,
+    "vote_count": 3104,
+    "vote_average": 7.2,
+    "overview": "싱어송라이터인 그레타(키이라 나이틀리)는 남자친구 데이브(애덤 리바인)가 메이저 음반회사와 계약을 하게 되면서 뉴욕으로 오게 된다. 그러나 행복도 잠시, 오랜 연인이자 음악적 파트너로서 함께 노래를 만들고 부르는 것이 좋았던 그레타와 달리 스타가 된 데이브의 마음은 어느새 변해버린다. 스타 음반프로듀서였지만 이제는 해고된 댄(마크 러팔로)은 미치기 일보 직전 들른 뮤직바에서 그레타의 자작곡을 듣게 되고 아직 녹슬지 않은 촉을 살려 음반제작을 제안한다. 거리 밴드를 결성한 그들은 뉴욕의 거리를 스튜디오 삼아 진짜로 부르고 싶었던 노래를 만들어가는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//xVXC1mDkjJ1pK9tTFgO2DGPavJj.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        53,
+        9648
+    ],
+    "title": "키퍼스",
+    "release_date": "2019-01-04",
+    "popularity": 15.261,
+    "vote_count": 521,
+    "vote_average": 5.6,
+    "overview": "육지와 동떨어진 스코틀랜드의 작은 무인도. 이 섬의 등대를 관리하는 ‘토마스’, ‘제임스’, ‘도널드’는 난파된 보트에서 남자의 시신과 금괴가 든 나무상자를 발견한다. 시신을 없애고, 금괴를 나누어 가지기로 한 세 사람. 그러나 상자를 찾아 낯선 사람들이 섬에 나타나고, 사건은 예상치 못한 방향으로 흘러가는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//tx9QO35bT9Lk0CiiUBZn2hbEJnl.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        10749
+    ],
+    "title": "팜 스프링스",
+    "release_date": "2020-07-10",
+    "popularity": 14.981,
+    "vote_count": 1868,
+    "vote_average": 7.3,
+    "overview": "팜 스프링스에서 열리는 결혼식에서 온 만사 태평 나일스와 신부 들러리 사라. 둘은 처음 본 그 순간부터 서로에게 반하며 급격히 사랑에 빠집니다. 피로연에서 몰래 빠져 나온 둘은 별로 으슥하지 않은 해변에서 만리장성을 쌓으려는 바로 그 순간, 알수없는 자가 쏜 화살에 맞고 쫓기는 신세가 되는데... 이젠 죽는구나 하는 그 순간, 둘은 그날 아침으로 타임루프하게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//sodg5pHVYDGnvQn4NZZu9808DPg.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        53
+    ],
+    "title": "마지막 게임",
+    "release_date": "2020-02-14",
+    "popularity": 15.222,
+    "vote_count": 370,
+    "vote_average": 4.9,
+    "overview": "대선을 앞둔 1980년대 미국, 한 저널리스트가 중앙아메리카의 무기 거래와 관련된 음모에 휘말린다. 아버지의 마지막 부탁을 거절해야 했을까. 분쟁 지역에서 일어나는 일을 집요하게 파헤쳐 온 기자. 그녀가 무기 거래에 휘말려 남미로 향한다. 엄청난 기삿감이라 믿으며.",
+    "poster_path": "https://image.tmdb.org/t/p/original//gItrnbEbMBbUrdIkFz8kgS2gkt.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        36
+    ],
+    "title": "영 메시아",
+    "release_date": "2016-03-10",
+    "popularity": 16.042,
+    "vote_count": 93,
+    "vote_average": 6.3,
+    "overview": "예수의 7살, 어린 시절의 삶을 그린 영화.",
+    "poster_path": "https://image.tmdb.org/t/p/original//3dimmtqjcjDirXVHyQNCBj9gOZw.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        28
+    ],
+    "title": "아메리칸 울트라",
+    "release_date": "2015-08-19",
+    "popularity": 17.0,
+    "vote_count": 2319,
+    "vote_average": 6.1,
+    "overview": "상식파괴! 개념리셋! 취향저격! 역대급 비정상 스파이의 액션 세포가 깨어난다!  여자친구 피비(크리스틴 스튜어트)에게 멋진 프로포즈를 하는 것만이 최대 목표인 편의점 알바생 마이크(제시 아이젠버그). 어느 날 찾아온 의문의 여자가 도통 알 수 없는 암호를 남기고 간 뒤 핵/노/잼이었던 인생이 핵/반/전 됐다! 갑자기 습격해온 괴한들을 얼떨결에 숟가락만으로 제압한 것! 자신도 몰랐던 액션 본능에 놀란 것도 잠시, 마이크는 자신이 일급 기밀 프로젝트로 만들어진 최정예 스파이였고 기억이 삭제된 채 비밀요원인 피비의 보호를 받고 있었다는 엄청난 사실을 알게 된다. 봉인됐던 마이크의 액션 세포가 깨어난 것을 확인한 CIA는 그를 제거하기 위해 도시를 폐쇄해버리고 결국, 마이크는 표적이 된 피비와 자신의 목숨을 건 미션을 시작하는데...  원스푼 투킬, 프라이팬 샷건, 통조림 헤드샷, 컵라면 어택. 올 여름, 뜻밖의 액션을 즐겨라!",
+    "poster_path": "https://image.tmdb.org/t/p/original//fTmzqAx8WnhhyCja0777OIh0bcy.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        80,
+        53,
+        18
+    ],
+    "title": "해커즈",
+    "release_date": "1995-09-14",
+    "popularity": 15.743,
+    "vote_count": 911,
+    "vote_average": 6.3,
+    "overview": "올해로 18세가 된 데이드 머피는 컴퓨터 천재. 11살때 이미 월스트리트를 포함, 전세계 1507대의 컴퓨터를 바이러스에 감염시켜 세계 경제를 혼란에 빠뜨린 전과도 있다. 법원에서는 데이드가 18세가 될 때까지 모든 종류의 키보드 근처에는 얼씬도 못하도록 명령했고, 그동안 그는 컴퓨터에 굶주려 왔다.  이제 18세가 된 데이드는 뉴욕의 새학교로 전학와 병아리 해커들인 새 친구들과 어울리게 된다. 어느날 장난끼 많은 친구 죠이가 한 유조선 회사의 컴퓨터에 침입했다가 친구들에게 자랑할 셈으로 쓰레기 화일을 복제한다. 그러나 죠이는 복제 도중 추적당하고, 경찰에 체포된다. 처음엔 별것 아니라 생각했던 친구들도 쓰레기 화일과 관련된 사람이 모두 지나칠 정도의 공격을 받자 그 비밀을 캐기위해 달려든다.  쓰레기 화일의 주인은 컴퓨터 천재, ID명 플라그. 화일의 비밀을 감추기 위해 플라그는 데이드의 어머니를 담보로 병아리 해커들을 위협하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        16,
+        12,
+        10751,
+        14
+    ],
+    "title": "곰들이 몰려온다!",
+    "release_date": "2019-10-09",
+    "popularity": 14.765,
+    "vote_count": 125,
+    "vote_average": 7.3,
+    "overview": "곰 세계 왕의 아들 토니오가 시칠리아 산의 사냥꾼들에 의해 납치당했다. 엎친 데 덮친 격으로 부족이 기근에 처하자 왕은 사람들이 사는 땅을 침략하기로 결심한다. 군대와 마법사의 도움을 받아 왕은 결국 토니오를 발견하는 데 성공하지만, 곧 곰들은 인간 세상에서 살 수 없다는 것을 알게 된다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//cihHyOx9ugAn1kMUovpm3yUQKa1.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        99
+    ],
+    "title": "Zombies: A Living History",
+    "release_date": "2011-10-25",
+    "popularity": 17.925,
+    "vote_count": 6,
+    "vote_average": 6.8,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//klo2RGBYxkriNT12qdIjVgpja55.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        27,
+        35
+    ],
+    "title": "프라이트 나이트 2",
+    "release_date": "2013-08-31",
+    "popularity": 15.746,
+    "vote_count": 197,
+    "vote_average": 4.9,
+    "overview": "찰리(윌 페인)는 절친 에드, 여자친구 에이미와 함께 루마니아에 도착한 직후 호텔 맞은편 아파트에서 벌어지는 경악스러운 장면을 목격한다. 불길한 느낌에 사로잡혀 강의실로 향한 찰리는 제리 댄드리지 교수(제이미 머레이)가 피의 백작부인 엘리자베스 바토리에 대해 설명하는 동안 그녀를 강하게 의심하게 된다. 이에 의문의 아파트에 숨어든 찰리는 엘리자베스 바토리처럼 젊은 여자의 피로 목욕을 한 뒤 젊음을 되찾는 제리의 모습을 훔쳐보다가 발각된다. 가까스로 제리의 손아귀에서 빠져나온 찰리는 그녀가 엘리자베스 바토리라는 사실을 에드에게 밝히고, TV 리얼리티 프로그램 ‘프라이트 나이트’를 진행하는 괴물 사냥꾼 피터 빈센트(숀 파워)에게 도움을 청한다. 하지만 찰리 일행과 함께 추적에 나선 피터는 지하철에서 제리를 보자마자 달아난다. 곧 뱀파이어의 정체를 드러낸 제리는 숫처녀의 피로 의식을 치르기 위해 에이미를 붙잡아 가는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//cp2959zvia5B3wgsv4pOurHndvb.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        53,
+        12,
+        80
+    ],
+    "title": "자칼",
+    "release_date": "1997-11-14",
+    "popularity": 16.891,
+    "vote_count": 1402,
+    "vote_average": 6.3,
+    "overview": "세상에는 국가처럼 강력한 힘을 가진 조직들이 있다. 그들은 전쟁을 일으킬 힘과 능력을 갖추고 있으며, 정치적, 금전적 또는 개인적 이해타산으로 전쟁을 야기시킨다. 그러나 그들의 목적은 오로지 하나, 대중을 위한다는 기치아래 누구든지 자신들의 적이라고 간주되는 대상에 피를 부르고, 공포감을 심어주는 것이다.  쟈칼이라 불리는 사나이가 이러한 국제단체들에 의해 미국정부의 요인을 암살하기 위해 고용되었다. 그의 몸값은 7,000만불. 끊임없이 이동하고 변신하는 그의 거처와 정체는 물론, 그에 관련된 모든 것이 비밀 속에 싸여있었다. 단지 그의 이름이 자칼이라는 것뿐. 자칼의 존재는 알지만 그의 목적을 파악하지 못했던 FBI 부국장은 그의 강력한 도전을 받게 된다.  러시아 정보요원의 지원을 받고 있는 그는 냉혈 킬러를 추적하기 위한 방법을 모색해야만 했다. 그들은 암살을 저지할 수 있는 유일한 방법으로 자칼과 대적할 수 있는 인물을 물색하게 되는데, 자칼과 똑같은 경력을 가지고 투옥 중인 전 첩보 요원을 찾게 된다. FBI요원, 러시아 정보요원, 투옥상태의 지하요원, 이 어울릴 것 같지 않은 팀은 필사의 임무를 띤 암살자를 저지하기 위해 초를 다퉈 쫓고 쫓기는 추격전과 지능전이 돌입하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//wkLF73oenC1n1DDKKU7oyLKVcMa.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        36,
+        80
+    ],
+    "title": "빠삐용",
+    "release_date": "2017-09-07",
+    "popularity": 19.001,
+    "vote_count": 1378,
+    "vote_average": 7.4,
+    "overview": "살인누명을 쓴 금고털이범 빠삐용은 종신형을 받아 남미에 있는 프랑스령 기아나의 감옥에 갇히게 된다. 위조지폐범 드가와는 죄수 수송선에서 만난다. 빠삐용이 드가의 돈을 노린 다른 죄수들로부터 그를 지켜준 이후, 두 사람은 특별한 우정을 나눈다. 빠삐용은 지옥같은 감옥을 탈출하기 위해 여러 차례 시도하지만, 그럴 때마다 독방에서 지내는 시간은 길어질 뿐이다. 그러나 그는 그 때마다 탈출을 포기하지 않는다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//xoAy1diXjizGlxjHTtuU0MAh6gF.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        12,
+        28,
+        53,
+        878
+    ],
+    "title": "어비스",
+    "release_date": "1989-08-09",
+    "popularity": 15.69,
+    "vote_count": 2087,
+    "vote_average": 7.3,
+    "overview": "156명의 선원을 태운 미핵잠수함 USS 몬타나가 정체불명의 물체에 의해 바다 깊숙이 침몰되는 사고가 발생하자 미해군은 침몰된 핵잠수함의 생존자 수색을 명목으로 민간석유시추선 딥코어와 연합 수색전을 펼게 된다. 딥코어의 책임자인 버드 브리그먼(Virgil \"Bud\" Brigman: 에드 해리스 분)은 강인한 성격과 탁월한 리더쉽으로 딥코어 선원들의 전폭적인 신의를 받고 있는 인물이다. 버드 브리그먼과 그의 선원들은 커피 중위(Lt.Hiram Coffey: 마이클 빈 분)가 이끄는 해군측 특수부대와 함께 바다 속으로 수색작전을 편다.  한편 해군에 파견되어 온 해양 장비 전문가인 린지(Lindsey Brigman: 매리 스튜어트 매스트란토니아 분)는 버드와 결혼한 사이지만 고집에 센 그녀의 강한 성격 때문에 관계가 원만치 못해 얼굴만 대하면 다투고, 코피 중위는 비밀지령 수행을 위한 지나친 독단적 행동으로 버드와 처음부터 갈등을 야기시킨다. 이들은 곧 잠수함을 찾아 생존자 수색을 하지만 예상대로 생존자는 없었다. 그런데 린지는 생명체가 살지 않는 심연에서 빛을 내며 지나가는 정체불명의 수중 생물을 발견한다. 동료 재머(Jammer Willis: 존 베드포드 로이드 분)가 고압병으로 지나친 산소를 흡입하여 쓰러지고, 설상가상으로 태풍이 불어서 사고가 발생하는데.",
+    "poster_path": "https://image.tmdb.org/t/p/original//wqDASMin2I3R27KsuJcPxItbulJ.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10752,
+        18
+    ],
+    "title": "Da 5 블러드",
+    "release_date": "2020-06-12",
+    "popularity": 15.375,
+    "vote_count": 796,
+    "vote_average": 6.6,
+    "overview": "네 명의 아프리카계 미국인 참전 용사들이 베트남으로 돌아가며 시작된다. 폴, 오티스, 에디 그리고 멜빈은 베트남에 두고 온 분대장의 유해를 찾아  정글로 들어간다. 그리고 깊이 묻어둔, 그들만 아는 보물도. 이제는 노장이 된 네 명의 영웅들은 그들의 이 여정을 걱정스럽게 지켜보는 폴의 아들과 함께 인간과 자연의 힘에 맞선다. 전쟁의 상흔이 고스란히 남은 그곳에서.",
+    "poster_path": "https://image.tmdb.org/t/p/original//uPyLsuWAxnpKrmeTEEKh8TwQMoD.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        878,
+        28,
+        12,
+        53
+    ],
+    "title": "스타 트렉 6: 미지의 세계",
+    "release_date": "1991-12-06",
+    "popularity": 11.986,
+    "vote_count": 917,
+    "vote_average": 7.0,
+    "overview": "23세기, 위성의 부분 파괴로 인해 오존층 오염 및 심각한 경제난에 봉착한 클링온 제국은 우주의 평화유지를 위해 결성된 혹성연방에 가입하고자 하고 마침내 중립 지대의 우주정거장과 혹성기지 철거를 조건으로 70년가나에 걸친 적대 관계를 종식시키기로 합의한다. 그러나 그들이 평화회담 후 자신들의 우주선으로 귀환하자마자 USS 엔터프라이즈호로부터 무차별공격이 이어지고 클링온 제국의 지도자를 비롯한 몇몇 각료가 살상되기에 이른다. 엔터프라이즈호 내부에 혹성연방의 전복을 꾀하는 이탈자가 있었던 것!  혹성연방의 배신행위로 단정지은 클링온 제국은 지도자를 비롯한 몇몇 각료가 살상 되기에 이른다. 엔터프라이즈호 내부에 혹성연방의 전복을 꾀하는 이탈자가 있었던 것! 오해를 풀고자 클링온제국을 방문한 엔터프라이즈호의 커크선장과 메코이는 클링온 지도자의 살인범으로 몰려 우주인의 공동 묘지로 불리우는 식민 위성으로 추방된다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//pzfYhd8GgGHGGJ98pQYvTJjMOb9.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18
+    ],
+    "title": "잃어버린 주말",
+    "release_date": "1945-11-29",
+    "popularity": 9.733,
+    "vote_count": 390,
+    "vote_average": 7.7,
+    "overview": "실패한 소설가 돈은 술병을 붙들고 산다. 동생 윅과 시골 농장에 가기로 한 주말을 앞두고 윅이 데이트하러 나간 사이에 돈은 윅이 가정부에게 주려고 숨겨둔 돈을 기어코 찾아내 술집에 간다. 결국 윅은 화가 난 채 혼자 떠나고, 돈은 술값을 마련하려고 소설가의 분신과 같은 타자기를 팔기 위해 거리를 배회한다. 와일더는 알코올 중독자의 처절한 극복 과정을 그리며 전후 미국 사회의 우울한 자화상을 포착해 당대의 공감을 이끌어냈다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//5fZWKQREZ3QVNjBKMLa7NmqufnE.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        10749,
+        80
+    ],
+    "title": "검은 고양이 흰 고양이",
+    "release_date": "1998-06-01",
+    "popularity": 11.682,
+    "vote_count": 525,
+    "vote_average": 7.7,
+    "overview": "고요한 초록빛의 다뉴브 강가. 이 곳에 터를 닦아 자손을 낳고 살고 있는 두 집시 집안이 있다. 먼저 1세대. 그르가와 자리야. 그들은 생사고락을 함께 한 친구사이지만 25년동안 만나지 않을 정도로 애증 관계에 있다. 다음으로 자리야의 아들인 마초. 그는 그르가의 옛 똘마니였던 다단과 역시 서로 씹고 씹히는 관계 속에서 근근히 우정을 유지하고 있는 2세대 친구간이다. 그리고 3세대. 마초의 외아들 자레와 다단의 여동생 딱정벌레 이름은 따로 있지만 난쟁이만한 키를 가진 그녀를 두고 사람들은 그렇게 부른다. 이제 이야기의 전개는 2세대부터. 집안을 책임져야 하는 처지이지만 늘 놀고 먹는 한심한 백수, 마초 어쩌다 결혼식을 앞둔 하루 전, 천지신명의 도움인지 손자를 도와주려는 할아버지의 마지막 베품인지, 자리야가 세상을 뜬다. 마초는 당장 다단에게 달려가 결혼식과 장례식을 한꺼번에 치룰 수 없다고 하지만 다단을 사망소식을 사흘 후로 연기할 것을 종용한다. 어쩔 수 없이 다음 날, 마초의 집 마당에선 결혼식이 치뤄지고 혼인 서약이 울려퍼진다. 난장판 분위기의 피로연. 급기야 난쟁이 신부가 도망을 치는데. 한편 일전에 사업 자금을 꾸러 온 마초의 거짓말로 친구가 죽은 줄 알고 있던 그르가. 그는 키다리 손자와 뚱땡이 손자를 데리고 친구의 묘를 방문하러 이 말으로 오고 있던 중 이었다. 오는 도중 길을 잃은 그르가의 마차는 도망치던 신부와 맞딱뜨리게 되고 이 순간 불꽃이 튀는 두 사람이 생긴다. 딱정벌레와 그르가의 키다리 손자. 둘은 운명적인 만남을 감지하고 첫눈에 사랑에 빠지는데. 그르가의 등장으로 인해 한때 그의 돈을 떼먹었던 다단은 울며겨자먹기로 여동생과 키다리 손자와의 결혼을 승낙하고, 자레는 사랑하던 마을 처녀와 짝이 지워진다. 그러나 불행하게도 그날 밤 그르가마저 세상을 뜬다. 자 이제 자신이 원하던 짝을 되찾았던 이 두 커플은 어찌 될 것인가?",
+    "poster_path": "https://image.tmdb.org/t/p/original//7k4HqQFytLKGHu1PIDZUxzooTx9.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        80,
+        18,
+        9648,
+        53
+    ],
+    "title": "비거 스플래쉬",
+    "release_date": "2015-11-26",
+    "popularity": 12.238,
+    "vote_count": 572,
+    "vote_average": 6.2,
+    "overview": "세계적으로 유명한 인기 가수 마리안은 남자친구 폴과 함께 이탈리아의 어느 작은 섬에서 평화로운 한때를 보내고 있다. 그런데 얼마 지나지 않아 두 사람만의 시간은 깨지고 만다. 오랜 친구인 해리가 자신의 매력적인 딸 페넬로페와 함께 두 사람을 불쑥 찾아왔기 때문이다. 이들은 가까운 것 같지만 때로는 매우 불편한 사이처럼 보인다. 시간이 지날수록 마리안과 해리의 과거가  부상함에 따라 그들의 관계는 질투, 욕망 그리고 위험의 수렁으로 변하게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//uGRQoZ0gp2PhoHi33Cnkdn79fle.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        80,
+        35
+    ],
+    "title": "스톡홀름",
+    "release_date": "2019-04-12",
+    "popularity": 15.249,
+    "vote_count": 270,
+    "vote_average": 5.9,
+    "overview": "다니엘 랑 (Daniel Lang)의 1974 년 뉴요커 기사 \"The Bank Drama\"에 실린 유럽 도시의 1973 년 은행 강도와 인질 위기에 대한 비범 한 사실을 바탕으로. 인질들이 체포 자들과 붙잡혀 당국에 대립되면서 \"스톡홀름 증후군 (Stockholm Syndrome)\"이라는 심리 현상이 발생하면서이 사건은 세계의 주목을 끌었다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//ko3AS33BLNEBcp1CO4FvdRltTxr.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        53,
+        80,
+        9648
+    ],
+    "title": "필사의 추적",
+    "release_date": "1981-07-24",
+    "popularity": 14.231,
+    "vote_count": 927,
+    "vote_average": 7.4,
+    "overview": "영화의 효과 음악을 녹음하는 잭 테리는 고성능 마이크를 가지고 여러가지 소리를 수집하던 중 우연히 사고가 나서 강물에 빠진 차를 발견하고 차안에서 샐리라는 여자를 구한다. 한편 차 안에는 이미 숨이 끊어진 남자가 같이 있었는데, 그는 정치권의 유명한 선거 후보자로 당선이 거의 확실시되었던 사람이었다. 이상함을 느낀 잭은 자신의 고성능 마이크에 남겨져있는 당시의 소리를 들어보고 차 사고가 나기 바로 전 총소리가 울렸다는 것을 알게 된다. 정치인이 살해된 것이 확실한 가운데 살인자는 샐리마저 살해하려들지만 잭의 방해로 실패하게 되는데.",
+    "poster_path": "https://image.tmdb.org/t/p/original//weMW1wLzeagP3tw6BfmYf1iL7dz.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10751,
+        16,
+        35
+    ],
+    "title": "미니언즈 홀리데이 스페셜",
+    "release_date": "2020-11-27",
+    "popularity": 9.282,
+    "vote_count": 101,
+    "vote_average": 7.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//zZI1nByCI0jOQqAUeTahU3j6pt1.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        12,
+        18
+    ],
+    "title": "데르수 우잘라",
+    "release_date": "1975-08-02",
+    "popularity": 10.98,
+    "vote_count": 311,
+    "vote_average": 8.1,
+    "overview": "1910년, 한 남자가 ‘데르수 우잘라’의 무덤을 찾아오고 시간은 과거로 돌아가 이들의 이야기를 들려준다. 블라디미르는 러시아 오지의 지도를 만들기 위해 탐험을 하던 중 우연히 사냥꾼 데르수를 만난다. 마침 안내인이 필요했던 그는 데르수에게 함께 동행해 줄 것을 요청하고, 이때부터 이들의 인연이 시작된다. 구로사와 아키라 감독이 실존 인물인 데르수 우잘라의 삶을 70mm 카메라로 영화화했다. 1975년 모스크바영화제 감독상 수상.",
+    "poster_path": "https://image.tmdb.org/t/p/original//oE4rBhuJplydGaJKjnongg1eKr4.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        10749
+    ],
+    "title": "라이크 크레이지",
+    "release_date": "2011-10-28",
+    "popularity": 12.484,
+    "vote_count": 878,
+    "vote_average": 6.4,
+    "overview": "영국 여자 '애나'와 미국 남자 '제이콥'은 LA에서 첫눈에 반한다.  서로에 대한 사랑을 쌓아가며 행복한 시간을 보내던 중,  애나의 학생 비자가 만료돼 영국으로 다시 돌아가야 하는 상황이 발생한다.  의도치 않게 장거리 연애를 시작한 둘은 점점 서로가 없는 삶에 익숙해지고 새로운 사람이 눈에 들어온다.  몇 개월 간의 갈등 끝에 애나는 중대한 결심을 하고 제이콥에게 전화를 건다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//w8oXa4BCCelkSF1lflsSpTqCehl.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        36
+    ],
+    "title": "내 친구 다머",
+    "release_date": "2017-11-03",
+    "popularity": 12.241,
+    "vote_count": 370,
+    "vote_average": 6.4,
+    "overview": "17명의 남성을 살해한 희대의 연쇄살인마 제프리 다머의 고등학교 시절을 그린 영화. 고등학생 제프리는 산성용액에 동물의 사체를 녹여 뼈를 수집하는 등 죽음에 집착하는 모습을 보인다. 불안정한 가정환경과 힘겨운 학교생활로 제프리의 폭력적인 충동은 점점 커져만 가고, 그 욕망은 살인에 대한 욕망으로 이어진다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//c6HoPIBcRv9l2tPB8hbivq71Nw.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        16,
+        35,
+        10751
+    ],
+    "title": "세이빙 산타",
+    "release_date": "2013-11-05",
+    "popularity": 10.605,
+    "vote_count": 79,
+    "vote_average": 5.2,
+    "overview": "메리 크리스마스를 위한 특급 작전!  산타는 내가 구한다!  루돌프의 외양간 청소를 하며 차세대 발명가를 꿈꾸는 엉뚱한 요정 버나드.  전 세계 아이들에게 선물을 나눠주는 산타클로스를 돕는다는  자부심으로 가득하지만 하는 일마다 실수투성이인 허당 요정이다.  그러던 어느 날, 악당 네빌과 그의 병사들이 하루 만에 전 세계 어린이들에게  선물을 주는 산타 썰매의 비밀을 파헤치기 위해 산타클로스를 납치하는데..  순식간에 난장판이 된 북극 마을!  만약 산타 썰매의 비밀이 네빌의 손에 넘어가게 되면  크리스마스는 영원히 사라지게 된다.  엉뚱한 요정 버나드는 타임머신 썰매를 타고 과거로 돌아가  루돌프 블리첸과 함께 악당들로부터 마을을 지켜야 한다.  산타의 비밀, 타임머신 썰매를 타고 과거로 고고!  버나드는 산타클로스와 북극 마을을 지켜낼 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//z6hk95XvKUEsDDX3OWV6KcD51s2.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        16,
+        12,
+        10751
+    ],
+    "title": "The Land Before Time III: The Time of the Great Giving",
+    "release_date": "1995-03-16",
+    "popularity": 13.229,
+    "vote_count": 305,
+    "vote_average": 6.2,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//abcJUBDHi6hxibSgm2bxYK1wAZK.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10749,
+        35,
+        10402,
+        18
+    ],
+    "title": "나의 첫 번째 슈퍼스타",
+    "release_date": "2020-06-10",
+    "popularity": 12.014,
+    "vote_count": 306,
+    "vote_average": 7.1,
+    "overview": "슈퍼스타 그레이스의 3년째 막내 매니저인 매기. 음악 프로듀서가 되기 위해 낮에는 매니저, 밤에는 음악 작업을 하며 열정을 불태우지만 늘 기회를 잡지 못한다. 10년 전 히트곡 하나로 버티는 세계적인 스타 그레이스는 매일 반복되는 공연에서 벗어나 새로운 앨범 발매를 꿈꾸지만 주변의 반대와 두려움에 부딪히는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//sfs8uv4u6DWgbYWf62jeurcKC5X.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10751,
+        14,
+        878,
+        12,
+        35
+    ],
+    "title": "4차원의 난장이 E.T",
+    "release_date": "1981-07-13",
+    "popularity": 12.429,
+    "vote_count": 706,
+    "vote_average": 6.6,
+    "overview": "\"시간의 지도\"를 훔쳐 역사의 유산을 도둑질하던 난쟁이 일당이 우연찮은 계기로 1980년대의 영국에 도착한다. 시간을 초월하는 구멍을 통해 시간 여행을 할수 있는 난쟁이들은 자신들의 재배자로부터 도주한 것이었다. 그들은 80년대 영국에서 부모로부터 소외된 외로운 소년 케빈을 만나 그를 동반자로 맞이한다. 케빈과 난쟁이들은 나폴레옹 시대부터 중세시대, 1900년대 초반의 시대들을 여행하는데...  영화는 과거의 역사적 인물들을 만나는 과정을 - 로빈 후드, 나폴레옹 등- 통해 역사의 신",
+    "poster_path": "https://image.tmdb.org/t/p/original//eKBCmNmbXU1ONpbZwZBlaz5yUz5.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        35
+    ],
+    "title": "로맨틱 레시피",
+    "release_date": "2014-08-06",
+    "popularity": 10.685,
+    "vote_count": 1118,
+    "vote_average": 7.3,
+    "overview": "재능 있는 인도인 요리사 하산. 복잡한 집안 사정으로 인도를 탈출한 그는 프랑스 남부 작은 마을에 도착해 레스토랑을 열게 된다. 하산의 레스토랑에서 백 발자국쯤이면 또 다른 레스토랑이 있는데 이 식당의 정통 프랑스 요리를 전문으로 하는 식당이다.  평소 하산은 프랑스 요리를 책을 보며 익힌 천재 요리사이지만 정식으로 프랑스 요리를 배운 적은 없다. 마을 사람 모두가 인도에서 온 하산의 레스토랑을 궁금해 하던 중 프랑스 식당의 요리사 마거리트를 우연히 알게 된 하산은 애틋한 감정이 싹트지만 두 레스토랑이 경쟁을 하면서 좌충우돌 소동이 벌어지게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//1vFhSr7INoulu18smHqicft05i8.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        80,
+        18,
+        53
+    ],
+    "title": "링컨 차를 타는 변호사",
+    "release_date": "2011-03-17",
+    "popularity": 11.232,
+    "vote_count": 2386,
+    "vote_average": 7.2,
+    "overview": "LA 뒷골목 범죄자들을 변호하는 변호사 ‘미키 할러(매튜 맥커너히)’. 돈이 되는 의뢰인을 만나려고 운전기사가 딸린 링컨 차를 타는 속물이지만, 한편으로는 죄 없는 의뢰인을 감옥으로 보낼까 봐 늘 두려워한다. 어느 날, 할리우드의 거대 부동산 재벌 ‘루이스 룰레(라이언 필립)’가 강간미수 폭행사건으로 찾아온다. 돈 냄새는 물론 결백의 냄새를 풍기는 루이스는 사실, 할러가 의뢰인을 유죄라고 단정해 평생 감옥에서 썩게 만든 사건의 진범이었던 것! 모든 사실을 알게 된 그는 의뢰 받은 폭행사건은 변호하는 동시에 루이스가 살인사건의 범인임을 증명하려 하는데… 모든 것을 바로 잡기 위한 그의 반격이 바로 지금 시작된다!",
+    "poster_path": "https://image.tmdb.org/t/p/original//o3Be5962XcP49xSwICRVtsP5ZYu.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18
+    ],
+    "title": "A Matter of Faith",
+    "release_date": "2014-10-17",
+    "popularity": 12.615,
+    "vote_count": 21,
+    "vote_average": 5.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//j4JwHpOjV6ZU1StNmpqtLMiRsND.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        878,
+        27,
+        53
+    ],
+    "title": "타임루프: 벗어날 수 없는",
+    "release_date": "2018-04-06",
+    "popularity": 13.741,
+    "vote_count": 711,
+    "vote_average": 6.3,
+    "overview": "오래전 “컬트” 집단에서 탈출한 ‘저스틴’과 ‘애런’. 두 형제 앞으로 어린 시절 함께 지냈던 ‘애나’의 메시지가 담긴 비디오 테이프가 배달되고 그들은 환영 받지 못할 ‘그곳’으로 다시 돌아가게 된다. 돌아온 형제를 경계하는 사람들. 비밀을 감추고 있는 사람들. 그리고 그들을 둘러싼 설명할 수 없는 현상들. 형제가 마주할 어두운 진실은 과연 무엇일까?  오래전 사이비 집단에서 탈출했던 두 형제는 그곳에서 전해지는 터무니없는 이야기가 어쩌면 진실일지도 모른다는 두려움에 휩싸인다. 최근 장르 영화계에서 재능을 알린 듀오 저스틴과 애론이 함께 연출한 세 번째 장편으로, 영화 속에서 진실을 찾아 나선 두 형제를 직접 연기했다.  (2017년 제21회 부천국제판타스틱영화제)",
+    "poster_path": "https://image.tmdb.org/t/p/original//u1JNEuJxMs929OZThXWQbiXLNeH.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        12,
+        10751,
+        14
+    ],
+    "title": "Mysterious Island",
+    "release_date": "1961-12-19",
+    "popularity": 9.229,
+    "vote_count": 109,
+    "vote_average": 6.4,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//lqLIpwISJEvERlS5fSWe8xbQDFf.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        36,
+        18
+    ],
+    "title": "미스터 터너",
+    "release_date": "2014-10-31",
+    "popularity": 9.384,
+    "vote_count": 407,
+    "vote_average": 6.5,
+    "overview": "마네, 모네, 르누아르 이전에 그가 있었다. 인상주의의 시작이자 풍경화의 거장 윌리엄 터너의 숨겨진 이야기  19세기, 이미 미술계에서 명성을 떨치고 있던 터너는 영국을 벗어나 여행을 다니며 영감을 얻던 중 한 여인과 사랑에 빠지게 된다. 동시에 기존의 화풍을 벗어나 파격적인 기법의 풍경화를 선보이지만 세간의 조롱을 사고, 심지어 시력이 나빠졌다는 소문까지 돌게되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//3cRSgoFA4hC9mDG1tQ3L2ODpmRD.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        16,
+        10751,
+        12,
+        35
+    ],
+    "title": "넛잡 2",
+    "release_date": "2017-08-11",
+    "popularity": 16.973,
+    "vote_count": 308,
+    "vote_average": 5.9,
+    "overview": "땅콩 털이에 성공 후 여유로운 삶을 즐기던 ‘설리’와 공원 친구들!  어느 날 갑자기, 영원할 것만 같던 땅콩 가게가 폭발하고, ‘설리’와 친구들은 어쩔 수 없이 ‘리버티공원’으로 돌아가게 되지만 이마저도 악덕 시장의 놀이공원 건설 계획으로 파괴될 위기에 처한다.  더 이상 물러날 곳이 없는 ‘설리’와 친구들!\r 과연 악덕 시장에 맞서 공원을 지킬 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//jVUmyzSeJMBrgmblOWqiCmIhjRg.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        80
+    ],
+    "title": "총알탄 사나이",
+    "release_date": "1988-12-02",
+    "popularity": 21.111,
+    "vote_count": 2680,
+    "vote_average": 7.2,
+    "overview": "LA 시경의 드레빈 경관(Frank Drebin: 레슬리 닐슨 분)은 마약 밀수범에게 중상을 입은 동료 놀드버그(Nordberg: O.J. 심슨 분)의 업무를 인수받는다. 마침 영국의 엘리자베스 여왕(Queen Elizabeth II: 쟈넷 찰스 분)이 방문 중이라 경비 업무로 바쁘기 짝이 없는 가운데, 경찰 서장은 마약사건을 24시간 이내에 처리하라고 한다. 그러나 사건의 열쇠를 쥔 루드비히(Vincent Ludwig: 리카도 몬탈반 분)의 여비서 제인(Jane Spencer: 프리실라 프레슬리 분)에게 반한 드레빈은 갈피를 잡지 못한다. 이를 틈타 루드비히는 제인에게 드레빈을 감시하라고 한다. 몰래 사장실에 들어간 드레빈은 LA 구장에서 시합을 관전하는 여왕을 암살하려는 내용이 적힌 쪽지를 발견한다. 그가 암살 음모를 눈치챈 것을 안 악당들은 그를 습격해 오지만 드레빈은 올가미를 피한다. 그리고 여왕 암살을 위해 최면술에 걸린 선수 한 명이 이용될 것이라는 사실을 알고 계획을 저지하기 위해 심판을 가장해 야구장에 나타난다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//zT0mhZqZQJE1gSY5Eg9qcGP4NYo.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        80,
+        53
+    ],
+    "title": "지옥의 반담",
+    "release_date": "1990-09-14",
+    "popularity": 19.211,
+    "vote_count": 391,
+    "vote_average": 6.1,
+    "overview": "캘리포니아 검찰청의 포글러(Tom Vogler: 죠지 딕커슨 분)는 벽지 교도소에서 일어나는 연속 살인 사건을 수사하라는 명령을 받는다. 포글러는 마침 범인을 추적해서 LA에서 온 캐나다의 경찰관 버크(Louis Burke: 쟝-끌로드 반담 분)에게 문제의 교도소에 잠입해서 진상을 규명토록 한다. 교도소에 잠입한 버크는 죄수들과 손잡고 연속살인사건을 파헤쳐 악덕 교도관 디그라프 경사(Sergeant DeGraf: 아트 라플러 분)가 외부의 권력층과 손잡고 연속 살인을 하는 것 같다고 여긴다.  포글러의 비서격인 여류 변호사 아만다(Amanda Beckett: 신시아 깁 분)는 자료를 수집하며 협력하다 고군분투하는 버크를 사랑하게 된다. 마침내 버크는 포글러가 연속 살인의 원흉이며, 불치병에 걸린 아내(Helen Vogler: 도로시 델스 분)에게 인간의 간을 먹이려 했음을 알아낸다. 이에 당황한 포글러는 살인귀 샌드맨(Naylor, \"The Sandman\": 패트릭 킬패트릭 분)을 교도서에 넣어 버크를 없애려 한다. 그러나 오히려 그가 버크에게 살해되어 모든 흑막이 공개된다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//osxgIHvePLeJJ8rJbHoOuqxI7iu.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        14,
+        9648,
+        80
+    ],
+    "title": "캣우먼",
+    "release_date": "2004-07-22",
+    "popularity": 19.162,
+    "vote_count": 2616,
+    "vote_average": 4.6,
+    "overview": "매사에 소심하고 소극적인 페이션스 필립스(할리 베리)는 그런 성격 때문에 늘 사람들에게 무시당하고 산다. 화가의 꿈도 포기하고 화장품 회사인 '헤데어 뷰티'의 그래픽 디자이너로 일하는 그녀는 내심 늘 남들에게 당하고만 사는 자신이 못마땅하기만 하다. 페이션스가 다니는 '헤데어 뷰티'사는 '젊음과 아름다움을 위해선 어떤 희생도 기꺼이 지불해야 한다'는 신조를 가진 악덕 사주 조지 헤데어(램버트 윌슨)가 운영하는 대기업. 슈퍼모델인 그의 아내 로렐(샤론 스톤)은 회사의 간판모델로 몇 년째 일하고 있었다. 그러나 남편이 모델로는 너무 늙었다며 22세의 젊은 모델로 교체하려 하자, 복수를 결심한다.  나름대로 평온하던 페이션스의 삶은 뜻하지 않은 사건으로 운명적 변화를 맞게 된다. '헤데어'의 노화방지 화장품에 감춰진 무서운 비밀을 알게 된 것. 비밀이 누설 될 것을 우려한 헤데어는 페이션스를 살해한다. 그러나 그녀는 고양이들의 신비로운 힘에 의해 부활해 힘과 민첩함, 초자연적 감각을 얻게 된다. 선과 악을 함께 지닌 유혹적인 존재 캣우먼으로 다시 태어난 페이션스... 그녀는 더 이상 예전의 평범하고 소심했던 여자가 아니다.  되살아난 페이션스는 복수를 시작하고, 그로 인해 한창 로맨스가 싹트기 시작한 경찰관 톰 론(벤자민 브랫)과의 관계가 복잡하게 꼬인다. 톰이 도시에서 벌어지고 있는 일련의 범죄가 자신이 좋아하는 페이션스와 뭔가 연관이 있다는 심증을 잡고 고민을 하기 시작했기 때문. 한편, 페이션스의 감춰진 야성이 분출되면서 그녀는 본래의 자아와 자신의 또 다른 자아 캣우먼 간의 구분이 점차 모호해져 혼란을 겪는다. 죽음으로 새로운 생명을 얻은 그녀는 이제 더 이상 그 누구에게도 지배되지 않는 존재로 변신해나가는데... 이제 캣우먼의 매력적인 활약이 시작된다!",
+    "poster_path": "https://image.tmdb.org/t/p/original//nWj9GOcHn9pz91P40wdfGgfJuZn.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        16,
+        35,
+        878,
+        10751
+    ],
+    "title": "멸종은 싫어!",
+    "release_date": "2021-02-11",
+    "popularity": 19.147,
+    "vote_count": 29,
+    "vote_average": 6.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//tRnPT88iD5zgeUPjHqaZznrxk5m.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        35,
+        878
+    ],
+    "title": "이너스페이스",
+    "release_date": "1987-06-30",
+    "popularity": 17.909,
+    "vote_count": 906,
+    "vote_average": 6.8,
+    "overview": "자유분방한 성격의 공군 조종사 다크 펜델톤(데니스 퀘이드 분) 중위는 실리콘벨리에서 거행되는 극비 초소형화 실험 테스트의 비행선 조종사로서의 임무를 맡는다. 눈에 보이지 않을 정도로 소형화되어 잠수정을 타고 실험 대상인 흰 토끼의 내부로 투입되던 중 스크림쇼우와 마가렛 박사의 습격을 받는데, 연구소 소장인 오지는 다크가 들어있는 주사기를 들고 도망치고 잭(마틴 숏 분)의 엉덩이에 주사를 놓고 살해당한다. 잭의 몸 속에 들어간 다크은 당황해하는 잭에게 상황을 설명하고 도움을 청한다. 나일즈 박사를 찾아간 잭과 다크는 그들이 자길 구해주려는 강한 의지가 없음을 알게 되자, 다크는 리디아(멕 라이언 분)를 찾아 도움을 청하게 된다. 리디아를 만나 얘기하던 잭은 스크림쇼우에게 잡혀가지만 리디아의 도움으로 구조된다. 최신 기술을 사고파는 첩보원 카우보이가 온다는 소식을 들은 리디아는 잭과 함께 그가 묵는 호텔에 잠입하는데, 다크는 잭의 얼굴을 카우보이 얼굴로 바꿔놓는다. 그러나, 들통이 나 스크림쇼우에게 잡혀 축소칩을 빼앗기게 되고 이들은 다크가 타고 있는 잠수정 속에 있는 확대 칩마저 빼앗기 위해 부하 아이고우를 잭의 몸 속에 투입시킨다. 위기를 간신히 모면한 잭은 오히려 스크림쇼우 일당을 소형화시켜 놓은 후 벡터 스코프로 달려간다. 한편, 간신히 아이고우 잠수정을 격퇴시킨 다크는 산소가 다 떨어져 고전을 하지만 다행히 시간 내로 구출되고 리디아와 행복한 결혼식을 올린다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//A4azclZQjqeQxXvcok3rdUmuq8a.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        27,
+        53
+    ],
+    "title": "유령 마을",
+    "release_date": "1989-02-17",
+    "popularity": 13.159,
+    "vote_count": 880,
+    "vote_average": 6.7,
+    "overview": "메이필드(Mayfield) 마을에 사는 레이 피터슨(Ray Peterson: 톰 행크스 분)은 휴가를 집에서 보내기로 작정하게 되는데, 한 달전에 이사온 괴상한 이웃 클로펙씨네 집에 신경이 쓰인다. 그 집은 도대체 이웃과 교류가 없는데다 밤이면 괴상한 소리까지 나는 것이었다. 한밤 중에 쓰레기를 차에다 실어서 집앞 쓰레기통에 버리기도 하고, 요란하게 모터를 돌리기도 하고, 뒤뜰을 파젖히기도 하는 등 수상한 일이 한 두가지가 아니다.그러던 중 이웃노인 월터씨가 갑자기 사라지는 사건까지 일어난다. 이웃들은 클로펙씨가 월터를 죽여 시체를 암매장한 게 아닌가 하는 생각까지 한다. 그러나 레이의 아내 캐롤(Carol Peterson: 캐리 피셔 분)은 이런 식으로 나가다가는 애매한 이웃을 범죄자로 오해하는 게 아닌가 싶어 여자들이 주동이 되어 남편을 데리고 그 집을 정식으로 방문한다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//vrVPAcv2njVdnkqhBwGBc7UxCjz.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        14,
+        10749
+    ],
+    "title": "스플래쉬",
+    "release_date": "1984-03-09",
+    "popularity": 15.958,
+    "vote_count": 997,
+    "vote_average": 6.3,
+    "overview": "형(존 캔디 분)와 뉴욕에서 청과상을 경영하는 알렌(톰 행크스 분)은 성공한 청년 사업가다. 부러울게 없는 그에게 한가지 아쉬운게 있다면 아직 사랑할 여자가 없다는 것. 어린 시절, 바다에 빠졌던 알렌이 인어에 의해 구조되지만 이를 알지 못한 채 세월이 흘렀다. 인어(다릴 한나 분)는 해저에 가라앉은 알렌의 지갑을 발견하고 알렌을 찾아 뉴욕에 나타나나 경찰의 보호를 받게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//7FutTsMWBwVhjk1Ujf1wtndUVZh.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35
+    ],
+    "title": "어덜트 월드",
+    "release_date": "2013-04-18",
+    "popularity": 15.463,
+    "vote_count": 306,
+    "vote_average": 6.1,
+    "overview": "시인이 되고 싶어 하는 에이미는 자신에게 재능이 있다고 믿고 여러 응모전에 도전하지만 모두 거절당한다. 부모님은 독립하라고 재촉하고 일이 쉽게 구해지지 않자, 그녀는 성인용품 가게 ‘어덜트 월드’에 취업한다. 가게 매니저로 일하는 알렉스는 성실하지만, 에이미는 가게에서 일하는 걸 수치스럽게 생각하고 머릿 속엔 온통 시 생각뿐이다. 그러던 중 자신이 광적으로 좋아하는 시인, 랫 빌링스를 우연히 만나 제자로 받아달라고 조른다. 당연히 가게 일은 뒷전으로 밀리고, 알렉스와도 다투게 된다. 랫은 그녀를 제자로 받아주지만, 집안일만을 시킬 뿐 자신의 시를 평가해 달라는 에이미의 요구에는 요지부동이다. 그러던 어느 날 새롭게 준비하는 시선집에 에이미의 시를 넣고 싶다고 말하는 랫. 하지만 그녀의 생일 선물로 받은 그 책의 제목은 ‘최악의 시, 형편없는 시 모음집’이다. 유명한 작가들의 신랄한 평가를 보고 충격을 받은 에이미는 계속해서 시를 쓸 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//yS5VwfCqrKnT3QbiBM5hS4bonat.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10751,
+        16
+    ],
+    "title": "곰돌이 푸: 루의 새 봄 대축제",
+    "release_date": "2004-03-09",
+    "popularity": 17.709,
+    "vote_count": 111,
+    "vote_average": 6.7,
+    "overview": "숲속에도 부활절이 찾아왔다. 누구보다 기대에 부푼 꼬마 루는 발리 아침을 먹고 부활절 계란 찾기를 하고 싶어 못 견딜 지경이다.곰돌이 푸도 부활절 꿀단지를 잔뜩 기대하고 있다. 티거, 피글렛, 심지어 이요트까지도 설레기는 마찬가지이다. 친구들은 모두 즐거운 부활절을 꿈꾸며 토끼의 집을 찾는다.  그런데 이게 웬일? 토끼네 집에서 친구들을 기다리고 있는 것은 부활절 파티가 아니라 봄맞이 대청소였다. 하지만 토끼는 부활절을 잊은 게 아니었다. 오히려 부활절을 너무 싫어했던 것이다. 심지어 토끼는 자기 앞에서 부활절이라는 단어를 꺼내는 것마저도 싫어했다. 그것은 지난해 부활절에 벌어진 사건 때문이었다.  지난해는 꼬마 루가 숲속에서 맞이하는 첫번째 부활절이었으므로 토끼는 완벽한 부활절 파티를 위해 완벽한 계획을 세우고 완벽한 준비를 갖추었다.그러나 친구들은 아무도 토끼의 지시를 따르지 않았고 제멋대로 계란찾기를 하며 토끼의 계획을 엉망진창으로 만들어버렸다. 화가 난 토끼는 다시는 부활절을 치르지 않겠다고 마음먹은 것이다.  결국 친구들은 모두 실망하여 집으로 돌아간다. 토끼는 해설자의 안내를 받아 잠깐 아직 쓰여지지 않은 페이지를 돌아보게 된다. 숲속은 매우 완벽한 상태로 정리정돈이 잘 되어 있었다. 바로 토끼가 바라는 그대로였다. 다만, 친구들이 아무도 없다는 사실을 제외한다면 말이다. 부활절 파티가 사라지자, 친구들은 하나 둘씩 숲을 떠나고 결국 토끼만 남게 된 것이었다. 그제야 자신이 너무 독선적이었음을 깨달은 토끼는 모든 것을 예전으로 되돌리려 하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//yAgVcU1BdPqvnyYnOkb1QtVNd5V.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        53
+    ],
+    "title": "프리즌 브레이커스",
+    "release_date": "2020-01-23",
+    "popularity": 16.835,
+    "vote_count": 70,
+    "vote_average": 7.6,
+    "overview": "칠레의 독재자 ‘피노체트’ 집권 시기, 독재자 암살에 실패한 ‘마누엘 로드리게스 애국전선’ 소속의 혁명가들이 악명 높은 산티아고 교도소에 수감된다. 독재자 암살의 목표를 굽히지 않은 24명의 혁명가들은 공학 박사인 ‘레온’의 치밀한 계산 아래 지하통로를 통한 탈옥 작전을 세운다. 아무런 탈출 장비도, 방법도 없는 상황에서 그들은 오직 독재 타도와 자유를 위해 하루에 몇 cm씩, 끝없는 전진을 이어간다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//sUSAdev4M4ggi2AdmzmTkIwsYA2.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        18,
+        10749
+    ],
+    "title": "헬로, 마이 네임 이즈 도리스",
+    "release_date": "2015-11-27",
+    "popularity": 13.964,
+    "vote_count": 384,
+    "vote_average": 6.4,
+    "overview": "뉴욕의 의류 회사에서 경리로 일하는 도리스(샐리 필드)는 오랫동안 어머니를 모시며 평생을 싱글로 살아왔다. 최근 어머니를 여읜 도리스는 새로 부임한 수십 년 연하의 아트 디렉터 존(맥스 그린필드)에게 첫눈에 반한다. 동기부여 연설가의 강연에 고무되어 “난 가능해”라는 신념을 갖게 된 도리스는, 절친한 친구의 13살짜리 손녀의 도움을 받아 가짜 계정을 만들고 존의 페이스북 친구가 된다. 페이스북으로 존의 취향을 파악한 도리스는 그가 좋아하는 일렉트로닉 밴드의 콘서트에 가고, 그곳에서 존과 그의 힙스터 친구들을 만나서 색다른 경험을 맛본다. 그날 이후 도리스는 존과의 본격적인 로맨스를 기대하지만, 그의 데이트 장면을 목격하면서 희망은 산산조각 난다. 심술이 난 도리스는 존의 페이스북에 거짓 댓글을 달아 두 사람을 헤어지게 만드는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//iYRpTDqZgA3rsRh4EIkWHsMjAKd.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        18
+    ],
+    "title": "킹 오브 썸머",
+    "release_date": "2013-01-19",
+    "popularity": 16.261,
+    "vote_count": 889,
+    "vote_average": 7.0,
+    "overview": "아버지와 함께 사는 조(닉 로빈슨). 하지만 아버지와의 관계는 순탄하지 않다. 조의 절친인 패트릭(가브리엘 바소) 역시 엄격한 부모로 인해 하루하루가 괴롭다. 우연히 발견한 숲 속의 공간에 마음을 뺏긴 조와 패트릭. 둘은 집을 떠나 그곳에 자신들만의 집을 짓고 살아보기로 결정하고, 이 무모한 도전에 괴짜 친구 비아지오(모이세스 아리아스)도 함께 한다. 직접 구한 재활용 재료들로 집을 짓고 수렵채집을 통해 먹거리를 확보하려는 이들의 계획은 기대와는 달리 험난하기만 하고, 조가 오랫동안 짝사랑 해왔던 켈리(에린 모리아티)가 조와 패트릭 사이에 끼어들면서 친구들의 우정은 시험대에 오르게 되는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//y6qIJx72mfWo7MEJirlDxxbafTc.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        18
+    ],
+    "title": "색즉시공",
+    "release_date": "2002-12-12",
+    "popularity": 17.158,
+    "vote_count": 65,
+    "vote_average": 6.0,
+    "overview": "군대 제대 후 늦깎이 대학생이 된 은식. 남보다 늦은 출발 때문에 고시 합격에 인생 목표를 건다. 하지만 대학에 들어가자마자 해병대 고참 성국을 만나게 되고 그의 꾐에 빠져 차력 동아리에 가입하고 만다. 불철주야 공부를 해도 모자랄 판에 웬 차력? 그런데 거기에 또 하나, 그의 꿈을 가로막는 장애가 있었으니.",
+    "poster_path": "https://image.tmdb.org/t/p/original//eRCd4nqD3i4tAzIVeyd1zTNiRPD.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        36
+    ],
+    "title": "우리가 꿈꾸는 기적: 인빅터스",
+    "release_date": "2009-12-10",
+    "popularity": 16.96,
+    "vote_count": 3306,
+    "vote_average": 7.2,
+    "overview": "첫 흑인 대통령으로 선발된 넬슨 만델라는 거의 백인으로 이뤄진 자국팀 ‘스프링복스’와 영국의 경기에서 흑인들이 상대팀 영국을 응원하는 것을 목격한다. 이에 인종과 국경을 초월하는 스포츠를 통해 모두의 마음을 하나로 연결할 것을 결심하고, ‘스프링복스’의 주장 프랑소와 피나르를 초대해 1년 뒤 자국에서 열리는 럭비 월드컵에서 우승해 달라고 제안한다. 그 누구도 믿지 않았고 불가능이라 여겨졌던 우승! 결코 굴하지 않았던 그들은 온 국민에게 기적 같은 경험을 선사하고 이 날의 경기는 흑과 백이 하나되는 역사적인 사건으로 기록되었다!",
+    "poster_path": "https://image.tmdb.org/t/p/original//hQ7MUn23jw57MwKtjlSZHlNytNt.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10752,
+        18
+    ],
+    "title": "12번째 솔저",
+    "release_date": "2017-12-25",
+    "popularity": 17.168,
+    "vote_count": 353,
+    "vote_average": 7.3,
+    "overview": "1940년 4월 9일, 제2차 세계대전 중인 나치군은 노르웨이를 점령하고 히틀러는 노르웨이 연안에 요새를 구축한다. 노르웨이 군의 마틴 레드작전이 다음 해 3월 24일 시작되고, 영국군으로부터 중요 임무를 수행하기 위한 훈련을 받은 12명의 노르웨이 저항군이 노르웨이로 급파된다. 그들의 임무는 독일 항공기지를 파괴하는 것.  하지만 작전 도중 발각되어 이들 중 11명은 체포되고 단 1명, 얀만이 총상을 입은 채 탈출에 성공한다. 혹독한 추위와 험난한 설산 속에서 냉혈한 나치 친위대 쿠르트 슈타게는 집요하게 추격해 오는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//75LjjQ6OGKauAk2NwMCkXnz5AOX.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        10749
+    ],
+    "title": "Los Leones",
+    "release_date": "2019-11-28",
+    "popularity": 14.311,
+    "vote_count": 61,
+    "vote_average": 8.1,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//4x18ruh7SdNaCIO85rw7j57So84.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        27,
+        35
+    ],
+    "title": "파리의 늑대인간",
+    "release_date": "1997-05-29",
+    "popularity": 15.406,
+    "vote_count": 479,
+    "vote_average": 5.9,
+    "overview": "유럽 여행 중 파리에 도착한 앤디(Andy McDermott: 톰 에버렛 스콧 분)와 친구 크리스(Chris: 필 벅크먼 분), 브래드(Brad: 빈센트 비루프 분)는 출입이 금지된 늦은 밤 몰래 에펠탑 꼭대기에 올라간다. 앤디는 에펠탑 꼭대기에서 번지 점프를 하려고 하고 친구들은 말린다. 이때 에펠탑에 오르는 또 다른 발자국 소리를 듣고 이들은 몸을 숨긴다. 아름다운 사라핀(Serafine: 줄리 델피 분)이 에펠탑에서 자살을 시도하고 이를 말리려고 앤디가 다가가지만 사라핀은 뛰어 내리고 만다. 발목에 밧줄을 감고 같이 추락하던 앤디의 도움으로 사라핀은 신데렐라처럼 구두만 남기고 사라지고 앤디는 철주에 부딪혀 병원에 입원한다. 간호사 복장을 한 사라핀을 발견하고 앤디가 따라가지만 사라핀은 모르는 사람이라면서 사라지고, 병원에서는 시체의 간이 도난당한다. 에펠탑 위에서 뛰어 내리기 전에 남긴 사라핀의 메모를 찾아낸 일행은 그 주소를 찾아간다. 돌아갈 것을 애원하는 사라핀에게 앤디는 만나줄 것을 조르고, 결국 그녀는 만날 약속을 한다. 사라핀과의 데이트에서 실수를 한 앤디는 다시 사라핀의 집을 찾아가지만, 사라핀은 없고 오빠인 것처럼 보이는 클로드(Claude: 피어리 코소 분)를 만난다. 클로드는 앤디 일행에게 클럽에서 열리는 보름달 파티에 사라핀을 만날 수 있으니까 오라고 초대한다. 으스스한 장소에서 열리는 파티에 참석한 일행은 사라핀이 없자 수상히 생각하여 앤디와 브래드를 남기고 크리스가 사라핀의 집으로 가보기로 한다. 앤디와 브래드가 클럽에 있다는 말을 들은 사라핀은 크리스를 지하실에 가둬두고 클럽으로 달려간다. 파티가 열리는 클럽은 밖에서 문이 잠기고, 사라핀은 앤디를 데리고 지하도로 도망한다. 클로드 일당은 늑대인간으로 변하여 클럽안은 순식간에 살육의 현장으로 변하고 도망하던 앤디도 늑대인간에게 쫓기고 구사일생 목숨을 건지지만 발목을 물리고 마는데.",
+    "poster_path": "https://image.tmdb.org/t/p/original//1NUOprbP7LLfKPArLJY7wziUiHT.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10749,
+        18,
+        10751
+    ],
+    "title": "최고의 유산",
+    "release_date": "2007-03-09",
+    "popularity": 22.207,
+    "vote_count": 308,
+    "vote_average": 7.7,
+    "overview": "억만장자 할아버지의 유산을 상속 받기 위한 조건으로 괴상한 임무들을 차례차례 수행해야하는 처지가 된 망나니 손자의 이야기.",
+    "poster_path": "https://image.tmdb.org/t/p/original//8BdVk1u110lwHFELTEO9HrPrIDa.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        27,
+        9648,
+        53
+    ],
+    "title": "숨바꼭질",
+    "release_date": "2005-01-27",
+    "popularity": 20.638,
+    "vote_count": 1232,
+    "vote_average": 6.4,
+    "overview": "데이비드 캘러웨이 박사(로버트 드 니로)의 9살 짜리 딸 에밀리(다코타 패닝)는, 엄마의 갑작스러운 자살 이후 커다란 정신적 충격에 빠져 집에만 틀어박혀 지낸다. 데이비드의 제자인 캐서린 칼슨 박사(팜케 얀센)에게서 몇 달 동안 정신과 치료를 받은 에밀리는 조금씩 회복의 기미를 보인다. 이에 데이비드는 딸의 건강을 위해 공기 좋은 뉴욕 외곽의 작은 마을로 이사를 가기로 마음 먹는다.  새로운 보금자리에서 상당히 안정을 되찾은 듯 보이던 에밀리가 어느날 찰리라는 상상속 친구에 대해 이야기하기 시작한다. 데이비드는 ‘찰리’라는 존재가, 에밀리가 자기자신을 표현하는 긍정적인 방법 중 하나라 생각하며 안심하지만, 어느 날 그 ‘찰리’로부터 온 피로 쓴 메시지가 집안 곳곳에서 발견되자, 사태의 심각성을 깨닫는다. 이제 그는 찰리의 존재 여부를 밝혀내야 할 뿐만 아니라, 그와의 광적인 죽음의 게임에 빠져있는 사랑하는 딸, 에밀리를 구해내야만 하는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//orY4PX3TNFdCbdVwhKY32UKMvoA.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        53,
+        878,
+        28,
+        12
+    ],
+    "title": "바이스: 범죄도시",
+    "release_date": "2015-01-16",
+    "popularity": 23.299,
+    "vote_count": 446,
+    "vote_average": 4.4,
+    "overview": "법도 규칙도 책임도 없는 도시 ‘바이스’. 이곳에서 사람들은 폭력, 살인, 강간 등 현실에선 불법인 광기를 분출한다. ‘바이스’에서 고객들의 욕망을 충족 시켜주는 건 인간의 유전자를 복제한 인공 지능 로봇으로 이들은 자신이 로봇이란 사실을 모른다. 그리고 이를 철저하게 통제하고 관리하는 건 냉혹한 경영자 ‘줄리안’(브루스 윌리스)이다.  어느 날, 로봇 중 하나인 ‘켈리’가 시스템의 오류로 모든 기억이 되살아 낸 채 ‘바이스’를 탈출한다.  이를 막으려는 ‘줄리안’과 ‘바이스’때문에 현실로 범죄가 이어진다고 비난하던 형사 ‘로이’(토마스 제인)가  이상한 낌새를 알아채고 ‘켈리’를 추격하기 시작한다.  그리고 ‘켈리’와 ‘로이’는 점차 믿을 수 없는 충격적 사실들과 마주하게 되는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//vn8akeiW9Ex4bilkMK9gVWSnCqO.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        878,
+        28
+    ],
+    "title": "로보캅",
+    "release_date": "2014-01-30",
+    "popularity": 18.891,
+    "vote_count": 4489,
+    "vote_average": 5.8,
+    "overview": "범죄와 무질서로 혼란에 빠진 도시.  좋은 아빠이자 실력 있는 경찰로 평범하게 살아가던 ‘알렉스 머피’는  예기치 못한 사고로 인해 온 몸에 치명적 부상을 입는다.  로봇 테크놀로지의 기술을 가진 다국적 기업 ‘옴니코프’ 사(社)는 아내 ‘클라라’에게 ‘머피’의 몸에 최첨단 하이테크 수트를 장착할 것을 제안하고,  그녀는 목숨을 잃을 위기에 놓인 남편을 살리기 위해 제안을 받아들인다.  모두가 기다려온 완벽한 히어로 ‘로보캅’으로 재탄생한 ‘머피’는 ‘옴니코프’사의 체계적 훈련을 받으며 더욱 강력해지고,  ‘클라라’는 기계처럼 변해버린 남편의 모습에 혼란스러워 한다.  한 치의 오차 없는 수트의 통제를 받으며 명령을 따라야 하는 ‘로보캅’.  하지만 그는 점차 스스로 수트를 지배하기 시작하고 그와 동시에 자신을 새롭게 태어나게 한 수트와 도시 이면에  거대한 음모가 숨겨져 있음을 깨닫게 되는데...!",
+    "poster_path": "https://image.tmdb.org/t/p/original//7oI1fSGPk8WnU6ibRveuC9HRqUW.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        10749
+    ],
+    "title": "왓 위민 원트",
+    "release_date": "2000-12-15",
+    "popularity": 15.885,
+    "vote_count": 3073,
+    "vote_average": 6.4,
+    "overview": "닉 마샬(Nick Marshall: 멜 깁슨 분)은 한 때 끝발 날리던 광고 기획자. 명성과 돈, 어느 하나 남 부러울 것이 없던 닉에게 어느 날 믿을 수 없는 시련이 닥쳐온다. 바로 승진의 기회를 경쟁사 직원에게 빼앗겨 버린 것! 그것도 남자가 아닌 여자 달시 맥과이어(Darcy Maguire: 헬렌 헌트 분)에게 말이다. 닉과 달시는 처음 만나자마자 서로를 경계한다. 닉에게 달시는 엄청난 잔소리로 남자를 달달 볶는 마녀일 뿐이며, 달시는 닉이 구닥다리 사고 방식을 가진 극우 남성우월 주의자로 밖에 보이지 않는다.  달시는 강력한 소비력을 가진 여성들을 위한 제품 광고를 기획할 팀을 꾸리고, 이에 밀릴 수 없는 닉은 여자를 이해하기 위해 자신이 '여자가 되어 보기'로 결심한다. 여자들처럼 코팩을 붙이고, 수분 함유 립스틱을 바르고, 마스카라를 하고, 스타킹을 신기도 하고. 닉은 조만간 자신이 여자를 이해하고 그에 맞는 광고 기획을 할 수 있으리라는 생각에 기분이 으쓱해지는데. 순간 꽈당! 욕실 바닥에 넘어져 정신을 잃고 만다. 다음 날 아침, 어제의 낙상 사고로 여느 때보다 늦게 출근하게 된 닉은 이상한 환청에 시달리게 된다. 주위 여자들은 분명 입을 다물고 있는데, 닉에게는 그녀들의 속마음이 다 들리는 것이다. 어리둥절한 닉은 정신과 상담을 받고, 상담 의사는 닉에게 일생의 전환을 맞게 될 사실을 깨닫게 해준다.  닉은 이 특별하고 위험천만한 능력을 달시에게 써먹기로 한다. 이제 닉은 달시의 모든 아이디어를 훔쳐내서 상사로부터 다시 인정을 받게 되고, 급기야 닉의 이런 능력을 꿈에도 모르는 달시는 그의 조작된 매력에 빠져들고 만다. 그리고 어느 틈 엔가 닉도 달시를 사랑하게 되는데... 그러나 회사에선 닉의 능력을 높이 평가해 달시를 해고하기로 결정한다. 양심의 가책을 느끼는 닉. 그는 과연 이 난관을 어떻게 헤쳐나갈 것인가.",
+    "poster_path": "https://image.tmdb.org/t/p/original//vhcwxIvEnCKe8kt1FrBIVK76x1c.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        53,
+        80,
+        28
+    ],
+    "title": "언셀러",
+    "release_date": "2014-08-12",
+    "popularity": 24.139,
+    "vote_count": 367,
+    "vote_average": 5.5,
+    "overview": "넉넉하지 않은 형편에 아이 가지길 원하는 가난한 부부 톰과 애나. 어느 날 지하실에 세 들어 살던 한 남자가 마약 과다 복용으로 죽어있는 것을 발견한다. 경찰이 다녀간 후 천정에서 엄청난 돈가방을 발견하고 죽은 남자의 돈이라 의심치 않는다. 돈으로 빚도 갚고 아이도 가지고 싶었던 부부에게 돈의 진짜 주인과 돈을 훔친 자가 나타나고 시시각각 목숨에 위협을 받기 시작한다. 설상가상으로 경찰에 알리려 해도 쓴 돈을 메우지 않으면 징역형에 처하게 될 것이라 통보 받는다. 결국 톰과 애나는 꼬인 매듭을 풀기 위해 모두를 자신들의 집으로 불러모아 한곳에서 마지막 결판을 내려 하는데…",
+    "poster_path": "https://image.tmdb.org/t/p/original//vMzvLP1V0sAU0bgBhjL2Sb0dsAk.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        12,
+        10751,
+        14,
+        16
+    ],
+    "title": "더 크리스마스",
+    "release_date": "2017-11-15",
+    "popularity": 25.144,
+    "vote_count": 398,
+    "vote_average": 6.1,
+    "overview": "자유를 꿈꾸는 방앗간의 당나귀 ‘보’.  어느 날, 베들레헴에서 밝게 빛나는 별 하나를 발견하고 방앗간을 박차고 나온 ‘보’는  장난꾸러기 비둘기 ‘데이브’와 사랑스러운 양 ‘루스’,  그리고 ‘마리아’와 ‘요셉’과 함께 꿈에 그리던 모험을 시작한다.  첫 번째 크리스마스의 비밀이 드디어 밝혀진다!",
+    "poster_path": "https://image.tmdb.org/t/p/original//81prAI1Uik7amtIBQkTcAvua4w3.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        878,
+        27,
+        9648
+    ],
+    "title": "비바리움",
+    "release_date": "2019-09-07",
+    "popularity": 17.103,
+    "vote_count": 1144,
+    "vote_average": 6.0,
+    "overview": "함께 살 곳을 찾던 ‘톰’과 ‘젬마’. 중개인으로부터 ‘욘더’라는 독특한 마을의 9호 집을 소개받는다. 똑같은 모양의 주택들이 즐비한 곳에서 알 수 없는 기묘함에 사로잡힌 순간, 중개인은 사라져 버린다. 어떤 방향으로 향해도 집 앞에 다다르는 이곳에서 우리의 선택은 없다, 오직 살아갈 뿐!",
+    "poster_path": "https://image.tmdb.org/t/p/original//7rmotLKRUqcslVuFXCzilXYYohF.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        12,
+        14,
+        28
+    ],
+    "title": "코난 - 바바리안",
+    "release_date": "1982-04-02",
+    "popularity": 18.731,
+    "vote_count": 1789,
+    "vote_average": 6.8,
+    "overview": "바다가 아틀란티스를 삼킨 후 아리아인의 자손들이 번성하기 전 사이에 암흑의 시기가 있었다. 이 때에, 코난은 아퀼로니아의 보석으로 장식된 왕관을 그의 수심어린 이마에 쓸 운명이었다. 내가 바로 그의 서사시를 그대들에게 말해줄 수 있는 유일한 연대기 작가이다. 그대들에게 그의 찬란한 모험의 날들에 대해 말해주겠노라!\r 대장장이의 아들인 어린 코난은 아버지에게 강철의 비밀에 관한 이야기를 들으며 자라나고 있었다. 그러나 사악한 마법사 툴사 둠이 이끄는 군대에게 마을이 습격당해 그의 부모와 마을 사람들은 몰살당하고 그는 노예로 팔려가게 되었다. 시간이 흘러 장성한 코난은 타고난 용력과 검술로 동료들과 함께 툴사 둠에게 납치된 공주를 구하고 부모님의 복수를 하기 위해 모험을 시작하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//qw2A587Ee61IwcSOLNFRhuOACZZ.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18
+    ],
+    "title": "Lokkhi Chele",
+    "release_date": "2021-11-17",
+    "popularity": 21.964,
+    "vote_count": 0,
+    "vote_average": 0.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//jx6ar9fxKX4keILB93UFacivkcX.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        80,
+        53,
+        10749,
+        18
+    ],
+    "title": "칼리토",
+    "release_date": "1993-11-10",
+    "popularity": 16.08,
+    "vote_count": 2322,
+    "vote_average": 7.9,
+    "overview": "칼리토는 30년형을 받고 감옥에서 복역하다가 5년만에 출옥한다. 오래 동안 뒷골목 생활을 하던 그는 바하마에서 차 임대업을 하리라는 꿈을 갖고 그 돈을 마련하기 위해 변호사인 데이브가 지분을 갖고 있는 클럽을 운영하게 된다. 착실히 돈을 모으고 있는데 어느날 옛 애인 게일을 만나게 된다. 그녀에게 자신의 꿈을 얘기한 칼리토는 더욱 클럽에만 열심이다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//qMyaZHiL682T1LDgFfXecLM3EZx.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        80
+    ],
+    "title": "위대한 레보스키",
+    "release_date": "1998-03-06",
+    "popularity": 18.88,
+    "vote_count": 8845,
+    "vote_average": 7.9,
+    "overview": "삶의 목표도, 별다른 직업도 없는 제프리 레보스키는 볼링장에서 시간이나 죽이며 칵테일을 늘 손에 들고 다닌다. 어느 날 이웃에 살고 있는 백만장자인 제프리 레보스키와 그를 혼동한 강도들이 그의 집에 침입한다. 강도 사건 후 얼마 지나지 않아 백만장자 레보스키의 젊은 아내가 납치당해 돈을 요구당하자, 이 돈의 전달자로 건달 제프리 레보스키가 뽑힌다. 그는 친구와 함께 백만 달러가 든 돈가방을 전달하지 않고 가로채지만, 불법 주차단속에 걸려 돈가방이 든 차가 견인된다. 그 와중에 백만장자 레보스키의 딸 마우드 버니는 납치된 것이 아니라 스스로 잠적한 것임을 밝히며, 돈가방을 자신에게 갖다줄 것을 요구하는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//5DpmtMBXXNDujIuSlKW3WLKuqEd.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10770,
+        35,
+        10749,
+        10751
+    ],
+    "title": "A Snowy Christmas",
+    "release_date": "2021-11-13",
+    "popularity": 14.119,
+    "vote_count": 0,
+    "vote_average": 0.0,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//eK0LoNJCHGbRlUpsAE4kAGDS84Y.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        35,
+        53
+    ],
+    "title": "겟 스마트",
+    "release_date": "2008-06-19",
+    "popularity": 14.38,
+    "vote_count": 2779,
+    "vote_average": 6.2,
+    "overview": "그들도 세상을 구한다!  비밀 첩보국 ‘컨트롤’과 세계 정복 야욕을 가진 범죄 조직 ‘카오스’가 대립하고 있는 이 때, 언제든 현장에 투입될 준비가 되어있는 컨트롤 요원 ‘맥스웰 스마트(스티브 카렐)’가 있었다.  때마침 컨트롤 본부가 공격을 받고 요원들의 신분이 위태로워지자, 컨트롤 국장(알란 아킨)은 특단의 조치로 열성 내근요원 맥스웰 스마트를 현장 특수요원으로 승진시킨다.  다만 아주 사소한 문제라면, 사상 최고이자 최악의 임무라는 이 중대한 임무가 맥스웰 스마트의 첫 임무라는 것뿐.  2인자의 거침없는 무한도전!!  꿈에도 그리던 현장요원이 된 스마트는 첩보계의 슈퍼 스타 ‘에이전트 23(드웨인 존슨)’의 곁에서 뛰길 고대하지만 그의 파트너는 다름아닌 유일하게 신분이 폭로되지 않은 ‘에이전트 99(앤 해서웨이)’. 그녀는 성형수술로 거듭난 사랑스러운 외모와는 달리 살인적인 옆차기를 구사하는 베테랑 현장요원이었다.  현장경험은 전무, 하지만 준비된 요원인 스마트는 '똑똑함'을 무기로 작전에 나서는데….  세상을 구하기 위해 나선 2인자의 거침 없는 무한도전은 지금부터 시작이다!",
+    "poster_path": "https://image.tmdb.org/t/p/original//4Q5r68l6NmAwoMmV2HGWD3pYT6o.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        80,
+        53,
+        18
+    ],
+    "title": "거미줄에 걸린 소녀",
+    "release_date": "2018-10-25",
+    "popularity": 15.343,
+    "vote_count": 1024,
+    "vote_average": 6.1,
+    "overview": "젊은 천재 해커 리스베트(클레어 포이)는 여성을 괴롭히는 남성을 찾아가 자신만의 방법으로 처단해서 악의 심판자라 불린다. 한 의뢰인으로부터 자신의 연구 결과를 해킹해달라는 제안을 받은 그녀가 이번에 해킹해야 하는 곳은 미 정보국 NSA. 무사히 해킹에 성공하지만 괴한의 공격을 받고 자료를 뺏기게 된 그녀는 자료를 되찾기 위해 추적을 시작하고, 이 일이 국제 해커 범죄 조직 스파이더와 그녀의 쌍둥이 여동생 카밀라(실비아 훅스)가 관련돼 있다는 것을 알게 된다. 사건의 진실과 스파이더스의 정체를 파헤칠수록 더 큰 위협에 처하게 되는데...",
+    "poster_path": "https://image.tmdb.org/t/p/original//oZadgNpFY3a4DlKskxKylImXxUH.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        28,
+        27
+    ],
+    "title": "런던워Z: 레드콘",
+    "release_date": "2018-09-07",
+    "popularity": 22.392,
+    "vote_count": 190,
+    "vote_average": 5.5,
+    "overview": "좀비 바이러스가 런던의 한 교도소로부터 퍼진 이후 살아남은 사람들은 남쪽 장벽 안에 피신 중이다. 점점 좀비들의 전투 능력이 향상되는 가운데 장벽이 무너지는 것은 시간 문제일 뿐. 이 와중에 좀비 사태를 해결할 과학자가 런던에 생존하고 있다는 것을 알게 되고 이 사람을 구하기 위해 8명의 특공대가 파견된다. 주어진 시간은 72시간... 이들의 임무는 성공할 수 있을 것인가?",
+    "poster_path": "https://image.tmdb.org/t/p/original//2E1ARICermsJJ847NKNW5z72QQK.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        18,
+        36
+    ],
+    "title": "Eiffel",
+    "release_date": "2021-10-07",
+    "popularity": 14.025,
+    "vote_count": 134,
+    "vote_average": 6.3,
+    "overview": "",
+    "poster_path": "https://image.tmdb.org/t/p/original//7JrT2FAv4WMZEPXFR9wXWqsyAvl.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        14,
+        16,
+        12
+    ],
+    "title": "이누야샤 극장판 4 : 홍련의 봉래도",
+    "release_date": "2004-12-23",
+    "popularity": 18.558,
+    "vote_count": 81,
+    "vote_average": 7.7,
+    "overview": "50년에 한 번씩 모습을 드러내는 신비의 섬 봉래도. 이곳을 지배하려는 네 요괴의 공격에 한 반요 아이가 섬을 탈출한다. 아이를 구한 이누야샤 일행이 다른 반요들을 지키기 위해 섬으로 향하는데. 요괴들에 맞선 싸움, 이제 시작됐다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//fu6eMjeOtD1dRw2sLL2xuwFRmLB.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35,
+        18
+    ],
+    "title": "달콤한 인생",
+    "release_date": "1960-02-05",
+    "popularity": 15.327,
+    "vote_count": 1343,
+    "vote_average": 8.2,
+    "overview": "삼류 신문의 사교계 담당 신문기자인 마르첼로(Marcello Rubini: 마르첼로 마스트로야니 분)는 사치스럽고 방탕한 생활을 하던 중 우연히 한결같이 반복되는 일상사에 진력을 내는 마달레나(Maddalena: 아눅 에이미 분)라는 여인을 만나 사귀게 된다. 마달레나는 마르첼로에게 고혹적인 분위기를 지닌 매춘부, 아르디아나를 소개시켜준다. 스스로도 주체할 수 없는 자신의 방탕한 생활에 회의를 느끼던 그는 어느 날 절친한 친구 스타이너가 자살했다는 소식을 듣고 더욱 실의에 빠지면서 삶의 가치와 의미에 대해 회의를 품게된다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//mZJ25Th65B2KXM57uIiEzO3Aw81.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        10749,
+        18
+    ],
+    "title": "나는 내일, 어제의 너와 만난다",
+    "release_date": "2016-12-17",
+    "popularity": 20.335,
+    "vote_count": 113,
+    "vote_average": 7.6,
+    "overview": "스무 살의 ‘타카토시’는 지하철에서 우연히 만난 ‘에미’를 보고 순식간에 마음을 빼앗긴다. 운명 같은 끌림을 느낀 타카토시의 고백으로 두 사람은 연인이 되고, 매일 만나 행복한 데이트를 한다. 하지만, 왠지 종종 의미를 알 수 없는 눈물을 보이던 에미로부터 믿을 수 없는 비밀을 듣게 된 타카토시는 큰 혼란에 빠진다. 그 비밀은 바로 타카토시와 에미의 시간은 서로 반대로 흐르고 있고, 교차되는 시간 속에서 함께 할 수 있는 시간은 오직 30일뿐이라는 것. 30일 후에도, 이 사랑은 계속될 수 있을까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//rsW6wgbeFQVxqh108IWn22FCTxr.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        27,
+        53
+    ],
+    "title": "헌트",
+    "release_date": "2019-09-13",
+    "popularity": 17.647,
+    "vote_count": 708,
+    "vote_average": 6.7,
+    "overview": "할로윈을 즐기던 여섯명의 친구들은 우연히 귀신의 집에 들어가게 된다. 시작은 평범하던 귀신의 집은 점점 살육의 현장으로 변하게 되고, 그 곳을 탈출하기 위한 싸움이 시작된다. 특별한 목적이나 반전따윈 없다. 기승전결이 확실한 단순무식형 호러슬래셔무비. 대부분의 이런 장르의 헐리웃 영화가 매우 잔인한 반면, 이 영화는 고어는 아닌 슬래셔 정도의 연출을 보여준다.",
+    "poster_path": "https://image.tmdb.org/t/p/original//haQSrjFlq30I60UVN1VsB6uRwKM.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        35
+    ],
+    "title": "마디그라 : 세 남자의 여행",
+    "release_date": "2011-09-23",
+    "popularity": 10.926,
+    "vote_count": 86,
+    "vote_average": 5.1,
+    "overview": "어린 시절부터 절친인 모범생 마이클과 뚱보 범프, 어리숙한 스코티는 졸업반 2학기 파티를 야심 차게 기획하지만 범프의 과도한 ‘알몸 홍보’ 여파로 파리 날리는 파티가 되고 만다. 우연히 TV에서 마디그라 축제 보도를 접한 범프는 친구들에게 뉴올리언즈로 가서 축제를 즐기자고 제의한다. 때마침 마이클의 여자친구 에리카가 할아버지의 장례식에 참석하기 위해 떠나고, 마이클과 친구들은 뉴올라언즈로 향한다. 모두들 축제를 위해 목걸이를 사지만 스코티는 할머니의 진주 목걸이를 준비한다.  부푼 마음을 안고 도착한 뉴올리언스. 그러나 스코티의 호텔 예약 실수로 오갈 데 없는 처지가 되고, 설상가상으로 장례식에 간 줄 알았던 에리카가 뜨겁게 축제를 즐기고 있는 것을 목격한 마이클은 아연실색한다. 게다가 차까지 도둑맞아 갈 곳 없는 친구들은 거리에서 노숙하는 지경에 이른다.  그러나 축제는 아직 끝나지 않았다. 여행객들 사이에서 술에 빠지고 파티에 취한 이들은 뉴올리언스의 추억을 하나 둘씩 만들기 시작한다. 마이클은 자신처럼 남친에게 배신당하고 온 루시를 만나 마음을 터놓는 친구가 되고, 스코티는 한눈에 반한 스타, 카르멘 엘렉트라와 파티에서 재회한다. 사람에 치이고, 축제에 지친 범프도 웨이트리스 앤의 위로를 받게된다. 과연 이들의 화려한 축제의 끝은 해피엔딩일까?",
+    "poster_path": "https://image.tmdb.org/t/p/original//pljjsYW0BUsWDu2x5FK5ccwW7cP.jpg"
+    }
+  }
+  ,{
+    "model" : "movies.movie",
+    "fields" : {
+      "genres": [
+        99
+    ],
+    "title": "브레이킹 바운더리: 지구의 과학",
+    "release_date": "2021-06-04",
+    "popularity": 10.203,
+    "vote_count": 25,
+    "vote_average": 7.2,
+    "overview": "북극의 황무지에서부터 남아메리카의 다양한 정글에 이르기까지 전 세계의 다양한 생명체에 초점을 맞춘 다큐멘터리",
+    "poster_path": "https://image.tmdb.org/t/p/original//kRs7kdlw06DVkxOVidWloqZ3HCw.jpg"
+    }
+  }
+]

@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <span>
-      <router-link :to="{ name: 'Login' }">Login</router-link> |
-      <router-link :to="{ name: 'Signup' }">Signup</router-link> |
+      <router-link :to="{ name: 'Login' }" v-if="!isLogin">Login</router-link>
+      <router-link :to="{ name: 'Signup' }" v-if="!isLogin">Signup</router-link>
     </span>
     <span>
-      <router-link :to="{ name: 'Recommend1' }">랜덤영화 20</router-link> |
-      <router-link :to="{ name: 'Recommend2' }">영화추천2</router-link> |
-      <router-link :to="{ name: 'Recommend3' }">영화추천3</router-link> |
+      <router-link :to="{ name: 'Recommend1' }">랜덤영화 20</router-link>
+      <router-link :to="{ name: 'Recommend2' }">영화추천2</router-link>
+      <router-link :to="{ name: 'Recommend3' }">영화추천3</router-link>
       <router-link :to="{ name: 'ReviewList' }">Community</router-link>
     </span>
     <span>
@@ -30,11 +30,9 @@ export default {
   data: function () {
     return {
       word : null,
+      isLogin : false,
     }
   },
-  // created: function () {
-
-  // },
   methods: {
     searchMovie: function () {
       if (this.word) {
@@ -47,6 +45,13 @@ export default {
             console.log(res)
           })
       }
+    }
+  },
+  created: function (event) {
+    const jwtToken = localStorage.getItem('jwt')
+    console.log(event)
+    if (jwtToken) {
+      this.isLogin = true
     }
   },
 }

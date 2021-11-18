@@ -8,7 +8,7 @@ from rest_framework import status
 from rest_framework.permissions import AllowAny
 import requests
 import random
-
+import sys
 # Create your views here.
 
 key = "733c7d5145ecf236ad387093e2d52047"
@@ -66,25 +66,28 @@ def random_recommend(request):
 @permission_classes([AllowAny])
 def movie_search(request, word):
     if request.method == 'GET':
+        word = word.encode('uft-8')
         Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page=1&include_adult=false"
         responses = requests.get(Url).json()
         temp = []
         pages = responses["total_pages"]
-        for page in range(1,pages):
-            Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page={page}&include_adult=false"
-            responses = requests.get(Url).json()
-            for response in responses["results"]:
-                temp_dict = {}
-                temp_dict["movie_id"] = response["id"]
-                temp_dict["title"] = response["title"]
-                temp_dict["release_date"] = response["release_date"]
-                temp_dict["popularity"] = response["popularity"]
-                temp_dict["vote_count"] = response["vote_count"]
-                temp_dict["vote_average"] = response["vote_average"]
-                temp_dict["overview"] = response["overview"]
-                temp_dict["poster_path"] = poster_url + response["poster_path"]
-                temp_dict["genres"] = response["genre_ids"]
-                temp.append(temp_dict)
+        check = responses["total_results"]
+        if check != 0:
+            for page in range(1,pages):
+                Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page={page}&include_adult=false"
+                responses = requests.get(Url).json()
+                for response in responses["results"]:
+                    temp_dict = {}
+                    temp_dict["movie_id"] = response["id"]
+                    temp_dict["title"] = response["title"]
+                    temp_dict["release_date"] = response["release_date"]
+                    temp_dict["popularity"] = response["popularity"]
+                    temp_dict["vote_count"] = response["vote_count"]
+                    temp_dict["vote_average"] = response["vote_average"]
+                    temp_dict["overview"] = response["overview"]
+                    temp_dict["poster_path"] = poster_url + response["poster_path"]
+                    temp_dict["genres"] = response["genre_ids"]
+                    temp.append(temp_dict)
         serializer = MovieSerializer(temp, many=True)
         return Response(serializer.data)
 

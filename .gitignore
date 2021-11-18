@@ -404,22 +404,7 @@ pip-selfcheck.json
 .history
 .ionide
 
-### Vue ###
-# gitignore template for Vue.js projects
-#
-# Recommended template: Node.gitignore
 
-# TODO: where does this rule come from?
-docs/_book
-
-# TODO: where does this rule come from?
-test/
-
-### Vuejs ###
-# Recommended template: Node.gitignore
-
-npm-debug.log
-yarn-error.log
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -446,4 +431,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,django,python,venv,node,vuejs,vue,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,django,python,venv,node,visualstudiocode

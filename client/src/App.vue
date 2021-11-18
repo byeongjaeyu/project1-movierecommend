@@ -1,32 +1,56 @@
 <template>
   <div id="app">
-    <span>
-      <router-link :to="{ name: 'Login' }" v-if="!isLogin">Login</router-link>
-      <router-link :to="{ name: 'Signup' }" v-if="!isLogin">Signup</router-link>
-    </span>
-    <span>
-      <router-link :to="{ name: 'Recommend1' }">랜덤영화 20</router-link>
-      <router-link :to="{ name: 'Recommend2' }">영화추천2</router-link>
-      <router-link :to="{ name: 'Recommend3' }">영화추천3</router-link>
-      <router-link :to="{ name: 'ReviewList' }">Community</router-link>
-    </span>
-    <span>
-      <input type="text" v-model.trim="word" @input="searchMovie" @keyup.enter="searchMovie">
-      <button @click="searchMovie"  >Search</button>
-    </span>
-    <index></index>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <p class="navbar-brand">MovieKing</p>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link :to="{ name: 'Login' }" class="nav-link">Login</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link :to="{ name: 'Signup' }" class="nav-link">Signup</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link :to="{ name: 'Logout' }" class="nav-link">Logout</router-link>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                영화추천
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <router-link :to="{ name: 'Index' }" class="dropdown-item">Index</router-link>
+                </li>
+                <li>
+                  <router-link :to="{ name: 'Recommend1' }" class="dropdown-item">랜덤영화 20</router-link>
+                </li>
+                <li>
+                  <router-link :to="{ name: 'Recommend2' }" class="dropdown-item">추천2</router-link>
+                </li>
+                <li>
+                  <router-link :to="{ name: 'Recommend3' }" class="dropdown-item">추천3</router-link>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" v-model="word" type="text" placeholder="검색할 영화를 입력하세요." @input="searchMovie" @keypress.enter="searchMovie">
+            <button class="btn btn-outline-success" @click="searchMovie">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Index from '@/views/movies/Index'
 import axios from 'axios'
 
 export default {
   name: 'App',
-  components: {
-    'Index' : Index,
-  },
+
   data: function () {
     return {
       word : null,

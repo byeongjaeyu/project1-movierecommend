@@ -4,8 +4,7 @@
     <div>
       <div v-for="movie in movies" :key="movie.movie_id">
         {{ movie.title }}
-        {{ movie.poster_path }}
-        <img :src="posterUrl" alt="">
+        <img :src="movie.poster_path" alt="">
         <hr>
       </div>
     </div>
@@ -39,5 +38,9 @@ export default {
 </script>
 
 <style>
-
+  img {
+    width: 300px;
+    height: 150px;
+    
+  }
 </style>

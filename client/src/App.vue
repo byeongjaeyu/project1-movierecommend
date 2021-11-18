@@ -10,27 +10,45 @@
       <router-link :to="{ name: 'Recommend3' }">영화추천3</router-link> |
       <router-link :to="{ name: 'ReviewList' }">Community</router-link>
     </span>
+    <span>
+      <input type="text" v-model.trim="word" @input="searchMovie" @keyup.enter="searchMovie">
+      <button @click="searchMovie"  >Search</button>
+    </span>
     <index></index>
   </div>
 </template>
 
 <script>
 import Index from '@/views/movies/Index'
+import axios from 'axios'
 
 export default {
   name: 'App',
   components: {
     'Index' : Index,
   },
-  // data: function () {
-  //   return {}
-  // },
+  data: function () {
+    return {
+      word : null,
+    }
+  },
   // created: function () {
 
   // },
-  // methods: {
-
-  // },
+  methods: {
+    searchMovie: function () {
+      if (this.word) {
+        axios ({
+          method: 'get',
+          url: `http://127.0.0.1:8000/movies/search/${this.word}/`
+        })
+          .then(res => {
+            console.log(`http://127.0.0.1:8000/movies/search/${this.word}/`)
+            console.log(res)
+          })
+      }
+    }
+  },
 }
 </script>
 

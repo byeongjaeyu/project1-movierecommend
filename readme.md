@@ -28,4 +28,7 @@
 
 
 ### 11/18(목요일)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

@@ -3,7 +3,7 @@
     <hr>
     <div class="row row-cols-3 g-4" id="app">
 
-      <div v-for="movie in movies" :key="movie.movie_id">
+      <div v-for="movie in movies" :key="movie.pk">
 
           <div class="col">
 

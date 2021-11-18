@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container ">
+  <div id="app" class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark font sticky-top">
       <div class="container-fluid">
         <p class="navbar-brand fw-bold text-white-50 m-auto">
@@ -15,7 +15,7 @@
             
             <li class="nav-item" v-if="!isLogin">
               <!-- <router-link :to="{ name: 'Login' }" class="nav-link text-white-50">Login</router-link> -->
-              <p @click="openLoginModal" class="text-decoration-none text-white-50">Login</p>
+              <p @click="openLoginModal" class="text-decoration-none text-white-50" style="margin:8px;">Login</p>
             </li>
             <li class="nav-item" v-if="!isLogin">
               <router-link :to="{ name: 'Signup' }" class="nav-link text-white-50">Signup</router-link>
@@ -51,7 +51,7 @@
     </nav>
     <router-view @login="isLogin=true"/>
     <login @closeLoginModal="closeLoginModal" v-if='loginModal'
-    style="position:fixed; m-auto; background:none; "
+    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0;"
     >
     </login>
   </div>

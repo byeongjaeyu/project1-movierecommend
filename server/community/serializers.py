@@ -12,7 +12,7 @@ class ReviewListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Review
-        fields = ('id', 'title',)
+        fields = ('id', 'title', 'movie_title', 'created_at', 'user')
 
 class CommentSerializer(serializers.ModelSerializer):
     

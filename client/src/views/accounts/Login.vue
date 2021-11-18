@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>hello</h1>
     <h1>Login</h1>
     <div>
       <label for="username">사용자 이름: </label>

@@ -38,7 +38,7 @@ def movie_index(request):
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
-def movie_recommend(request):
+def random_recommend(request):
     if request.method == 'GET':
         ran_num = random.randrange(1,500)
         Url = f"https://api.themoviedb.org/3/discover/movie?api_key={key}&language=ko-kr&include_adult=false&include_video=false&page={ran_num}&with_watch_monetization_types=flatrate"

@@ -75,45 +75,26 @@ def movie_search(request, word):
         pages = responses["total_pages"]
         check = responses["total_results"]
         if check != 0:
-            if pages <= 10:
-                for page in range(1,pages+1):
-                    Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page={page}&include_adult=false"
-                    responses = requests.get(Url).json()
-                    for response in responses["results"]:
-                        temp_dict = {}
-                        try:
-                            temp_dict["movie_id"] = response["id"]
-                            temp_dict["title"] = response["title"]
-                            temp_dict["release_date"] = response["release_date"]
-                            temp_dict["popularity"] = response["popularity"]
-                            temp_dict["vote_count"] = response["vote_count"]
-                            temp_dict["vote_average"] = response["vote_average"]
-                            temp_dict["overview"] = response["overview"]
-                            temp_dict["poster_path"] = poster_url + str(response["poster_path"])
-                            temp_dict["genres"] = response["genre_ids"]
-                            temp.append(temp_dict)
-                        except KeyError:
-                            continue
-            elif pages > 10:
-                for page in range(1,11):
-                    Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page={page}&include_adult=false"
-                    responses = requests.get(Url).json()
-                    for response in responses["results"]:
-                        temp_dict = {}
-                        try:
-                            temp_dict["movie_id"] = response["id"]
-                            temp_dict["title"] = response["title"]
-                            temp_dict["release_date"] = response["release_date"]
-                            temp_dict["popularity"] = response["popularity"]
-                            temp_dict["vote_count"] = response["vote_count"]
-                            temp_dict["vote_average"] = response["vote_average"]
-                            temp_dict["overview"] = response["overview"]
-                            temp_dict["poster_path"] = poster_url + str(response["poster_path"])
-                            temp_dict["genres"] = response["genre_ids"]
-                            temp.append(temp_dict)
-                        except KeyError:
-                            continue
-        serializer = MovieListSerializer(temp, many=True)
+            for page in range(1,2):
+                Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page={page}&include_adult=false"
+                responses = requests.get(Url).json()
+                for response in responses["results"]:
+                    temp_dict = {}
+                    try:
+                        temp_dict["movie_id"] = response["id"]
+                        temp_dict["title"] = response["title"]
+                        temp_dict["release_date"] = response["release_date"]
+                        temp_dict["popularity"] = response["popularity"]
+                        temp_dict["vote_count"] = response["vote_count"]
+                        temp_dict["vote_average"] = response["vote_average"]
+                        temp_dict["overview"] = response["overview"]
+                        temp_dict["poster_path"] = poster_url + str(response["poster_path"])
+                        temp_dict["genres"] = response["genre_ids"]
+                        temp.append(temp_dict)
+                    except KeyError:
+                        continue
+
+        serializer = MovieSerializer(temp, many=True)
         return Response(serializer.data)
 
 

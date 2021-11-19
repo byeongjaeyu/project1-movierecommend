@@ -16,7 +16,7 @@
         <tr v-for="review in reviewList" :key="review.id" @click="goToDetail">
           <td>{{ review.id }}</td>
           <td>[{{ review.movie_title }}] {{ review.title }}</td>
-          <td>{{ review.user }}</td>
+          <td>{{ review.username }}</td>
           <td>{{ review.created_at }}</td>
         </tr>
       </tbody>

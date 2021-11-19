@@ -50,7 +50,7 @@
       </div>
     </nav>
     <router-view @login="isLogin=true"/>
-    <login @closeLoginModal="closeLoginModal" v-if='loginModal'
+    <login @closeLoginModal="closeLoginModal" @login="login" v-if='loginModal'
     style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0;"
     >
     </login>
@@ -91,7 +91,12 @@ export default {
     logout: function () {
       this.isLogin = false
       localStorage.removeItem('jwt')
-      this.$router.push({ name: 'Login' })
+      this.$router.push({ name: 'Index' })
+    },
+    login: function () {
+      this.isLogin = true
+      this.closeLoginModal()
+      this.$router.push({ name: 'Index' })
     },
     openLoginModal: function () {
       this.loginModal = true

@@ -3,6 +3,7 @@ from django.shortcuts import render, get_list_or_404, get_object_or_404
 
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
+# from django.http import HttpResponse
 
 
 from .models import Review, Comment
@@ -21,9 +22,16 @@ def review_list(request):
         serializer = ReviewListSerializer(reviews, many=True)
         return Response(serializer.data)
     elif request.method == 'POST':
+        print(type(request.data))
         serializer = ReviewSerializer(data=request.data)
+<<<<<<< Updated upstream
         if serializer.is_valid(raise_exception=True):
             print(serializer)
+=======
+        print(serializer)
+        if serializer.is_valid(raise_exception=True):
+            print('!!!')
+>>>>>>> Stashed changes
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 

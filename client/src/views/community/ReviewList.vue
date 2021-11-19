@@ -20,6 +20,12 @@
           <td>{{ review.created_at }}</td>
         </tr>
       </tbody>
+      <br>
+      <button>
+        <router-link :to="{ name: 'CreateReview' }" class="text-decoration-none text-black">
+          Create Review!
+        </router-link>
+      </button>
     </table>
  
 
@@ -39,7 +45,7 @@ export default {
   created: function () {
     axios({
       method: 'get',
-      url: `http://127.0.0.1:8000/community/`
+      url: `http://127.0.0.1:8000/community/review/`
     })
       .then(res => {
         this.reviewList = res.data

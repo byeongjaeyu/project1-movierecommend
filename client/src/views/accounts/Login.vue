@@ -1,5 +1,5 @@
 <template>
-  <transition name="modal" appear >
+  <transition name="modal" appear class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <!-- <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
       <div class="modal-dialog">
         <div class="modal-content">
@@ -50,6 +50,7 @@ export default {
         .then(res => {
           console.log(res)
           localStorage.setItem('jwt',res.data.token)
+          localStorage.setItem('username',this.credentials.username)
           this.$emit('login')
         })
         .catch(err => {

@@ -91,6 +91,7 @@ def movie_search(request, word):
                             temp_dict["overview"] = response["overview"]
                             temp_dict["poster_path"] = poster_url + str(response["poster_path"])
                             temp_dict["genres"] = response["genre_ids"]
+                            temp.append(temp_dict)
                         except KeyError:
                             continue
             elif pages > 10:
@@ -109,9 +110,9 @@ def movie_search(request, word):
                             temp_dict["overview"] = response["overview"]
                             temp_dict["poster_path"] = poster_url + str(response["poster_path"])
                             temp_dict["genres"] = response["genre_ids"]
+                            temp.append(temp_dict)
                         except KeyError:
                             continue
-                    temp.append(temp_dict)
         serializer = MovieListSerializer(temp, many=True)
         return Response(serializer.data)
 

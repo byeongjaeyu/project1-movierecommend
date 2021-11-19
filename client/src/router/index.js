@@ -15,7 +15,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/Index',
     name: 'Index',
     component: Index,
   },

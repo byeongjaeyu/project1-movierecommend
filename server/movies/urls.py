@@ -5,5 +5,5 @@ urlpatterns = [
     path('', views.movie_index),
     path('recommend1/', views.random_recommend),
     path('search/<str:word>/', views.movie_search),
-    path('recommend2/<int:movie_id>/', views.choice_recommend),
+    # path('recommend2/', views.genre_recommend),
 ]

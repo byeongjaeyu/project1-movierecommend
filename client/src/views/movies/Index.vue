@@ -1,24 +1,30 @@
 <template>
   <div>
     <hr>
-    <div class="row row-cols-3 g-4" id="app">
-
+    <div class="row row-cols-3 g-4" id="app" v-if="!searchMovies.length">
       <div v-for="movie in movies" :key="movie.pk">
-
           <div class="col">
-
             <div class="card">
               <img :src="movie.poster_path" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title fw-bold">{{ movie.title }}</h5>
               </div>
             </div>
-          
-
         </div>
-
       </div>
+    </div>
 
+    <div class="row row-cols-3 g-4" id="app" v-else>
+      <div v-for="movie in searchMovies" :key="movie.pk">
+          <div class="col">
+            <div class="card">
+              <img :src="movie.poster_path" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">{{ movie.title }}</h5>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -29,6 +35,9 @@ import axios from 'axios'
 
 export default {
   name: 'Index',
+  props: {
+    searchMovies: Array
+  },
   data: function () {
     return {
       movies : [],
@@ -46,7 +55,7 @@ export default {
       .catch(err => {
         console.log(err)
       })
-  },
+    }
 }
 </script>
 

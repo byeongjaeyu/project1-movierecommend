@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-dark font sticky-top">
       <div class="container-fluid">
         <p class="navbar-brand fw-bold text-white-50 m-auto">
-          <router-link :to="{ name: 'Index' }" class="text-decoration-none text-white-50">
+          <router-link :to="{ name: '/' }" class="text-decoration-none text-white-50">
             <img src="https://fontmeme.com/permalink/211118/4236136457f6822dd292086626451371.png">
           </router-link>
         </p>
@@ -43,29 +43,41 @@
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2" v-model="word" type="text" placeholder="검색할 영화를 입력하세요." @input="searchMovie" @keypress.enter="searchMovie">
+            <input 
+            class="form-control me-2" 
+            v-model="word" 
+            type="text" 
+            placeholder="검색할 영화를 입력하세요." 
+            @input="searchMovie"
+            >
             <button class="btn btn-outline-success" @click="searchMovie">Search</button>
           </form>
         </div>
       </div>
     </nav>
     <router-view @login="isLogin=true"/>
-    <login @closeLoginModal="closeLoginModal" @login="login" v-if='loginModal'
+    <login 
+    @closeLoginModal="closeLoginModal" 
+    @login="login" v-if='loginModal'
     style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0;"
     >
     </login>
+    <Index :searchMovies="searchMovies">
+    </Index>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import Login from './views/accounts/Login.vue'
+import Index from './views/movies/Index.vue'
 
 export default {
   name: 'App',
 
   components: {
     Login,
+    Index,
   },
 
   data: function () {
@@ -73,6 +85,7 @@ export default {
       word : null,
       isLogin : false,
       loginModal : false,
+      searchMovies: [],
     }
   },
   methods: {
@@ -85,6 +98,7 @@ export default {
           .then(res => {
             console.log(`http://127.0.0.1:8000/movies/search/${this.word}/`)
             console.log(res)
+            this.searchMovies = res.data
           })
       }
     },

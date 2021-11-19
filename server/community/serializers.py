@@ -1,6 +1,8 @@
-from django.db import models
+from accounts.models import User
 from rest_framework import serializers
 from .models import Review, Comment
+
+
 
 class ReviewSerializer(serializers.ModelSerializer):
 
@@ -9,14 +11,15 @@ class ReviewSerializer(serializers.ModelSerializer):
         fields = ('__all__')
 
 class ReviewListSerializer(serializers.ModelSerializer):
+    
+    def getUsername(self, obj):
+        return obj.user.username
+        
+    username = serializers.SerializerMethodField("getUsername")
 
     class Meta:
         model = Review
-<<<<<<< Updated upstream
-        fields = ('id', 'title', 'movie_title', 'created_at', 'user')
-=======
-        fields = ('id', 'title', 'movie_title',)
->>>>>>> Stashed changes
+        fields = ('id', 'title', 'movie_title', 'created_at', 'user', 'username',)
 
 class CommentSerializer(serializers.ModelSerializer):
     

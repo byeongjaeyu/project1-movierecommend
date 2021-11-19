@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.shortcuts import render, get_list_or_404, get_object_or_404
 from rest_framework.fields import REGEX_TYPE
 from rest_framework.response import Response
@@ -7,6 +8,7 @@ from .models import Review, Comment
 from .serializers import ReviewListSerializer, ReviewSerializer, CommentSerializer
 from rest_framework import status
 from rest_framework.permissions import AllowAny
+from accounts.models import User
 # Create your views here.
 
 
@@ -16,6 +18,7 @@ def review_list(request):
     if request.method == 'GET':
         reviews = get_list_or_404(Review)
         serializer = ReviewListSerializer(reviews, many=True)
+
         return Response(serializer.data)
 
 

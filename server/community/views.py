@@ -21,12 +21,15 @@ def review_list(request):
         reviews = get_list_or_404(Review)
         serializer = ReviewListSerializer(reviews, many=True)
         return Response(serializer.data)
-    elif request.method == 'POST':
-        print(type(request.data))
+    else:
         serializer = ReviewSerializer(data=request.data)
+<<<<<<< Updated upstream
         print(serializer)
         if serializer.is_valid(raise_exception=True):
             print('!!!')
+=======
+        if serializer.is_valid(raise_exception=True):
+>>>>>>> Stashed changes
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 

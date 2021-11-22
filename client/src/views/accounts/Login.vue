@@ -1,29 +1,29 @@
 <template>
-  <transition name="modal" appear class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <!-- <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Login</h5>
-            <button @click="$emit('closeLoginModal')">Close</button>
-          </div>
-          <div class="modal-body">
-            <div>
-              <label for="username">사용자 이름: </label>
-              <input type="text" id="username" v-model="credentials.username">
+  <modal>
+    <transition name="modal" appear class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Login</h5>
+              <button @click="$emit('closeLoginModal')">Close</button>
             </div>
-            <div>
-              <label for="password">비밀번호: </label>
-              <input type="password" id="password" v-model="credentials.password">
+            <div class="modal-body">
+              <div>
+                <label for="username">사용자 이름: </label>
+                <input type="text" id="username" v-model="credentials.username">
+              </div>
+              <div>
+                <label for="password">비밀번호: </label>
+                <input type="password" id="password" v-model="credentials.password">
+              </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button @click="login" class="btn btn-primary">로그인</button>
+            <div class="modal-footer">
+              <button @click="login" class="btn btn-primary">로그인</button>
+            </div>
           </div>
         </div>
-      </div>
-    <!-- </div> -->
-  </transition>
+    </transition>
+  </modal>
 </template>
 
 

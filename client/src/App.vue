@@ -62,7 +62,7 @@
     <login 
     @closeLoginModal="closeLoginModal" 
     @login="login" v-if='loginModal'
-    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0;"
+    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:1050;"
     >
     </login>
     <Index :searchMovies="searchMovies" v-show="showIndex">
@@ -102,8 +102,7 @@ export default {
           .then(res => {
             console.log(`http://127.0.0.1:8000/movies/search/${this.word}/`)
             console.log(res)
-            this.searchMovies = res
-            // print(res.results)
+            this.searchMovies = res.data
           })
       }
     },

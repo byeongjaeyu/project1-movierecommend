@@ -1,12 +1,15 @@
 <template>
   <div id="app" class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark font sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary font sticky-top">
       <div class="container-fluid">
-        <p class="navbar-brand fw-bold text-white-50 m-auto">
+        <p  @click="indexIn" class="navbar-brand fw-bold text-white-50 m-auto">
           <router-link :to="{ name: '/' }" class="text-decoration-none text-white-50">
             <img src="https://fontmeme.com/permalink/211118/4236136457f6822dd292086626451371.png">
           </router-link>
         </p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
             <li class="nav-item" v-if="isLogin">
@@ -18,7 +21,7 @@
               <p @click="openLoginModal" class="text-decoration-none text-white-50" style="margin:8px;">Login</p>
             </li>
             <li class="nav-item" v-if="!isLogin">
-              <router-link :to="{ name: 'Signup' }" class="nav-link text-white-50">Signup</router-link>
+              <p @click="openSignupModal" class="text-decoration-none text-white-50" style="margin:8px;">Signup</p>
             </li>
            
             
@@ -27,18 +30,18 @@
                 영화추천
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
+                <li @click="indexOut">
                   <router-link :to="{ name: 'Recommend1' }" class="dropdown-item">랜덤영화 20</router-link>
                 </li>
-                <li>
+                <li @click="indexOut">
                   <router-link :to="{ name: 'Recommend2' }" class="dropdown-item">추천2</router-link>
                 </li>
-                <li>
+                <li @click="indexOut">
                   <router-link :to="{ name: 'Recommend3' }" class="dropdown-item">추천3</router-link>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li  @click="indexOut" class="nav-item">
               <router-link :to="{ name: 'ReviewList' }" class="nav-link text-white-50">Community</router-link>
             </li>
           </ul>
@@ -55,14 +58,20 @@
         </div>
       </div>
     </nav>
-    <router-view @login="isLogin=true"/>
+    <router-view />
     <login 
     @closeLoginModal="closeLoginModal" 
     @login="login" v-if='loginModal'
-    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0;"
+    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:1000;"
     >
     </login>
-    <Index :searchMovies="searchMovies">
+    <signup 
+    @closeSignupModal="closeSignupModal" 
+    @signup="signup" v-if='signupModal'
+    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:1050;"
+    >
+    </signup>
+    <Index :searchMovies="searchMovies" v-show="showIndex">
     </Index>
   </div>
 </template>
@@ -70,7 +79,11 @@
 <script>
 import axios from 'axios'
 import Login from './views/accounts/Login.vue'
+import Signup from './views/accounts/Signup.vue'
 import Index from './views/movies/Index.vue'
+// import $ from 'jquery'
+// import * as jose from 'jose'
+import jwt_decode from 'jwt-decode'
 
 export default {
   name: 'App',
@@ -78,6 +91,7 @@ export default {
   components: {
     Login,
     Index,
+    Signup,
   },
 
   data: function () {
@@ -85,7 +99,11 @@ export default {
       word : null,
       isLogin : false,
       loginModal : false,
+      signupModal : false,
       searchMovies: [],
+      showIndex : true,
+      userId : null,
+      isAdmin : false,
     }
   },
   methods: {
@@ -100,16 +118,23 @@ export default {
             console.log(res)
             this.searchMovies = res.data
           })
+      } else {
+        this.searchMovies = []
       }
     },
     logout: function () {
       this.isLogin = false
       localStorage.removeItem('jwt')
+      localStorage.removeItem('username')
       this.$router.push({ name: 'Index' })
     },
     login: function () {
       this.isLogin = true
       this.closeLoginModal()
+      this.$router.push({ name: 'Index' })
+    },
+    signup: function () {
+      this.closeSignupModal()
       this.$router.push({ name: 'Index' })
     },
     openLoginModal: function () {
@@ -118,17 +143,61 @@ export default {
     closeLoginModal: function () {
       this.loginModal = false
     },
+    openSignupModal: function () {
+      this.signupModal = true
+    },
+    closeSignupModal: function () {
+      this.signupModal = false
+    },
+    indexOut: function () {
+      this.showIndex = false
+    },
+    indexIn: function () {
+      this.showIndex = true
+    },
+    isStaff : function () {
+      axios({
+        url : 'http://127.0.0.1:8000/accounts/isstaff/',
+        data : this.userId,
+      })
+        .then(res => {
+          console.log(res)
+        })
+    }
+    // modalOut: function () {
+    //   if (this.loginModal===true){
+    //     this.loginModal = false
+    //   }
+    // },
   },
   created: function (event) {
+    console.log(event)
     this.loginModal = false
     const jwtToken = localStorage.getItem('jwt')
-    console.log(event)
+    // const protectedHeader = jose.decodeProtectedHeader(jwtToken)
+    // console.log(jwtToken)
+    // console.log(window.atob(jwtToken))
+    // console.log(protectedHeader)
+    // console.log(event)
+    var decoded = jwt_decode(jwtToken)
+    console.log(decoded)
     if (jwtToken) {
       this.isLogin = true
+      this.userId = decoded.user_id
+      this.isStaff()
       this.$router.push({ name: 'Index' })
     }
   },
-}
+  computed: {},
+};
+// $(document).on("click",function(event){
+//   console.log(event)
+//   console.log(this.loginModal)
+//   if (this.loginModal==true){
+//     console.log(event)
+//     this.loginModal = false
+//   }
+// })
 </script>
 
 <style>
@@ -155,10 +224,6 @@ export default {
 
 .nav-link {
   color: white;
-}
-
-.modal-backdrop{
-  height:100%;
 }
 
 </style>

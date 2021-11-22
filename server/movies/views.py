@@ -42,27 +42,12 @@ def movie_index(request):
 @permission_classes([AllowAny])
 def random_recommend(request):
     if request.method == 'GET':
-        ran_num = random.randrange(1,500)
-        Url = f"https://api.themoviedb.org/3/discover/movie?api_key={key}&language=ko-kr&include_adult=false&include_video=false&page={ran_num}&with_watch_monetization_types=flatrate"
-        temp = []
-        responses = requests.get(Url).json()
-
-        for response in responses["results"]:
-            temp_dict = {}
-            temp_dict["movie_id"] = response["id"]
-            temp_dict["title"] = response["title"]
-            temp_dict["release_date"] = response["release_date"]
-            temp_dict["popularity"] = response["popularity"]
-            temp_dict["vote_count"] = response["vote_count"]
-            temp_dict["vote_average"] = response["vote_average"]
-            temp_dict["overview"] = response["overview"]
-            if response["poster_path"]:
-                temp_dict["poster_path"] = poster_url + response["poster_path"]
-            else:
-                temp_dict["poster_path"] = poster_url
-            temp_dict["genres"] = response["genre_ids"]
-            temp.append(temp_dict)
-        serializer = MovieSerializer(temp, many=True)
+        movie_list = []
+        movies = Movie.objects.all()
+        ran_index = random.sample(range(1,len(movies)), 20)
+        for idx in ran_index:
+            movie_list.append(movies[idx])
+        serializer = MovieSerializer(movie_list, many=True)
         return Response(serializer.data)
 
 
@@ -72,7 +57,6 @@ def genre_recommend(request):
     if request.user.is_authenticated:
         user = request.user
         reviews = user.review_set.all()
-        print(reviews)
         like_genre = set()
         if reviews.count():
             for review in reviews:
@@ -139,4 +123,5 @@ def movie_search(request, word):
             if word in movie.title:
                 movie_list.append(movie)
         serializer = MovieSerializer(movie_list, many=True)
+        print(serializer.data)
         return Response(serializer.data)

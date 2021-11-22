@@ -49,3 +49,7 @@ def is_staff(request):
             False
         }
         return Response(data)
+
+# @api_view(['POST'])
+# @permission_classes([AllowAny])
+# def is_user(request):

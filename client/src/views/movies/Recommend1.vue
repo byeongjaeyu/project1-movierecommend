@@ -8,7 +8,7 @@
           <div class="col">
 
             <div class="card">
-              <img :src="movie.poster_path" class="card-img-top" alt="...">
+              <img :src="movie.poster_path" @error="replaceByDefault" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title fw-bold">{{ movie.title }}</h5>
               </div>
@@ -47,6 +47,11 @@ export default {
         console.log(err)
       })
   },
+  methods: {
+    replaceByDefault(e) {
+      e.target.src = require("../../assets/Default.png")
+  },
+}
 }
 </script>
 

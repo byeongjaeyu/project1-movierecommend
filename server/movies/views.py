@@ -123,5 +123,4 @@ def movie_search(request, word):
             if word in movie.title:
                 movie_list.append(movie)
         serializer = MovieSerializer(movie_list, many=True)
-        print(serializer.data)
         return Response(serializer.data)

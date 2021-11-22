@@ -64,6 +64,10 @@ const routes = [
     name: 'ReviewDetail',
     component: ReviewDetail,
   },
+  {
+    path: '/admin',
+    name: 'Admin',
+  }
 ]
 
 const router = new VueRouter({

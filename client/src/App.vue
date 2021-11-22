@@ -74,7 +74,7 @@
 import axios from 'axios'
 import Login from './views/accounts/Login.vue'
 import Index from './views/movies/Index.vue'
-import $ from 'jquery'
+// import $ from 'jquery'
 
 export default {
   name: 'App',
@@ -148,14 +148,10 @@ export default {
   },
   computed: {},
 };
-$(document).on("click",function(event){
-  console.log(event)
-  console.log(this.loginModal)
-  if (this.loginModal==true){
-    console.log(event)
-    this.loginModal = false
-  }
-})
+// $('#Modal').modal({
+//    backdrop: 'static',
+//    keyboard: false
+// });
 </script>
 
 <style>

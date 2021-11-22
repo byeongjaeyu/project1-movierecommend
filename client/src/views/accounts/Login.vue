@@ -14,7 +14,7 @@
             </div>
             <div>
               <label for="password">비밀번호: </label>
-              <input type="password" id="password" v-model="credentials.password">
+              <input type="password" @keypress.enter="login" id="password" v-model="credentials.password">
             </div>
           </div>
           <div class="modal-footer">

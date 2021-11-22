@@ -9,11 +9,7 @@ class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
         # fields = ('__all__')
-<<<<<<< Updated upstream
-        fields = ('title','movie_title','content','rank','user')
-=======
         fields = ('title','movie_title','content','rank',)
->>>>>>> Stashed changes
 
 class ReviewListSerializer(serializers.ModelSerializer):
     

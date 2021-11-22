@@ -15,7 +15,6 @@
             <li class="nav-item" v-if="isLogin">
               <a class="nav-link text-white-50" @click="logout">Logout</a>
             </li>
-            
             <li class="nav-item" v-if="!isLogin">
               <!-- <router-link :to="{ name: 'Login' }" class="nav-link text-white-50">Login</router-link> -->
               <p @click="openLoginModal" class="text-decoration-none text-white-50" style="margin:8px;">Login</p>
@@ -23,8 +22,9 @@
             <li class="nav-item" v-if="!isLogin">
               <p @click="openSignupModal" class="text-decoration-none text-white-50" style="margin:8px;">Signup</p>
             </li>
-           
-            
+            <li class="nav-item" v-if="isAdmin">
+              <a href="http://127.0.0.1:8000/admin" class="nav-link text-decoration-none text-white-50">관리자페이지</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white-50" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 영화추천
@@ -124,6 +124,7 @@ export default {
     },
     logout: function () {
       this.isLogin = false
+      this.isAdmin = false
       localStorage.removeItem('jwt')
       localStorage.removeItem('username')
       this.$router.push({ name: 'Index' })
@@ -131,6 +132,13 @@ export default {
     login: function () {
       this.isLogin = true
       this.closeLoginModal()
+      const jwtToken = localStorage.getItem('jwt')
+      var decoded = jwt_decode(jwtToken)
+      console.log(decoded)
+      if (decoded) {
+        this.userId = decoded.user_id
+        this.isStaff()
+      }
       this.$router.push({ name: 'Index' })
     },
     signup: function () {
@@ -157,12 +165,13 @@ export default {
     },
     isStaff : function () {
       axios({
-        method: "POST",
+        method: 'post',
         url : 'http://127.0.0.1:8000/accounts/isstaff/',
         data : this.userId,
       })
         .then(res => {
           console.log(res)
+          this.isAdmin = res.data[0]
         })
     }
     // modalOut: function () {
@@ -175,13 +184,12 @@ export default {
     console.log(event)
     this.loginModal = false
     const jwtToken = localStorage.getItem('jwt')
+    var decoded = jwt_decode(jwtToken)
     // const protectedHeader = jose.decodeProtectedHeader(jwtToken)
     // console.log(jwtToken)
     // console.log(window.atob(jwtToken))
     // console.log(protectedHeader)
     // console.log(event)
-    var decoded = jwt_decode(jwtToken)
-    console.log(decoded)
     if (jwtToken) {
       this.isLogin = true
       this.userId = decoded.user_id

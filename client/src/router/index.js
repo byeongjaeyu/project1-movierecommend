@@ -45,7 +45,7 @@ const routes = [
     component: Recommend3,
   },
   {
-    path: '/community',
+    path: '/community/',
     name: 'ReviewList',
     component: ReviewList,
   },
@@ -64,10 +64,6 @@ const routes = [
     name: 'ReviewDetail',
     component: ReviewDetail,
   },
-  {
-    path: '/admin',
-    name: 'Admin',
-  }
 ]
 
 const router = new VueRouter({

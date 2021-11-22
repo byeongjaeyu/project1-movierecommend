@@ -21,6 +21,7 @@
         </tr>
       </tbody>
     </table>
+    <router-link :to="{ name: 'CreateReview' }" class="text-decoration-none">리뷰 작성</router-link>
   </div>
 </template>
 
@@ -37,13 +38,13 @@ export default {
   created: function () {
     axios({
       method: 'get',
-      url: `http://127.0.0.1:8000/community/`
+      url: `http://127.0.0.1:8000/community/review/`
     })
       .then(res => {
         this.reviewList = res.data
         console.log(this.reviewList)
       })
-  }
+  },
 }
 </script>
 

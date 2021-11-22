@@ -9,7 +9,7 @@ class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
         # fields = ('__all__')
-        fields = ('title','movie_title','content','rank')
+        fields = ('title','movie_title','content','rank','user')
 
 class ReviewListSerializer(serializers.ModelSerializer):
     

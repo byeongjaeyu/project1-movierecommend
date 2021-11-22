@@ -60,7 +60,7 @@ const routes = [
     component: CreateComment,
   },
   {
-    path: '/community/reviewdetail',
+    path: '/community/:reviewid/reviewdetail',
     name: 'ReviewDetail',
     component: ReviewDetail,
   },

@@ -13,11 +13,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="review in reviewList" :key="review.id" @click="goToDetail(review)">
-          <td>{{ review.id }}</td>
-          <td>[{{ review.movie_title }}] {{ review.title }}</td>
-          <td>{{ review.username }}</td>
-          <td>{{ review.created_at }}</td>
+        <tr v-for="review in reviewList" :key="review.id" @click="goToDetail($event, review)">
+            <td>{{ review.id }}</td>
+            <td>[{{ review.movie_title }}] {{ review.title }}</td>
+            <td>{{ review.username }}</td>
+            <td>{{ review.created_at }}</td>
         </tr>
       </tbody>
     </table>
@@ -28,10 +28,11 @@
 <script>
 import axios from 'axios'
 
+
 export default {
   name: 'ReviewList',
   components: {
-    // ReviewDetail,
+    
   },
   data: function () {
     return  {
@@ -49,13 +50,12 @@ export default {
       })
   },
   methods: {
-    goToDetail: function (review) {
-      console.log(review)
+    goToDetail: function (event, review) {
       console.log(review.id)
-      this.$router.push({ name: 'ReviewDetail' }, params: {id: review.id})
+      this.$router.push({ name: 'ReviewDetail' , params: {reviewid:review.id, reviewuser:review.username}} )
     }
+    },
   }
-}
 </script>
 
 <style>

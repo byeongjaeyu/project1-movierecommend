@@ -5,11 +5,16 @@ from .models import Review, Comment
 
 
 class ReviewSerializer(serializers.ModelSerializer):
+    
+    def getUsername(self, obj):
+        return obj.user.username
+        
+    username = serializers.SerializerMethodField("getUsername")
 
     class Meta:
         model = Review
         # fields = ('__all__')
-        fields = ('title','movie_title','content','rank',)
+        fields = ('title','movie_title','content','rank', 'username')
 
 class ReviewListSerializer(serializers.ModelSerializer):
     

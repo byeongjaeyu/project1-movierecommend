@@ -52,6 +52,6 @@ export default {
 
 <style>
 .card-img-top {
-  height: 520px;
+
 }
 </style>

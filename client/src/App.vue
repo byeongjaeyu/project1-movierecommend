@@ -102,7 +102,8 @@ export default {
           .then(res => {
             console.log(`http://127.0.0.1:8000/movies/search/${this.word}/`)
             console.log(res)
-            this.searchMovies = res.data
+            this.searchMovies = res
+            // print(res.results)
           })
       }
     },

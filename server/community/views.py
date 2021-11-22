@@ -24,6 +24,7 @@ def review_list(request):
     else:
         serializer = ReviewSerializer(data=request.data)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         print(serializer)
         if serializer.is_valid(raise_exception=True):
             print('!!!')
@@ -31,6 +32,11 @@ def review_list(request):
         if serializer.is_valid(raise_exception=True):
 >>>>>>> Stashed changes
             serializer.save()
+=======
+        if serializer.is_valid(raise_exception=True):
+            print(serializer)
+            serializer.save(user=request.user)
+>>>>>>> Stashed changes
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 @api_view(['GET', 'PUT', 'DELETE'])

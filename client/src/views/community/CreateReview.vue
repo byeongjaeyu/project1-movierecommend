@@ -73,6 +73,7 @@ export default {
       // this.newReview.updated_at = formatDate
       this.newReview.user = localStorage.getItem('username')
       this.newReview.rank = this.newReviewRank
+      console.log(this.newReview)
       axios({
         method: 'post',
         url: 'http://127.0.0.1:8000/community/review/',

@@ -24,10 +24,6 @@ def review_list(request):
     else:
         serializer = ReviewSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-<<<<<<< Updated upstream
-=======
-            print(serializer)
->>>>>>> Stashed changes
             serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
@@ -96,3 +92,4 @@ def review_search(request, word):
                 "일치하는 게시글이 없습니다."
             }
             return Response(data, status=status.HTTP_204_NO_CONTENT)
+

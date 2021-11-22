@@ -30,3 +30,22 @@ def signup(request):
         # password는 직렬화 과정에는 포함 되지만 → 표현(response)할 때는 나타나지 않는다.
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def is_staff(request):
+    userId = int(list(request.data.keys())[0])
+    userlist = get_user_model().objects.all()
+    staffId = 0
+    for user in userlist:
+        if user.is_staff:
+            staffId = user.id
+    if userId == staffId:
+        data = {
+            True
+        }
+        return Response(data)
+    else:
+        data = {
+            False
+        }
+        return Response(data)

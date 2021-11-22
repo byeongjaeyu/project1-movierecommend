@@ -58,7 +58,7 @@
         </div>
       </div>
     </nav>
-    <router-view @login="isLogin=true"/>
+    <router-view />
     <login 
     @closeLoginModal="closeLoginModal" 
     @login="login" v-if='loginModal'
@@ -74,6 +74,7 @@
 import axios from 'axios'
 import Login from './views/accounts/Login.vue'
 import Index from './views/movies/Index.vue'
+import $ from 'jquery'
 
 export default {
   name: 'App',
@@ -129,6 +130,11 @@ export default {
     indexIn: function () {
       this.showIndex = true
     },
+    // modalOut: function () {
+    //   if (this.loginModal===true){
+    //     this.loginModal = false
+    //   }
+    // },
   },
   created: function (event) {
     console.log(event)
@@ -140,7 +146,16 @@ export default {
       this.$router.push({ name: 'Index' })
     }
   },
-}
+  computed: {},
+};
+$(document).on("click",function(event){
+  console.log(event)
+  console.log(this.loginModal)
+  if (this.loginModal==true){
+    console.log(event)
+    this.loginModal = false
+  }
+})
 </script>
 
 <style>

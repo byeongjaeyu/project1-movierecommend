@@ -23,18 +23,6 @@ def review_list(request):
         return Response(serializer.data)
     else:
         serializer = ReviewSerializer(data=request.data)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        print(serializer)
-=======
->>>>>>> Stashed changes
-        if serializer.is_valid(raise_exception=True):
-            serializer.save()
-=======
-=======
->>>>>>> Stashed changes
         if serializer.is_valid(raise_exception=True):
             print(serializer)
             serializer.save(user=request.user)

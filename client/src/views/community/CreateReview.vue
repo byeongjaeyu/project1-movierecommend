@@ -64,6 +64,8 @@ export default {
             console.log(res)
             this.$router.push({ name: 'ReviewList' })
           })
+      } else {
+        alert("빈칸 채워라.");
       }
       
       },

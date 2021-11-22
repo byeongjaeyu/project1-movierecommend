@@ -24,6 +24,10 @@ def review_list(request):
     else:
         serializer = ReviewSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
+<<<<<<< Updated upstream
+=======
+            print(serializer)
+>>>>>>> Stashed changes
             serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
@@ -74,3 +78,21 @@ def comment_create(request, review_pk):
     if serializer.is_valid(raise_exception=True):
         serializer.save(review=review)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def review_search(request, word):
+    if request.method == 'GET':
+        reviews = Review.objects.all()
+        search_list = []
+        for review in reviews:
+            if word in review.title:
+                search_list.append(review)
+        if search_list:
+            serializer = ReviewSerializer(search_list, many=True)
+            return Response(serializer.data)
+        else:
+            data = {
+                "일치하는 게시글이 없습니다."
+            }
+            return Response(data, status=status.HTTP_204_NO_CONTENT)

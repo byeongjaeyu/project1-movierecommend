@@ -69,13 +69,13 @@ def genre_recommend(request):
             for genre in like_genre:
                 movie = Movie.objects.filter(genres__in=[genre])
                 movies = movies.union(movie, all=False)
-            movie_list = movies.order_by('vote_average')[:10]
+            movie_list = movies.order_by('vote_average')[:20]
         else:
             movies = Movie.objects.all()
-            movie_list = movies.order_by('vote_average')[:10]
+            movie_list = movies.order_by('vote_average')[:20]
     else:
         movies = Movie.objects.all()
-        movie_list = movies.order_by('vote_average')[:10]
+        movie_list = movies.order_by('vote_average')[:20]
     serializer = MovieSerializer(movie_list, many=True)
     return Response(serializer.data)
 

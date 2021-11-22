@@ -62,6 +62,7 @@
     <login 
     @closeLoginModal="closeLoginModal" 
     @login="login" v-if='loginModal'
+<<<<<<< Updated upstream
     style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:1000;"
     >
     </login>
@@ -71,6 +72,11 @@
     style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:1050;"
     >
     </signup>
+=======
+    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:1050;"
+    >
+    </login>
+>>>>>>> Stashed changes
     <Index :searchMovies="searchMovies" v-show="showIndex">
     </Index>
   </div>
@@ -81,9 +87,13 @@ import axios from 'axios'
 import Login from './views/accounts/Login.vue'
 import Signup from './views/accounts/Signup.vue'
 import Index from './views/movies/Index.vue'
+<<<<<<< Updated upstream
 // import $ from 'jquery'
 // import * as jose from 'jose'
 import jwt_decode from 'jwt-decode'
+=======
+import $ from 'jquery'
+>>>>>>> Stashed changes
 
 export default {
   name: 'App',
@@ -102,8 +112,11 @@ export default {
       signupModal : false,
       searchMovies: [],
       showIndex : true,
+<<<<<<< Updated upstream
       userId : null,
       isAdmin : false,
+=======
+>>>>>>> Stashed changes
     }
   },
   methods: {
@@ -118,7 +131,11 @@ export default {
             console.log(res)
             this.searchMovies = res.data
           })
+<<<<<<< Updated upstream
       } else {
+=======
+      } else{
+>>>>>>> Stashed changes
         this.searchMovies = []
       }
     },
@@ -143,18 +160,22 @@ export default {
     closeLoginModal: function () {
       this.loginModal = false
     },
+<<<<<<< Updated upstream
     openSignupModal: function () {
       this.signupModal = true
     },
     closeSignupModal: function () {
       this.signupModal = false
     },
+=======
+>>>>>>> Stashed changes
     indexOut: function () {
       this.showIndex = false
     },
     indexIn: function () {
       this.showIndex = true
     },
+<<<<<<< Updated upstream
     isStaff : function () {
       axios({
         url : 'http://127.0.0.1:8000/accounts/isstaff/',
@@ -164,6 +185,8 @@ export default {
           console.log(res)
         })
     }
+=======
+>>>>>>> Stashed changes
     // modalOut: function () {
     //   if (this.loginModal===true){
     //     this.loginModal = false
@@ -190,6 +213,7 @@ export default {
   },
   computed: {},
 };
+<<<<<<< Updated upstream
 // $(document).on("click",function(event){
 //   console.log(event)
 //   console.log(this.loginModal)
@@ -198,6 +222,16 @@ export default {
 //     this.loginModal = false
 //   }
 // })
+=======
+$(document).on("click",function(event){
+  console.log(event)
+  console.log(this.loginModal)
+  if (this.loginModal==true){
+    console.log(event)
+    this.loginModal = false
+  }
+})
+>>>>>>> Stashed changes
 </script>
 
 <style>

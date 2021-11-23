@@ -59,9 +59,16 @@ def random_recommend(request):
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def genre_recommend(request):
+<<<<<<< Updated upstream
     if request.method == 'POST':
         userId = int(list(request.data.keys())[0])
         reviews = Review.objects.filter(user_id=userId)
+=======
+    if request.method == 'GET':
+        print(request.data)
+        user = request.user
+        reviews = user.review_set.all()
+>>>>>>> Stashed changes
         like_genre = set()
         if reviews.count():
             for review in reviews:

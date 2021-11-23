@@ -10,21 +10,33 @@ export default {
   name: 'Recommend2',
   data: function () {
     return {
-      userId: null,
+      userId: {
+        id: null
+      },
     }
   },
   created: function () {
     const token = localStorage.getItem('jwt')
     var decoded = jwt_decode(token)
-    this.userId = decoded.user_id
+    this.userId.id = decoded.user_id
     axios({
       method:'get',
       url:'http://127.0.0.1:8000/movies/recommend2/',
-      data: this.userId
+      data: this.userId.id,
+      headers:this.setToken()
     })
       .then(res => {
         console.log(res)
       })
+  },
+  methods: {
+    setToken: function () {
+      const token = localStorage.getItem('jwt')
+      const config = {
+        Authorization: `JWT ${token}`
+        }
+      return config
+    }
   },
 }
 </script>

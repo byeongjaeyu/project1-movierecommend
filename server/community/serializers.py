@@ -11,18 +11,18 @@ class ReviewReadSerializer(serializers.ModelSerializer):
         # read_only_fields = ('comment',)
 
 class ReviewSerializer(serializers.ModelSerializer):
-    # class CommentSerializer(serializers.ModelSerializer):
+    class CommentSerializer(serializers.ModelSerializer):
     
-    #     class Meta:
-    #         model = Comment
-    #         fields = ('__all__')
-    #         read_only_fileds = ('review',)
+        class Meta:
+            model = Comment
+            fields = ('__all__')
 
-    comments = serializers.RelatedField(many=True, read_only=True)
 
+    comments = CommentSerializer(many=True, read_only=True)
+    
     class Meta:
         model = Review
-        fields = ('title','movie_title','content','rank','comments')
+        fields = '__all__'
         # read_only_fields = ('comment',)
 
 class ReviewListSerializer(serializers.ModelSerializer):

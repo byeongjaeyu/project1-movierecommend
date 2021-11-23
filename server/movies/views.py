@@ -48,6 +48,7 @@ def random_recommend(request):
         for idx in ran_index:
             movie_list.append(movies[idx])
         serializer = MovieSerializer(movie_list, many=True)
+        print(serializer.data[0])
         return Response(serializer.data)
 
 

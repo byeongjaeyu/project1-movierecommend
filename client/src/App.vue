@@ -36,9 +36,7 @@
                 <li @click="indexOut">
                   <router-link :to="{ name: 'Recommend2' }" class="dropdown-item">추천2</router-link>
                 </li>
-                <li @click="indexOut">
-                  <router-link :to="{ name: 'Recommend3' }" class="dropdown-item">추천3</router-link>
-                </li>
+
               </ul>
             </li>
             <li  @click="indexOut" class="nav-item">

@@ -7,7 +7,7 @@
 
           <div class="col">
 
-            <div class="card">
+            <div class="card" @click="showMsgOk(movie)">
               <img :src="movie.poster_path" @error="replaceByDefault" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title fw-bold">{{ movie.title }}</h5>
@@ -27,7 +27,9 @@
 <script>
 import axios from 'axios'
 
+
 export default {
+
   name: 'Recommend1',
   data: function () {
     return {
@@ -51,7 +53,35 @@ export default {
     replaceByDefault(e) {
       e.target.src = require("../../assets/Default.png")
   },
-}
+    showMsgOk: function(movie) {
+        const h = this.$createElement
+        // Using HTML string
+        const titleVNode = h('div', { domProps: { innerHTML: 'Title from <i>HTML<i> string' } })
+        // More complex structure
+        const messageVNode = h('div', { class: ['foobar'] }, [
+          h('p', { class: ['text-center'] }, [
+            ' Flashy ',
+            h('strong', 'msgBoxOk'),
+            ' message ',
+          ]),
+          h('p', { class: ['text-center'] }, [h('b-spinner')]),
+          h('b-img', {
+            props: {
+              src: movie.poster_path,
+              thumbnail: true,
+              center: true,
+              fluid: true,
+            }
+          })
+        ])
+        // We must pass the generated VNodes as arrays
+        this.$bvModal.msgBoxOk([messageVNode], {
+          title: [titleVNode],
+          buttonSize: 'sm',
+          centered: true, size: 'sm'
+        })
+      }
+    }
 }
 </script>
 

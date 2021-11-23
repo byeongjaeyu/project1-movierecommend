@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '@/views/movies/Index'
-import MovieDetail from '@/views/movies/MovieDetail'
 import Recommend1 from '@/views/movies/Recommend1'
 import Recommend2 from '@/views/movies/Recommend2'
-import Recommend3 from '@/views/movies/Recommend3'
 import CreateComment from '@/views/community/CreateComment'
 import CreateReview from '@/views/community/CreateReview'
 import ReviewUpdate from '@/views/community/ReviewUpdate'
@@ -32,11 +30,6 @@ const routes = [
     component: Signup,
   },
   {
-    path: '/movie/moviedetail',
-    name: 'MovieDetail',
-    component: MovieDetail,
-  },
-  {
     path: '/movie/recommend1',
     name: 'Recommend1',
     component: Recommend1,
@@ -45,11 +38,6 @@ const routes = [
     path: '/movie/recommend2',
     name: 'Recommend2',
     component: Recommend2,
-  },
-  {
-    path: '/movie/recommend3',
-    name: 'Recommend3',
-    component: Recommend3,
   },
   {
     path: '/community/',

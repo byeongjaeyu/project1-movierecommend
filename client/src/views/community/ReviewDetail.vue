@@ -141,13 +141,32 @@ export default {
         data:this.UpdateComment
       })
         .then(() => {
-          this.UpdateComment = null
+          this.UpdateComment.content = null
           this.showCommentUpdate = false
+          this.getDataAll()
         })
     },
     showCommentUpdateBox : function () {
       this.showCommentUpdate = !this.showCommentUpdate
-    }
+    },
+  },
+  getDataAll : function () {
+    axios({
+      method: 'get',
+      url: `http://127.0.0.1:8000/community/review/${this.id}`
+    })
+      .then(res => {
+        console.log(res.data)
+        this.review = res.data
+      })
+        .then(() => {
+          const jwtToken = localStorage.getItem('jwt')
+          var decoded = jwt_decode(jwtToken)
+          this.nowUser = decoded.username
+          if (decoded.user_id === this.review.user) {
+            this.showEdit = true
+          }
+      })
   }
 }
 </script>

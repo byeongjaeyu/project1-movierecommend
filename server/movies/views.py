@@ -54,7 +54,8 @@ def random_recommend(request):
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def genre_recommend(request):
-    if request.user.is_authenticated:
+    if request.method == 'GET':
+        print(request.data)
         user = request.user
         reviews = user.review_set.all()
         like_genre = set()

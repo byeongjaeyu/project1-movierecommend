@@ -33,6 +33,7 @@ def signup(request):
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def is_staff(request):
+    print(request.data)
     userId = int(list(request.data.keys())[0])
     userlist = get_user_model().objects.all()
     staffId = 0

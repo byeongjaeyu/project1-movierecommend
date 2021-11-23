@@ -9,6 +9,7 @@ from rest_framework.permissions import AllowAny
 import requests
 import random
 from bs4 import BeautifulSoup
+from community.models import Review
 # Create your views here.
 
 key = "733c7d5145ecf236ad387093e2d52047"
@@ -49,6 +50,7 @@ def random_recommend(request):
             movie_list.append(movies[idx])
         serializer = MovieSerializer(movie_list, many=True)
         print(serializer.data[0])
+        serializer
         return Response(serializer.data)
 
 
@@ -56,9 +58,8 @@ def random_recommend(request):
 @permission_classes([AllowAny])
 def genre_recommend(request):
     if request.method == 'POST':
-        print(request.data)
-        user = request.user
-        reviews = user.review_set.all()
+        userId = int(list(request.data.keys())[0])
+        reviews = Review.objects.filter(user_id=userId)
         like_genre = set()
         if reviews.count():
             for review in reviews:
@@ -75,10 +76,8 @@ def genre_recommend(request):
         else:
             movies = Movie.objects.all()
             movie_list = movies.order_by('vote_average')[:20]
-    else:
-        movies = Movie.objects.all()
-        movie_list = movies.order_by('vote_average')[:20]
     serializer = MovieSerializer(movie_list, many=True)
+    print(serializer.data)
     return Response(serializer.data)
 
 # @api_view(['GET'])
@@ -127,4 +126,4 @@ def movie_search(request, word):
         serializer = MovieSerializer(movie_list, many=True)
         return Response(serializer.data)
 
-# https://www.youtube.com/watch?v=Pj7CadRf82k
+# https://www.youtube.com/watch?v=AMWUjwM07g4"

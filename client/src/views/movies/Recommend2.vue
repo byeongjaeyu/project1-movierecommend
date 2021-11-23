@@ -1,5 +1,29 @@
 <template>
-  <div></div>
+  <div>
+    <hr>
+    <div class="row row-cols-3 g-4" id="app">
+
+      <div v-for="movie in movies" :key="movie.pk">
+
+          <div class="col">
+
+            <div class="card">
+              <img :src="movie.poster_path" @error="replaceByDefault" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">{{ movie.title }}</h5>
+              </div>
+            </div>
+          
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
 </template>
 
 <script>
@@ -10,6 +34,7 @@ export default {
   name: 'Recommend2',
   data: function () {
     return {
+      movies: [],
       userId: {
         id: null
       },
@@ -27,6 +52,11 @@ export default {
     })
       .then(res => {
         console.log(res)
+        this.movies = res.data
+        console.log(this.movies)
+      })
+      .catch(err => {
+        console.log(err)
       })
   },
   methods: {
@@ -36,7 +66,10 @@ export default {
         Authorization: `JWT ${token}`
         }
       return config
-    }
+    },
+    replaceByDefault(e) {
+      e.target.src = require("../../assets/Default.png")
+  },
   },
 }
 </script>

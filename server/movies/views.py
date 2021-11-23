@@ -51,10 +51,10 @@ def random_recommend(request):
         return Response(serializer.data)
 
 
-@api_view(['GET'])
+@api_view(['POST'])
 @permission_classes([AllowAny])
 def genre_recommend(request):
-    if request.method == 'GET':
+    if request.method == 'POST':
         print(request.data)
         user = request.user
         reviews = user.review_set.all()

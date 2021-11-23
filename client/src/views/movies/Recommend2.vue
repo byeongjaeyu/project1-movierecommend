@@ -11,13 +11,8 @@ export default {
   data: function () {
     return {
       userId: {
-<<<<<<< Updated upstream
         id: null
       },
-=======
-        id: null,
-    }
->>>>>>> Stashed changes
     }
   },
   created: function () {
@@ -27,12 +22,8 @@ export default {
     axios({
       method:'post',
       url:'http://127.0.0.1:8000/movies/recommend2/',
-<<<<<<< Updated upstream
       data: this.userId.id,
       headers:this.setToken()
-=======
-      data: this.userId.id
->>>>>>> Stashed changes
     })
       .then(res => {
         console.log(res)

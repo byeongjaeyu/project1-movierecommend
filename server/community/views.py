@@ -95,4 +95,3 @@ def review_search(request, word):
                 "일치하는 게시글이 없습니다."
             }
             return Response(data, status=status.HTTP_204_NO_CONTENT)
-

@@ -22,20 +22,24 @@
         </tr>
       </tbody>
     </table>
+    <create-comment :id="id"></create-comment>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import jwt_decode from 'jwt-decode'
+import CreateComment from './CreateComment.vue'
 
 export default {
+  components: { CreateComment },
   name: 'ReviewDetail',
   data: function () {
     return {
       id : this.$route.params.reviewid,
       review: null,
-      showEdit: false
+      showEdit: false,
+      comments: null,
     }
   },
   props: {
@@ -47,7 +51,7 @@ export default {
       url: `http://127.0.0.1:8000/community/review/${this.id}`
     })
       .then(res => {
-        console.log(res.data)
+        // console.log(res.data)
         this.review = res.data
       })
         .then(() => {
@@ -56,6 +60,16 @@ export default {
           if (decoded.username === this.review.username) {
             this.showEdit = true
           }
+        })
+        .then(() => {
+          axios({
+            method: 'get',
+            url: `http://127.0.0.1:8000/community/review/${this.id}/comment`
+          })
+            .then((res) => {
+              console.log(res)
+              this.comments = res.data
+            })
         })
   }
 }

@@ -36,7 +36,7 @@ export default {
     return {
       credentials: {
         username: null,
-        passwork: null,
+        password: null,
       }
     }
   },

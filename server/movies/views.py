@@ -45,6 +45,8 @@ def random_recommend(request):
     if request.method == 'GET':
         movie_list = []
         movies = Movie.objects.all()
+        for movie in movies:
+            movie.set_youtube_url('abcdefg')
         ran_index = random.sample(range(1,len(movies)), 20)
         for idx in ran_index:
             movie_list.append(movies[idx])

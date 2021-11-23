@@ -22,9 +22,9 @@
         </tr>
       </tbody>
     </table>
-    <div v-for="comment in this.commentsContents" :key="comment.id">
-      {{ comment.username }}
-      {{ comment.content }}
+    <div v-for="key in this.review.comments" :key="key">
+      {{ this.review.comments[key].username }}
+      {{ this.review.comments[key].content }}
     </div>
     <create-comment :id="id"></create-comment>
   </div>
@@ -43,8 +43,6 @@ export default {
       id : this.$route.params.reviewid,
       review: null,
       showEdit: false,
-      comments: null,
-      commentsContents: [],
     }
   },
   props: {
@@ -56,22 +54,9 @@ export default {
       url: `http://127.0.0.1:8000/community/review/${this.id}`
     })
       .then(res => {
-        // console.log(res.data)
+        console.log(res.data)
         this.review = res.data
-        this.comments = this.review.comments
-        if (this.comments) {
-          for (var key in this.comments) {
-            console.log(this.comments[key])
-            axios({
-              method:'get',
-              url:`http://127.0.0.1:8000/community/comment/${this.comments[key]}/`
-            })
-              .then(res => {
-                console.log(res.data)
-                this.commentsContents.push(res.data)
-              })
-          }
-        }
+        console.log(this.review.comments[0])
       })
         .then(() => {
           const jwtToken = localStorage.getItem('jwt')

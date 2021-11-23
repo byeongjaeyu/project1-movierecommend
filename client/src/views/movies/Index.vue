@@ -5,7 +5,7 @@
       <div v-for="movie in movies" :key="movie.pk">
           <div class="col">
             <div class="card">
-              <img :src="movie.poster_path" @error="replaceByDefault" class="card-img-top" alt="...">
+              <img :src="movie.poster_path" class="card-img-top" alt="..." >
               <div class="card-body">
                 <h5 class="card-title fw-bold">{{ movie.title }}</h5>
               </div>
@@ -18,7 +18,7 @@
       <div v-for="movie in searchMovies" :key="movie.pk">
           <div class="col">
             <div class="card">
-              <img :src="movie.poster_path" @error="replaceByDefault" class="card-img-top">
+              <img :src="movie.poster_path" class="card-img-top" alt="..." >
               <div class="card-body">
                 <h5 class="card-title fw-bold">{{ movie.title }}</h5>
               </div>
@@ -32,7 +32,6 @@
 
 <script>
 import axios from 'axios'
-
 
 export default {
   name: 'Index',
@@ -56,12 +55,7 @@ export default {
       .catch(err => {
         console.log(err)
       })
-  },
-  methods: {
-    replaceByDefault(e) {
-      e.target.src = require("../../assets/Default.png")
     }
-  } 
 }
 </script>
 

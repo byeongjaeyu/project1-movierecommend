@@ -11,16 +11,19 @@ class GenreSerializer(serializers.ModelSerializer):
 
 class MovieSerializer(serializers.ModelSerializer):
     
-    
+    youtube_url = serializers.CharField(source='get_youtube_url', read_only=True)
+
     class Meta:
         model = Movie
-        fields = '__all__'
+        fields = ('id', 'title' ,'poster_path','youtube_url')
 
 class MovieListSerializer(serializers.ModelSerializer):
 
+    youtube_url = serializers.CharField(source='get_youtube_url', read_only=True)
+
     class Meta:
         model = Movie
-        fields = ('id', 'title' ,'poster_path',)
+        fields = ('id', 'title' ,'poster_path','youtube_url')
 
 class GenreSerializer(serializers.ModelSerializer):
     

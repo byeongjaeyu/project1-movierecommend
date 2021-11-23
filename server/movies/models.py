@@ -16,3 +16,9 @@ class Movie(models.Model):
     overview = models.TextField(blank=True, null=True)
     poster_path = models.CharField(max_length=200, blank=True,null=True) 
     genres = models.ManyToManyField(Genre)
+
+    def get_youtube_url(self):
+        return self.youtube_url
+    
+    def set_youtube_url(self, url):
+        self.youtube_url = url

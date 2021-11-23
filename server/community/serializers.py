@@ -12,7 +12,9 @@ class ReviewReadSerializer(serializers.ModelSerializer):
 
 class ReviewSerializer(serializers.ModelSerializer):
     class CommentSerializer(serializers.ModelSerializer):
-    
+        def getUsername(self, obj):
+            return obj.user.username
+        username = serializers.SerializerMethodField("getUsername")
         class Meta:
             model = Comment
             fields = ('__all__')

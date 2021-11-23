@@ -5,16 +5,16 @@
       </thead>
       <tbody>
         <tr>
-          <td>{{ this.review.title }}</td>
+          <td>{{ review.title }}</td>
         </tr>
         <tr>
-          <td>{{ this.review.movie_title }}</td>
+          <td>{{ review.movie_title }}</td>
         </tr>
         <tr>
-          <td>{{ this.review.rank }}</td>
+          <td>{{ review.rank }}</td>
         </tr>
         <tr>
-          <td>{{ this.review.content }}</td>
+          <td>{{ review.content }}</td>
         </tr>
         <tr>
           <button v-if="showEdit" @click="reviewUpdate">수정하기</button>
@@ -22,31 +22,30 @@
         </tr>
       </tbody>
     </table>
-    <div v-for="key in this.review.comments" :key="key">
-      <div class="d-flex justify-content-center">
-        <div>
-          {{ key.username }}&nbsp;&nbsp;
-        </div>
-        <div class="border" style="border:0.01px solid black; width:0.01px; height:22px;"></div>
-        <div>
-          &nbsp;&nbsp;{{ key.content }}
-        </div>
-
-        <div v-if="key.username===nowUser">
-            &nbsp;&nbsp;<button @click="showCommentUpdateBox">Edit</button>
+    <div v-for="key in review.comments" :key="key">
+      <div class="">
+        <div class="d-flex justify-content-center">
+          <div>
+            {{ key.username }}&nbsp;&nbsp;
+          </div>
+          <div class="border" style="border:0.01px solid black; width:0.01px; height:22px;"></div>
+          <div>
+            &nbsp;&nbsp;{{ key.content }}
+          </div>
+          <div v-if="key.username === nowUser">
+            &nbsp;&nbsp;<button :id="key.id" @click="showCommentUpdateBox(key.id)">Edit</button>
             &nbsp;<button @click="commentDelete($event, key.id)">X</button>
+          </div>
         </div>
 
-        <br>
-
-        <div v-if="showCommentUpdate===true">
-          <input v-model="this.UpdateComment.content" type="text">
-          <button  @click="commentUpdate($event, key.user)">댓글수정</button>
-        </div>
+        <span :id="key.id" v-if="showCommentUpdate && selectedComment==key.id">
+          <input v-model="UpdateComment.content" type="text">
+          <button  @click="commentUpdate($event, key.user, key.id)">댓글수정</button>
+        </span>
 
       </div>
     </div>
-    <create-comment :id="id"></create-comment>
+    <create-comment :id="id" @commentComplete="commentComplete"></create-comment>
   </div>
 </template>
 
@@ -54,6 +53,7 @@
 import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 import CreateComment from './CreateComment.vue'
+// import $ from 'jquery'
 // import ReviewUpdate from './ReviewUpdate.vue'
 
 export default {
@@ -67,10 +67,11 @@ export default {
       showEdit: false,
       showCommentEdit: false,
       showCommentUpdate: false,
+      selectedComment:null,
       UpdateComment: {
         content:null, //v-model
         review:null, //this.id
-        userid:null, //key.user
+        user:null, //key.user
       },
     }
   },
@@ -78,12 +79,16 @@ export default {
     reviewid : Number,
   },
   created: function () {
-    axios({
+    this.getComment()
+  },
+  methods: {
+    getComment: function () {
+      axios({
       method: 'get',
       url: `http://127.0.0.1:8000/community/review/${this.id}`
     })
       .then(res => {
-        console.log(res.data)
+        // console.log(res.data)
         this.review = res.data
       })
         .then(() => {
@@ -94,8 +99,7 @@ export default {
             this.showEdit = true
           }
         })
-  },
-  methods: {
+    },
     reloadDetail: function () {
       window.location.reload(`/community/${this.id}/reviewdetail`)
     },
@@ -107,6 +111,7 @@ export default {
         .then(() => {
           this.$router.push({name:'ReviewList'})
           alert(`${this.id}번 게시글이 삭제됐습니다.`)
+          this.getComment()
         })
     },
     reviewUpdate: function () {
@@ -130,24 +135,36 @@ export default {
       })
         .then(() => {
           this.$router.push({name:'ReviewDetail',params:{reviewid:this.id}})
+          alert('댓글이 삭제됐습니다.')
+          this.getComment()
         })
     },
-    commentUpdate: function (event,user) {
+    commentUpdate: function (event,user,commentId) {
       this.UpdateComment.review = this.id
-      this.UpdateComment.userid = user
+      this.UpdateComment.user = user
+      console.log(this.id)
       axios({
         method:'put',
-        url:`http://127.0.0.1:8000/community/review/${this.id}/comment/`,
+        url:`http://127.0.0.1:8000/community/comment/${commentId}/`,
         data:this.UpdateComment
       })
         .then(() => {
           this.UpdateComment.content = null
           this.showCommentUpdate = false
+<<<<<<< Updated upstream
           this.getDataAll()
+=======
+          this.getComment()
+>>>>>>> Stashed changes
         })
     },
-    showCommentUpdateBox : function () {
+    commentComplete: function () {
+      this.getComment()
+    },
+    showCommentUpdateBox : function(id) {
+      // console.log(id)
       this.showCommentUpdate = !this.showCommentUpdate
+<<<<<<< Updated upstream
     },
   },
   getDataAll : function () {
@@ -168,6 +185,11 @@ export default {
           }
       })
   }
+=======
+      this.selectedComment = id
+    },
+  },
+>>>>>>> Stashed changes
 }
 </script>
 

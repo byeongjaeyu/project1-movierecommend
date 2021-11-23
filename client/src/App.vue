@@ -60,13 +60,13 @@
     <login 
     @closeLoginModal="closeLoginModal" 
     @login="login" v-if='loginModal'
-    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:1000;"
+    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:10000;"
     >
     </login>
     <signup 
     @closeSignupModal="closeSignupModal" 
     @signup="signup" v-if='signupModal'
-    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:1050;"
+    style="position: fixed; top: 30%; left: 0; right: 0; bottom: 0; z-index:10500;"
     >
     </signup>
     <Index :searchMovies="searchMovies" v-show="showIndex">
@@ -132,7 +132,7 @@ export default {
       this.closeLoginModal()
       const jwtToken = localStorage.getItem('jwt')
       var decoded = jwt_decode(jwtToken)
-      console.log(decoded)
+      // console.log(decoded)
       if (decoded) {
         this.userId = decoded.user_id
         this.isStaff()

@@ -67,7 +67,7 @@ def comment(request, comment_pk):
             serializer.save()
             return Response(serializer.data)
 
-@api_view(['POST'])
+@api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
 def comment_create(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)

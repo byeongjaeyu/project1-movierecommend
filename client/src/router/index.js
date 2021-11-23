@@ -60,7 +60,11 @@ const routes = [
     component: CreateComment,
   },
   {
+<<<<<<< Updated upstream
     path: '/community/:reviewid/reviewdetail',
+=======
+    path: '/community/:reviewid/detail',
+>>>>>>> Stashed changes
     name: 'ReviewDetail',
     component: ReviewDetail,
   },

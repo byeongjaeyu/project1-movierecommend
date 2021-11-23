@@ -124,3 +124,5 @@ def movie_search(request, word):
                 movie_list.append(movie)
         serializer = MovieSerializer(movie_list, many=True)
         return Response(serializer.data)
+
+# https://www.youtube.com/watch?v=Pj7CadRf82k

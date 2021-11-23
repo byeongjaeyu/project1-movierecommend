@@ -50,9 +50,9 @@ export default {
     CreateReview: function () {
       const jwtToken = localStorage.getItem('jwt')
       var decoded = jwt_decode(jwtToken)
-      console.log(decoded)
       this.newReview.user = decoded.user_id
       this.newReview.rank = Number(this.newReview.rank)
+      console.log(this.newReview)
       if (this.newReview.title && this.newReview.movie_title && this.newReview.user && this.newReview.content && this.newReview.rank) {
         axios({
         method: 'post',

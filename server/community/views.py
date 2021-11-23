@@ -7,7 +7,7 @@ from rest_framework.decorators import api_view, permission_classes
 
 
 from .models import Review, Comment
-from .serializers import ReviewListSerializer, ReviewSerializer, CommentSerializer
+from .serializers import ReviewListSerializer, ReviewSerializer, CommentSerializer, ReviewReadSerializer
 from rest_framework import status
 from rest_framework.permissions import AllowAny
 
@@ -22,7 +22,7 @@ def review_list(request):
         serializer = ReviewListSerializer(reviews, many=True)
         return Response(serializer.data)
     else:
-        serializer = ReviewSerializer(data=request.data)
+        serializer = ReviewReadSerializer(data=request.data)
         print(serializer)
         if serializer.is_valid(raise_exception=True):
             serializer.save(user=request.user)

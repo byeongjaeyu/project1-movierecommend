@@ -4,6 +4,12 @@ from rest_framework import serializers
 from .models import Review, Comment
 
 
+class ReviewReadSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        fields = ('title','movie_title','content','rank',)
+        # read_only_fields = ('comment',)
+
 class ReviewSerializer(serializers.ModelSerializer):
     # class CommentSerializer(serializers.ModelSerializer):
     

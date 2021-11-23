@@ -25,7 +25,7 @@ export default {
     var decoded = jwt_decode(token)
     this.userId.id = decoded.user_id
     axios({
-      method:'get',
+      method:'post',
       url:'http://127.0.0.1:8000/movies/recommend2/',
 <<<<<<< Updated upstream
       data: this.userId.id,

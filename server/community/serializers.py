@@ -5,9 +5,20 @@ from .models import Review, Comment
 
 
 class ReviewSerializer(serializers.ModelSerializer):
+<<<<<<< Updated upstream
     
 
     # comments = serializers.RelatedField(many=True, read_only=True)
+=======
+    # class CommentSerializer(serializers.ModelSerializer):
+    
+    #     class Meta:
+    #         model = Comment
+    #         fields = ('__all__')
+    #         read_only_fileds = ('review',)
+
+    comments = serializers.StringRelatedField(many=True, read_only=True)
+>>>>>>> Stashed changes
 
     class Meta:
         model = Review

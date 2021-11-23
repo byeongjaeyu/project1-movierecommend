@@ -22,6 +22,9 @@
         </tr>
       </tbody>
     </table>
+    <div v-for="comment in this.review.comments" :key="comment.title">
+      {{ comment.title }}
+    </div>
     <create-comment :id="id"></create-comment>
   </div>
 </template>
@@ -39,7 +42,6 @@ export default {
       id : this.$route.params.reviewid,
       review: null,
       showEdit: false,
-      comments: null,
     }
   },
   props: {
@@ -51,7 +53,7 @@ export default {
       url: `http://127.0.0.1:8000/community/review/${this.id}`
     })
       .then(res => {
-        // console.log(res.data)
+        console.log(res.data)
         this.review = res.data
       })
         .then(() => {
@@ -60,16 +62,6 @@ export default {
           if (decoded.username === this.review.username) {
             this.showEdit = true
           }
-        })
-        .then(() => {
-          axios({
-            method: 'get',
-            url: `http://127.0.0.1:8000/community/review/${this.id}/comment`
-          })
-            .then((res) => {
-              console.log(res)
-              this.comments = res.data
-            })
         })
   }
 }

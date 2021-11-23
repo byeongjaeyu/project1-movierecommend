@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     goToDetail: function (event, review) {
-      console.log(review.id)
+      // console.log(review.id)
       this.$router.push({ name: 'ReviewDetail' , params: {reviewid:review.id, reviewuser:review.username}} )
     }
     },

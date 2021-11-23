@@ -17,13 +17,14 @@
           <td>{{ this.review.content }}</td>
         </tr>
         <tr>
-          <button v-if="showEdit">수정하기</button>
-          <button v-if="showEdit">삭제하기</button>
+          <button v-if="showEdit" @click="reviewUpdate">수정하기</button>
+          <button v-if="showEdit" @click="reviewDelete">삭제하기</button>
         </tr>
       </tbody>
     </table>
-    <div v-for="comment in this.review.comments" :key="comment.title">
-      {{ comment.title }}
+    <div v-for="comment in this.commentsContents" :key="comment.id">
+      {{ comment.username }}
+      {{ comment.content }}
     </div>
     <create-comment :id="id"></create-comment>
   </div>
@@ -42,6 +43,8 @@ export default {
       id : this.$route.params.reviewid,
       review: null,
       showEdit: false,
+      comments: null,
+      commentsContents: [],
     }
   },
   props: {
@@ -53,8 +56,22 @@ export default {
       url: `http://127.0.0.1:8000/community/review/${this.id}`
     })
       .then(res => {
-        console.log(res.data)
+        // console.log(res.data)
         this.review = res.data
+        this.comments = this.review.comments
+        if (this.comments) {
+          for (var key in this.comments) {
+            console.log(this.comments[key])
+            axios({
+              method:'get',
+              url:`http://127.0.0.1:8000/community/comment/${this.comments[key]}/`
+            })
+              .then(res => {
+                console.log(res.data)
+                this.commentsContents.push(res.data)
+              })
+          }
+        }
       })
         .then(() => {
           const jwtToken = localStorage.getItem('jwt')
@@ -63,6 +80,21 @@ export default {
             this.showEdit = true
           }
         })
+  },
+  methods: {
+    reloadDetail: function () {
+      window.location.reload(`/community/${this.id}/reviewdetail`)
+    },
+    reviewDelete: function () {
+      axios({
+        method:'delete',
+        url:`http://127.0.0.1:8000/community/review/${this.id}`
+      })
+        .then(res => {
+          this.$router.push({name:'ReviewList'})
+          alert(res.data.delete)
+        })
+    }
   }
 }
 </script>

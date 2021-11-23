@@ -72,6 +72,8 @@ def comment(request, comment_pk):
 def comment_create(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     serializer = CommentSerializer(data=request.data)
+    print(serializer)
+    print(review)
     if serializer.is_valid(raise_exception=True):
         serializer.save(review=review)
         return Response(serializer.data, status=status.HTTP_201_CREATED)

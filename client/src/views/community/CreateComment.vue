@@ -24,12 +24,29 @@ export default {
     }
   },
   methods: {
+    setToken: function () {
+      const token = localStorage.getItem('jwt')
+      const config = {
+        Authorization: `JWT ${token}`
+      }
+      return config
+    },
     createComment: function () {
       const token = localStorage.getItem('jwt')
       var decoded = jwt_decode(token)
-      this.newReview.user = decoded.username
+      console.log(decoded)
+      this.newReview.user = decoded.user_id
       console.log(this.newReview)
-      axios({})
+      axios({
+        method:'post',
+        url:`http://127.0.0.1:8000/community/review/${this.id}/comment/`,
+        headers: this.setToken(),
+        data: this.newReview,
+      })
+        .then(() => {
+          this.newReview.content=null
+          this.$emit('commentComplete')
+        })
     }
   }
 

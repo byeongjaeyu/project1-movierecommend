@@ -93,4 +93,62 @@
 2. 리뷰 디테일 마무리
 3. 영화 디테일(영화 이름 받아서 포스터 출력), 좋아요, 코멘트
 4. 영화 리뷰 쓸때 movie_title modal이용해서 우리 데이터베이스에 있는 영화만 선택 할 수 있도록
-5. 
+
+
+
+### 11/23~24(화요일~수요일)
+
+- 기능부분은 거의 다 구현
+
+- but 처음 DB를 잘못 추출하여 youtube URL을 노가다로 가져와야해서 로딩시간이 꽤김 ㅠㅠ
+
+- bootstrap-vue 설치법 !!
+
+  - ```
+    npm install vue bootstrap bootstrap-vue
+    ```
+
+    위의 패키지 설치
+
+  - ```javascript
+    import Vue from 'vue'
+    import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+    
+    // Import Bootstrap an BootstrapVue CSS files (order is important)
+    import 'bootstrap/dist/css/bootstrap.css'
+    import 'bootstrap-vue/dist/bootstrap-vue.css'
+    
+    // Make BootstrapVue available throughout your project
+    Vue.use(BootstrapVue)
+    // Optionally install the BootstrapVue icon components plugin
+    Vue.use(IconsPlugin)
+    ```
+
+    main.js 또는 app.js 파일에 위의 코드를 넣어줌
+
+    ```javascript
+    // ex) main.js
+    
+    import Vue from 'vue'
+    import App from './App.vue'
+    
+    import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+    
+    // Make BootstrapVue available throughout your project
+    Vue.use(BootstrapVue);
+    // Optionally install the BootstrapVue icon components plugin
+    Vue.use(IconsPlugin);
+    
+    // Import Bootstrap an BootstrapVue CSS files (order is important)
+    import "bootstrap/dist/css/bootstrap.css";
+    import "bootstrap-vue/dist/bootstrap-vue.css";
+    
+    Vue.config.productionTip = false
+    
+    new Vue({
+      render: h => h(App),
+    }).$mount('#app')
+    ```
+
+    
+

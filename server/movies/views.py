@@ -23,54 +23,29 @@ youtube_base_url = 'https://www.youtube.com/embed/'
 @permission_classes([AllowAny])
 def movie_index(request):
     if request.method == 'GET':
-        temp = []
-        baseUrl = "https://api.themoviedb.org/3/trending/movie/week?api_key="
-        Url = baseUrl + key + '&language=ko-kr'
-        responses = requests.get(Url).json()
-        idx = 0
-        for response in responses["results"]:
-            temp_dict = {}
-            temp_dict["movie_id"] = response["id"]
-            temp_dict["title"] = response["title"]
-            temp_dict["release_date"] = response["release_date"]
-            temp_dict["popularity"] = response["popularity"]
-            temp_dict["vote_count"] = response["vote_count"]
-            temp_dict["vote_average"] = response["vote_average"]
-            temp_dict["overview"] = response["overview"]
-            temp_dict["poster_path"] = poster_url + response["poster_path"]
-            temp_dict["genres"] = response["genre_ids"]
-            # temp_dict["youtube_url"] = youtube_base_url + videoUrl[idx]
-            temp.append(temp_dict)
-            idx += 1
-        return Response(temp)
+        movie_list = []
+        movies = Movie.objects.all()
+        movielist = movies.order_by('-release_date')
+        cnt = 1
+        for movie in movielist:
+            if movie.youtube_url:
+                movie_list.append(movie)
+                cnt += 1
+            if cnt == 20:
+                break
+        serializer = MovieSerializer(movie_list, many=True)
+        return Response(serializer.data)
 
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def random_recommend(request):
-    video_url = 'https://api.themoviedb.org/3/movie/'
-    video_url2 = f'/videos?api_key={key}&language=ko-kr'
-    search_url = 'https://api.themoviedb.org/3/search/movie?api_key=733c7d5145ecf236ad387093e2d52047&language=ko-kr&query='
     if request.method == 'GET':
         movie_list = []
         movies = Movie.objects.all()
-        ran_index = random.sample(range(1,len(movies)), 10)
+        ran_index = random.sample(range(1,len(movies)), 20)
         for idx in ran_index:
             movie_list.append(movies[idx])
-        for movie in movie_list:
-            searchUrl = search_url + movie.title
-            responses = requests.get(searchUrl).json()
-            movie_id = responses["results"][0]["id"]
-            videoUrl = video_url + str(movie_id) + video_url2
-            responses = requests.get(videoUrl).json()
-            if not responses["results"]:
-                movie.set_youtube_url('')
-            else:
-                for video in responses['results']:
-                    if video["type"] == 'Trailer':
-                        youtubeUrl = youtube_base_url + video["key"]
-                        movie.set_youtube_url(youtubeUrl)
-                        break
         serializer = MovieSerializer(movie_list, many=True)
         return Response(serializer.data)
 
@@ -83,6 +58,7 @@ def genre_recommend(request):
         reviews = Review.objects.filter(user_id=userId)
         like_genre = set()
         movie_list = []
+        random_list = []
         if reviews.count():
             for review in reviews:
                 movie = Movie.objects.filter(title=review.movie_title)
@@ -95,68 +71,21 @@ def genre_recommend(request):
                 for genre in like_genre:
                     movie = Movie.objects.filter(genres__in=[genre])
                     movies = movies.union(movie, all=False)
-                movieList = movies.order_by('vote_average')[:10]
+                movieList = movies.order_by('vote_average')[:100]
             else:
                 movies = Movie.objects.all()
-                movieList = movies.order_by('vote_average')[:10]
+                movieList = movies.order_by('vote_average')[:100]
         else:
             movies = Movie.objects.all()
-            movieList = movies.order_by('vote_average')[:10]
+            movieList = movies.order_by('vote_average')[:100]
         for movie in movieList:
             movie_list.append(movie)
-        video_url = 'https://api.themoviedb.org/3/movie/'
-        video_url2 = f'/videos?api_key={key}&language=ko-kr'
-        search_url = 'https://api.themoviedb.org/3/search/movie?api_key=733c7d5145ecf236ad387093e2d52047&language=ko-kr&query='
-        for movie in movie_list:
-            searchUrl = search_url + movie.title
-            responses = requests.get(searchUrl).json()
-            movie_id = responses["results"][0]["id"]
-            videoUrl = video_url + str(movie_id) + video_url2
-            responses = requests.get(videoUrl).json()
-            if not responses["results"]:
-                movie.set_youtube_url('')
-            else:
-                for video in responses['results']:
-                    if video["type"] == 'Trailer':
-                        youtubeUrl = youtube_base_url + video["key"]
-                        movie.set_youtube_url(youtubeUrl)
-                        break
-    
-    serializer = MovieSerializer(movie_list, many=True)
+    ran_index = random.sample(range(1,len(movie_list)), 20)
+    for idx in ran_index:
+        random_list.append(movie_list[idx])
+    serializer = MovieSerializer(random_list, many=True)
     return Response(serializer.data)
 
-# @api_view(['GET'])
-# @permission_classes([AllowAny])
-# def movie_search(request, word):
-#     if request.method == 'GET':
-#         Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page=1&include_adult=false"
-#         responses = requests.get(Url).json()
-#         temp = []
-#         pages = responses["total_pages"]
-#         check = responses["total_results"]
-#         if check != 0:
-#             for page in range(1,2):
-#                 Url = f"https://api.themoviedb.org/3/search/movie?api_key={key}&language=ko-kr&query={word}&page={page}&include_adult=false"
-#                 responses = requests.get(Url)
-#                 soup = BeautifulSoup(responses.text, 'html.parser')
-#                 print(soup)
-#                 for response in responses["results"]:
-#                     temp_dict = {}
-#                     try:
-#                         temp_dict["movie_id"] = response["id"]
-#                         temp_dict["title"] = response["title"]
-#                         temp_dict["release_date"] = response["release_date"]
-#                         temp_dict["popularity"] = response["popularity"]
-#                         temp_dict["vote_count"] = response["vote_count"]
-#                         temp_dict["vote_average"] = response["vote_average"]
-#                         temp_dict["overview"] = response["overview"]
-#                         temp_dict["poster_path"] = poster_url + str(response["poster_path"])
-#                         temp_dict["genres"] = response["genre_ids"]
-#                         temp.append(temp_dict)
-#                     except KeyError:
-#                         continue
-#         serializer = MovieSerializer(temp, many=True)
-#         return Response(serializer.data)
 
 
 @api_view(['GET'])
@@ -168,7 +97,6 @@ def movie_search(request, word):
         for movie in movies:
             if word in movie.title:
                 movie_list.append(movie)
-        movie_list = movie_list[:40]
         serializer = MovieListSerializer(movie_list, many=True)
         return Response(serializer.data)
 

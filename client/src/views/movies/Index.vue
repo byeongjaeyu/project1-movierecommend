@@ -1,10 +1,12 @@
 <template>
   <div>
+
+
     <hr>
     <div class="row row-cols-3 g-4" id="app" v-if="!searchMovies.length">
       <div v-for="movie in movies" :key="movie.pk">
           <div class="col">
-            <div class="card" @click="showModal(movie)">
+            <div class="card" @click="showMsgOk(movie)">
               <img :src="movie.poster_path" class="card-img-top" alt="..." >
               <div class="card-body">
                 <h5 class="card-title fw-bold">{{ movie.title }}</h5>
@@ -26,6 +28,7 @@
       </div>
     </div>
 
+<!-- 
     <b-modal ref="movieModal" hide-footer title='test'>
       <div class="text-center">
         <div>
@@ -38,7 +41,7 @@
         <iframe width="400" height="300" src="https://www.youtube.com/embed/uiIIyepK6XY" frameborder="0">트레일러 영상이 없어요.</iframe>
         </div>
       </div>
-    </b-modal>
+    </b-modal> -->
 
   </div>
 </template>
@@ -48,10 +51,13 @@ import axios from 'axios'
 
 export default {
   name: 'Index',
+  components: {
+
+  },
   props: {
     searchMovies: Array
   },
-  data: function () {
+  data () {
     return {
       movies : [],
     }
@@ -88,9 +94,13 @@ export default {
           h('p', { class: ['text-center'] }, [
             movie.overview, 
           ]),
-          h('p', {class : ['text-center']},[
-            movie.youtube_url,
-          ]),
+          
+          h('iframe', {class: ['center']} ,{
+            props: {
+              src: movie.youtube_url,
+              center: true,
+            }
+          })
         ])
         // We must pass the generated VNodes as arrays
         this.$bvModal.msgBoxOk([messageVNode], {
@@ -98,14 +108,11 @@ export default {
           buttonSize: 'sm',
           centered: true, size: 'md'
         })
-      },
-      showModal() {
-        this.$refs['movieModal'].show()
-      }
     }
   }
+}
 </script>
 
-<style>
+<style >
 
 </style>

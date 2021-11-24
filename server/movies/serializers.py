@@ -17,11 +17,9 @@ class MovieSerializer(serializers.ModelSerializer):
             model = Genre
             fields = '__all__'
 
-    youtube_url = serializers.CharField(source='get_youtube_url', read_only=True)
-
     class Meta:
         model = Movie
-        fields = ('id', 'title' ,'poster_path', 'overview','youtube_url', 'release_date', 'vote_average', 'genres')
+        fields = '__all__'
 
 class MovieListSerializer(serializers.ModelSerializer):
 
@@ -31,7 +29,6 @@ class MovieListSerializer(serializers.ModelSerializer):
             model = Genre
             fields = '__all__'
 
-    # youtube_url = serializers.CharField(source='get_youtube_url', read_only=True)
 
     class Meta:
         model = Movie

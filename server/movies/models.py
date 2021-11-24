@@ -9,16 +9,18 @@ class Genre(models.Model):
 
 class Movie(models.Model):
     title = models.CharField(max_length=100)
-    release_date = models.DateField(blank=True, null=True)
-    popularity = models.FloatField(blank=True, null=True)
+    release_date = models.DateField(null=True)
+    popularity = models.FloatField(null=True)
+    runtime = models.IntegerField(null=True)
     vote_count = models.IntegerField()
     vote_average = models.FloatField()
-    overview = models.TextField(blank=True, null=True)
-    poster_path = models.CharField(max_length=200, blank=True,null=True) 
+    overview = models.TextField(null=True)
+    poster_path = models.CharField(max_length=200,null=True) 
+    youtube_url = models.CharField(max_length=100)
     genres = models.ManyToManyField(Genre)
 
-    def get_youtube_url(self):
-        return self.youtube_url
+    # def get_youtube_url(self):
+    #     return self.youtube_url
     
-    def set_youtube_url(self, url):
-        self.youtube_url = url
+    # def set_youtube_url(self, url):
+    #     self.youtube_url = url

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <hr>
+  <div class="container">
+    <br>
     <h1>커뮤니티</h1>
     <hr>
     <table class="table table-hover ">

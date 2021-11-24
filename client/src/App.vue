@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary font sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark font sticky-top border">
       <div class="container-fluid">
         <p  @click="indexIn" class="navbar-brand fw-bold text-white-50 m-auto">
           <router-link :to="{ name: '/' }" class="text-decoration-none text-white-50">
@@ -13,34 +13,34 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
             <li class="nav-item" v-if="isLogin">
-              <a class="nav-link text-white-50" @click="logout">Logout</a>
+              <a class="nav-link text-light" @click="logout">Logout</a>
             </li>
             <li class="nav-item" v-if="!isLogin">
               <!-- <router-link :to="{ name: 'Login' }" class="nav-link text-white-50">Login</router-link> -->
-              <p @click="openLoginModal" class="text-decoration-none text-white-50" style="margin:8px;">Login</p>
+              <p @click="openLoginModal" class="text-decoration-none text-light" style="margin:8px;">Login</p>
             </li>
             <li class="nav-item" v-if="!isLogin">
-              <p @click="openSignupModal" class="text-decoration-none text-white-50" style="margin:8px;">Signup</p>
+              <p @click="openSignupModal" class="text-decoration-none text-light" style="margin:8px;">Signup</p>
             </li>
             <li class="nav-item" v-if="isAdmin">
-              <a href="http://127.0.0.1:8000/admin" class="nav-link text-decoration-none text-white-50">관리자페이지</a>
+              <a href="http://127.0.0.1:8000/admin" class="nav-link text-decoration-none text-light">관리자페이지</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white-50" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 영화추천
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu border bg-dark" aria-labelledby="navbarDropdown">
                 <li @click="indexOut">
-                  <router-link :to="{ name: 'Recommend1' }" class="dropdown-item">랜덤영화 20</router-link>
+                  <router-link :to="{ name: 'Recommend1' }" class="dropdown-item bg-dark text-light">랜덤영화 20</router-link>
                 </li>
                 <li @click="indexOut">
-                  <router-link :to="{ name: 'Recommend2' }" class="dropdown-item">추천2</router-link>
+                  <router-link :to="{ name: 'Recommend2' }" class="dropdown-item bg-dark text-light">추천2</router-link>
                 </li>
 
               </ul>
             </li>
             <li  @click="indexOut" class="nav-item">
-              <router-link :to="{ name: 'ReviewList' }" class="nav-link text-white-50">Community</router-link>
+              <router-link :to="{ name: 'ReviewList' }" class="nav-link text-light">Community</router-link>
             </li>
           </ul>
           <form class="d-flex">

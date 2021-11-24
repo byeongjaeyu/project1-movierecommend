@@ -1,29 +1,50 @@
 <template>
-  <div>
-    <table class="table">
-      <thead>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ review.title }}</td>
-        </tr>
-        <tr>
-          <td>{{ review.movie_title }}</td>
-        </tr>
-        <tr>
-          <td>{{ review.rank }}</td>
-        </tr>
-        <tr>
-          <td>{{ review.content }}</td>
-        </tr>
-        <tr>
-          <button v-if="showEdit" @click="reviewUpdate">수정하기</button>
-          <button v-if="showEdit" @click="reviewDelete">삭제하기</button>
-        </tr>
-      </tbody>
-    </table>
-    <div v-for="key in review.comments" :key="key">
-      <div class="">
+  <div class="container">
+    <br>
+    <div class="text-start fs-4 fw-bold text-secondary">
+      &nbsp;영화 리뷰
+      <br>
+    </div>
+    <div class="border-top border-bottom border-3 bg-light px-2">
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="fs-5 fw-bold">
+          [{{ review.movie_title }}] &nbsp;&nbsp;
+          {{ review.title }}
+        </div>
+        {{ review.created_at }}
+      </div>
+      <br>
+    </div>
+    <div class="border-bottom border-3 text-start px-2">
+      {{ review.user }}
+      <br>
+    </div>
+    <div class='border-bottom border-3 text-start p-2'>
+      <br>
+      {{ review.content }}
+      {{ review.rank }}
+      <br><br>
+      <div class='d-flex justify-content-center'>
+        <i class="far fa-heart"></i>&nbsp;&nbsp;
+        <i class="fas fa-heart"></i>&nbsp;&nbsp;
+        좋아요 10000
+        <br>
+      </div>
+    </div>
+    <div class="p-2 d-flex justify-content-end">
+      <button id="btn-edit" v-if="showEdit" @click="reviewUpdate"><i class="fas fa-edit"></i></button>
+      <button id="btn-delete" v-if="showEdit" @click="reviewDelete"><i class="far fa-trash-alt"></i></button>
+    </div>
+    
+
+    <div class="p-2 bg-light border border-1 rounded-pill">
+        댓글 {{review.comments.length}} 개
+        <br>
+    </div>
+    
+    <div v-for="key in review.comments" :key="key" class="pt-3">
+      <div>
         <div class="d-flex justify-content-center">
           <div>
             {{ key.username }}&nbsp;&nbsp;
@@ -88,7 +109,7 @@ export default {
       url: `http://127.0.0.1:8000/community/review/${this.id}`
     })
       .then(res => {
-        // console.log(res.data)
+        console.log(res.data)
         this.review = res.data
       })
         .then(() => {
@@ -157,15 +178,31 @@ export default {
     commentComplete: function () {
       this.getComment()
     },
-    showCommentUpdateBox : function(id) {
+    showCommentUpdateBox : function() {
       // console.log(id)
       this.showCommentUpdate = !this.showCommentUpdate
+<<<<<<< Updated upstream
       this.selectedComment = id
+=======
+>>>>>>> Stashed changes
     },
   },
 }
 </script>
 
 <style>
-
+  #btn-edit{
+    margin-right:3px;
+    margin-left:3px;
+    padding: 5px;
+    background-color: white;
+    border:2px solid rgb(21, 218, 87);
+  }
+  #btn-delete{
+    margin-right:3px;
+    margin-left:3px;
+    padding: 5px;
+    background-color: white;
+    border:2px solid rgb(228, 14, 67);
+  }
 </style>

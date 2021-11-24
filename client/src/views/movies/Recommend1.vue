@@ -56,13 +56,11 @@ export default {
     showMsgOk: function(movie) {
         const h = this.$createElement
         // Using HTML string
-        const titleVNode = h('div', { domProps: { innerHTML: 'Title from <i>HTML<i> string' } })
+        const titleVNode = h('div', { domProps: { innerHTML: `${movie.title}` } })
         // More complex structure
         const messageVNode = h('div', { class: ['foobar'] }, [
           h('p', { class: ['text-center'] }, [
-            ' Flashy ',
-            h('strong', 'msgBoxOk'),
-            ' message ',
+            `${movie.overview}`
           ]),
           h('p', { class: ['text-center'] }, [h('b-spinner')]),
           h('b-img', {

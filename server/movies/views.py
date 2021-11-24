@@ -100,4 +100,15 @@ def movie_search(request, word):
         serializer = MovieListSerializer(movie_list, many=True)
         return Response(serializer.data)
 
-# https://www.youtube.com/watch?v=AMWUjwM07g4"
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def fordetail(request,word):
+    if request.method == 'GET':
+        movie_list = []
+        movies = Movie.objects.filter(title=word)
+        for movie in movies:
+            if movie.title == word:
+                movie_list.append(movie)
+                break
+        serializer = MovieSerializer(movie_list, many=True)
+        return Response(serializer.data)

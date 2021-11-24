@@ -135,8 +135,4 @@ export default {
   border: solid 1px;
   border-color:lightgray;
 }
-<<<<<<< Updated upstream
 </style>
-=======
-</style>
->>>>>>> Stashed changes

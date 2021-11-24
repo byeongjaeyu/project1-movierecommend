@@ -1,7 +1,7 @@
 <template>
   <div class="container" style="width:75%">
     <br>
-    <h1 class="py-2">커뮤니티</h1>
+    <h1 class="py-2">Reviews</h1>
     <hr>
     <table class="table table-hover ">
       <thead>
@@ -21,7 +21,7 @@
         </tr>
       </tbody>
     </table>
-    <router-link :to="{ name: 'CreateReview' }" class="text-decoration-none">리뷰 작성</router-link>
+    <router-link :to="{ name: 'CreateReview' }" class="text-decoration-none" style="color:blue;font-size:300%;"><i class="fas fa-plus-circle"></i></router-link>
   </div>
 </template>
 

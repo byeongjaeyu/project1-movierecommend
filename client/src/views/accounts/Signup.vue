@@ -1,28 +1,28 @@
 <template>
   <transition name="modal" appear >
     <!-- <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Signup</h5>
-            <button @click="$emit('closeSignupModal')">Close</button>
+      <div class="modal-dialog container">
+        <div class="modal-content border border-3 border-dark rounded">
+          <div class="modal-header d-flex justify-content-between">
+            <h5 class="modal-title fw-bold fs-3">Signup</h5>
+            <button class="bg-white" @click="$emit('closeSignupModal')">Close</button>
           </div>
           <div class="modal-body">
             <div>
-              <label for="username">사용자 이름: </label>
+              <label class="fw-bold me-2 my-2" for="username">사용자 이름: </label>
               <input type="text" id="username" v-model="credentials.username">
             </div>
             <div>
-              <label for="password">비밀번호: </label>
-              <input type="password" id="password" v-model="credentials.password">
+              <label class="fw-bold me-2 my-2" for="password">비밀번호: </label>
+              <input class="fw-bold me-2 my-2" type="password" id="password" v-model="credentials.password">
             </div>
             <div>
-              <label for="password">비밀번호 확인: </label>
+              <label class="fw-bold me-2 my-2" for="password">비밀번호 확인: </label>
               <input type="password" id="password" v-model="credentials.passwordConfirmation">
             </div>
           </div>
           <div class="modal-footer">
-            <button @click="signup" class="btn btn-primary">회원가입</button>
+            <button @click="signup" class="btn btn-primary fw-bold">회원가입</button>
           </div>
         </div>
       </div>

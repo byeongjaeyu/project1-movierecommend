@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="row row-cols-3 g-4" id="app" v-else>
       <div v-for="movie in searchMovies" :key="movie.pk">
           <div class="col">
@@ -26,7 +26,13 @@
         </div>
       </div>
     </div>
+    <b-modal hide-footer title="Using Component Methods">
+      <div class="d-block text-center">
+        <h3>Hello From My Modal!</h3>
+      </div>
 
+
+    </b-modal>
   </div>
 </template>
 
@@ -60,15 +66,9 @@ export default {
     showMsgOk: function(movie) {
         const h = this.$createElement
         // Using HTML string
-        const titleVNode = h('div', { domProps: { innerHTML: 'Title from <i>HTML<i> string' } })
+        const titleVNode = h('div', { domProps: { innerHTML: movie.title } })
         // More complex structure
         const messageVNode = h('div', { class: ['foobar'] }, [
-          h('p', { class: ['text-center'] }, [
-            ' Flashy ',
-            h('strong', 'msgBoxOk'),
-            ' message ',
-          ]),
-          h('p', { class: ['text-center'] }, [h('b-spinner')]),
           h('b-img', {
             props: {
               src: movie.poster_path,
@@ -76,13 +76,17 @@ export default {
               center: true,
               fluid: true,
             }
-          })
+          }),
+          h('br'),
+          h('p', { class: ['text-center'] }, [
+            movie.overview,
+          ]),
         ])
         // We must pass the generated VNodes as arrays
         this.$bvModal.msgBoxOk([messageVNode], {
           title: [titleVNode],
           buttonSize: 'sm',
-          centered: true, size: 'sm'
+          centered: true, size: 'md'
         })
       }
     }

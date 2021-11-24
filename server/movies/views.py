@@ -17,6 +17,9 @@ key = "733c7d5145ecf236ad387093e2d52047"
 poster_url = "https://image.tmdb.org/t/p/original/"
 youtube_base_url = 'https://www.youtube.com/watch?v='
 
+
+
+
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def movie_index(request):
@@ -25,7 +28,6 @@ def movie_index(request):
         "iXfbMtMI8R0", "BdkSkI61aGo", "yFZh-Wqi7RI", "eqn0Hj1e3jg", '', "xDmRI9y0LEs", "lWGuFIeTkw4", "dP57Rnzr2M0", "n9_v7L7t51c", "AMAS18DUgAw",
         "4rTkrtH2s3o", "rmR7xefwjWs", "6R143jGPmcQ", "UeK8MG5tGkQ"]
         temp = []
-        print(videoUrl)
         baseUrl = "https://api.themoviedb.org/3/trending/movie/week?api_key="
         Url = baseUrl + key + '&language=ko-kr'
         responses = requests.get(Url).json()
@@ -172,7 +174,8 @@ def movie_search(request, word):
         for movie in movies:
             if word in movie.title:
                 movie_list.append(movie)
-        serializer = MovieSerializer(movie_list, many=True)
+        movie_list = movie_list[:40]
+        serializer = MovieListSerializer(movie_list, many=True)
         return Response(serializer.data)
 
 # https://www.youtube.com/watch?v=AMWUjwM07g4"

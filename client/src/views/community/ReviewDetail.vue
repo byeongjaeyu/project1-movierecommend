@@ -151,11 +151,7 @@ export default {
         .then(() => {
           this.UpdateComment.content = null
           this.showCommentUpdate = false
-<<<<<<< Updated upstream
-          this.getDataAll()
-=======
           this.getComment()
->>>>>>> Stashed changes
         })
     },
     commentComplete: function () {
@@ -164,32 +160,9 @@ export default {
     showCommentUpdateBox : function(id) {
       // console.log(id)
       this.showCommentUpdate = !this.showCommentUpdate
-<<<<<<< Updated upstream
-    },
-  },
-  getDataAll : function () {
-    axios({
-      method: 'get',
-      url: `http://127.0.0.1:8000/community/review/${this.id}`
-    })
-      .then(res => {
-        console.log(res.data)
-        this.review = res.data
-      })
-        .then(() => {
-          const jwtToken = localStorage.getItem('jwt')
-          var decoded = jwt_decode(jwtToken)
-          this.nowUser = decoded.username
-          if (decoded.user_id === this.review.user) {
-            this.showEdit = true
-          }
-      })
-  }
-=======
       this.selectedComment = id
     },
   },
->>>>>>> Stashed changes
 }
 </script>
 

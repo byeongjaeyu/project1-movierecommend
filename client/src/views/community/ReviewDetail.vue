@@ -86,6 +86,9 @@ export default {
       showCommentEdit: false,
       showCommentUpdate: false,
       selectedComment:null,
+      reviewMovie: {
+        
+      },
       UpdateComment: {
         content:null, //v-model
         review:null, //this.id
@@ -98,6 +101,16 @@ export default {
   },
   created: function () {
     this.getComment()
+      .then(() => {
+        axios({
+          method:'get',
+          url:`http://127.0.0.1:8000/movies/fordetail/${this.review.movie_title}/`
+        })
+          .then(res=>{
+            console.log(res.data)
+          })
+      })
+    
   },
   methods: {
     getComment: function () {

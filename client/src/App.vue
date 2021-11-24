@@ -31,10 +31,10 @@
               </a>
               <ul class="dropdown-menu border bg-dark" aria-labelledby="navbarDropdown">
                 <li @click="indexOut">
-                  <router-link :to="{ name: 'Recommend1' }" class="dropdown-item bg-dark text-light">랜덤영화 20</router-link>
+                  <router-link :to="{ name: 'Recommend1' }" class="dropdown-item bg-dark text-light">랜덤영화추천</router-link>
                 </li>
                 <li @click="indexOut">
-                  <router-link :to="{ name: 'Recommend2' }" class="dropdown-item bg-dark text-light">추천2</router-link>
+                  <router-link :to="{ name: 'Recommend2' }" class="dropdown-item bg-dark text-light">회원님이 좋아할 만한영화</router-link>
                 </li>
 
               </ul>

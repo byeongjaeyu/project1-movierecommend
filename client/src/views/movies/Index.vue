@@ -90,17 +90,16 @@ export default {
               fluid: true,
             }
           }),
-          h('br'),
+          h('span', { class: ['d-flex justify-content-center'] }, [
+            "개봉일 : ", movie.release_date, ' '
+          ]),
+          h('span', { class: ['d-flex justify-content-center'] }, [
+             "상영시간 : ", movie.runtime, '분'
+          ]),
           h('p', { class: ['text-center'] }, [
             movie.overview, 
           ]),
           
-          h('iframe', {class: ['center']} ,{
-            props: {
-              src: movie.youtube_url,
-              center: true,
-            }
-          })
         ])
         // We must pass the generated VNodes as arrays
         this.$bvModal.msgBoxOk([messageVNode], {

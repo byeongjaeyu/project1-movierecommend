@@ -67,10 +67,16 @@ export default {
               fluid: true,
             }
           }),
-          h('br'),
-          h('p', { class: ['text-center'] }, [
-            movie.overview,
+          h('span', { class: ['d-flex justify-content-center'] }, [
+            "개봉일 : ", movie.release_date, ' '
           ]),
+          h('span', { class: ['d-flex justify-content-center'] }, [
+             "상영시간 : ", movie.runtime, '분'
+          ]),
+          h('p', { class: ['text-center'] }, [
+            movie.overview, 
+          ]),
+          
         ])
         // We must pass the generated VNodes as arrays
         this.$bvModal.msgBoxOk([messageVNode], {
@@ -78,7 +84,7 @@ export default {
           buttonSize: 'sm',
           centered: true, size: 'md'
         })
-      }
+    }
     }
 }
 </script>

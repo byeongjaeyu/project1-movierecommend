@@ -28,7 +28,7 @@ def movie_index(request):
         movielist = movies.order_by('-release_date')
         cnt = 1
         for movie in movielist:
-            if movie.youtube_url:
+            if movie.youtube_url and movie.overview != '':
                 movie_list.append(movie)
                 cnt += 1
             if cnt == 20:
@@ -59,19 +59,36 @@ def genre_recommend(request):
         like_genre = set()
         movie_list = []
         random_list = []
+        genres_count = {
+            '액션' : 0, '모험' : 0, '애니메이션' : 0, '코미디' : 0, '범죄' : 0,
+            '다큐멘터리' : 0, '드라마' : 0, '가족' : 0, '판타지' : 0, '역사' : 0,
+            '공포' : 0, '음악' : 0, '미스터리' : 0, '로맨스' : 0,
+            'SF' : 0, 'TV 영화' : 0, '스릴러' : 0, '전쟁' : 0, '서부' : 0
+        }
+        genre_list = {
+            '액션' : 28, '모험' : 12, '애니메이션' : 16, '코미디' : 35, '범죄' : 80,
+            '다큐멘터리' : 99, '드라마' : 18, '가족' : 10751, '판타지' : 14, '역사' : 36,
+            '공포' : 27, '음악' : 10402, '미스터리' : 9648, '로맨스' : 10749,
+            'SF' : 878, 'TV 영화' : 10770, '스릴러' : 53, '전쟁' : 10752, '서부' : 37
+        }
         if reviews.count():
             for review in reviews:
                 movie = Movie.objects.filter(title=review.movie_title)
                 if movie.exists():
                     genres = movie[0].genres.all()
                     for genre in genres:
-                        like_genre.add(genre.id)
+                        genres_count[genre.name] += 1
+            tmp_max = 0
+            max_genre = ''
+            for key, value in genres_count.items():
+                if genres_count[key] > tmp_max:
+                    tmp_max = value
+                    max_genre = key
             movies = Movie.objects.none()
+            like_genre.add(max_genre)
             if like_genre:
-                for genre in like_genre:
-                    movie = Movie.objects.filter(genres__in=[genre])
-                    movies = movies.union(movie, all=False)
-                movieList = movies.order_by('vote_average')[:100]
+                movie = Movie.objects.filter(genres__in=[genre_list[max_genre]])
+                movieList = movie.order_by('vote_average')[:100]
             else:
                 movies = Movie.objects.all()
                 movieList = movies.order_by('vote_average')[:100]

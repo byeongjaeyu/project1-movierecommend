@@ -15,8 +15,7 @@ from community.models import Review
 
 key = "733c7d5145ecf236ad387093e2d52047"
 poster_url = "https://image.tmdb.org/t/p/original/"
-youtube_base_url = 'https://www.youtube.com/watch?v='
-
+youtube_base_url = 'https://www.youtube.com/embed/'
 
 
 
@@ -24,9 +23,6 @@ youtube_base_url = 'https://www.youtube.com/watch?v='
 @permission_classes([AllowAny])
 def movie_index(request):
     if request.method == 'GET':
-        videoUrl = ["Pj7CadRf82k", "uiIIyepK6XY", "5EbdgThNoiM", "-5Dc8EMVYBo", "TJyQYnf-6lE", "BryJA-Xp-Q4",
-        "iXfbMtMI8R0", "BdkSkI61aGo", "yFZh-Wqi7RI", "eqn0Hj1e3jg", '', "xDmRI9y0LEs", "lWGuFIeTkw4", "dP57Rnzr2M0", "n9_v7L7t51c", "AMAS18DUgAw",
-        "4rTkrtH2s3o", "rmR7xefwjWs", "6R143jGPmcQ", "UeK8MG5tGkQ"]
         temp = []
         baseUrl = "https://api.themoviedb.org/3/trending/movie/week?api_key="
         Url = baseUrl + key + '&language=ko-kr'
@@ -43,7 +39,7 @@ def movie_index(request):
             temp_dict["overview"] = response["overview"]
             temp_dict["poster_path"] = poster_url + response["poster_path"]
             temp_dict["genres"] = response["genre_ids"]
-            temp_dict["youtube_url"] = youtube_base_url + videoUrl[idx]
+            # temp_dict["youtube_url"] = youtube_base_url + videoUrl[idx]
             temp.append(temp_dict)
             idx += 1
         return Response(temp)
@@ -62,7 +58,6 @@ def random_recommend(request):
         for idx in ran_index:
             movie_list.append(movies[idx])
         for movie in movie_list:
-            print(type(movie))
             searchUrl = search_url + movie.title
             responses = requests.get(searchUrl).json()
             movie_id = responses["results"][0]["id"]
@@ -118,7 +113,6 @@ def genre_recommend(request):
             movie_id = responses["results"][0]["id"]
             videoUrl = video_url + str(movie_id) + video_url2
             responses = requests.get(videoUrl).json()
-            print(videoUrl)
             if not responses["results"]:
                 movie.set_youtube_url('')
             else:

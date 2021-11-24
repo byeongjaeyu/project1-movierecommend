@@ -17,7 +17,7 @@
       <br>
     </div>
     <div class="border-bottom border-3 text-start px-2">
-      {{ review.user }}
+      {{ review.username }}
       <br>
     </div>
     <div class='border-bottom border-3 text-start p-2'>
@@ -54,8 +54,8 @@
             &nbsp;&nbsp;{{ key.content }}
           </div>
           <div v-if="key.username === nowUser">
-            &nbsp;&nbsp;<button :id="key.id" @click="showCommentUpdateBox(key.id)">Edit</button>
-            &nbsp;<button @click="commentDelete($event, key.id)">X</button>
+            &nbsp;&nbsp;<div :id="key.id" @click="showCommentUpdateBox(key.id)"><i  class="fas fa-edit"></i></div>
+            &nbsp;<div @click="commentDelete($event, key.id)"><i  class="far fa-trash-alt"></i></div>
           </div>
         </div>
 
@@ -178,13 +178,10 @@ export default {
     commentComplete: function () {
       this.getComment()
     },
-    showCommentUpdateBox : function() {
+    showCommentUpdateBox : function(id) {
       // console.log(id)
       this.showCommentUpdate = !this.showCommentUpdate
-<<<<<<< Updated upstream
       this.selectedComment = id
-=======
->>>>>>> Stashed changes
     },
   },
 }

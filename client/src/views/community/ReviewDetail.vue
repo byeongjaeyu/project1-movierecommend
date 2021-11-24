@@ -14,13 +14,8 @@
         {{ review.created_at }}
       </div>
     </div>
-<<<<<<< Updated upstream
-    <div class="border-bottom border-3 text-start px-2">
-      {{ review.username }}
-=======
     <div class="fw-bold border-bottom border-3 text-start px-2 py-1">
       작성자 : &nbsp;{{ review.username }}
->>>>>>> Stashed changes
       <br>
     </div>
     <div class='border-bottom border-3 text-start p-2'>
@@ -57,15 +52,11 @@
           <div class="py-1" :id="key.id" v-if="!(selectedComment==key.id)">
             &nbsp;&nbsp;{{ key.content }}
           </div>
-<<<<<<< Updated upstream
-          <div v-if="key.username === nowUser">
-=======
           <span class="py-1" :id="key.id" v-if="showCommentUpdate && selectedComment==key.id">
             <input v-model="UpdateComment.content" type="text" :placeholder="key.content">
             <button  @click="commentUpdate($event, key.user, key.id)"><i class="fas fa-check"></i></button>
           </span>
           <div class="d-flex py-1" v-if="key.username === nowUser">
->>>>>>> Stashed changes
             &nbsp;&nbsp;<div :id="key.id" @click="showCommentUpdateBox(key.id)"><i  class="fas fa-edit"></i></div>
             &nbsp;<div @click="commentDelete($event, key.id)"><i  class="far fa-trash-alt"></i></div>
           </div>
@@ -190,12 +181,9 @@ export default {
       // console.log(id)
       this.showCommentUpdate = !this.showCommentUpdate
       this.selectedComment = id
-<<<<<<< Updated upstream
-=======
       if (this.showCommentUpdate === false) {
         this.selectedComment = null
       }
->>>>>>> Stashed changes
     },
   },
 }

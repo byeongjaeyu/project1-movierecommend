@@ -7,7 +7,10 @@
     </div>
     <div class="mb-3 text-start">
       <label for="exampleFormControlInput1" class="form-label fs-5 fw-bold">영화 제목</label>
-      <input @input="searchMovie" v-model="newReview.movie_title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex) 신세계">
+      <div class="">
+        <input id="searchArea" @input="searchMovie" v-model="newReview.movie_title" type="text" class="form-control" placeholder="ex) 신세계" autocomplete='off'>
+        <div id="autoMaker" @click="updateInput"></div>
+      </div>
     </div>
     <div class="mb-3 text-start">
       <label for="exampleFormControlTextarea1" class="form-label fs-5 fw-bold">내용</label>
@@ -29,6 +32,7 @@
 <script>
 import jwt_decode from 'jwt-decode'
 import axios from 'axios'
+import $ from 'jquery'
 
 export default {
   name: 'CreateReview',
@@ -46,19 +50,45 @@ export default {
     }
   },
   methods: {
+    updateInput: function () {
+      this.newReview.movie_title = document.querySelector('#searchArea').value
+    },
     searchMovie: function () {
       if (this.newReview.movie_title) {
+        $('#autoMaker').empty()
         axios ({
           method: 'get',
           url : `http://127.0.0.1:8000/movies/search/${this.newReview.movie_title}/`
         })
           .then(res => {
-            this.searchMovie = []
+            this.searchMovies = []
+            $('#autoMaker').children().remove()
             for (const movie in res.data) {
-              console.log(movie)
-              this.searchMovie.push(movie.title)
+              this.searchMovies.push(res.data[movie].title)
+              // console.log(this.searchMovies)
             }
           })
+            .then(() => {
+              for (const movieTitle in this.searchMovies) {
+                $('#autoMaker').append($('<div>').text(this.searchMovies[movieTitle]))
+                if (movieTitle > 10) {
+                  break;
+                }
+              }
+            })
+              .then(() => {
+                // console.log(this.newReview.movie_title)
+                $('#autoMaker').children().each(function () {
+                  $(this).click(function(){
+                    $('#searchArea').val($(this).text()) 
+                    $('#autoMaker').children().remove()
+                  })
+                })
+              })
+      } else {
+        this.searchMovies = []
+        $('#autoMaker').children().remove()
+        $('#autoMaker').empty()
       }
     },
     setToken: function () {
@@ -90,10 +120,19 @@ export default {
       }
       
       },
-    }
-}
+    },
+};
+
 </script>
 
 <style>
+#autoMaker {
+  border: solid 1.5px;
+  border-color:black;
+}
 
+#autoMaker div {
+  border: solid 1px;
+  border-color:lightgray;
+}
 </style>

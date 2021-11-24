@@ -1,23 +1,27 @@
 <template>
-  <div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">리뷰 제목</label>
-      <input v-model="newReview.title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="title">
+  <div class="container p-2" style="width:50%">
+    <br>
+    <div class="mb-3 text-start">
+      <label for="exampleFormControlInput1" class="form-label fs-5 fw-bold">리뷰 제목</label>
+      <input v-model="newReview.title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex) 와 이 영화 재밌네요!">
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">영화 제목</label>
-      <input v-model="newReview.movie_title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="movie_title">
+    <div class="mb-3 text-start">
+      <label for="exampleFormControlInput1" class="form-label fs-5 fw-bold">영화 제목</label>
+      <input @input="searchMovie" v-model="newReview.movie_title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex) 신세계">
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">내용</label>
-      <textarea v-model="newReview.content" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="content"></textarea>
+    <div class="mb-3 text-start">
+      <label for="exampleFormControlTextarea1" class="form-label fs-5 fw-bold">내용</label>
+      <textarea v-model="newReview.content" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="ex) 꼭 보세요 댓글로 소통해요!"></textarea>
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">점수</label>
-      <input v-model="newReview.rank" type='number' placeholder="rank">
-    </div>
-    <div class="mb-3">
-      <button @click="CreateReview">리뷰 작성</button>
+    <div>
+      <div class="mb-3 text-start d-flex justify-content-between">
+        <div>
+          <label for="exampleFormControlTextarea1" class="form-label fs-5 fw-bold">점수</label>
+          &nbsp;
+          <input v-model="newReview.rank" type='number' placeholder="ex) 100">
+        </div>
+        <button @click="CreateReview" class="bg-white"><i class="fas fa-plus"></i></button>
+      </div>
     </div>
   </div>
 </template>
@@ -30,6 +34,8 @@ export default {
   name: 'CreateReview',
   data: function () {
     return {
+      word : null,
+      searchMovies : [],
       newReview: {
         user : null,
         title: null,
@@ -40,6 +46,21 @@ export default {
     }
   },
   methods: {
+    searchMovie: function () {
+      if (this.newReview.movie_title) {
+        axios ({
+          method: 'get',
+          url : `http://127.0.0.1:8000/movies/search/${this.newReview.movie_title}/`
+        })
+          .then(res => {
+            this.searchMovie = []
+            for (const movie in res.data) {
+              console.log(movie)
+              this.searchMovie.push(movie.title)
+            }
+          })
+      }
+    },
     setToken: function () {
       const token = localStorage.getItem('jwt')
       const config = {

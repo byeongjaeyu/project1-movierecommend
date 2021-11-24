@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container" style="width:75%">
     <br>
-    <h1>커뮤니티</h1>
+    <h1 class="py-2">커뮤니티</h1>
     <hr>
     <table class="table table-hover ">
       <thead>

@@ -82,6 +82,25 @@ import Index from './views/movies/Index.vue'
 // import $ from 'jquery'
 // import * as jose from 'jose'
 import jwt_decode from 'jwt-decode'
+// function randombg(){
+//   var random= Math.floor(Math.random() * 6) + 0;
+//   var bigSize = [ "url('/src/assets/backgorund/bg1.jpg')",
+//                   "url('/src/assets/backgorund/bg2.jpg')",
+//                   "url('/src/assets/backgorund/bg3.jpg')",
+//                   "url('/src/assets/backgorund/bg4.jpg')",
+//                   "url('/src/assets/backgorund/bg5.jpg')",
+//                   "url('/src/assets/backgorund/bg6.jpg')",
+//                   "url('/src/assets/backgorund/bg7.jpg')",
+//                   "url('/src/assets/backgorund/bg8.jpg')",
+//                   "url('/src/assets/backgorund/bg9.jpg')",
+//                   "url('/src/assets/backgorund/bg10.jpg')",
+//                   "url('/src/assets/backgorund/bg11.jpg')",
+//                   "url('/src/assets/backgorund/bg12.jpg')",
+//                   ];
+//   document.getElementById("app").style.backgroundImage=bigSize[random];
+//   setTimeout(randombg, 5000);
+// }
+// randombg()
 
 export default {
   name: 'App',

@@ -23,7 +23,6 @@ def review_list(request):
         return Response(serializer.data)
     else:
         serializer = ReviewReadSerializer(data=request.data)
-        print(serializer)
         if serializer.is_valid(raise_exception=True):
             serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -72,8 +71,6 @@ def comment(request, comment_pk):
 def comment_create(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     serializer = CommentSerializer(data=request.data)
-    print(serializer)
-    print(review)
     if serializer.is_valid(raise_exception=True):
         serializer.save(review=review)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -99,8 +96,12 @@ def review_search(request, word):
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def like_user(request, review_pk):
+<<<<<<< Updated upstream
     print(request.data['id'])
     user_id = request.data['id']
+=======
+    user_id = request.data
+>>>>>>> Stashed changes
     review = get_object_or_404(Review, pk=review_pk)
     if review.like_users.filter(pk=user_id).exist():
         review.like_users.remove(user_id)

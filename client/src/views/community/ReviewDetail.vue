@@ -20,6 +20,7 @@
     </div>
     <div class='border-bottom border-3 text-start p-2'>
       <br>
+<<<<<<< Updated upstream
       <div class="d-flex justify-content-between px-2">
         <div class="card" style="width: 30rem;">
           <img :src="this.reviewMovie.poster_path" class="card-img-top" style="width:100%; height:100%;">
@@ -36,6 +37,12 @@
       {{ review.content }}
       </div>
       
+=======
+      {{ review.content }}<br><br>
+      <div class="border border-1 bg-secondary text-white" style="width:30%">
+      {{ review.movie_title }}&nbsp;영화에&nbsp;{{ review.rank }}점을 주셨습니다.
+      </div>
+>>>>>>> Stashed changes
       <div class='d-flex justify-content-center'>
         <div class="text-center" style="font-size:30px">
           <div  style="position:relative;">
@@ -233,6 +240,7 @@ export default {
       if (this.showCommentUpdate === false) {
         this.selectedComment = null
       }
+<<<<<<< Updated upstream
     },
     like: function () {
       const token = localStorage.getItem('jwt')
@@ -248,6 +256,8 @@ export default {
         .then(() => {
           this.getComment()
         })
+=======
+>>>>>>> Stashed changes
     },
   },
 }

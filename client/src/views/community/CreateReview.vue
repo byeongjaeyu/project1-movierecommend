@@ -7,10 +7,14 @@
     </div>
     <div class="mb-3 text-start">
       <label for="exampleFormControlInput1" class="form-label fs-5 fw-bold">영화 제목</label>
+<<<<<<< Updated upstream
       <div class="">
         <input id="searchArea" @input="searchMovie" v-model="newReview.movie_title" type="text" class="form-control" placeholder="ex) 신세계" autocomplete='off'>
         <div id="autoMaker" @click="updateInput"></div>
       </div>
+=======
+      <input @input="searchMovie" v-model="newReview.movie_title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex) 신세계">
+>>>>>>> Stashed changes
     </div>
     <div class="mb-3 text-start">
       <label for="exampleFormControlTextarea1" class="form-label fs-5 fw-bold">내용</label>
@@ -50,17 +54,23 @@ export default {
     }
   },
   methods: {
+<<<<<<< Updated upstream
     updateInput: function () {
       this.newReview.movie_title = document.querySelector('#searchArea').value
     },
     searchMovie: function () {
       if (this.newReview.movie_title) {
         $('#autoMaker').empty()
+=======
+    searchMovie: function () {
+      if (this.newReview.movie_title) {
+>>>>>>> Stashed changes
         axios ({
           method: 'get',
           url : `http://127.0.0.1:8000/movies/search/${this.newReview.movie_title}/`
         })
           .then(res => {
+<<<<<<< Updated upstream
             this.searchMovies = []
             $('#autoMaker').children().remove()
             for (const movie in res.data) {
@@ -89,6 +99,14 @@ export default {
         this.searchMovies = []
         $('#autoMaker').children().remove()
         $('#autoMaker').empty()
+=======
+            this.searchMovie = []
+            for (const movie in res.data) {
+              console.log(movie)
+              this.searchMovie.push(movie.title)
+            }
+          })
+>>>>>>> Stashed changes
       }
     },
     setToken: function () {

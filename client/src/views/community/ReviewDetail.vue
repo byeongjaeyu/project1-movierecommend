@@ -1,3 +1,4 @@
+
 <template>
   <div class="container">
     <br>
@@ -20,21 +21,37 @@
     </div>
     <div class='border-bottom border-3 text-start p-2'>
       <br>
-      {{ review.content }}<br><br>
-      <div class="border border-1 bg-secondary text-white" style="width:30%">
-      {{ review.movie_title }}&nbsp;영화에&nbsp;{{ review.rank }}점을 주셨습니다.
+      <div class="d-flex justify-content-between px-2">
+        <div class="card" style="width: 30rem;">
+          <img :src="this.reviewMovie.poster_path" class="card-img-top" style="width:100%; height:100%;">
+          <div class="card-body">
+            <p class="card-text border border-1 bg-secondary text-white">
+              {{ review.movie_title }}&nbsp;영화에&nbsp;{{ review.rank }}점을 주셨습니다.
+            </p>
+          </div>
+        </div>
+        <iframe class="ps-1" width="500" height="500" :src="reviewMovie.youtube_url" frameborder="0">트레일러 영상이 없어요.</iframe>
       </div>
+
+      <div class="py-3">
+      {{ review.content }}
+      </div>
+      
       <div class='d-flex justify-content-center'>
-        <i class="far fa-heart"></i>&nbsp;&nbsp;
-        <i class="fas fa-heart"></i>&nbsp;&nbsp;
-        좋아요 10000
-        <br>
+        <div class="text-center">
+          <i class="far fa-heart"></i>&nbsp;&nbsp;
+          <i class="fas fa-heart"></i>&nbsp;&nbsp;
+          좋아요 10000
+        </div>
       </div>
+      
     </div>
+
     <div class="p-2 d-flex justify-content-end">
       <button id="btn-edit" v-if="showEdit" @click="reviewUpdate"><i class="fas fa-edit"></i></button>
       <button id="btn-delete" v-if="showEdit" @click="reviewDelete"><i class="far fa-trash-alt"></i></button>
     </div>
+
     
 
     <div class="p-2 bg-light border border-1 rounded-pill">
@@ -87,7 +104,10 @@ export default {
       showCommentUpdate: false,
       selectedComment:null,
       reviewMovie: {
-        
+        release_date:null,
+        vote_average:null,
+        youtube_url:null,
+        poster_path:null,
       },
       UpdateComment: {
         content:null, //v-model
@@ -101,16 +121,6 @@ export default {
   },
   created: function () {
     this.getComment()
-      .then(() => {
-        axios({
-          method:'get',
-          url:`http://127.0.0.1:8000/movies/fordetail/${this.review.movie_title}/`
-        })
-          .then(res=>{
-            console.log(res.data)
-          })
-      })
-    
   },
   methods: {
     getComment: function () {
@@ -119,7 +129,7 @@ export default {
       url: `http://127.0.0.1:8000/community/review/${this.id}`
     })
       .then(res => {
-        console.log(res.data)
+        // console.log(res.data)
         this.review = res.data
       })
         .then(() => {
@@ -130,6 +140,18 @@ export default {
             this.showEdit = true
           }
         })
+          .then(() => {
+            axios({
+              method:'get',
+              url:`http://127.0.0.1:8000/movies/fordetail/${this.review.movie_title}/`
+            })
+              .then(res=>{
+                this.reviewMovie.release_date = res.data[0].release_date
+                this.reviewMovie.vote_average = res.data[0].vote_average
+                this.reviewMovie.youtube_url = res.data[0].youtube_url
+                this.reviewMovie.poster_path = res.data[0].poster_path
+              })
+          })
     },
     reloadDetail: function () {
       window.location.reload(`/community/${this.id}/reviewdetail`)
@@ -174,7 +196,7 @@ export default {
 
       this.UpdateComment.review = this.id
       this.UpdateComment.user = user
-      console.log(this.id)
+      // console.log(this.id)
       axios({
         method:'put',
         url:`http://127.0.0.1:8000/community/comment/${commentId}/`,

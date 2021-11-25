@@ -1,4 +1,3 @@
-
 <template>
   <div class="container">
     <br>
@@ -38,10 +37,17 @@
       </div>
       
       <div class='d-flex justify-content-center'>
-        <div class="text-center">
-          <i class="far fa-heart"></i>&nbsp;&nbsp;
-          <i class="fas fa-heart"></i>&nbsp;&nbsp;
-          좋아요 10000
+        <div class="text-center" style="font-size:30px">
+          <div  style="position:relative;">
+            <div @click="like" v-if="!isLike">
+              <i class="far fa-heart" ></i>
+            </div>
+            <div @click="like" v-if="isLike" style="position:absolute; bottom:0%;">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div v-if="review.like_user">{{review.like_user.length}}</div>
+          <div v-else></div>
         </div>
       </div>
       
@@ -99,6 +105,7 @@ export default {
       id : this.$route.params.reviewid,
       nowUser : null,
       review: null,
+      isLike:false,
       showEdit: false,
       showCommentEdit: false,
       showCommentUpdate: false,
@@ -123,6 +130,13 @@ export default {
     this.getComment()
   },
   methods: {
+    setToken: function () {
+      const token = localStorage.getItem('jwt')
+      const config = {
+        Authorization: `JWT ${token}`
+      }
+      return config
+    },
     getComment: function () {
       axios({
       method: 'get',
@@ -219,6 +233,21 @@ export default {
       if (this.showCommentUpdate === false) {
         this.selectedComment = null
       }
+    },
+    like: function () {
+      const token = localStorage.getItem('jwt')
+      var decoded = jwt_decode(token)
+      axios({
+        method:'post',
+        url: `http://127.0.0.1:8000/community/like/${this.id}/`,
+        data: {
+          id: decoded.user_id
+          },
+        headers: this.setToken(),
+      })
+        .then(() => {
+          this.getComment()
+        })
     },
   },
 }

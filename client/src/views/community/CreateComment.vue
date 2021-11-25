@@ -2,7 +2,7 @@
   <div>
     <div>
       <input v-model="newReview.content" type="text" class="m-1" placeholder="댓글을 입력하세요.">
-      <button class="m-1" @click="createComment">작성</button>
+      <button class="m-1 bg-white" @click="createComment">작성</button>
     </div>
   </div>
 </template>

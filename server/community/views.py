@@ -96,14 +96,10 @@ def review_search(request, word):
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def like_user(request, review_pk):
-<<<<<<< Updated upstream
-    print(request.data['id'])
     user_id = request.data['id']
-=======
-    user_id = request.data
->>>>>>> Stashed changes
     review = get_object_or_404(Review, pk=review_pk)
-    if review.like_users.filter(pk=user_id).exist():
+    likeUser = review.like_users.all()
+    if likeUser.filter(pk=user_id):
         review.like_users.remove(user_id)
         liked = False
     else:

@@ -37,7 +37,6 @@
       </div>
       
       <div class='d-flex justify-content-center'>
-<<<<<<< Updated upstream
         <div class="text-center" style="font-size:30px">
           <div  style="position:relative;">
             <div @click="like" v-if="!isLike">
@@ -49,12 +48,6 @@
           </div>
           <div v-if="review.like_user">{{review.like_user.length}}</div>
           <div v-else></div>
-=======
-        <div class="text-center">
-          <i class="far fa-heart"></i>&nbsp;&nbsp;
-          <i class="fas fa-heart"></i>&nbsp;&nbsp;
-          좋아요 10000
->>>>>>> Stashed changes
         </div>
       </div>
       
